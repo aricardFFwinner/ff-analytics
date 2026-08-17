@@ -50,6 +50,6 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "report: weekly update ($(date -u +%Y-%m-%dT%H:%MZ))"
-            git pull --rebase origin main
+            git pull --rebase -X theirs origin main
             git push origin main
           fi
