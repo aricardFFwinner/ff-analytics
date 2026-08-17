@@ -125200,6 +125200,22 @@
   "playoff_team_count": 6,
   "reg_season_count": 14
  },
+ "recent_activity": [
+  {
+   "date": 1786786056390,
+   "team": "Fuward Trump",
+   "action": "FA ADDED",
+   "player": "Carnell Tate",
+   "bid": 0
+  },
+  {
+   "date": 1786784948718,
+   "team": "Fuward Trump",
+   "action": "DROPPED",
+   "player": "Ryan Miller",
+   "bid": 0
+  }
+ ],
  "has_odds": true,
  "dst_metrics_season": 2025
 }
