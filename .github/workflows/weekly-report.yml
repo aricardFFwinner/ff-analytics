@@ -3,6 +3,8 @@ name: Weekly Report
 on:
   workflow_dispatch:
   schedule:
+  # 火曜 18:17 JST (火曜 09:17 UTC) — 日曜分の機会指標を1日早く反映(waiver先取り用)
+    - cron: "17 9 * * 2"
     # 水曜 12:17 JST (水曜 03:17 UTC) — Waiver/FA判断用
     - cron: "17 3 * * 3"
     # 日曜 12:17 JST (日曜 03:17 UTC) — スタメン大枠決定用
