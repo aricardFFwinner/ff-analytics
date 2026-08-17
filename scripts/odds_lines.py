@@ -27,34 +27,42 @@ TEAM_NAME_TO_ABBREV = {
 }
 
 
-def fetch_implied_totals(valid_gamedays=None):
+def _expand_days(gamedays):
+    """試合日集合を前後1日に広げる(commence_timeはUTCでETの夜試合が翌日になるため)。"""
+    from datetime import datetime, timedelta
+    valid = set()
+    for d in gamedays or ():
+        try:
+            day = datetime.strptime(d, "%Y-%m-%d")
+        except ValueError:
+            continue
+        for delta in (-1, 0, 1):
+            valid.add((day + timedelta(days=delta)).strftime("%Y-%m-%d"))
+    return valid
+
+
+def fetch_implied_totals(valid_gamedays=None, _cached_events=[None]):
     """{nflverse略称: {"implied": float, "ou": float, "spread": float}} を返す。
 
-    valid_gamedays: 今週のレギュラーシーズン試合日(YYYY-MM-DD, ET基準)の集合。
-    指定すると該当日以外のイベント(プレシーズン試合や翌週分)を除外する。
+    valid_gamedays: 対象週のレギュラーシーズン試合日(YYYY-MM-DD, ET基準)の集合。
+    指定すると該当日以外のイベント(プレシーズン試合や別週分)を除外する。
+    同一プロセス内の2回目以降はAPIレスポンスを再利用する(来週分の抽出でも消費ゼロ)。
     """
     key = os.environ.get("ODDS_API_KEY", "").strip()
     if not key:
         return {}
-    try:
-        with urllib.request.urlopen(ODDS_URL.format(key=key), timeout=60) as r:
-            events = json.loads(r.read().decode())
-    except Exception as e:
-        print(f"[warn] オッズ取得失敗(スキップ): {e}")
-        return {}
+    if _cached_events[0] is not None:
+        events = _cached_events[0]
+    else:
+        try:
+            with urllib.request.urlopen(ODDS_URL.format(key=key), timeout=60) as r:
+                events = json.loads(r.read().decode())
+            _cached_events[0] = events
+        except Exception as e:
+            print(f"[warn] オッズ取得失敗(スキップ): {e}")
+            return {}
 
-    valid = None
-    if valid_gamedays:
-        from datetime import datetime, timedelta
-        valid = set()
-        for d in valid_gamedays:
-            try:
-                day = datetime.strptime(d, "%Y-%m-%d")
-            except ValueError:
-                continue
-            # commence_timeはUTC。ETの夜試合はUTCでは翌日になるため前後1日を許容
-            for delta in (-1, 0, 1):
-                valid.add((day + timedelta(days=delta)).strftime("%Y-%m-%d"))
+    valid = _expand_days(valid_gamedays) if valid_gamedays else None
 
     result = {}
     skipped = 0

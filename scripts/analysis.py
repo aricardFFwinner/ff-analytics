@@ -127,7 +127,14 @@ def fa_recommendations(snapshot, week, top_n=8):
             s, basis = player_week_score(p, week)
             if s <= 0:
                 continue
-            rows.append({**p, "score": round(s, 2), "score_basis": basis})
+            # 来週の見込み(Bye週はNone→レポート側でBYE表示)。先取り判断用
+            if p.get("next_week_opp") == "BYE":
+                next_score = None
+            else:
+                ns, _ = player_week_score(p, week + 1)
+                next_score = round(ns, 1)
+            rows.append({**p, "score": round(s, 2), "score_basis": basis,
+                         "next_score": next_score})
         rows.sort(key=lambda x: (x["score"], x.get("proj_total", 0)), reverse=True)
         rows = rows[:top_n]
 

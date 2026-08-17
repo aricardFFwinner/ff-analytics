@@ -209,8 +209,9 @@ def render(ctx):
         s.append(f"<div class='card'><b>{esc(pos)}</b> <span class='sub'>({worst_note})</span><table>")
         opp_th = ("<th class='num'>Snap%</th><th class='num'>直近pt/G</th><th>傾向</th>"
                   if (ctx.get("opp_info") or {}).get("available") and pos not in ("D/ST", "K") else "")
+        next_th = "<th>来週</th><th class='num'>来週pt</th>"
         s.append(f"<tr><th>選手</th><th>Team</th><th>今週の相手</th>{fa_tot_th}<th class='num'>予測pt</th>"
-                 f"<th class='num'>最弱比</th>{opp_th}<th class='num'>own%</th></tr>")
+                 f"{next_th}<th class='num'>最弱比</th>{opp_th}<th class='num'>own%</th></tr>")
         for x in r["fa"]:
             gain = x.get("gain_vs_my_worst")
             gain_html = f"<span class='gain-pos'>+{gain}</span>" if (gain is not None and gain > 0) else (esc(gain) if gain is not None else "-")
@@ -222,10 +223,27 @@ def render(ctx):
                 tag = f" {esc(x['opp_tag'])}" if x.get("opp_tag") else ""
                 opp_td = (f"<td class='num'>{snap}</td><td class='num'>{ppg}</td>"
                           f"<td>{esc(o.get('trend','-'))}{tag}</td>")
+            # 来週セル: 相手(+来週Tot、緑赤付き)とBye表示、来週見込みpt
+            nopp = x.get("next_week_opp", "")
+            if nopp == "BYE":
+                next_td = "<td><span class='tag warn'>BYE</span></td><td class='num'>-</td>"
+            else:
+                nt = x.get("next_implied_total")
+                nt_html = ""
+                if nt is not None:
+                    hi = " style='color:var(--good);font-weight:600'" if nt >= 26 else (
+                         " style='color:var(--bad)'" if nt <= 18 else "")
+                    nt_html = f"<br><span class='sub'{hi}>Tot{nt}</span>"
+                ns = x.get("next_score")
+                ns_html = f"{ns}" if ns is not None else "-"
+                next_td = f"<td>{esc(nopp)}{nt_html}</td><td class='num'>{ns_html}</td>"
             s.append(f"<tr><td>{_name_cell(x)}</td><td>{esc(x['pro_team'])}</td>"
                      f"<td>{_opp_cell(x)}</td>{_tot_cell(x)}<td class='num'>{x['score']}</td>"
-                     f"<td class='num'>{gain_html}</td>{opp_td}<td class='num'>{esc(x.get('percent_owned',''))}</td></tr>")
+                     f"{next_td}<td class='num'>{gain_html}</td>{opp_td}<td class='num'>{esc(x.get('percent_owned',''))}</td></tr>")
         s.append("</table></div>")
+    s.append("<div class='note'>「来週」列 = 来週の対戦相手と見込みpt(ESPN週次予測、なければ季節平均)。"
+             "来週Totはブックメーカーの来週ライン(公開前の試合は非表示。通常、今週の試合消化後に出揃う)。"
+             "Waiverは取るまで順位固定なので、来週強いFAの1週早い確保に使う。</div>")
     if ctx["drop_candidates"]:
         s.append("<div class='note'>ドロップ候補(低予測順、\"R\"=ルーキー、✅=期待も機会も低く安全 / 🟡=期待は高いが機会低下・1週様子見推奨): " + ", ".join(
             f"{esc(z)}{esc(n)}({esc(p)}) {sc}pt" for n, p, sc, z in ctx["drop_candidates"]) + "</div>")

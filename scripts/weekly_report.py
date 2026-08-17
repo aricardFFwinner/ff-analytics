@@ -44,13 +44,21 @@ def enrich_with_nfl_schedule(snapshot, week):
                      for ti in info.values()
                      for wk, g in ti.get("games", {}).items()
                      if wk == week and g.get("gameday")}
+    next_gamedays = {g["gameday"]
+                     for ti in info.values()
+                     for wk, g in ti.get("games", {}).items()
+                     if wk == week + 1 and g.get("gameday")}
+    implied_next = {}
     try:
         import odds_lines
         implied = odds_lines.fetch_implied_totals(week_gamedays)
+        if implied:  # 来週分は同じAPIレスポンスから抽出(追加消費ゼロ)
+            implied_next = odds_lines.fetch_implied_totals(next_gamedays)
     except Exception as e:
         print(f"[warn] オッズ処理に失敗(続行): {e}")
         implied = {}
     snapshot["has_odds"] = bool(implied)
+    snapshot["has_next_odds"] = bool(implied_next)
 
     try:
         import stadium_weather
@@ -130,6 +138,16 @@ def enrich_with_nfl_schedule(snapshot, week):
             opp_line = implied.get(opp_ab)
             if opp_line:
                 p["opp_implied"] = opp_line["implied"]
+
+        # 来週の情報(FAの先取り判断用): 相手・Bye・来週Tot
+        ng = ti["games"].get(week + 1)
+        if ng:
+            p["next_week_opp"] = ("vs " if ng["is_home"] else "@ ") + ng["opponent"]
+            nl = implied_next.get(ab)
+            if nl:
+                p["next_implied_total"] = nl["implied"]
+        elif ti.get("bye") == week + 1:
+            p["next_week_opp"] = "BYE"
 
     for t in snapshot["teams"]:
         is_mine = t["team_id"] == snapshot["my_team_id"]
