@@ -27,8 +27,12 @@ TEAM_NAME_TO_ABBREV = {
 }
 
 
-def fetch_implied_totals():
-    """{nflverse略称: {"implied": float, "ou": float, "spread": float}} を返す。"""
+def fetch_implied_totals(valid_gamedays=None):
+    """{nflverse略称: {"implied": float, "ou": float, "spread": float}} を返す。
+
+    valid_gamedays: 今週のレギュラーシーズン試合日(YYYY-MM-DD, ET基準)の集合。
+    指定すると該当日以外のイベント(プレシーズン試合や翌週分)を除外する。
+    """
     key = os.environ.get("ODDS_API_KEY", "").strip()
     if not key:
         return {}
@@ -39,9 +43,28 @@ def fetch_implied_totals():
         print(f"[warn] オッズ取得失敗(スキップ): {e}")
         return {}
 
+    valid = None
+    if valid_gamedays:
+        from datetime import datetime, timedelta
+        valid = set()
+        for d in valid_gamedays:
+            try:
+                day = datetime.strptime(d, "%Y-%m-%d")
+            except ValueError:
+                continue
+            # commence_timeはUTC。ETの夜試合はUTCでは翌日になるため前後1日を許容
+            for delta in (-1, 0, 1):
+                valid.add((day + timedelta(days=delta)).strftime("%Y-%m-%d"))
+
     result = {}
+    skipped = 0
     for ev in events:
         try:
+            if valid is not None:
+                ev_date = (ev.get("commence_time") or "")[:10]
+                if ev_date not in valid:
+                    skipped += 1
+                    continue
             home = TEAM_NAME_TO_ABBREV.get(ev.get("home_team", ""))
             away = TEAM_NAME_TO_ABBREV.get(ev.get("away_team", ""))
             if not home or not away:
@@ -71,5 +94,5 @@ def fetch_implied_totals():
                                     "spread": round(spread, 1)}
         except Exception:
             continue
-    print(f"[info] オッズ取得: {len(result)}チーム分のインプライドトータル")
+    print(f"[info] オッズ取得: {len(result)}チーム分のインプライドトータル (対象外イベント除外: {skipped})")
     return result

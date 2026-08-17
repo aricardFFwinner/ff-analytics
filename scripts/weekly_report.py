@@ -40,9 +40,13 @@ def enrich_with_nfl_schedule(snapshot, week):
         print(f"[warn] nflverse日程の取得に失敗(続行): {e}")
         return
 
+    week_gamedays = {g["gameday"]
+                     for ti in info.values()
+                     for wk, g in ti.get("games", {}).items()
+                     if wk == week and g.get("gameday")}
     try:
         import odds_lines
-        implied = odds_lines.fetch_implied_totals()
+        implied = odds_lines.fetch_implied_totals(week_gamedays)
     except Exception as e:
         print(f"[warn] オッズ処理に失敗(続行): {e}")
         implied = {}
