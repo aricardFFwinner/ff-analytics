@@ -13,6 +13,20 @@
    "action": "FA ADDED",
    "player": "Carnell Tate",
    "bid": 0
+  },
+  {
+   "date": 1786967053369,
+   "team": "Fourth and Way Down",
+   "action": "DROPPED",
+   "player": "Dak Prescott",
+   "bid": 0
+  },
+  {
+   "date": 1786967053369,
+   "team": "Fourth and Way Down",
+   "action": "FA ADDED",
+   "player": "Justin Herbert",
+   "bid": 0
   }
  ]
 }

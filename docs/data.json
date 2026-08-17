@@ -282,7 +282,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 27.4,
      "game_ou": 51.4,
-     "opp_implied": 23.9
+     "opp_implied": 23.9,
+     "next_week_opp": "@ HOU",
+     "next_implied_total": 22.0
     },
     {
      "id": 4242335,
@@ -533,7 +535,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 22.4,
      "game_ou": 48.2,
-     "opp_implied": 25.8
+     "opp_implied": 25.8,
+     "next_week_opp": "@ KC",
+     "next_implied_total": 20.8
     },
     {
      "id": 4258173,
@@ -784,7 +788,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 22.4,
      "game_ou": 44.5,
-     "opp_implied": 22.1
+     "opp_implied": 22.1,
+     "next_week_opp": "vs CIN",
+     "next_implied_total": 24.5
     },
     {
      "id": 4685382,
@@ -1035,7 +1041,9 @@
      "venue_str": "ドーム/人工芝",
      "implied_total": 28.3,
      "game_ou": 46.3,
-     "opp_implied": 18.0
+     "opp_implied": 18.0,
+     "next_week_opp": "vs LV",
+     "next_implied_total": 25.5
     },
     {
      "id": 4426502,
@@ -1286,7 +1294,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 19.6,
      "game_ou": 42.2,
-     "opp_implied": 22.6
+     "opp_implied": 22.6,
+     "next_week_opp": "vs CAR",
+     "next_implied_total": 22.8
     },
     {
      "id": 4047365,
@@ -1537,7 +1547,9 @@
      "venue_str": "ドーム/人工芝",
      "implied_total": 22.1,
      "game_ou": 45.0,
-     "opp_implied": 22.9
+     "opp_implied": 22.9,
+     "next_week_opp": "@ NYJ",
+     "next_implied_total": 24.0
     },
     {
      "id": 4595348,
@@ -1788,7 +1800,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 23.0,
      "game_ou": 48.6,
-     "opp_implied": 25.6
+     "opp_implied": 25.6,
+     "next_week_opp": "@ LA",
+     "next_implied_total": 19.5
     },
     {
      "id": 4572680,
@@ -1797,7 +1811,7 @@
      "pro_team": "GB",
      "injury_status": "QUESTIONABLE",
      "lineup_slot": "TE",
-     "percent_owned": 86.14,
+     "percent_owned": 86.13,
      "total_points": 0.0,
      "avg_points": 0.0,
      "proj_total": 180.99,
@@ -2039,7 +2053,9 @@
      "venue_str": "ドーム/人工芝",
      "implied_total": 22.1,
      "game_ou": 45.0,
-     "opp_implied": 22.9
+     "opp_implied": 22.9,
+     "next_week_opp": "@ NYJ",
+     "next_implied_total": 24.0
     },
     {
      "id": 4372016,
@@ -2290,7 +2306,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 20.0,
      "game_ou": 42.8,
-     "opp_implied": 22.7
+     "opp_implied": 22.7,
+     "next_week_opp": "vs JAX",
+     "next_implied_total": 23.0
     },
     {
      "id": 4685702,
@@ -2541,7 +2559,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 16.5,
      "game_ou": 40.5,
-     "opp_implied": 24.0
+     "opp_implied": 24.0,
+     "next_week_opp": "@ TB",
+     "next_implied_total": 18.2
     },
     {
      "id": 4431299,
@@ -2792,7 +2812,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 25.0,
      "game_ou": 47.4,
-     "opp_implied": 22.5
+     "opp_implied": 22.5,
+     "next_week_opp": "vs MIN",
+     "next_implied_total": 24.5
     },
     {
      "id": -16014,
@@ -3048,258 +3070,9 @@
      },
      "implied_total": 26.0,
      "game_ou": 48.5,
-     "opp_implied": 22.5
-    },
-    {
-     "id": 2577417,
-     "name": "Dak Prescott",
-     "position": "QB",
-     "pro_team": "DAL",
-     "injury_status": "ACTIVE",
-     "lineup_slot": "QB",
-     "percent_owned": 88.92,
-     "total_points": 0.0,
-     "avg_points": 0.0,
-     "proj_total": 286.93,
-     "proj_avg": 16.88,
-     "weekly_proj": {
-      "1": 17.17
-     },
-     "weekly_actual": {},
-     "opponents": {
-      "1": "NYG",
-      "2": "WSH",
-      "3": "BAL",
-      "4": "HOU",
-      "5": "TB",
-      "6": "GB",
-      "7": "PHI",
-      "8": "ARI",
-      "9": "IND",
-      "10": "SF",
-      "11": "TEN",
-      "12": "PHI",
-      "13": "SEA",
-      "15": "LAR",
-      "16": "JAX",
-      "17": "NYG",
-      "18": "WSH"
-     },
-     "pos_rank": [],
-     "is_rookie": false,
-     "bye": 14,
-     "nfl_games": {
-      "1": {
-       "opponent": "NYG",
-       "is_home": false,
-       "home_team": "NYG",
-       "gameday": "2026-09-13",
-       "weekday": "Sunday",
-       "gametime": "20:20",
-       "location": "Home",
-       "roof": "outdoors",
-       "surface": "fieldturf",
-       "stadium": "MetLife Stadium"
-      },
-      "2": {
-       "opponent": "WAS",
-       "is_home": true,
-       "home_team": "DAL",
-       "gameday": "2026-09-20",
-       "weekday": "Sunday",
-       "gametime": "16:25",
-       "location": "Home",
-       "roof": "",
-       "surface": "matrixturf",
-       "stadium": "AT&T Stadium"
-      },
-      "3": {
-       "opponent": "BAL",
-       "is_home": true,
-       "home_team": "DAL",
-       "gameday": "2026-09-27",
-       "weekday": "Sunday",
-       "gametime": "16:25",
-       "location": "Neutral",
-       "roof": "",
-       "surface": "matrixturf",
-       "stadium": "Maracana Stadium"
-      },
-      "4": {
-       "opponent": "HOU",
-       "is_home": false,
-       "home_team": "HOU",
-       "gameday": "2026-10-04",
-       "weekday": "Sunday",
-       "gametime": "13:00",
-       "location": "Home",
-       "roof": "",
-       "surface": "astroturf",
-       "stadium": "Reliant Stadium"
-      },
-      "5": {
-       "opponent": "TB",
-       "is_home": true,
-       "home_team": "DAL",
-       "gameday": "2026-10-08",
-       "weekday": "Thursday",
-       "gametime": "20:15",
-       "location": "Home",
-       "roof": "",
-       "surface": "matrixturf",
-       "stadium": "AT&T Stadium"
-      },
-      "6": {
-       "opponent": "GB",
-       "is_home": false,
-       "home_team": "GB",
-       "gameday": "2026-10-18",
-       "weekday": "Sunday",
-       "gametime": "20:20",
-       "location": "Home",
-       "roof": "outdoors",
-       "surface": "grass",
-       "stadium": "Lambeau Field"
-      },
-      "7": {
-       "opponent": "PHI",
-       "is_home": false,
-       "home_team": "PHI",
-       "gameday": "2026-10-26",
-       "weekday": "Monday",
-       "gametime": "20:15",
-       "location": "Home",
-       "roof": "outdoors",
-       "surface": "grass",
-       "stadium": "Lincoln Financial Field"
-      },
-      "8": {
-       "opponent": "ARI",
-       "is_home": true,
-       "home_team": "DAL",
-       "gameday": "2026-11-01",
-       "weekday": "Sunday",
-       "gametime": "13:00",
-       "location": "Home",
-       "roof": "",
-       "surface": "matrixturf",
-       "stadium": "AT&T Stadium"
-      },
-      "9": {
-       "opponent": "IND",
-       "is_home": false,
-       "home_team": "IND",
-       "gameday": "2026-11-08",
-       "weekday": "Sunday",
-       "gametime": "13:00",
-       "location": "Home",
-       "roof": "",
-       "surface": "fieldturf",
-       "stadium": "Lucas Oil Stadium"
-      },
-      "10": {
-       "opponent": "SF",
-       "is_home": true,
-       "home_team": "DAL",
-       "gameday": "2026-11-15",
-       "weekday": "Sunday",
-       "gametime": "16:25",
-       "location": "Home",
-       "roof": "",
-       "surface": "matrixturf",
-       "stadium": "AT&T Stadium"
-      },
-      "11": {
-       "opponent": "TEN",
-       "is_home": true,
-       "home_team": "DAL",
-       "gameday": "2026-11-22",
-       "weekday": "Sunday",
-       "gametime": "13:00",
-       "location": "Home",
-       "roof": "",
-       "surface": "matrixturf",
-       "stadium": "AT&T Stadium"
-      },
-      "12": {
-       "opponent": "PHI",
-       "is_home": true,
-       "home_team": "DAL",
-       "gameday": "2026-11-26",
-       "weekday": "Thursday",
-       "gametime": "16:30",
-       "location": "Home",
-       "roof": "",
-       "surface": "matrixturf",
-       "stadium": "AT&T Stadium"
-      },
-      "13": {
-       "opponent": "SEA",
-       "is_home": false,
-       "home_team": "SEA",
-       "gameday": "2026-12-07",
-       "weekday": "Monday",
-       "gametime": "20:15",
-       "location": "Home",
-       "roof": "outdoors",
-       "surface": "fieldturf",
-       "stadium": "Lumen Field"
-      },
-      "15": {
-       "opponent": "LA",
-       "is_home": false,
-       "home_team": "LA",
-       "gameday": "2026-12-20",
-       "weekday": "Sunday",
-       "gametime": "16:25",
-       "location": "Home",
-       "roof": "dome",
-       "surface": "matrixturf",
-       "stadium": "SoFi Stadium"
-      },
-      "16": {
-       "opponent": "JAX",
-       "is_home": true,
-       "home_team": "DAL",
-       "gameday": "2026-12-27",
-       "weekday": "Sunday",
-       "gametime": "20:20",
-       "location": "Home",
-       "roof": "",
-       "surface": "matrixturf",
-       "stadium": "AT&T Stadium"
-      },
-      "17": {
-       "opponent": "NYG",
-       "is_home": true,
-       "home_team": "DAL",
-       "gameday": "2027-01-03",
-       "weekday": "Sunday",
-       "gametime": "13:00",
-       "location": "Home",
-       "roof": "",
-       "surface": "matrixturf",
-       "stadium": "AT&T Stadium"
-      },
-      "18": {
-       "opponent": "WAS",
-       "is_home": false,
-       "home_team": "WAS",
-       "gameday": "2027-01-10",
-       "weekday": "Sunday",
-       "gametime": "13:00",
-       "location": "Home",
-       "roof": "outdoors",
-       "surface": "grass",
-       "stadium": "Northwest Stadium"
-      }
-     },
-     "this_week_opp": "@ NYG",
-     "kickoff_jst": "月 09:20",
-     "venue_str": "屋外/人工芝",
-     "implied_total": 25.6,
-     "game_ou": 48.6,
-     "opp_implied": 23.0
+     "opp_implied": 22.5,
+     "next_week_opp": "vs NYG",
+     "next_implied_total": 28.5
     },
     {
      "id": 4689936,
@@ -3550,7 +3323,9 @@
      "venue_str": "ドーム/人工芝",
      "implied_total": 28.1,
      "game_ou": 49.1,
-     "opp_implied": 21.1
+     "opp_implied": 21.1,
+     "next_week_opp": "@ BUF",
+     "next_implied_total": 24.5
     },
     {
      "id": 4710714,
@@ -3559,7 +3334,7 @@
      "pro_team": "SF",
      "injury_status": "QUESTIONABLE",
      "lineup_slot": "BE",
-     "percent_owned": 19.01,
+     "percent_owned": 19.03,
      "total_points": 0.0,
      "avg_points": 0.0,
      "proj_total": 130.37,
@@ -3801,7 +3576,262 @@
      "venue_str": "ドーム/人工芝",
      "implied_total": 22.5,
      "game_ou": 48.5,
-     "opp_implied": 26.0
+     "opp_implied": 26.0,
+     "next_week_opp": "vs MIA",
+     "next_implied_total": 28.5
+    },
+    {
+     "id": 4038941,
+     "name": "Justin Herbert",
+     "position": "QB",
+     "pro_team": "LAC",
+     "injury_status": "ACTIVE",
+     "lineup_slot": "QB",
+     "percent_owned": 85.51,
+     "total_points": 0.0,
+     "avg_points": 0.0,
+     "proj_total": 282.79,
+     "proj_avg": 16.63,
+     "weekly_proj": {
+      "1": 18.96
+     },
+     "weekly_actual": {},
+     "opponents": {
+      "1": "ARI",
+      "2": "LV",
+      "3": "BUF",
+      "4": "SEA",
+      "5": "DEN",
+      "6": "KC",
+      "8": "LAR",
+      "9": "HOU",
+      "10": "BAL",
+      "11": "NYJ",
+      "12": "NE",
+      "13": "TB",
+      "14": "LV",
+      "15": "SF",
+      "16": "MIA",
+      "17": "KC",
+      "18": "DEN"
+     },
+     "pos_rank": [],
+     "is_rookie": false,
+     "bye": 7,
+     "nfl_games": {
+      "1": {
+       "opponent": "ARI",
+       "is_home": true,
+       "home_team": "LAC",
+       "gameday": "2026-09-13",
+       "weekday": "Sunday",
+       "gametime": "16:25",
+       "location": "Home",
+       "roof": "dome",
+       "surface": "matrixturf",
+       "stadium": "SoFi Stadium"
+      },
+      "2": {
+       "opponent": "LV",
+       "is_home": true,
+       "home_team": "LAC",
+       "gameday": "2026-09-20",
+       "weekday": "Sunday",
+       "gametime": "16:05",
+       "location": "Home",
+       "roof": "dome",
+       "surface": "matrixturf",
+       "stadium": "SoFi Stadium"
+      },
+      "3": {
+       "opponent": "BUF",
+       "is_home": false,
+       "home_team": "BUF",
+       "gameday": "2026-09-27",
+       "weekday": "Sunday",
+       "gametime": "13:00",
+       "location": "Home",
+       "roof": "outdoors",
+       "surface": "a_turf",
+       "stadium": "Highmark Stadium"
+      },
+      "4": {
+       "opponent": "SEA",
+       "is_home": false,
+       "home_team": "SEA",
+       "gameday": "2026-10-04",
+       "weekday": "Sunday",
+       "gametime": "16:25",
+       "location": "Home",
+       "roof": "outdoors",
+       "surface": "fieldturf",
+       "stadium": "Lumen Field"
+      },
+      "5": {
+       "opponent": "DEN",
+       "is_home": true,
+       "home_team": "LAC",
+       "gameday": "2026-10-11",
+       "weekday": "Sunday",
+       "gametime": "16:05",
+       "location": "Home",
+       "roof": "dome",
+       "surface": "matrixturf",
+       "stadium": "SoFi Stadium"
+      },
+      "6": {
+       "opponent": "KC",
+       "is_home": false,
+       "home_team": "KC",
+       "gameday": "2026-10-18",
+       "weekday": "Sunday",
+       "gametime": "16:25",
+       "location": "Home",
+       "roof": "outdoors",
+       "surface": "grass",
+       "stadium": "GEHA Field at Arrowhead Stadium"
+      },
+      "8": {
+       "opponent": "LA",
+       "is_home": false,
+       "home_team": "LA",
+       "gameday": "2026-11-01",
+       "weekday": "Sunday",
+       "gametime": "16:05",
+       "location": "Home",
+       "roof": "dome",
+       "surface": "matrixturf",
+       "stadium": "SoFi Stadium"
+      },
+      "9": {
+       "opponent": "HOU",
+       "is_home": true,
+       "home_team": "LAC",
+       "gameday": "2026-11-08",
+       "weekday": "Sunday",
+       "gametime": "16:05",
+       "location": "Home",
+       "roof": "dome",
+       "surface": "matrixturf",
+       "stadium": "SoFi Stadium"
+      },
+      "10": {
+       "opponent": "BAL",
+       "is_home": false,
+       "home_team": "BAL",
+       "gameday": "2026-11-16",
+       "weekday": "Monday",
+       "gametime": "20:15",
+       "location": "Home",
+       "roof": "outdoors",
+       "surface": "grass",
+       "stadium": "M&T Bank Stadium"
+      },
+      "11": {
+       "opponent": "NYJ",
+       "is_home": true,
+       "home_team": "LAC",
+       "gameday": "2026-11-22",
+       "weekday": "Sunday",
+       "gametime": "16:05",
+       "location": "Home",
+       "roof": "dome",
+       "surface": "matrixturf",
+       "stadium": "SoFi Stadium"
+      },
+      "12": {
+       "opponent": "NE",
+       "is_home": true,
+       "home_team": "LAC",
+       "gameday": "2026-11-29",
+       "weekday": "Sunday",
+       "gametime": "20:20",
+       "location": "Home",
+       "roof": "dome",
+       "surface": "matrixturf",
+       "stadium": "SoFi Stadium"
+      },
+      "13": {
+       "opponent": "TB",
+       "is_home": false,
+       "home_team": "TB",
+       "gameday": "2026-12-06",
+       "weekday": "Sunday",
+       "gametime": "13:00",
+       "location": "Home",
+       "roof": "outdoors",
+       "surface": "grass",
+       "stadium": "Raymond James Stadium"
+      },
+      "14": {
+       "opponent": "LV",
+       "is_home": false,
+       "home_team": "LV",
+       "gameday": "2026-12-13",
+       "weekday": "Sunday",
+       "gametime": "16:05",
+       "location": "Home",
+       "roof": "dome",
+       "surface": "grass",
+       "stadium": "Allegiant Stadium"
+      },
+      "15": {
+       "opponent": "SF",
+       "is_home": true,
+       "home_team": "LAC",
+       "gameday": "2026-12-17",
+       "weekday": "Thursday",
+       "gametime": "20:15",
+       "location": "Home",
+       "roof": "dome",
+       "surface": "matrixturf",
+       "stadium": "SoFi Stadium"
+      },
+      "16": {
+       "opponent": "MIA",
+       "is_home": false,
+       "home_team": "MIA",
+       "gameday": "2026-12-27",
+       "weekday": "Sunday",
+       "gametime": "13:00",
+       "location": "Home",
+       "roof": "outdoors",
+       "surface": "grass",
+       "stadium": "Hard Rock Stadium"
+      },
+      "17": {
+       "opponent": "KC",
+       "is_home": true,
+       "home_team": "LAC",
+       "gameday": "2027-01-03",
+       "weekday": "Sunday",
+       "gametime": "13:00",
+       "location": "Home",
+       "roof": "dome",
+       "surface": "matrixturf",
+       "stadium": "SoFi Stadium"
+      },
+      "18": {
+       "opponent": "DEN",
+       "is_home": false,
+       "home_team": "DEN",
+       "gameday": "2027-01-10",
+       "weekday": "Sunday",
+       "gametime": "13:00",
+       "location": "Home",
+       "roof": "outdoors",
+       "surface": "grass",
+       "stadium": "Empower Field at Mile High"
+      }
+     },
+     "this_week_opp": "vs ARI",
+     "kickoff_jst": "月 05:25",
+     "venue_str": "ドーム/人工芝",
+     "implied_total": 28.3,
+     "game_ou": 46.3,
+     "opp_implied": 18.0,
+     "next_week_opp": "vs LV",
+     "next_implied_total": 25.5
     }
    ]
   },
@@ -4083,7 +4113,9 @@
      "venue_str": "ドーム/人工芝",
      "implied_total": 28.1,
      "game_ou": 49.1,
-     "opp_implied": 21.1
+     "opp_implied": 21.1,
+     "next_week_opp": "@ BUF",
+     "next_implied_total": 24.5
     },
     {
      "id": 4241389,
@@ -4334,7 +4366,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 25.6,
      "game_ou": 48.6,
-     "opp_implied": 23.0
+     "opp_implied": 23.0,
+     "next_week_opp": "vs WAS",
+     "next_implied_total": 28.0
     },
     {
      "id": 3043078,
@@ -4585,7 +4619,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 25.8,
      "game_ou": 48.2,
-     "opp_implied": 22.4
+     "opp_implied": 22.4,
+     "next_week_opp": "vs NO",
+     "next_implied_total": 27.0
     },
     {
      "id": 4362238,
@@ -4836,7 +4872,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 27.4,
      "game_ou": 51.4,
-     "opp_implied": 23.9
+     "opp_implied": 23.9,
+     "next_week_opp": "@ HOU",
+     "next_implied_total": 22.0
     },
     {
      "id": 4361370,
@@ -5087,7 +5125,9 @@
      "venue_str": "ドーム/人工芝",
      "implied_total": 21.1,
      "game_ou": 49.1,
-     "opp_implied": 28.1
+     "opp_implied": 28.1,
+     "next_week_opp": "@ BAL",
+     "next_implied_total": 19.5
     },
     {
      "id": 16800,
@@ -5338,7 +5378,9 @@
      "venue_str": "ドーム/人工芝",
      "implied_total": 26.0,
      "game_ou": 48.5,
-     "opp_implied": 22.5
+     "opp_implied": 22.5,
+     "next_week_opp": "vs NYG",
+     "next_implied_total": 28.5
     },
     {
      "id": 3916387,
@@ -5589,7 +5631,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 25.8,
      "game_ou": 48.2,
-     "opp_implied": 22.4
+     "opp_implied": 22.4,
+     "next_week_opp": "vs NO",
+     "next_implied_total": 27.0
     },
     {
      "id": 4239993,
@@ -5840,7 +5884,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 27.4,
      "game_ou": 51.4,
-     "opp_implied": 23.9
+     "opp_implied": 23.9,
+     "next_week_opp": "@ HOU",
+     "next_implied_total": 22.0
     },
     {
      "id": 3953687,
@@ -6091,7 +6137,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 25.6,
      "game_ou": 48.6,
-     "opp_implied": 23.0
+     "opp_implied": 23.0,
+     "next_week_opp": "vs WAS",
+     "next_implied_total": 28.0
     },
     {
      "id": 4685512,
@@ -6342,7 +6390,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 23.9,
      "game_ou": 44.1,
-     "opp_implied": 20.2
+     "opp_implied": 20.2,
+     "next_week_opp": "@ ARI",
+     "next_implied_total": 27.2
     },
     {
      "id": 3915511,
@@ -6593,7 +6643,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 27.4,
      "game_ou": 51.4,
-     "opp_implied": 23.9
+     "opp_implied": 23.9,
+     "next_week_opp": "@ HOU",
+     "next_implied_total": 22.0
     },
     {
      "id": -16026,
@@ -6849,7 +6901,9 @@
      },
      "implied_total": 23.9,
      "game_ou": 44.1,
-     "opp_implied": 20.2
+     "opp_implied": 20.2,
+     "next_week_opp": "@ ARI",
+     "next_implied_total": 27.2
     },
     {
      "id": 3040151,
@@ -7100,7 +7154,9 @@
      "venue_str": "ドーム/人工芝",
      "implied_total": 22.5,
      "game_ou": 48.5,
-     "opp_implied": 26.0
+     "opp_implied": 26.0,
+     "next_week_opp": "vs MIA",
+     "next_implied_total": 28.5
     },
     {
      "id": 4685278,
@@ -7351,7 +7407,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 25.0,
      "game_ou": 47.4,
-     "opp_implied": 22.5
+     "opp_implied": 22.5,
+     "next_week_opp": "vs MIN",
+     "next_implied_total": 24.5
     },
     {
      "id": -16033,
@@ -7607,7 +7665,9 @@
      },
      "implied_total": 25.8,
      "game_ou": 48.2,
-     "opp_implied": 22.4
+     "opp_implied": 22.4,
+     "next_week_opp": "vs NO",
+     "next_implied_total": 27.0
     }
    ]
   },
@@ -7889,7 +7949,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 19.6,
      "game_ou": 42.2,
-     "opp_implied": 22.6
+     "opp_implied": 22.6,
+     "next_week_opp": "vs CAR",
+     "next_implied_total": 22.8
     },
     {
      "id": 4374302,
@@ -8140,7 +8202,9 @@
      "venue_str": "ドーム/人工芝",
      "implied_total": 28.1,
      "game_ou": 49.1,
-     "opp_implied": 21.1
+     "opp_implied": 21.1,
+     "next_week_opp": "@ BUF",
+     "next_implied_total": 24.5
     },
     {
      "id": 4361307,
@@ -8391,7 +8455,9 @@
      "venue_str": "ドーム/人工芝",
      "implied_total": 18.0,
      "game_ou": 46.3,
-     "opp_implied": 28.3
+     "opp_implied": 28.3,
+     "next_week_opp": "vs SEA",
+     "next_implied_total": 17.2
     },
     {
      "id": 3929630,
@@ -8642,7 +8708,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 25.7,
      "game_ou": 46.8,
-     "opp_implied": 21.1
+     "opp_implied": 21.1,
+     "next_week_opp": "@ TEN",
+     "next_implied_total": 23.5
     },
     {
      "id": 4047646,
@@ -8651,7 +8719,7 @@
      "pro_team": "NE",
      "injury_status": "ACTIVE",
      "lineup_slot": "BE",
-     "percent_owned": 99.38,
+     "percent_owned": 99.39,
      "total_points": 0.0,
      "avg_points": 0.0,
      "proj_total": 248.38,
@@ -8893,7 +8961,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 20.2,
      "game_ou": 44.1,
-     "opp_implied": 23.9
+     "opp_implied": 23.9,
+     "next_week_opp": "vs PIT",
+     "next_implied_total": 24.0
     },
     {
      "id": 4427366,
@@ -9144,7 +9214,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 18.4,
      "game_ou": 39.3,
-     "opp_implied": 20.9
+     "opp_implied": 20.9,
+     "next_week_opp": "vs GB",
+     "next_implied_total": 18.5
     },
     {
      "id": 4241478,
@@ -9395,7 +9467,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 25.7,
      "game_ou": 46.8,
-     "opp_implied": 21.1
+     "opp_implied": 21.1,
+     "next_week_opp": "@ TEN",
+     "next_implied_total": 23.5
     },
     {
      "id": 4035538,
@@ -9646,7 +9720,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 22.4,
      "game_ou": 44.5,
-     "opp_implied": 22.1
+     "opp_implied": 22.1,
+     "next_week_opp": "vs CIN",
+     "next_implied_total": 24.5
     },
     {
      "id": 16737,
@@ -9897,7 +9973,9 @@
      "venue_str": "ドーム/人工芝",
      "implied_total": 22.5,
      "game_ou": 48.5,
-     "opp_implied": 26.0
+     "opp_implied": 26.0,
+     "next_week_opp": "vs MIA",
+     "next_implied_total": 28.5
     },
     {
      "id": 4040715,
@@ -10148,7 +10226,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 25.7,
      "game_ou": 46.8,
-     "opp_implied": 21.1
+     "opp_implied": 21.1,
+     "next_week_opp": "@ TEN",
+     "next_implied_total": 23.5
     },
     {
      "id": -16034,
@@ -10404,7 +10484,9 @@
      },
      "implied_total": 22.4,
      "game_ou": 44.5,
-     "opp_implied": 22.1
+     "opp_implied": 22.1,
+     "next_week_opp": "vs CIN",
+     "next_implied_total": 24.5
     },
     {
      "id": 12483,
@@ -10655,7 +10737,9 @@
      "venue_str": "ドーム/人工芝",
      "implied_total": 26.0,
      "game_ou": 48.5,
-     "opp_implied": 22.5
+     "opp_implied": 22.5,
+     "next_week_opp": "vs NYG",
+     "next_implied_total": 28.5
     },
     {
      "id": 17372,
@@ -10906,7 +10990,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 22.6,
      "game_ou": 42.2,
-     "opp_implied": 19.6
+     "opp_implied": 19.6,
+     "next_week_opp": "@ NE",
+     "next_implied_total": 19.5
     },
     {
      "id": 4568490,
@@ -11157,7 +11243,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 20.0,
      "game_ou": 42.8,
-     "opp_implied": 22.7
+     "opp_implied": 22.7,
+     "next_week_opp": "vs JAX",
+     "next_implied_total": 23.0
     },
     {
      "id": 4871023,
@@ -11408,7 +11496,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 20.9,
      "game_ou": 39.3,
-     "opp_implied": 18.4
+     "opp_implied": 18.4,
+     "next_week_opp": "vs PHI",
+     "next_implied_total": 19.0
     }
    ]
   },
@@ -11690,7 +11780,9 @@
      "venue_str": "ドーム/人工芝",
      "implied_total": 22.9,
      "game_ou": 45.0,
-     "opp_implied": 22.1
+     "opp_implied": 22.1,
+     "next_week_opp": "@ CHI",
+     "next_implied_total": 21.0
     },
     {
      "id": 4430737,
@@ -11941,7 +12033,9 @@
      "venue_str": "ドーム/人工芝",
      "implied_total": 26.0,
      "game_ou": 48.5,
-     "opp_implied": 22.5
+     "opp_implied": 22.5,
+     "next_week_opp": "vs NYG",
+     "next_implied_total": 28.5
     },
     {
      "id": 3915416,
@@ -12192,7 +12286,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 22.1,
      "game_ou": 44.5,
-     "opp_implied": 22.4
+     "opp_implied": 22.4,
+     "next_week_opp": "vs DET",
+     "next_implied_total": 27.5
     },
     {
      "id": 4567048,
@@ -12443,7 +12539,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 22.7,
      "game_ou": 42.8,
-     "opp_implied": 20.0
+     "opp_implied": 20.0,
+     "next_week_opp": "vs IND",
+     "next_implied_total": 26.8
     },
     {
      "id": 3918298,
@@ -12694,7 +12792,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 22.1,
      "game_ou": 44.5,
-     "opp_implied": 22.4
+     "opp_implied": 22.4,
+     "next_week_opp": "vs DET",
+     "next_implied_total": 27.5
     },
     {
      "id": 4431459,
@@ -12945,7 +13045,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 22.4,
      "game_ou": 48.2,
-     "opp_implied": 25.8
+     "opp_implied": 25.8,
+     "next_week_opp": "@ KC",
+     "next_implied_total": 20.8
     },
     {
      "id": 3128429,
@@ -13196,7 +13298,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 20.0,
      "game_ou": 42.8,
-     "opp_implied": 22.7
+     "opp_implied": 22.7,
+     "next_week_opp": "vs JAX",
+     "next_implied_total": 23.0
     },
     {
      "id": 4259545,
@@ -13447,7 +13551,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 25.0,
      "game_ou": 47.4,
-     "opp_implied": 22.5
+     "opp_implied": 22.5,
+     "next_week_opp": "vs MIN",
+     "next_implied_total": 24.5
     },
     {
      "id": 4880281,
@@ -13698,7 +13804,9 @@
      "venue_str": "ドーム/人工芝",
      "implied_total": 21.1,
      "game_ou": 49.1,
-     "opp_implied": 28.1
+     "opp_implied": 28.1,
+     "next_week_opp": "@ BAL",
+     "next_implied_total": 19.5
     },
     {
      "id": 4569987,
@@ -13949,7 +14057,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 22.6,
      "game_ou": 42.2,
-     "opp_implied": 19.6
+     "opp_implied": 19.6,
+     "next_week_opp": "@ NE",
+     "next_implied_total": 19.5
     },
     {
      "id": 4047650,
@@ -14200,7 +14310,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 22.6,
      "game_ou": 42.2,
-     "opp_implied": 19.6
+     "opp_implied": 19.6,
+     "next_week_opp": "@ NE",
+     "next_implied_total": 19.5
     },
     {
      "id": 3121422,
@@ -14451,7 +14563,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 21.1,
      "game_ou": 46.8,
-     "opp_implied": 25.7
+     "opp_implied": 25.7,
+     "next_week_opp": "@ DAL",
+     "next_implied_total": 23.5
     },
     {
      "id": 2971573,
@@ -14702,7 +14816,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 22.4,
      "game_ou": 44.5,
-     "opp_implied": 22.1
+     "opp_implied": 22.1,
+     "next_week_opp": "vs CIN",
+     "next_implied_total": 24.5
     },
     {
      "id": 3917315,
@@ -14953,7 +15069,9 @@
      "venue_str": "ドーム/人工芝",
      "implied_total": 22.9,
      "game_ou": 45.0,
-     "opp_implied": 22.1
+     "opp_implied": 22.1,
+     "next_week_opp": "@ CHI",
+     "next_implied_total": 21.0
     },
     {
      "id": -16023,
@@ -15209,7 +15327,9 @@
      },
      "implied_total": 22.6,
      "game_ou": 42.2,
-     "opp_implied": 19.6
+     "opp_implied": 19.6,
+     "next_week_opp": "@ NE",
+     "next_implied_total": 19.5
     }
    ]
   },
@@ -15491,7 +15611,9 @@
      "venue_str": "ドーム/人工芝",
      "implied_total": 26.0,
      "game_ou": 48.5,
-     "opp_implied": 22.5
+     "opp_implied": 22.5,
+     "next_week_opp": "vs NYG",
+     "next_implied_total": 28.5
     },
     {
      "id": 4890973,
@@ -15742,7 +15864,9 @@
      "venue_str": "ドーム/天然芝",
      "implied_total": 22.0,
      "game_ou": 40.4,
-     "opp_implied": 18.4
+     "opp_implied": 18.4,
+     "next_week_opp": "@ LAC",
+     "next_implied_total": 17.0
     },
     {
      "id": 4379399,
@@ -15993,7 +16117,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 22.1,
      "game_ou": 44.5,
-     "opp_implied": 22.4
+     "opp_implied": 22.4,
+     "next_week_opp": "vs DET",
+     "next_implied_total": 27.5
     },
     {
      "id": 4429160,
@@ -16244,7 +16370,9 @@
      "venue_str": "ドーム/天然芝",
      "implied_total": 18.4,
      "game_ou": 40.4,
-     "opp_implied": 22.0
+     "opp_implied": 22.0,
+     "next_week_opp": "@ SF",
+     "next_implied_total": 18.0
     },
     {
      "id": 4428331,
@@ -16495,7 +16623,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 22.7,
      "game_ou": 42.8,
-     "opp_implied": 20.0
+     "opp_implied": 20.0,
+     "next_week_opp": "vs IND",
+     "next_implied_total": 26.8
     },
     {
      "id": 4426354,
@@ -16746,7 +16876,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 25.6,
      "game_ou": 48.6,
-     "opp_implied": 23.0
+     "opp_implied": 23.0,
+     "next_week_opp": "vs WAS",
+     "next_implied_total": 28.0
     },
     {
      "id": 4723086,
@@ -16997,7 +17129,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 25.0,
      "game_ou": 47.4,
-     "opp_implied": 22.5
+     "opp_implied": 22.5,
+     "next_week_opp": "vs MIN",
+     "next_implied_total": 24.5
     },
     {
      "id": 4429615,
@@ -17248,7 +17382,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 25.8,
      "game_ou": 48.2,
-     "opp_implied": 22.4
+     "opp_implied": 22.4,
+     "next_week_opp": "vs NO",
+     "next_implied_total": 27.0
     },
     {
      "id": 4569618,
@@ -17499,7 +17635,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 18.4,
      "game_ou": 39.3,
-     "opp_implied": 20.9
+     "opp_implied": 20.9,
+     "next_week_opp": "vs GB",
+     "next_implied_total": 18.5
     },
     {
      "id": 4696981,
@@ -17750,7 +17888,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 23.0,
      "game_ou": 48.6,
-     "opp_implied": 25.6
+     "opp_implied": 25.6,
+     "next_week_opp": "@ LA",
+     "next_implied_total": 19.5
     },
     {
      "id": 4426348,
@@ -18001,7 +18141,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 21.1,
      "game_ou": 46.8,
-     "opp_implied": 25.7
+     "opp_implied": 25.7,
+     "next_week_opp": "@ DAL",
+     "next_implied_total": 23.5
     },
     {
      "id": 4870653,
@@ -18252,7 +18394,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 16.5,
      "game_ou": 40.5,
-     "opp_implied": 24.0
+     "opp_implied": 24.0,
+     "next_week_opp": "@ TB",
+     "next_implied_total": 18.2
     },
     {
      "id": 4882093,
@@ -18503,7 +18647,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 24.0,
      "game_ou": 40.5,
-     "opp_implied": 16.5
+     "opp_implied": 16.5,
+     "next_week_opp": "@ DEN",
+     "next_implied_total": 20.5
     },
     {
      "id": 4362081,
@@ -18754,7 +18900,9 @@
      "venue_str": "ドーム/人工芝",
      "implied_total": 28.3,
      "game_ou": 46.3,
-     "opp_implied": 18.0
+     "opp_implied": 18.0,
+     "next_week_opp": "vs LV",
+     "next_implied_total": 25.5
     },
     {
      "id": -16021,
@@ -19010,7 +19158,9 @@
      },
      "implied_total": 25.7,
      "game_ou": 46.8,
-     "opp_implied": 21.1
+     "opp_implied": 21.1,
+     "next_week_opp": "@ TEN",
+     "next_implied_total": 23.5
     }
    ]
   },
@@ -19292,7 +19442,9 @@
      "venue_str": "ドーム/人工芝",
      "implied_total": 22.5,
      "game_ou": 48.5,
-     "opp_implied": 26.0
+     "opp_implied": 26.0,
+     "next_week_opp": "vs MIA",
+     "next_implied_total": 28.5
     },
     {
      "id": 4430878,
@@ -19543,7 +19695,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 23.9,
      "game_ou": 44.1,
-     "opp_implied": 20.2
+     "opp_implied": 20.2,
+     "next_week_opp": "@ ARI",
+     "next_implied_total": 27.2
     },
     {
      "id": 4870808,
@@ -19794,7 +19948,9 @@
      "venue_str": "ドーム/人工芝",
      "implied_total": 18.0,
      "game_ou": 46.3,
-     "opp_implied": 28.3
+     "opp_implied": 28.3,
+     "next_week_opp": "vs SEA",
+     "next_implied_total": 17.2
     },
     {
      "id": 4432665,
@@ -20045,7 +20201,9 @@
      "venue_str": "ドーム/天然芝",
      "implied_total": 22.0,
      "game_ou": 40.4,
-     "opp_implied": 18.4
+     "opp_implied": 18.4,
+     "next_week_opp": "@ LAC",
+     "next_implied_total": 17.0
     },
     {
      "id": 4612826,
@@ -20296,7 +20454,9 @@
      "venue_str": "ドーム/人工芝",
      "implied_total": 28.3,
      "game_ou": 46.3,
-     "opp_implied": 18.0
+     "opp_implied": 18.0,
+     "next_week_opp": "vs LV",
+     "next_implied_total": 25.5
     },
     {
      "id": 4239996,
@@ -20547,7 +20707,9 @@
      "venue_str": "ドーム/人工芝",
      "implied_total": 21.1,
      "game_ou": 49.1,
-     "opp_implied": 28.1
+     "opp_implied": 28.1,
+     "next_week_opp": "@ BAL",
+     "next_implied_total": 19.5
     },
     {
      "id": 4361579,
@@ -20798,7 +20960,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 25.6,
      "game_ou": 48.6,
-     "opp_implied": 23.0
+     "opp_implied": 23.0,
+     "next_week_opp": "vs WAS",
+     "next_implied_total": 28.0
     },
     {
      "id": 4685472,
@@ -21049,7 +21213,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 22.5,
      "game_ou": 47.4,
-     "opp_implied": 25.0
+     "opp_implied": 25.0,
+     "next_week_opp": "@ ATL",
+     "next_implied_total": 21.2
     },
     {
      "id": 4567750,
@@ -21300,7 +21466,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 23.9,
      "game_ou": 51.4,
-     "opp_implied": 27.4
+     "opp_implied": 27.4,
+     "next_week_opp": "vs CLE",
+     "next_implied_total": 24.2
     },
     {
      "id": 4431452,
@@ -21551,7 +21719,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 20.2,
      "game_ou": 44.1,
-     "opp_implied": 23.9
+     "opp_implied": 23.9,
+     "next_week_opp": "vs PIT",
+     "next_implied_total": 24.0
     },
     {
      "id": 4596448,
@@ -21802,7 +21972,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 23.9,
      "game_ou": 51.4,
-     "opp_implied": 27.4
+     "opp_implied": 27.4,
+     "next_week_opp": "vs CLE",
+     "next_implied_total": 24.2
     },
     {
      "id": -16007,
@@ -22058,7 +22230,9 @@
      },
      "implied_total": 20.0,
      "game_ou": 42.8,
-     "opp_implied": 22.7
+     "opp_implied": 22.7,
+     "next_week_opp": "vs JAX",
+     "next_implied_total": 23.0
     },
     {
      "id": 4569173,
@@ -22309,7 +22483,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 20.2,
      "game_ou": 44.1,
-     "opp_implied": 23.9
+     "opp_implied": 23.9,
+     "next_week_opp": "vs PIT",
+     "next_implied_total": 24.0
     },
     {
      "id": 2473037,
@@ -22560,7 +22736,9 @@
      "venue_str": "屋外/人工芝",
      "implied_total": 23.9,
      "game_ou": 44.1,
-     "opp_implied": 20.2
+     "opp_implied": 20.2,
+     "next_week_opp": "@ ARI",
+     "next_implied_total": 27.2
     },
     {
      "id": 3916148,
@@ -22811,7 +22989,9 @@
      "venue_str": "屋外/天然芝",
      "implied_total": 20.9,
      "game_ou": 39.3,
-     "opp_implied": 18.4
+     "opp_implied": 18.4,
+     "next_week_opp": "vs PHI",
+     "next_implied_total": 19.0
     }
    ]
   }
@@ -23049,7 +23229,244 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.0,
     "game_ou": 48.6,
-    "opp_implied": 25.6
+    "opp_implied": 25.6,
+    "next_week_opp": "@ LA",
+    "next_implied_total": 19.5
+   },
+   {
+    "id": 2577417,
+    "name": "Dak Prescott",
+    "position": "QB",
+    "pro_team": "DAL",
+    "injury_status": "ACTIVE",
+    "lineup_slot": "",
+    "percent_owned": 88.92,
+    "total_points": 0.0,
+    "avg_points": 0.0,
+    "proj_total": 286.93,
+    "proj_avg": 16.88,
+    "weekly_proj": {
+     "1": 17.17
+    },
+    "weekly_actual": {},
+    "opponents": {},
+    "pos_rank": [],
+    "is_rookie": false,
+    "bye": 14,
+    "nfl_games": {
+     "1": {
+      "opponent": "NYG",
+      "is_home": false,
+      "home_team": "NYG",
+      "gameday": "2026-09-13",
+      "weekday": "Sunday",
+      "gametime": "20:20",
+      "location": "Home",
+      "roof": "outdoors",
+      "surface": "fieldturf",
+      "stadium": "MetLife Stadium"
+     },
+     "2": {
+      "opponent": "WAS",
+      "is_home": true,
+      "home_team": "DAL",
+      "gameday": "2026-09-20",
+      "weekday": "Sunday",
+      "gametime": "16:25",
+      "location": "Home",
+      "roof": "",
+      "surface": "matrixturf",
+      "stadium": "AT&T Stadium"
+     },
+     "3": {
+      "opponent": "BAL",
+      "is_home": true,
+      "home_team": "DAL",
+      "gameday": "2026-09-27",
+      "weekday": "Sunday",
+      "gametime": "16:25",
+      "location": "Neutral",
+      "roof": "",
+      "surface": "matrixturf",
+      "stadium": "Maracana Stadium"
+     },
+     "4": {
+      "opponent": "HOU",
+      "is_home": false,
+      "home_team": "HOU",
+      "gameday": "2026-10-04",
+      "weekday": "Sunday",
+      "gametime": "13:00",
+      "location": "Home",
+      "roof": "",
+      "surface": "astroturf",
+      "stadium": "Reliant Stadium"
+     },
+     "5": {
+      "opponent": "TB",
+      "is_home": true,
+      "home_team": "DAL",
+      "gameday": "2026-10-08",
+      "weekday": "Thursday",
+      "gametime": "20:15",
+      "location": "Home",
+      "roof": "",
+      "surface": "matrixturf",
+      "stadium": "AT&T Stadium"
+     },
+     "6": {
+      "opponent": "GB",
+      "is_home": false,
+      "home_team": "GB",
+      "gameday": "2026-10-18",
+      "weekday": "Sunday",
+      "gametime": "20:20",
+      "location": "Home",
+      "roof": "outdoors",
+      "surface": "grass",
+      "stadium": "Lambeau Field"
+     },
+     "7": {
+      "opponent": "PHI",
+      "is_home": false,
+      "home_team": "PHI",
+      "gameday": "2026-10-26",
+      "weekday": "Monday",
+      "gametime": "20:15",
+      "location": "Home",
+      "roof": "outdoors",
+      "surface": "grass",
+      "stadium": "Lincoln Financial Field"
+     },
+     "8": {
+      "opponent": "ARI",
+      "is_home": true,
+      "home_team": "DAL",
+      "gameday": "2026-11-01",
+      "weekday": "Sunday",
+      "gametime": "13:00",
+      "location": "Home",
+      "roof": "",
+      "surface": "matrixturf",
+      "stadium": "AT&T Stadium"
+     },
+     "9": {
+      "opponent": "IND",
+      "is_home": false,
+      "home_team": "IND",
+      "gameday": "2026-11-08",
+      "weekday": "Sunday",
+      "gametime": "13:00",
+      "location": "Home",
+      "roof": "",
+      "surface": "fieldturf",
+      "stadium": "Lucas Oil Stadium"
+     },
+     "10": {
+      "opponent": "SF",
+      "is_home": true,
+      "home_team": "DAL",
+      "gameday": "2026-11-15",
+      "weekday": "Sunday",
+      "gametime": "16:25",
+      "location": "Home",
+      "roof": "",
+      "surface": "matrixturf",
+      "stadium": "AT&T Stadium"
+     },
+     "11": {
+      "opponent": "TEN",
+      "is_home": true,
+      "home_team": "DAL",
+      "gameday": "2026-11-22",
+      "weekday": "Sunday",
+      "gametime": "13:00",
+      "location": "Home",
+      "roof": "",
+      "surface": "matrixturf",
+      "stadium": "AT&T Stadium"
+     },
+     "12": {
+      "opponent": "PHI",
+      "is_home": true,
+      "home_team": "DAL",
+      "gameday": "2026-11-26",
+      "weekday": "Thursday",
+      "gametime": "16:30",
+      "location": "Home",
+      "roof": "",
+      "surface": "matrixturf",
+      "stadium": "AT&T Stadium"
+     },
+     "13": {
+      "opponent": "SEA",
+      "is_home": false,
+      "home_team": "SEA",
+      "gameday": "2026-12-07",
+      "weekday": "Monday",
+      "gametime": "20:15",
+      "location": "Home",
+      "roof": "outdoors",
+      "surface": "fieldturf",
+      "stadium": "Lumen Field"
+     },
+     "15": {
+      "opponent": "LA",
+      "is_home": false,
+      "home_team": "LA",
+      "gameday": "2026-12-20",
+      "weekday": "Sunday",
+      "gametime": "16:25",
+      "location": "Home",
+      "roof": "dome",
+      "surface": "matrixturf",
+      "stadium": "SoFi Stadium"
+     },
+     "16": {
+      "opponent": "JAX",
+      "is_home": true,
+      "home_team": "DAL",
+      "gameday": "2026-12-27",
+      "weekday": "Sunday",
+      "gametime": "20:20",
+      "location": "Home",
+      "roof": "",
+      "surface": "matrixturf",
+      "stadium": "AT&T Stadium"
+     },
+     "17": {
+      "opponent": "NYG",
+      "is_home": true,
+      "home_team": "DAL",
+      "gameday": "2027-01-03",
+      "weekday": "Sunday",
+      "gametime": "13:00",
+      "location": "Home",
+      "roof": "",
+      "surface": "matrixturf",
+      "stadium": "AT&T Stadium"
+     },
+     "18": {
+      "opponent": "WAS",
+      "is_home": false,
+      "home_team": "WAS",
+      "gameday": "2027-01-10",
+      "weekday": "Sunday",
+      "gametime": "13:00",
+      "location": "Home",
+      "roof": "outdoors",
+      "surface": "grass",
+      "stadium": "Northwest Stadium"
+     }
+    },
+    "this_week_opp": "@ NYG",
+    "kickoff_jst": "月 09:20",
+    "venue_str": "屋外/人工芝",
+    "implied_total": 25.6,
+    "game_ou": 48.6,
+    "opp_implied": 23.0,
+    "next_week_opp": "vs WAS",
+    "next_implied_total": 28.0
    },
    {
     "id": 4431611,
@@ -23282,7 +23699,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 25.0,
     "game_ou": 47.4,
-    "opp_implied": 22.5
+    "opp_implied": 22.5,
+    "next_week_opp": "vs MIN",
+    "next_implied_total": 24.5
    },
    {
     "id": 4426338,
@@ -23515,7 +23934,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.0,
     "game_ou": 42.8,
-    "opp_implied": 22.7
+    "opp_implied": 22.7,
+    "next_week_opp": "vs JAX",
+    "next_implied_total": 23.0
    },
    {
     "id": 4360310,
@@ -23748,240 +24169,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 24.0,
     "game_ou": 40.5,
-    "opp_implied": 16.5
-   },
-   {
-    "id": 4038941,
-    "name": "Justin Herbert",
-    "position": "QB",
-    "pro_team": "LAC",
-    "injury_status": "ACTIVE",
-    "lineup_slot": "",
-    "percent_owned": 85.51,
-    "total_points": 0.0,
-    "avg_points": 0.0,
-    "proj_total": 282.79,
-    "proj_avg": 16.63,
-    "weekly_proj": {
-     "1": 18.96
-    },
-    "weekly_actual": {},
-    "opponents": {},
-    "pos_rank": [],
-    "is_rookie": false,
-    "bye": 7,
-    "nfl_games": {
-     "1": {
-      "opponent": "ARI",
-      "is_home": true,
-      "home_team": "LAC",
-      "gameday": "2026-09-13",
-      "weekday": "Sunday",
-      "gametime": "16:25",
-      "location": "Home",
-      "roof": "dome",
-      "surface": "matrixturf",
-      "stadium": "SoFi Stadium"
-     },
-     "2": {
-      "opponent": "LV",
-      "is_home": true,
-      "home_team": "LAC",
-      "gameday": "2026-09-20",
-      "weekday": "Sunday",
-      "gametime": "16:05",
-      "location": "Home",
-      "roof": "dome",
-      "surface": "matrixturf",
-      "stadium": "SoFi Stadium"
-     },
-     "3": {
-      "opponent": "BUF",
-      "is_home": false,
-      "home_team": "BUF",
-      "gameday": "2026-09-27",
-      "weekday": "Sunday",
-      "gametime": "13:00",
-      "location": "Home",
-      "roof": "outdoors",
-      "surface": "a_turf",
-      "stadium": "Highmark Stadium"
-     },
-     "4": {
-      "opponent": "SEA",
-      "is_home": false,
-      "home_team": "SEA",
-      "gameday": "2026-10-04",
-      "weekday": "Sunday",
-      "gametime": "16:25",
-      "location": "Home",
-      "roof": "outdoors",
-      "surface": "fieldturf",
-      "stadium": "Lumen Field"
-     },
-     "5": {
-      "opponent": "DEN",
-      "is_home": true,
-      "home_team": "LAC",
-      "gameday": "2026-10-11",
-      "weekday": "Sunday",
-      "gametime": "16:05",
-      "location": "Home",
-      "roof": "dome",
-      "surface": "matrixturf",
-      "stadium": "SoFi Stadium"
-     },
-     "6": {
-      "opponent": "KC",
-      "is_home": false,
-      "home_team": "KC",
-      "gameday": "2026-10-18",
-      "weekday": "Sunday",
-      "gametime": "16:25",
-      "location": "Home",
-      "roof": "outdoors",
-      "surface": "grass",
-      "stadium": "GEHA Field at Arrowhead Stadium"
-     },
-     "8": {
-      "opponent": "LA",
-      "is_home": false,
-      "home_team": "LA",
-      "gameday": "2026-11-01",
-      "weekday": "Sunday",
-      "gametime": "16:05",
-      "location": "Home",
-      "roof": "dome",
-      "surface": "matrixturf",
-      "stadium": "SoFi Stadium"
-     },
-     "9": {
-      "opponent": "HOU",
-      "is_home": true,
-      "home_team": "LAC",
-      "gameday": "2026-11-08",
-      "weekday": "Sunday",
-      "gametime": "16:05",
-      "location": "Home",
-      "roof": "dome",
-      "surface": "matrixturf",
-      "stadium": "SoFi Stadium"
-     },
-     "10": {
-      "opponent": "BAL",
-      "is_home": false,
-      "home_team": "BAL",
-      "gameday": "2026-11-16",
-      "weekday": "Monday",
-      "gametime": "20:15",
-      "location": "Home",
-      "roof": "outdoors",
-      "surface": "grass",
-      "stadium": "M&T Bank Stadium"
-     },
-     "11": {
-      "opponent": "NYJ",
-      "is_home": true,
-      "home_team": "LAC",
-      "gameday": "2026-11-22",
-      "weekday": "Sunday",
-      "gametime": "16:05",
-      "location": "Home",
-      "roof": "dome",
-      "surface": "matrixturf",
-      "stadium": "SoFi Stadium"
-     },
-     "12": {
-      "opponent": "NE",
-      "is_home": true,
-      "home_team": "LAC",
-      "gameday": "2026-11-29",
-      "weekday": "Sunday",
-      "gametime": "20:20",
-      "location": "Home",
-      "roof": "dome",
-      "surface": "matrixturf",
-      "stadium": "SoFi Stadium"
-     },
-     "13": {
-      "opponent": "TB",
-      "is_home": false,
-      "home_team": "TB",
-      "gameday": "2026-12-06",
-      "weekday": "Sunday",
-      "gametime": "13:00",
-      "location": "Home",
-      "roof": "outdoors",
-      "surface": "grass",
-      "stadium": "Raymond James Stadium"
-     },
-     "14": {
-      "opponent": "LV",
-      "is_home": false,
-      "home_team": "LV",
-      "gameday": "2026-12-13",
-      "weekday": "Sunday",
-      "gametime": "16:05",
-      "location": "Home",
-      "roof": "dome",
-      "surface": "grass",
-      "stadium": "Allegiant Stadium"
-     },
-     "15": {
-      "opponent": "SF",
-      "is_home": true,
-      "home_team": "LAC",
-      "gameday": "2026-12-17",
-      "weekday": "Thursday",
-      "gametime": "20:15",
-      "location": "Home",
-      "roof": "dome",
-      "surface": "matrixturf",
-      "stadium": "SoFi Stadium"
-     },
-     "16": {
-      "opponent": "MIA",
-      "is_home": false,
-      "home_team": "MIA",
-      "gameday": "2026-12-27",
-      "weekday": "Sunday",
-      "gametime": "13:00",
-      "location": "Home",
-      "roof": "outdoors",
-      "surface": "grass",
-      "stadium": "Hard Rock Stadium"
-     },
-     "17": {
-      "opponent": "KC",
-      "is_home": true,
-      "home_team": "LAC",
-      "gameday": "2027-01-03",
-      "weekday": "Sunday",
-      "gametime": "13:00",
-      "location": "Home",
-      "roof": "dome",
-      "surface": "matrixturf",
-      "stadium": "SoFi Stadium"
-     },
-     "18": {
-      "opponent": "DEN",
-      "is_home": false,
-      "home_team": "DEN",
-      "gameday": "2027-01-10",
-      "weekday": "Sunday",
-      "gametime": "13:00",
-      "location": "Home",
-      "roof": "outdoors",
-      "surface": "grass",
-      "stadium": "Empower Field at Mile High"
-     }
-    },
-    "this_week_opp": "vs ARI",
-    "kickoff_jst": "月 05:25",
-    "venue_str": "ドーム/人工芝",
-    "implied_total": 28.3,
-    "game_ou": 46.3,
-    "opp_implied": 18.0
+    "opp_implied": 16.5,
+    "next_week_opp": "@ DEN",
+    "next_implied_total": 20.5
    },
    {
     "id": 3139477,
@@ -24214,7 +24404,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.7,
     "game_ou": 42.8,
-    "opp_implied": 20.0
+    "opp_implied": 20.0,
+    "next_week_opp": "vs IND",
+    "next_implied_total": 26.8
    },
    {
     "id": 4361741,
@@ -24447,7 +24639,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.5,
     "game_ou": 48.5,
-    "opp_implied": 26.0
+    "opp_implied": 26.0,
+    "next_week_opp": "vs MIA",
+    "next_implied_total": 28.5
    },
    {
     "id": 3046779,
@@ -24680,7 +24874,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 28.1,
     "game_ou": 49.1,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ BUF",
+    "next_implied_total": 24.5
    },
    {
     "id": 3052587,
@@ -24913,7 +25109,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.9,
     "game_ou": 51.4,
-    "opp_implied": 27.4
+    "opp_implied": 27.4,
+    "next_week_opp": "vs CLE",
+    "next_implied_total": 24.2
    },
    {
     "id": 4360689,
@@ -25146,7 +25344,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 21.1,
     "game_ou": 49.1,
-    "opp_implied": 28.1
+    "opp_implied": 28.1,
+    "next_week_opp": "@ BAL",
+    "next_implied_total": 19.5
    },
    {
     "id": 3917792,
@@ -25379,7 +25579,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 48.2,
-    "opp_implied": 25.8
+    "opp_implied": 25.8,
+    "next_week_opp": "@ KC",
+    "next_implied_total": 20.8
    },
    {
     "id": 4036378,
@@ -25612,7 +25814,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.1,
     "game_ou": 45.0,
-    "opp_implied": 22.9
+    "opp_implied": 22.9,
+    "next_week_opp": "@ NYJ",
+    "next_implied_total": 24.0
    },
    {
     "id": 3912547,
@@ -25845,7 +26049,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.9,
     "game_ou": 44.1,
-    "opp_implied": 20.2
+    "opp_implied": 20.2,
+    "next_week_opp": "@ ARI",
+    "next_implied_total": 27.2
    },
    {
     "id": 4432577,
@@ -26078,7 +26284,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 44.5,
-    "opp_implied": 22.1
+    "opp_implied": 22.1,
+    "next_week_opp": "vs CIN",
+    "next_implied_total": 24.5
    },
    {
     "id": 4242512,
@@ -26087,7 +26295,7 @@
     "pro_team": "MIA",
     "injury_status": "ACTIVE",
     "lineup_slot": "",
-    "percent_owned": 14.71,
+    "percent_owned": 14.7,
     "total_points": 0.0,
     "avg_points": 0.0,
     "proj_total": 237.8,
@@ -26311,7 +26519,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 18.4,
     "game_ou": 40.4,
-    "opp_implied": 22.0
+    "opp_implied": 22.0,
+    "next_week_opp": "@ SF",
+    "next_implied_total": 18.0
    },
    {
     "id": 4837248,
@@ -26544,7 +26754,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 22.0,
     "game_ou": 40.4,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "@ LAC",
+    "next_implied_total": 17.0
    },
    {
     "id": 4688380,
@@ -26777,7 +26989,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.9,
     "game_ou": 39.3,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "vs PHI",
+    "next_implied_total": 19.0
    },
    {
     "id": 4685720,
@@ -27010,7 +27224,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.5,
     "game_ou": 47.4,
-    "opp_implied": 25.0
+    "opp_implied": 25.0,
+    "next_week_opp": "@ ATL",
+    "next_implied_total": 21.2
    },
    {
     "id": 8439,
@@ -27243,7 +27459,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.6,
     "game_ou": 42.2,
-    "opp_implied": 19.6
+    "opp_implied": 19.6,
+    "next_week_opp": "@ NE",
+    "next_implied_total": 19.5
    },
    {
     "id": 2578570,
@@ -27476,7 +27694,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 18.0,
     "game_ou": 46.3,
-    "opp_implied": 28.3
+    "opp_implied": 28.3,
+    "next_week_opp": "vs SEA",
+    "next_implied_total": 17.2
    },
    {
     "id": 15864,
@@ -27709,7 +27929,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 18.4,
     "game_ou": 39.3,
-    "opp_implied": 20.9
+    "opp_implied": 20.9,
+    "next_week_opp": "vs GB",
+    "next_implied_total": 18.5
    },
    {
     "id": 4432762,
@@ -27942,7 +28164,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 16.5,
     "game_ou": 40.5,
-    "opp_implied": 24.0
+    "opp_implied": 24.0,
+    "next_week_opp": "@ TB",
+    "next_implied_total": 18.2
    },
    {
     "id": 14880,
@@ -28175,7 +28399,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 22.0,
     "game_ou": 40.4,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "@ LAC",
+    "next_implied_total": 17.0
    },
    {
     "id": 4241479,
@@ -28408,7 +28634,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 19.6,
     "game_ou": 42.2,
-    "opp_implied": 22.6
+    "opp_implied": 22.6,
+    "next_week_opp": "vs CAR",
+    "next_implied_total": 22.8
    },
    {
     "id": 3122840,
@@ -28641,7 +28869,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 16.5,
     "game_ou": 40.5,
-    "opp_implied": 24.0
+    "opp_implied": 24.0,
+    "next_week_opp": "@ TB",
+    "next_implied_total": 18.2
    },
    {
     "id": 4430841,
@@ -28874,7 +29104,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 18.0,
     "game_ou": 46.3,
-    "opp_implied": 28.3
+    "opp_implied": 28.3,
+    "next_week_opp": "vs SEA",
+    "next_implied_total": 17.2
    },
    {
     "id": 4433970,
@@ -29107,7 +29339,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.9,
     "game_ou": 45.0,
-    "opp_implied": 22.1
+    "opp_implied": 22.1,
+    "next_week_opp": "@ CHI",
+    "next_implied_total": 21.0
    },
    {
     "id": 4360423,
@@ -29340,7 +29574,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 19.6,
     "game_ou": 42.2,
-    "opp_implied": 22.6
+    "opp_implied": 22.6,
+    "next_week_opp": "vs CAR",
+    "next_implied_total": 22.8
    },
    {
     "id": 4362887,
@@ -29573,7 +29809,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.7,
     "game_ou": 42.8,
-    "opp_implied": 20.0
+    "opp_implied": 20.0,
+    "next_week_opp": "vs IND",
+    "next_implied_total": 26.8
    },
    {
     "id": 4685522,
@@ -29806,7 +30044,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 26.0,
     "game_ou": 48.5,
-    "opp_implied": 22.5
+    "opp_implied": 22.5,
+    "next_week_opp": "vs NYG",
+    "next_implied_total": 28.5
    },
    {
     "id": 4714771,
@@ -30039,7 +30279,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.6,
     "game_ou": 42.2,
-    "opp_implied": 19.6
+    "opp_implied": 19.6,
+    "next_week_opp": "@ NE",
+    "next_implied_total": 19.5
    },
    {
     "id": 5529,
@@ -30270,7 +30512,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 48.2,
-    "opp_implied": 25.8
+    "opp_implied": 25.8,
+    "next_week_opp": "@ KC",
+    "next_implied_total": 20.8
    },
    {
     "id": 11252,
@@ -30503,7 +30747,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 27.4,
     "game_ou": 51.4,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "@ HOU",
+    "next_implied_total": 22.0
    },
    {
     "id": 2969939,
@@ -30736,7 +30982,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.0,
     "game_ou": 48.6,
-    "opp_implied": 25.6
+    "opp_implied": 25.6,
+    "next_week_opp": "@ LA",
+    "next_implied_total": 19.5
    },
    {
     "id": 4241464,
@@ -30969,7 +31217,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.5,
     "game_ou": 48.5,
-    "opp_implied": 26.0
+    "opp_implied": 26.0,
+    "next_week_opp": "vs MIA",
+    "next_implied_total": 28.5
    },
    {
     "id": 4429084,
@@ -31200,7 +31450,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 48.2,
-    "opp_implied": 25.8
+    "opp_implied": 25.8,
+    "next_week_opp": "@ KC",
+    "next_implied_total": 20.8
    },
    {
     "id": 4240391,
@@ -31433,7 +31685,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 20.2,
     "game_ou": 44.1,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "vs PIT",
+    "next_implied_total": 24.0
    },
    {
     "id": 4429955,
@@ -31666,7 +31920,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.6,
     "game_ou": 42.2,
-    "opp_implied": 19.6
+    "opp_implied": 19.6,
+    "next_week_opp": "@ NE",
+    "next_implied_total": 19.5
    },
    {
     "id": 4685413,
@@ -31899,7 +32155,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 18.4,
     "game_ou": 39.3,
-    "opp_implied": 20.9
+    "opp_implied": 20.9,
+    "next_week_opp": "vs GB",
+    "next_implied_total": 18.5
    },
    {
     "id": 4360698,
@@ -32132,7 +32390,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.6,
     "game_ou": 48.6,
-    "opp_implied": 23.0
+    "opp_implied": 23.0,
+    "next_week_opp": "vs WAS",
+    "next_implied_total": 28.0
    },
    {
     "id": 4432734,
@@ -32363,7 +32623,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.9,
     "game_ou": 44.1,
-    "opp_implied": 20.2
+    "opp_implied": 20.2,
+    "next_week_opp": "@ ARI",
+    "next_implied_total": 27.2
    },
    {
     "id": 2576980,
@@ -32596,7 +32858,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 21.1,
     "game_ou": 46.8,
-    "opp_implied": 25.7
+    "opp_implied": 25.7,
+    "next_week_opp": "@ DAL",
+    "next_implied_total": 23.5
    },
    {
     "id": 4434153,
@@ -32829,7 +33093,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 25.0,
     "game_ou": 47.4,
-    "opp_implied": 22.5
+    "opp_implied": 22.5,
+    "next_week_opp": "vs MIN",
+    "next_implied_total": 24.5
    },
    {
     "id": 4889929,
@@ -33062,7 +33328,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 18.4,
     "game_ou": 40.4,
-    "opp_implied": 22.0
+    "opp_implied": 22.0,
+    "next_week_opp": "@ SF",
+    "next_implied_total": 18.0
    },
    {
     "id": 14163,
@@ -33295,7 +33563,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.1,
     "game_ou": 45.0,
-    "opp_implied": 22.9
+    "opp_implied": 22.9,
+    "next_week_opp": "@ NYJ",
+    "next_implied_total": 24.0
    },
    {
     "id": 4240703,
@@ -33528,7 +33798,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.5,
     "game_ou": 47.4,
-    "opp_implied": 25.0
+    "opp_implied": 25.0,
+    "next_week_opp": "@ ATL",
+    "next_implied_total": 21.2
    },
    {
     "id": 3924327,
@@ -33761,7 +34033,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.9,
     "game_ou": 44.1,
-    "opp_implied": 20.2
+    "opp_implied": 20.2,
+    "next_week_opp": "@ ARI",
+    "next_implied_total": 27.2
    },
    {
     "id": 3116407,
@@ -33994,7 +34268,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.6,
     "game_ou": 42.2,
-    "opp_implied": 19.6
+    "opp_implied": 19.6,
+    "next_week_opp": "@ NE",
+    "next_implied_total": 19.5
    },
    {
     "id": 3892775,
@@ -34227,7 +34503,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.0,
     "game_ou": 42.8,
-    "opp_implied": 22.7
+    "opp_implied": 22.7,
+    "next_week_opp": "vs JAX",
+    "next_implied_total": 23.0
    },
    {
     "id": 4685201,
@@ -34460,7 +34738,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 25.7,
     "game_ou": 46.8,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ TEN",
+    "next_implied_total": 23.5
    },
    {
     "id": 4683423,
@@ -34693,7 +34973,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 48.2,
-    "opp_implied": 25.8
+    "opp_implied": 25.8,
+    "next_week_opp": "@ KC",
+    "next_implied_total": 20.8
    },
    {
     "id": 4426339,
@@ -34926,7 +35208,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 21.1,
     "game_ou": 49.1,
-    "opp_implied": 28.1
+    "opp_implied": 28.1,
+    "next_week_opp": "@ BAL",
+    "next_implied_total": 19.5
    },
    {
     "id": 3115293,
@@ -35159,7 +35443,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.1,
     "game_ou": 44.5,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs DET",
+    "next_implied_total": 27.5
    },
    {
     "id": 4035671,
@@ -35392,7 +35678,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.8,
     "game_ou": 48.2,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs NO",
+    "next_implied_total": 27.0
    },
    {
     "id": 16728,
@@ -35625,7 +35913,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 28.1,
     "game_ou": 49.1,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ BUF",
+    "next_implied_total": 24.5
    },
    {
     "id": 3886812,
@@ -35858,7 +36148,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.9,
     "game_ou": 51.4,
-    "opp_implied": 27.4
+    "opp_implied": 27.4,
+    "next_week_opp": "vs CLE",
+    "next_implied_total": 24.2
    },
    {
     "id": 4426875,
@@ -36091,7 +36383,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.6,
     "game_ou": 48.6,
-    "opp_implied": 23.0
+    "opp_implied": 23.0,
+    "next_week_opp": "vs WAS",
+    "next_implied_total": 28.0
    },
    {
     "id": 4383351,
@@ -36324,7 +36618,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 28.3,
     "game_ou": 46.3,
-    "opp_implied": 18.0
+    "opp_implied": 18.0,
+    "next_week_opp": "vs LV",
+    "next_implied_total": 25.5
    },
    {
     "id": 4242546,
@@ -36557,7 +36853,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 44.5,
-    "opp_implied": 22.1
+    "opp_implied": 22.1,
+    "next_week_opp": "vs CIN",
+    "next_implied_total": 24.5
    },
    {
     "id": 4038524,
@@ -36790,7 +37088,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 18.0,
     "game_ou": 46.3,
-    "opp_implied": 28.3
+    "opp_implied": 28.3,
+    "next_week_opp": "vs SEA",
+    "next_implied_total": 17.2
    },
    {
     "id": 4259553,
@@ -37023,7 +37323,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 26.0,
     "game_ou": 48.5,
-    "opp_implied": 22.5
+    "opp_implied": 22.5,
+    "next_week_opp": "vs NYG",
+    "next_implied_total": 28.5
    },
    {
     "id": 3044720,
@@ -37256,7 +37558,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 28.1,
     "game_ou": 49.1,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ BUF",
+    "next_implied_total": 24.5
    },
    {
     "id": 3039707,
@@ -37489,7 +37793,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.9,
     "game_ou": 39.3,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "vs PHI",
+    "next_implied_total": 19.0
    },
    {
     "id": 2573079,
@@ -37720,7 +38026,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.9,
     "game_ou": 45.0,
-    "opp_implied": 22.1
+    "opp_implied": 22.1,
+    "next_week_opp": "@ CHI",
+    "next_implied_total": 21.0
    },
    {
     "id": 14012,
@@ -37951,7 +38259,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 25.7,
     "game_ou": 46.8,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ TEN",
+    "next_implied_total": 23.5
    },
    {
     "id": 4427238,
@@ -38182,7 +38492,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 16.5,
     "game_ou": 40.5,
-    "opp_implied": 24.0
+    "opp_implied": 24.0,
+    "next_week_opp": "@ TB",
+    "next_implied_total": 18.2
    },
    {
     "id": 4431325,
@@ -38413,7 +38725,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 16.5,
     "game_ou": 40.5,
-    "opp_implied": 24.0
+    "opp_implied": 24.0,
+    "next_week_opp": "@ TB",
+    "next_implied_total": 18.2
    },
    {
     "id": 14881,
@@ -38664,7 +38978,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 24.0,
     "game_ou": 40.5,
-    "opp_implied": 16.5
+    "opp_implied": 16.5,
+    "next_week_opp": "@ DEN",
+    "next_implied_total": 20.5
    },
    {
     "id": 4361418,
@@ -38895,7 +39211,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.9,
     "game_ou": 39.3,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "vs PHI",
+    "next_implied_total": 19.0
    },
    {
     "id": 4567747,
@@ -39126,7 +39444,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.7,
     "game_ou": 42.8,
-    "opp_implied": 20.0
+    "opp_implied": 20.0,
+    "next_week_opp": "vs IND",
+    "next_implied_total": 26.8
    },
    {
     "id": 11394,
@@ -39359,7 +39679,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 27.4,
     "game_ou": 51.4,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "@ HOU",
+    "next_implied_total": 22.0
    },
    {
     "id": 4361259,
@@ -39590,7 +39912,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 21.1,
     "game_ou": 49.1,
-    "opp_implied": 28.1
+    "opp_implied": 28.1,
+    "next_week_opp": "@ BAL",
+    "next_implied_total": 19.5
    },
    {
     "id": 16760,
@@ -39821,7 +40145,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 26.0,
     "game_ou": 48.5,
-    "opp_implied": 22.5
+    "opp_implied": 22.5,
+    "next_week_opp": "vs NYG",
+    "next_implied_total": 28.5
    },
    {
     "id": 15168,
@@ -40052,7 +40378,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 25.0,
     "game_ou": 47.4,
-    "opp_implied": 22.5
+    "opp_implied": 22.5,
+    "next_week_opp": "vs MIN",
+    "next_implied_total": 24.5
    },
    {
     "id": 4429435,
@@ -40285,7 +40613,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 18.4,
     "game_ou": 39.3,
-    "opp_implied": 20.9
+    "opp_implied": 20.9,
+    "next_week_opp": "vs GB",
+    "next_implied_total": 18.5
    },
    {
     "id": 4573398,
@@ -40516,7 +40846,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.9,
     "game_ou": 45.0,
-    "opp_implied": 22.1
+    "opp_implied": 22.1,
+    "next_week_opp": "@ CHI",
+    "next_implied_total": 21.0
    },
    {
     "id": 16757,
@@ -40747,7 +41079,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 21.1,
     "game_ou": 49.1,
-    "opp_implied": 28.1
+    "opp_implied": 28.1,
+    "next_week_opp": "@ BAL",
+    "next_implied_total": 19.5
    },
    {
     "id": 2972515,
@@ -40978,7 +41312,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 19.6,
     "game_ou": 42.2,
-    "opp_implied": 22.6
+    "opp_implied": 22.6,
+    "next_week_opp": "vs CAR",
+    "next_implied_total": 22.8
    },
    {
     "id": 4260394,
@@ -41211,7 +41547,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 22.0,
     "game_ou": 40.4,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "@ LAC",
+    "next_implied_total": 17.0
    },
    {
     "id": 4360799,
@@ -41478,7 +41816,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.0,
     "game_ou": 48.6,
-    "opp_implied": 25.6
+    "opp_implied": 25.6,
+    "next_week_opp": "@ LA",
+    "next_implied_total": 19.5
    },
    {
     "id": 4250360,
@@ -41709,7 +42049,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 18.4,
     "game_ou": 39.3,
-    "opp_implied": 20.9
+    "opp_implied": 20.9,
+    "next_week_opp": "vs GB",
+    "next_implied_total": 18.5
    },
    {
     "id": 4240858,
@@ -41940,7 +42282,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.9,
     "game_ou": 39.3,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "vs PHI",
+    "next_implied_total": 19.0
    },
    {
     "id": 4433971,
@@ -42171,7 +42515,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.1,
     "game_ou": 45.0,
-    "opp_implied": 22.9
+    "opp_implied": 22.9,
+    "next_week_opp": "@ NYJ",
+    "next_implied_total": 24.0
    },
    {
     "id": 4431465,
@@ -42402,7 +42748,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 20.2,
     "game_ou": 44.1,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "vs PIT",
+    "next_implied_total": 24.0
    },
    {
     "id": 4432722,
@@ -42633,7 +42981,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 21.1,
     "game_ou": 46.8,
-    "opp_implied": 25.7
+    "opp_implied": 25.7,
+    "next_week_opp": "@ DAL",
+    "next_implied_total": 23.5
    },
    {
     "id": 4879250,
@@ -42864,7 +43214,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 25.7,
     "game_ou": 46.8,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ TEN",
+    "next_implied_total": 23.5
    },
    {
     "id": 4239086,
@@ -43151,7 +43503,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 48.2,
-    "opp_implied": 25.8
+    "opp_implied": 25.8,
+    "next_week_opp": "@ KC",
+    "next_implied_total": 20.8
    },
    {
     "id": 4034946,
@@ -43382,7 +43736,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.5,
     "game_ou": 47.4,
-    "opp_implied": 25.0
+    "opp_implied": 25.0,
+    "next_week_opp": "@ ATL",
+    "next_implied_total": 21.2
    },
    {
     "id": 4241820,
@@ -43613,7 +43969,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.0,
     "game_ou": 42.8,
-    "opp_implied": 22.7
+    "opp_implied": 22.7,
+    "next_week_opp": "vs JAX",
+    "next_implied_total": 23.0
    },
    {
     "id": 4036419,
@@ -43844,7 +44202,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.8,
     "game_ou": 48.2,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs NO",
+    "next_implied_total": 27.0
    },
    {
     "id": 4044111,
@@ -44075,7 +44435,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.7,
     "game_ou": 42.8,
-    "opp_implied": 20.0
+    "opp_implied": 20.0,
+    "next_week_opp": "vs IND",
+    "next_implied_total": 26.8
    },
    {
     "id": 4039034,
@@ -44306,7 +44668,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.1,
     "game_ou": 44.5,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs DET",
+    "next_implied_total": 27.5
    },
    {
     "id": 4259592,
@@ -44537,7 +44901,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 27.4,
     "game_ou": 51.4,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "@ HOU",
+    "next_implied_total": 22.0
    },
    {
     "id": 4426335,
@@ -44768,7 +45134,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 44.5,
-    "opp_implied": 22.1
+    "opp_implied": 22.1,
+    "next_week_opp": "vs CIN",
+    "next_implied_total": 24.5
    }
   ],
   "RB": [
@@ -45003,7 +45371,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 20.2,
     "game_ou": 44.1,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "vs PIT",
+    "next_implied_total": 24.0
    },
    {
     "id": 4038815,
@@ -45236,7 +45606,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.6,
     "game_ou": 42.2,
-    "opp_implied": 19.6
+    "opp_implied": 19.6,
+    "next_week_opp": "@ NE",
+    "next_implied_total": 19.5
    },
    {
     "id": 4241416,
@@ -45469,7 +45841,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.5,
     "game_ou": 47.4,
-    "opp_implied": 25.0
+    "opp_implied": 25.0,
+    "next_week_opp": "@ ATL",
+    "next_implied_total": 21.2
    },
    {
     "id": 4241985,
@@ -45478,7 +45852,7 @@
     "pro_team": "DEN",
     "injury_status": "ACTIVE",
     "lineup_slot": "",
-    "percent_owned": 79.22,
+    "percent_owned": 79.21,
     "total_points": 0.0,
     "avg_points": 0.0,
     "proj_total": 179.87,
@@ -45702,7 +46076,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.0,
     "game_ou": 42.8,
-    "opp_implied": 22.7
+    "opp_implied": 22.7,
+    "next_week_opp": "vs JAX",
+    "next_implied_total": 23.0
    },
    {
     "id": 4371733,
@@ -45935,7 +46311,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.9,
     "game_ou": 51.4,
-    "opp_implied": 27.4
+    "opp_implied": 27.4,
+    "next_week_opp": "vs CLE",
+    "next_implied_total": 24.2
    },
    {
     "id": 3042519,
@@ -46168,7 +46546,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.9,
     "game_ou": 45.0,
-    "opp_implied": 22.1
+    "opp_implied": 22.1,
+    "next_week_opp": "@ CHI",
+    "next_implied_total": 21.0
    },
    {
     "id": 4608686,
@@ -46401,7 +46781,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 25.0,
     "game_ou": 47.4,
-    "opp_implied": 22.5
+    "opp_implied": 22.5,
+    "next_week_opp": "vs MIN",
+    "next_implied_total": 24.5
    },
    {
     "id": 4697815,
@@ -46634,7 +47016,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 21.1,
     "game_ou": 46.8,
-    "opp_implied": 25.7
+    "opp_implied": 25.7,
+    "next_week_opp": "@ DAL",
+    "next_implied_total": 23.5
    },
    {
     "id": 4678008,
@@ -46867,7 +47251,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.5,
     "game_ou": 47.4,
-    "opp_implied": 25.0
+    "opp_implied": 25.0,
+    "next_week_opp": "@ ATL",
+    "next_implied_total": 21.2
    },
    {
     "id": 4429096,
@@ -47100,7 +47486,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 26.0,
     "game_ou": 48.5,
-    "opp_implied": 22.5
+    "opp_implied": 22.5,
+    "next_week_opp": "vs NYG",
+    "next_implied_total": 28.5
    },
    {
     "id": 4575131,
@@ -47109,7 +47497,7 @@
     "pro_team": "WSH",
     "injury_status": "ACTIVE",
     "lineup_slot": "",
-    "percent_owned": 68.19,
+    "percent_owned": 68.18,
     "total_points": 0.0,
     "avg_points": 0.0,
     "proj_total": 159.37,
@@ -47333,7 +47721,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 21.1,
     "game_ou": 46.8,
-    "opp_implied": 25.7
+    "opp_implied": 25.7,
+    "next_week_opp": "@ DAL",
+    "next_implied_total": 23.5
    },
    {
     "id": 4426385,
@@ -47566,7 +47956,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.9,
     "game_ou": 44.1,
-    "opp_implied": 20.2
+    "opp_implied": 20.2,
+    "next_week_opp": "@ ARI",
+    "next_implied_total": 27.2
    },
    {
     "id": 4429059,
@@ -47799,7 +48191,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 44.5,
-    "opp_implied": 22.1
+    "opp_implied": 22.1,
+    "next_week_opp": "vs CIN",
+    "next_implied_total": 24.5
    },
    {
     "id": 4360569,
@@ -48032,7 +48426,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.9,
     "game_ou": 45.0,
-    "opp_implied": 22.1
+    "opp_implied": 22.1,
+    "next_week_opp": "@ CHI",
+    "next_implied_total": 21.0
    },
    {
     "id": 3054850,
@@ -48041,7 +48437,7 @@
     "pro_team": "NO",
     "injury_status": "ACTIVE",
     "lineup_slot": "",
-    "percent_owned": 48.49,
+    "percent_owned": 48.48,
     "total_points": 0.0,
     "avg_points": 0.0,
     "proj_total": 126.87,
@@ -48265,7 +48661,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 21.1,
     "game_ou": 49.1,
-    "opp_implied": 28.1
+    "opp_implied": 28.1,
+    "next_week_opp": "@ BAL",
+    "next_implied_total": 19.5
    },
    {
     "id": 4361529,
@@ -48498,7 +48896,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 28.1,
     "game_ou": 49.1,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ BUF",
+    "next_implied_total": 24.5
    },
    {
     "id": 4428557,
@@ -48507,7 +48907,7 @@
     "pro_team": "TEN",
     "injury_status": "ACTIVE",
     "lineup_slot": "",
-    "percent_owned": 32.1,
+    "percent_owned": 32.11,
     "total_points": 0.0,
     "avg_points": 0.0,
     "proj_total": 153.95,
@@ -48731,7 +49131,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.9,
     "game_ou": 39.3,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "vs PHI",
+    "next_implied_total": 19.0
    },
    {
     "id": 4362619,
@@ -48964,7 +49366,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 24.0,
     "game_ou": 40.5,
-    "opp_implied": 16.5
+    "opp_implied": 16.5,
+    "next_week_opp": "@ DEN",
+    "next_implied_total": 20.5
    },
    {
     "id": 4373626,
@@ -48973,7 +49377,7 @@
     "pro_team": "ARI",
     "injury_status": "ACTIVE",
     "lineup_slot": "",
-    "percent_owned": 17.62,
+    "percent_owned": 17.65,
     "total_points": 0.0,
     "avg_points": 0.0,
     "proj_total": 91.42,
@@ -49197,7 +49601,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 18.0,
     "game_ou": 46.3,
-    "opp_implied": 28.3
+    "opp_implied": 28.3,
+    "next_week_opp": "vs SEA",
+    "next_implied_total": 17.2
    },
    {
     "id": 4241474,
@@ -49430,7 +49836,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 19.6,
     "game_ou": 42.2,
-    "opp_implied": 22.6
+    "opp_implied": 22.6,
+    "next_week_opp": "vs CAR",
+    "next_implied_total": 22.8
    },
    {
     "id": 4360516,
@@ -49663,7 +50071,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.0,
     "game_ou": 48.6,
-    "opp_implied": 25.6
+    "opp_implied": 25.6,
+    "next_week_opp": "@ LA",
+    "next_implied_total": 19.5
    },
    {
     "id": 4429013,
@@ -49896,7 +50306,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 25.7,
     "game_ou": 46.8,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ TEN",
+    "next_implied_total": 23.5
    },
    {
     "id": 4686658,
@@ -50129,7 +50541,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 22.0,
     "game_ou": 40.4,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "@ LAC",
+    "next_implied_total": 17.0
    },
    {
     "id": 4596334,
@@ -50362,7 +50776,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 28.3,
     "game_ou": 46.3,
-    "opp_implied": 18.0
+    "opp_implied": 18.0,
+    "next_week_opp": "vs LV",
+    "next_implied_total": 25.5
    },
    {
     "id": 4429501,
@@ -50595,7 +51011,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.1,
     "game_ou": 44.5,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs DET",
+    "next_implied_total": 27.5
    },
    {
     "id": 5081397,
@@ -50828,7 +51246,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 16.5,
     "game_ou": 40.5,
-    "opp_implied": 24.0
+    "opp_implied": 24.0,
+    "next_week_opp": "@ TB",
+    "next_implied_total": 18.2
    },
    {
     "id": 4685247,
@@ -51061,7 +51481,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 18.4,
     "game_ou": 39.3,
-    "opp_implied": 20.9
+    "opp_implied": 20.9,
+    "next_week_opp": "vs GB",
+    "next_implied_total": 18.5
    },
    {
     "id": 4038441,
@@ -51294,7 +51716,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.8,
     "game_ou": 48.2,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs NO",
+    "next_implied_total": 27.0
    },
    {
     "id": 3045147,
@@ -51303,7 +51727,7 @@
     "pro_team": "ARI",
     "injury_status": "QUESTIONABLE",
     "lineup_slot": "",
-    "percent_owned": 5.81,
+    "percent_owned": 5.8,
     "total_points": 0.0,
     "avg_points": 0.0,
     "proj_total": 0.0,
@@ -51527,7 +51951,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 18.0,
     "game_ou": 46.3,
-    "opp_implied": 28.3
+    "opp_implied": 28.3,
+    "next_week_opp": "vs SEA",
+    "next_implied_total": 17.2
    },
    {
     "id": 4702555,
@@ -51760,7 +52186,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.0,
     "game_ou": 42.8,
-    "opp_implied": 22.7
+    "opp_implied": 22.7,
+    "next_week_opp": "vs JAX",
+    "next_implied_total": 23.0
    },
    {
     "id": 4429023,
@@ -51993,7 +52421,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.1,
     "game_ou": 45.0,
-    "opp_implied": 22.9
+    "opp_implied": 22.9,
+    "next_week_opp": "@ NYJ",
+    "next_implied_total": 24.0
    },
    {
     "id": 4685397,
@@ -52226,7 +52656,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.5,
     "game_ou": 48.5,
-    "opp_implied": 26.0
+    "opp_implied": 26.0,
+    "next_week_opp": "vs MIA",
+    "next_implied_total": 28.5
    },
    {
     "id": 4429835,
@@ -52459,7 +52891,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.9,
     "game_ou": 44.1,
-    "opp_implied": 20.2
+    "opp_implied": 20.2,
+    "next_week_opp": "@ ARI",
+    "next_implied_total": 27.2
    },
    {
     "id": 3116389,
@@ -52692,7 +53126,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 27.4,
     "game_ou": 51.4,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "@ HOU",
+    "next_implied_total": 22.0
    },
    {
     "id": 4685279,
@@ -52925,7 +53361,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.6,
     "game_ou": 48.6,
-    "opp_implied": 23.0
+    "opp_implied": 23.0,
+    "next_week_opp": "vs WAS",
+    "next_implied_total": 28.0
    },
    {
     "id": 4696044,
@@ -53158,7 +53596,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.5,
     "game_ou": 48.5,
-    "opp_implied": 26.0
+    "opp_implied": 26.0,
+    "next_week_opp": "vs MIA",
+    "next_implied_total": 28.5
    },
    {
     "id": 4685555,
@@ -53391,7 +53831,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.9,
     "game_ou": 39.3,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "vs PHI",
+    "next_implied_total": 19.0
    },
    {
     "id": 4832955,
@@ -53624,7 +54066,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.7,
     "game_ou": 42.8,
-    "opp_implied": 20.0
+    "opp_implied": 20.0,
+    "next_week_opp": "vs IND",
+    "next_implied_total": 26.8
    },
    {
     "id": 4430968,
@@ -53857,7 +54301,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 28.3,
     "game_ou": 46.3,
-    "opp_implied": 18.0
+    "opp_implied": 18.0,
+    "next_week_opp": "vs LV",
+    "next_implied_total": 25.5
    },
    {
     "id": 4685246,
@@ -54090,7 +54536,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 21.1,
     "game_ou": 46.8,
-    "opp_implied": 25.7
+    "opp_implied": 25.7,
+    "next_week_opp": "@ DAL",
+    "next_implied_total": 23.5
    },
    {
     "id": 4682745,
@@ -54323,7 +54771,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 18.4,
     "game_ou": 40.4,
-    "opp_implied": 22.0
+    "opp_implied": 22.0,
+    "next_week_opp": "@ SF",
+    "next_implied_total": 18.0
    },
    {
     "id": 4711533,
@@ -54556,7 +55006,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 18.4,
     "game_ou": 40.4,
-    "opp_implied": 22.0
+    "opp_implied": 22.0,
+    "next_week_opp": "@ SF",
+    "next_implied_total": 18.0
    },
    {
     "id": 4832846,
@@ -54789,7 +55241,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.9,
     "game_ou": 45.0,
-    "opp_implied": 22.1
+    "opp_implied": 22.1,
+    "next_week_opp": "@ CHI",
+    "next_implied_total": 21.0
    },
    {
     "id": 3915411,
@@ -55022,7 +55476,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.1,
     "game_ou": 44.5,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs DET",
+    "next_implied_total": 27.5
    },
    {
     "id": 4887558,
@@ -55255,7 +55711,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.9,
     "game_ou": 44.1,
-    "opp_implied": 20.2
+    "opp_implied": 20.2,
+    "next_week_opp": "@ ARI",
+    "next_implied_total": 27.2
    },
    {
     "id": 4685526,
@@ -55488,7 +55946,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.8,
     "game_ou": 48.2,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs NO",
+    "next_implied_total": 27.0
    },
    {
     "id": 4430871,
@@ -55721,7 +56181,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.9,
     "game_ou": 51.4,
-    "opp_implied": 27.4
+    "opp_implied": 27.4,
+    "next_week_opp": "vs CLE",
+    "next_implied_total": 24.2
    },
    {
     "id": 4362478,
@@ -55954,7 +56416,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.7,
     "game_ou": 42.8,
-    "opp_implied": 20.0
+    "opp_implied": 20.0,
+    "next_week_opp": "vs IND",
+    "next_implied_total": 26.8
    },
    {
     "id": 4911851,
@@ -56187,7 +56651,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 24.0,
     "game_ou": 40.5,
-    "opp_implied": 16.5
+    "opp_implied": 16.5,
+    "next_week_opp": "@ DEN",
+    "next_implied_total": 20.5
    },
    {
     "id": 4685350,
@@ -56420,7 +56886,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.5,
     "game_ou": 47.4,
-    "opp_implied": 25.0
+    "opp_implied": 25.0,
+    "next_week_opp": "@ ATL",
+    "next_implied_total": 21.2
    },
    {
     "id": 4874509,
@@ -56653,7 +57121,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 48.2,
-    "opp_implied": 25.8
+    "opp_implied": 25.8,
+    "next_week_opp": "@ KC",
+    "next_implied_total": 20.8
    },
    {
     "id": 3149687,
@@ -56886,7 +57356,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.1,
     "game_ou": 45.0,
-    "opp_implied": 22.9
+    "opp_implied": 22.9,
+    "next_week_opp": "@ NYJ",
+    "next_implied_total": 24.0
    },
    {
     "id": 4819231,
@@ -57119,7 +57591,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.6,
     "game_ou": 42.2,
-    "opp_implied": 19.6
+    "opp_implied": 19.6,
+    "next_week_opp": "@ NE",
+    "next_implied_total": 19.5
    },
    {
     "id": 4040761,
@@ -57352,7 +57826,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.0,
     "game_ou": 48.6,
-    "opp_implied": 25.6
+    "opp_implied": 25.6,
+    "next_week_opp": "@ LA",
+    "next_implied_total": 19.5
    },
    {
     "id": 4695404,
@@ -57585,7 +58061,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 18.4,
     "game_ou": 39.3,
-    "opp_implied": 20.9
+    "opp_implied": 20.9,
+    "next_week_opp": "vs GB",
+    "next_implied_total": 18.5
    },
    {
     "id": 4240603,
@@ -57818,7 +58296,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.6,
     "game_ou": 48.6,
-    "opp_implied": 23.0
+    "opp_implied": 23.0,
+    "next_week_opp": "vs WAS",
+    "next_implied_total": 28.0
    },
    {
     "id": 16002,
@@ -58051,7 +58531,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.5,
     "game_ou": 48.5,
-    "opp_implied": 26.0
+    "opp_implied": 26.0,
+    "next_week_opp": "vs MIA",
+    "next_implied_total": 28.5
    },
    {
     "id": 4429275,
@@ -58284,7 +58766,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 18.0,
     "game_ou": 46.3,
-    "opp_implied": 28.3
+    "opp_implied": 28.3,
+    "next_week_opp": "vs SEA",
+    "next_implied_total": 17.2
    },
    {
     "id": 4431545,
@@ -58517,7 +59001,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 25.7,
     "game_ou": 46.8,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ TEN",
+    "next_implied_total": 23.5
    },
    {
     "id": 4686468,
@@ -58750,7 +59236,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 48.2,
-    "opp_implied": 25.8
+    "opp_implied": 25.8,
+    "next_week_opp": "@ KC",
+    "next_implied_total": 20.8
    },
    {
     "id": 4596602,
@@ -58983,7 +59471,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.7,
     "game_ou": 42.8,
-    "opp_implied": 20.0
+    "opp_implied": 20.0,
+    "next_week_opp": "vs IND",
+    "next_implied_total": 26.8
    },
    {
     "id": 4429299,
@@ -59216,7 +59706,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 27.4,
     "game_ou": 51.4,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "@ HOU",
+    "next_implied_total": 22.0
    },
    {
     "id": 3116385,
@@ -59467,7 +59959,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.5,
     "game_ou": 48.5,
-    "opp_implied": 26.0
+    "opp_implied": 26.0,
+    "next_week_opp": "vs MIA",
+    "next_implied_total": 28.5
    },
    {
     "id": 4599739,
@@ -59700,7 +60194,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 21.1,
     "game_ou": 49.1,
-    "opp_implied": 28.1
+    "opp_implied": 28.1,
+    "next_week_opp": "@ BAL",
+    "next_implied_total": 19.5
    },
    {
     "id": 3128720,
@@ -59951,7 +60447,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.0,
     "game_ou": 42.8,
-    "opp_implied": 22.7
+    "opp_implied": 22.7,
+    "next_week_opp": "vs JAX",
+    "next_implied_total": 23.0
    },
    {
     "id": 4241457,
@@ -60200,7 +60698,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.6,
     "game_ou": 42.2,
-    "opp_implied": 19.6
+    "opp_implied": 19.6,
+    "next_week_opp": "@ NE",
+    "next_implied_total": 19.5
    },
    {
     "id": 3059915,
@@ -60451,7 +60951,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 18.0,
     "game_ou": 46.3,
-    "opp_implied": 28.3
+    "opp_implied": 28.3,
+    "next_week_opp": "vs SEA",
+    "next_implied_total": 17.2
    },
    {
     "id": 4429939,
@@ -60684,7 +61186,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 44.5,
-    "opp_implied": 22.1
+    "opp_implied": 22.1,
+    "next_week_opp": "vs CIN",
+    "next_implied_total": 24.5
    },
    {
     "id": 4690013,
@@ -60917,7 +61421,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.8,
     "game_ou": 48.2,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs NO",
+    "next_implied_total": 27.0
    },
    {
     "id": 4682652,
@@ -61150,7 +61656,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 21.1,
     "game_ou": 49.1,
-    "opp_implied": 28.1
+    "opp_implied": 28.1,
+    "next_week_opp": "@ BAL",
+    "next_implied_total": 19.5
    },
    {
     "id": 4383396,
@@ -61383,7 +61891,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.6,
     "game_ou": 48.6,
-    "opp_implied": 23.0
+    "opp_implied": 23.0,
+    "next_week_opp": "vs WAS",
+    "next_implied_total": 28.0
    },
    {
     "id": 4035537,
@@ -61616,7 +62126,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 18.4,
     "game_ou": 39.3,
-    "opp_implied": 20.9
+    "opp_implied": 20.9,
+    "next_week_opp": "vs GB",
+    "next_implied_total": 18.5
    },
    {
     "id": 4366963,
@@ -61849,7 +62361,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 22.0,
     "game_ou": 40.4,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "@ LAC",
+    "next_implied_total": 17.0
    },
    {
     "id": 4372019,
@@ -62082,7 +62596,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 21.1,
     "game_ou": 46.8,
-    "opp_implied": 25.7
+    "opp_implied": 25.7,
+    "next_week_opp": "@ DAL",
+    "next_implied_total": 23.5
    },
    {
     "id": 4426386,
@@ -62313,7 +62829,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 25.0,
     "game_ou": 47.4,
-    "opp_implied": 22.5
+    "opp_implied": 22.5,
+    "next_week_opp": "vs MIN",
+    "next_implied_total": 24.5
    },
    {
     "id": 4431562,
@@ -62546,7 +63064,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.6,
     "game_ou": 48.6,
-    "opp_implied": 23.0
+    "opp_implied": 23.0,
+    "next_week_opp": "vs WAS",
+    "next_implied_total": 28.0
    },
    {
     "id": 4383429,
@@ -62779,7 +63299,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 28.1,
     "game_ou": 49.1,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ BUF",
+    "next_implied_total": 24.5
    },
    {
     "id": 4693370,
@@ -63012,7 +63534,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.6,
     "game_ou": 42.2,
-    "opp_implied": 19.6
+    "opp_implied": 19.6,
+    "next_week_opp": "@ NE",
+    "next_implied_total": 19.5
    },
    {
     "id": 2975417,
@@ -63245,7 +63769,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.0,
     "game_ou": 48.6,
-    "opp_implied": 25.6
+    "opp_implied": 25.6,
+    "next_week_opp": "@ LA",
+    "next_implied_total": 19.5
    },
    {
     "id": 4239934,
@@ -63476,7 +64002,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.5,
     "game_ou": 47.4,
-    "opp_implied": 25.0
+    "opp_implied": 25.0,
+    "next_week_opp": "@ ATL",
+    "next_implied_total": 21.2
    },
    {
     "id": 4429202,
@@ -63707,7 +64235,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.6,
     "game_ou": 48.6,
-    "opp_implied": 23.0
+    "opp_implied": 23.0,
+    "next_week_opp": "vs WAS",
+    "next_implied_total": 28.0
    },
    {
     "id": 4710341,
@@ -63938,7 +64468,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 26.0,
     "game_ou": 48.5,
-    "opp_implied": 22.5
+    "opp_implied": 22.5,
+    "next_week_opp": "vs NYG",
+    "next_implied_total": 28.5
    },
    {
     "id": 4568024,
@@ -64171,7 +64703,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.9,
     "game_ou": 51.4,
-    "opp_implied": 27.4
+    "opp_implied": 27.4,
+    "next_week_opp": "vs CLE",
+    "next_implied_total": 24.2
    },
    {
     "id": 4039505,
@@ -64404,7 +64938,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 20.2,
     "game_ou": 44.1,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "vs PIT",
+    "next_implied_total": 24.0
    },
    {
     "id": 3068267,
@@ -64655,7 +65191,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 28.3,
     "game_ou": 46.3,
-    "opp_implied": 18.0
+    "opp_implied": 18.0,
+    "next_week_opp": "vs LV",
+    "next_implied_total": 25.5
    },
    {
     "id": 4240657,
@@ -64886,7 +65424,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.9,
     "game_ou": 39.3,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "vs PHI",
+    "next_implied_total": 19.0
    },
    {
     "id": 4569682,
@@ -65117,7 +65657,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 21.1,
     "game_ou": 49.1,
-    "opp_implied": 28.1
+    "opp_implied": 28.1,
+    "next_week_opp": "@ BAL",
+    "next_implied_total": 19.5
    },
    {
     "id": 4429805,
@@ -65348,7 +65890,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.1,
     "game_ou": 44.5,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs DET",
+    "next_implied_total": 27.5
    },
    {
     "id": 4685477,
@@ -65579,7 +66123,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 20.2,
     "game_ou": 44.1,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "vs PIT",
+    "next_implied_total": 24.0
    },
    {
     "id": 3051392,
@@ -65830,7 +66376,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 24.0,
     "game_ou": 40.5,
-    "opp_implied": 16.5
+    "opp_implied": 16.5,
+    "next_week_opp": "@ DEN",
+    "next_implied_total": 20.5
    },
    {
     "id": 4241961,
@@ -66063,7 +66611,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 22.0,
     "game_ou": 40.4,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "@ LAC",
+    "next_implied_total": 17.0
    },
    {
     "id": 4722893,
@@ -66294,7 +66844,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.0,
     "game_ou": 42.8,
-    "opp_implied": 22.7
+    "opp_implied": 22.7,
+    "next_week_opp": "vs JAX",
+    "next_implied_total": 23.0
    },
    {
     "id": 3125107,
@@ -66527,7 +67079,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 18.4,
     "game_ou": 39.3,
-    "opp_implied": 20.9
+    "opp_implied": 20.9,
+    "next_week_opp": "vs GB",
+    "next_implied_total": 18.5
    },
    {
     "id": 4360238,
@@ -66758,7 +67312,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 25.7,
     "game_ou": 46.8,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ TEN",
+    "next_implied_total": 23.5
    }
   ],
   "WR": [
@@ -66993,7 +67549,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 28.1,
     "game_ou": 49.1,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ BUF",
+    "next_implied_total": 24.5
    },
    {
     "id": 4035687,
@@ -67226,7 +67784,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.6,
     "game_ou": 42.2,
-    "opp_implied": 19.6
+    "opp_implied": 19.6,
+    "next_week_opp": "@ NE",
+    "next_implied_total": 19.5
    },
    {
     "id": 4432708,
@@ -67459,7 +68019,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 18.0,
     "game_ou": 46.3,
-    "opp_implied": 28.3
+    "opp_implied": 28.3,
+    "next_week_opp": "vs SEA",
+    "next_implied_total": 17.2
    },
    {
     "id": 4360078,
@@ -67468,7 +68030,7 @@
     "pro_team": "IND",
     "injury_status": "OUT",
     "lineup_slot": "",
-    "percent_owned": 84.23,
+    "percent_owned": 84.22,
     "total_points": 0.0,
     "avg_points": 0.0,
     "proj_total": 203.31,
@@ -67692,7 +68254,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 48.2,
-    "opp_implied": 25.8
+    "opp_implied": 25.8,
+    "next_week_opp": "@ KC",
+    "next_implied_total": 20.8
    },
    {
     "id": 4248528,
@@ -67925,7 +68489,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.1,
     "game_ou": 45.0,
-    "opp_implied": 22.9
+    "opp_implied": 22.9,
+    "next_week_opp": "@ NYJ",
+    "next_implied_total": 24.0
    },
    {
     "id": 4432773,
@@ -68158,7 +68724,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 24.0,
     "game_ou": 40.5,
-    "opp_implied": 16.5
+    "opp_implied": 16.5,
+    "next_week_opp": "@ DEN",
+    "next_implied_total": 20.5
    },
    {
     "id": 4432620,
@@ -68391,7 +68959,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 24.0,
     "game_ou": 40.5,
-    "opp_implied": 16.5
+    "opp_implied": 16.5,
+    "next_week_opp": "@ DEN",
+    "next_implied_total": 20.5
    },
    {
     "id": 4360761,
@@ -68624,7 +69194,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 18.0,
     "game_ou": 46.3,
-    "opp_implied": 28.3
+    "opp_implied": 28.3,
+    "next_week_opp": "vs SEA",
+    "next_implied_total": 17.2
    },
    {
     "id": 4701936,
@@ -68857,7 +69429,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.1,
     "game_ou": 45.0,
-    "opp_implied": 22.9
+    "opp_implied": 22.9,
+    "next_week_opp": "@ NYJ",
+    "next_implied_total": 24.0
    },
    {
     "id": 3916433,
@@ -69090,7 +69664,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 24.0,
     "game_ou": 40.5,
-    "opp_implied": 16.5
+    "opp_implied": 16.5,
+    "next_week_opp": "@ DEN",
+    "next_implied_total": 20.5
    },
    {
     "id": 4569587,
@@ -69323,7 +69899,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.9,
     "game_ou": 39.3,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "vs PHI",
+    "next_implied_total": 19.0
    },
    {
     "id": 4429205,
@@ -69556,7 +70134,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.9,
     "game_ou": 45.0,
-    "opp_implied": 22.1
+    "opp_implied": 22.1,
+    "next_week_opp": "@ CHI",
+    "next_implied_total": 21.0
    },
    {
     "id": 4870795,
@@ -69789,7 +70369,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 25.7,
     "game_ou": 46.8,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ TEN",
+    "next_implied_total": 23.5
    },
    {
     "id": 4688813,
@@ -70022,7 +70604,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 48.2,
-    "opp_implied": 25.8
+    "opp_implied": 25.8,
+    "next_week_opp": "@ KC",
+    "next_implied_total": 20.8
    },
    {
     "id": 4685415,
@@ -70031,7 +70615,7 @@
     "pro_team": "JAX",
     "injury_status": "ACTIVE",
     "lineup_slot": "",
-    "percent_owned": 72.69,
+    "percent_owned": 72.68,
     "total_points": 0.0,
     "avg_points": 0.0,
     "proj_total": 112.96,
@@ -70255,7 +70839,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 24.0,
     "game_ou": 40.5,
-    "opp_implied": 16.5
+    "opp_implied": 16.5,
+    "next_week_opp": "@ DEN",
+    "next_implied_total": 20.5
    },
    {
     "id": 4373678,
@@ -70488,7 +71074,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.1,
     "game_ou": 44.5,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs DET",
+    "next_implied_total": 27.5
    },
    {
     "id": 4683062,
@@ -70721,7 +71309,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.7,
     "game_ou": 42.8,
-    "opp_implied": 20.0
+    "opp_implied": 20.0,
+    "next_week_opp": "vs IND",
+    "next_implied_total": 26.8
    },
    {
     "id": 4429025,
@@ -70954,7 +71544,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 28.3,
     "game_ou": 46.3,
-    "opp_implied": 18.0
+    "opp_implied": 18.0,
+    "next_week_opp": "vs LV",
+    "next_implied_total": 25.5
    },
    {
     "id": 3116165,
@@ -71187,7 +71779,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.9,
     "game_ou": 51.4,
-    "opp_implied": 27.4
+    "opp_implied": 27.4,
+    "next_week_opp": "vs CLE",
+    "next_implied_total": 24.2
    },
    {
     "id": 4362249,
@@ -71196,7 +71790,7 @@
     "pro_team": "GB",
     "injury_status": "ACTIVE",
     "lineup_slot": "",
-    "percent_owned": 67.8,
+    "percent_owned": 67.79,
     "total_points": 0.0,
     "avg_points": 0.0,
     "proj_total": 170.55,
@@ -71420,7 +72014,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.1,
     "game_ou": 45.0,
-    "opp_implied": 22.9
+    "opp_implied": 22.9,
+    "next_week_opp": "@ NYJ",
+    "next_implied_total": 24.0
    },
    {
     "id": 3126486,
@@ -71653,7 +72249,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.5,
     "game_ou": 48.5,
-    "opp_implied": 26.0
+    "opp_implied": 26.0,
+    "next_week_opp": "vs MIA",
+    "next_implied_total": 28.5
    },
    {
     "id": 2976212,
@@ -71886,7 +72484,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 21.1,
     "game_ou": 46.8,
-    "opp_implied": 25.7
+    "opp_implied": 25.7,
+    "next_week_opp": "@ DAL",
+    "next_implied_total": 23.5
    },
    {
     "id": 4361432,
@@ -71895,7 +72495,7 @@
     "pro_team": "NE",
     "injury_status": "ACTIVE",
     "lineup_slot": "",
-    "percent_owned": 59.6,
+    "percent_owned": 59.59,
     "total_points": 0.0,
     "avg_points": 0.0,
     "proj_total": 150.1,
@@ -72119,7 +72719,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 20.2,
     "game_ou": 44.1,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "vs PIT",
+    "next_implied_total": 24.0
    },
    {
     "id": 4877706,
@@ -72352,7 +72954,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 44.5,
-    "opp_implied": 22.1
+    "opp_implied": 22.1,
+    "next_week_opp": "vs CIN",
+    "next_implied_total": 24.5
    },
    {
     "id": 4695883,
@@ -72585,7 +73189,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.5,
     "game_ou": 47.4,
-    "opp_implied": 25.0
+    "opp_implied": 25.0,
+    "next_week_opp": "@ ATL",
+    "next_implied_total": 21.2
    },
    {
     "id": 4032473,
@@ -72818,7 +73424,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.9,
     "game_ou": 44.1,
-    "opp_implied": 20.2
+    "opp_implied": 20.2,
+    "next_week_opp": "@ ARI",
+    "next_implied_total": 27.2
    },
    {
     "id": 4241463,
@@ -73051,7 +73659,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 16.5,
     "game_ou": 40.5,
-    "opp_implied": 24.0
+    "opp_implied": 24.0,
+    "next_week_opp": "@ TB",
+    "next_implied_total": 18.2
    },
    {
     "id": 4428209,
@@ -73284,7 +73894,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.5,
     "game_ou": 48.5,
-    "opp_implied": 26.0
+    "opp_implied": 26.0,
+    "next_week_opp": "vs MIA",
+    "next_implied_total": 28.5
    },
    {
     "id": 3925357,
@@ -73517,7 +74129,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.9,
     "game_ou": 39.3,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "vs PHI",
+    "next_implied_total": 19.0
    },
    {
     "id": 4430834,
@@ -73750,7 +74364,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.9,
     "game_ou": 51.4,
-    "opp_implied": 27.4
+    "opp_implied": 27.4,
+    "next_week_opp": "vs CLE",
+    "next_implied_total": 24.2
    },
    {
     "id": 4832800,
@@ -73983,7 +74599,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 16.5,
     "game_ou": 40.5,
-    "opp_implied": 24.0
+    "opp_implied": 24.0,
+    "next_week_opp": "@ TB",
+    "next_implied_total": 18.2
    },
    {
     "id": 4428718,
@@ -74216,7 +74834,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 22.0,
     "game_ou": 40.4,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "@ LAC",
+    "next_implied_total": 17.0
    },
    {
     "id": 4366031,
@@ -74449,7 +75069,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 44.5,
-    "opp_implied": 22.1
+    "opp_implied": 22.1,
+    "next_week_opp": "vs CIN",
+    "next_implied_total": 24.5
    },
    {
     "id": 4723820,
@@ -74682,7 +75304,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 18.4,
     "game_ou": 39.3,
-    "opp_implied": 20.9
+    "opp_implied": 20.9,
+    "next_week_opp": "vs GB",
+    "next_implied_total": 18.5
    },
    {
     "id": 4870847,
@@ -74691,7 +75315,7 @@
     "pro_team": "BAL",
     "injury_status": "ACTIVE",
     "lineup_slot": "",
-    "percent_owned": 12.0,
+    "percent_owned": 12.02,
     "total_points": 0.0,
     "avg_points": 0.0,
     "proj_total": 100.4,
@@ -74915,7 +75539,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.8,
     "game_ou": 48.2,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs NO",
+    "next_implied_total": 27.0
    },
    {
     "id": 3886598,
@@ -75148,7 +75774,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.9,
     "game_ou": 45.0,
-    "opp_implied": 22.1
+    "opp_implied": 22.1,
+    "next_week_opp": "@ CHI",
+    "next_implied_total": 21.0
    },
    {
     "id": 4685261,
@@ -75381,7 +76009,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.6,
     "game_ou": 42.2,
-    "opp_implied": 19.6
+    "opp_implied": 19.6,
+    "next_week_opp": "@ NE",
+    "next_implied_total": 19.5
    },
    {
     "id": 4597500,
@@ -75614,7 +76244,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 18.4,
     "game_ou": 39.3,
-    "opp_implied": 20.9
+    "opp_implied": 20.9,
+    "next_week_opp": "vs GB",
+    "next_implied_total": 18.5
    },
    {
     "id": 4382466,
@@ -75847,7 +76479,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 22.0,
     "game_ou": 40.4,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "@ LAC",
+    "next_implied_total": 17.0
    },
    {
     "id": 2977187,
@@ -76080,7 +76714,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.9,
     "game_ou": 44.1,
-    "opp_implied": 20.2
+    "opp_implied": 20.2,
+    "next_week_opp": "@ ARI",
+    "next_implied_total": 27.2
    },
    {
     "id": 3116406,
@@ -76331,7 +76967,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.8,
     "game_ou": 48.2,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs NO",
+    "next_implied_total": 27.0
    },
    {
     "id": 4040655,
@@ -76564,7 +77202,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.0,
     "game_ou": 48.6,
-    "opp_implied": 25.6
+    "opp_implied": 25.6,
+    "next_week_opp": "@ LA",
+    "next_implied_total": 19.5
    },
    {
     "id": 4870612,
@@ -76573,7 +77213,7 @@
     "pro_team": "ATL",
     "injury_status": "ACTIVE",
     "lineup_slot": "",
-    "percent_owned": 5.76,
+    "percent_owned": 5.75,
     "total_points": 0.0,
     "avg_points": 0.0,
     "proj_total": 82.58,
@@ -76797,7 +77437,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 19.6,
     "game_ou": 42.2,
-    "opp_implied": 22.6
+    "opp_implied": 22.6,
+    "next_week_opp": "vs CAR",
+    "next_implied_total": 22.8
    },
    {
     "id": 4569603,
@@ -77030,7 +77672,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 18.4,
     "game_ou": 40.4,
-    "opp_implied": 22.0
+    "opp_implied": 22.0,
+    "next_week_opp": "@ SF",
+    "next_implied_total": 18.0
    },
    {
     "id": 5081432,
@@ -77263,7 +77907,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 21.1,
     "game_ou": 46.8,
-    "opp_implied": 25.7
+    "opp_implied": 25.7,
+    "next_week_opp": "@ DAL",
+    "next_implied_total": 23.5
    },
    {
     "id": 5123663,
@@ -77496,7 +78142,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 28.1,
     "game_ou": 49.1,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ BUF",
+    "next_implied_total": 24.5
    },
    {
     "id": 4869645,
@@ -77729,7 +78377,244 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 18.4,
     "game_ou": 40.4,
-    "opp_implied": 22.0
+    "opp_implied": 22.0,
+    "next_week_opp": "@ SF",
+    "next_implied_total": 18.0
+   },
+   {
+    "id": 4912218,
+    "name": "Cyrus Allen",
+    "position": "WR",
+    "pro_team": "KC",
+    "injury_status": "ACTIVE",
+    "lineup_slot": "",
+    "percent_owned": 3.91,
+    "total_points": 0.0,
+    "avg_points": 0.0,
+    "proj_total": 43.85,
+    "proj_avg": 2.58,
+    "weekly_proj": {
+     "1": 2.45
+    },
+    "weekly_actual": {},
+    "opponents": {},
+    "pos_rank": [],
+    "is_rookie": true,
+    "bye": 5,
+    "nfl_games": {
+     "1": {
+      "opponent": "DEN",
+      "is_home": true,
+      "home_team": "KC",
+      "gameday": "2026-09-14",
+      "weekday": "Monday",
+      "gametime": "20:15",
+      "location": "Home",
+      "roof": "outdoors",
+      "surface": "grass",
+      "stadium": "GEHA Field at Arrowhead Stadium"
+     },
+     "2": {
+      "opponent": "IND",
+      "is_home": true,
+      "home_team": "KC",
+      "gameday": "2026-09-20",
+      "weekday": "Sunday",
+      "gametime": "20:20",
+      "location": "Home",
+      "roof": "outdoors",
+      "surface": "grass",
+      "stadium": "GEHA Field at Arrowhead Stadium"
+     },
+     "3": {
+      "opponent": "MIA",
+      "is_home": false,
+      "home_team": "MIA",
+      "gameday": "2026-09-27",
+      "weekday": "Sunday",
+      "gametime": "13:00",
+      "location": "Home",
+      "roof": "outdoors",
+      "surface": "grass",
+      "stadium": "Hard Rock Stadium"
+     },
+     "4": {
+      "opponent": "LV",
+      "is_home": false,
+      "home_team": "LV",
+      "gameday": "2026-10-04",
+      "weekday": "Sunday",
+      "gametime": "16:25",
+      "location": "Home",
+      "roof": "dome",
+      "surface": "grass",
+      "stadium": "Allegiant Stadium"
+     },
+     "6": {
+      "opponent": "LAC",
+      "is_home": true,
+      "home_team": "KC",
+      "gameday": "2026-10-18",
+      "weekday": "Sunday",
+      "gametime": "16:25",
+      "location": "Home",
+      "roof": "outdoors",
+      "surface": "grass",
+      "stadium": "GEHA Field at Arrowhead Stadium"
+     },
+     "7": {
+      "opponent": "SEA",
+      "is_home": false,
+      "home_team": "SEA",
+      "gameday": "2026-10-25",
+      "weekday": "Sunday",
+      "gametime": "20:20",
+      "location": "Home",
+      "roof": "outdoors",
+      "surface": "fieldturf",
+      "stadium": "Lumen Field"
+     },
+     "8": {
+      "opponent": "DEN",
+      "is_home": false,
+      "home_team": "DEN",
+      "gameday": "2026-11-01",
+      "weekday": "Sunday",
+      "gametime": "16:25",
+      "location": "Home",
+      "roof": "outdoors",
+      "surface": "grass",
+      "stadium": "Empower Field at Mile High"
+     },
+     "9": {
+      "opponent": "NYJ",
+      "is_home": true,
+      "home_team": "KC",
+      "gameday": "2026-11-08",
+      "weekday": "Sunday",
+      "gametime": "13:00",
+      "location": "Home",
+      "roof": "outdoors",
+      "surface": "grass",
+      "stadium": "GEHA Field at Arrowhead Stadium"
+     },
+     "10": {
+      "opponent": "ATL",
+      "is_home": false,
+      "home_team": "ATL",
+      "gameday": "2026-11-15",
+      "weekday": "Sunday",
+      "gametime": "13:00",
+      "location": "Home",
+      "roof": "",
+      "surface": "fieldturf",
+      "stadium": "Mercedes-Benz Stadium"
+     },
+     "11": {
+      "opponent": "ARI",
+      "is_home": true,
+      "home_team": "KC",
+      "gameday": "2026-11-22",
+      "weekday": "Sunday",
+      "gametime": "13:00",
+      "location": "Home",
+      "roof": "outdoors",
+      "surface": "grass",
+      "stadium": "GEHA Field at Arrowhead Stadium"
+     },
+     "12": {
+      "opponent": "BUF",
+      "is_home": false,
+      "home_team": "BUF",
+      "gameday": "2026-11-26",
+      "weekday": "Thursday",
+      "gametime": "20:20",
+      "location": "Home",
+      "roof": "outdoors",
+      "surface": "a_turf",
+      "stadium": "Highmark Stadium"
+     },
+     "13": {
+      "opponent": "LA",
+      "is_home": false,
+      "home_team": "LA",
+      "gameday": "2026-12-03",
+      "weekday": "Thursday",
+      "gametime": "20:15",
+      "location": "Home",
+      "roof": "dome",
+      "surface": "matrixturf",
+      "stadium": "SoFi Stadium"
+     },
+     "14": {
+      "opponent": "CIN",
+      "is_home": false,
+      "home_team": "CIN",
+      "gameday": "2026-12-13",
+      "weekday": "Sunday",
+      "gametime": "16:25",
+      "location": "Home",
+      "roof": "outdoors",
+      "surface": "fieldturf",
+      "stadium": "Paycor Stadium"
+     },
+     "15": {
+      "opponent": "NE",
+      "is_home": true,
+      "home_team": "KC",
+      "gameday": "2026-12-21",
+      "weekday": "Monday",
+      "gametime": "20:15",
+      "location": "Home",
+      "roof": "outdoors",
+      "surface": "grass",
+      "stadium": "GEHA Field at Arrowhead Stadium"
+     },
+     "16": {
+      "opponent": "SF",
+      "is_home": true,
+      "home_team": "KC",
+      "gameday": "2026-12-27",
+      "weekday": "Sunday",
+      "gametime": "16:25",
+      "location": "Home",
+      "roof": "outdoors",
+      "surface": "grass",
+      "stadium": "GEHA Field at Arrowhead Stadium"
+     },
+     "17": {
+      "opponent": "LAC",
+      "is_home": false,
+      "home_team": "LAC",
+      "gameday": "2027-01-03",
+      "weekday": "Sunday",
+      "gametime": "13:00",
+      "location": "Home",
+      "roof": "dome",
+      "surface": "matrixturf",
+      "stadium": "SoFi Stadium"
+     },
+     "18": {
+      "opponent": "LV",
+      "is_home": true,
+      "home_team": "KC",
+      "gameday": "2027-01-10",
+      "weekday": "Sunday",
+      "gametime": "13:00",
+      "location": "Home",
+      "roof": "outdoors",
+      "surface": "grass",
+      "stadium": "GEHA Field at Arrowhead Stadium"
+     }
+    },
+    "this_week_opp": "vs DEN",
+    "kickoff_jst": "火 09:15",
+    "venue_str": "屋外/天然芝",
+    "implied_total": 22.7,
+    "game_ou": 42.8,
+    "opp_implied": 20.0,
+    "next_week_opp": "vs IND",
+    "next_implied_total": 26.8
    },
    {
     "id": 4686612,
@@ -77962,240 +78847,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 28.3,
     "game_ou": 46.3,
-    "opp_implied": 18.0
-   },
-   {
-    "id": 4912218,
-    "name": "Cyrus Allen",
-    "position": "WR",
-    "pro_team": "KC",
-    "injury_status": "ACTIVE",
-    "lineup_slot": "",
-    "percent_owned": 3.9,
-    "total_points": 0.0,
-    "avg_points": 0.0,
-    "proj_total": 43.85,
-    "proj_avg": 2.58,
-    "weekly_proj": {
-     "1": 2.45
-    },
-    "weekly_actual": {},
-    "opponents": {},
-    "pos_rank": [],
-    "is_rookie": true,
-    "bye": 5,
-    "nfl_games": {
-     "1": {
-      "opponent": "DEN",
-      "is_home": true,
-      "home_team": "KC",
-      "gameday": "2026-09-14",
-      "weekday": "Monday",
-      "gametime": "20:15",
-      "location": "Home",
-      "roof": "outdoors",
-      "surface": "grass",
-      "stadium": "GEHA Field at Arrowhead Stadium"
-     },
-     "2": {
-      "opponent": "IND",
-      "is_home": true,
-      "home_team": "KC",
-      "gameday": "2026-09-20",
-      "weekday": "Sunday",
-      "gametime": "20:20",
-      "location": "Home",
-      "roof": "outdoors",
-      "surface": "grass",
-      "stadium": "GEHA Field at Arrowhead Stadium"
-     },
-     "3": {
-      "opponent": "MIA",
-      "is_home": false,
-      "home_team": "MIA",
-      "gameday": "2026-09-27",
-      "weekday": "Sunday",
-      "gametime": "13:00",
-      "location": "Home",
-      "roof": "outdoors",
-      "surface": "grass",
-      "stadium": "Hard Rock Stadium"
-     },
-     "4": {
-      "opponent": "LV",
-      "is_home": false,
-      "home_team": "LV",
-      "gameday": "2026-10-04",
-      "weekday": "Sunday",
-      "gametime": "16:25",
-      "location": "Home",
-      "roof": "dome",
-      "surface": "grass",
-      "stadium": "Allegiant Stadium"
-     },
-     "6": {
-      "opponent": "LAC",
-      "is_home": true,
-      "home_team": "KC",
-      "gameday": "2026-10-18",
-      "weekday": "Sunday",
-      "gametime": "16:25",
-      "location": "Home",
-      "roof": "outdoors",
-      "surface": "grass",
-      "stadium": "GEHA Field at Arrowhead Stadium"
-     },
-     "7": {
-      "opponent": "SEA",
-      "is_home": false,
-      "home_team": "SEA",
-      "gameday": "2026-10-25",
-      "weekday": "Sunday",
-      "gametime": "20:20",
-      "location": "Home",
-      "roof": "outdoors",
-      "surface": "fieldturf",
-      "stadium": "Lumen Field"
-     },
-     "8": {
-      "opponent": "DEN",
-      "is_home": false,
-      "home_team": "DEN",
-      "gameday": "2026-11-01",
-      "weekday": "Sunday",
-      "gametime": "16:25",
-      "location": "Home",
-      "roof": "outdoors",
-      "surface": "grass",
-      "stadium": "Empower Field at Mile High"
-     },
-     "9": {
-      "opponent": "NYJ",
-      "is_home": true,
-      "home_team": "KC",
-      "gameday": "2026-11-08",
-      "weekday": "Sunday",
-      "gametime": "13:00",
-      "location": "Home",
-      "roof": "outdoors",
-      "surface": "grass",
-      "stadium": "GEHA Field at Arrowhead Stadium"
-     },
-     "10": {
-      "opponent": "ATL",
-      "is_home": false,
-      "home_team": "ATL",
-      "gameday": "2026-11-15",
-      "weekday": "Sunday",
-      "gametime": "13:00",
-      "location": "Home",
-      "roof": "",
-      "surface": "fieldturf",
-      "stadium": "Mercedes-Benz Stadium"
-     },
-     "11": {
-      "opponent": "ARI",
-      "is_home": true,
-      "home_team": "KC",
-      "gameday": "2026-11-22",
-      "weekday": "Sunday",
-      "gametime": "13:00",
-      "location": "Home",
-      "roof": "outdoors",
-      "surface": "grass",
-      "stadium": "GEHA Field at Arrowhead Stadium"
-     },
-     "12": {
-      "opponent": "BUF",
-      "is_home": false,
-      "home_team": "BUF",
-      "gameday": "2026-11-26",
-      "weekday": "Thursday",
-      "gametime": "20:20",
-      "location": "Home",
-      "roof": "outdoors",
-      "surface": "a_turf",
-      "stadium": "Highmark Stadium"
-     },
-     "13": {
-      "opponent": "LA",
-      "is_home": false,
-      "home_team": "LA",
-      "gameday": "2026-12-03",
-      "weekday": "Thursday",
-      "gametime": "20:15",
-      "location": "Home",
-      "roof": "dome",
-      "surface": "matrixturf",
-      "stadium": "SoFi Stadium"
-     },
-     "14": {
-      "opponent": "CIN",
-      "is_home": false,
-      "home_team": "CIN",
-      "gameday": "2026-12-13",
-      "weekday": "Sunday",
-      "gametime": "16:25",
-      "location": "Home",
-      "roof": "outdoors",
-      "surface": "fieldturf",
-      "stadium": "Paycor Stadium"
-     },
-     "15": {
-      "opponent": "NE",
-      "is_home": true,
-      "home_team": "KC",
-      "gameday": "2026-12-21",
-      "weekday": "Monday",
-      "gametime": "20:15",
-      "location": "Home",
-      "roof": "outdoors",
-      "surface": "grass",
-      "stadium": "GEHA Field at Arrowhead Stadium"
-     },
-     "16": {
-      "opponent": "SF",
-      "is_home": true,
-      "home_team": "KC",
-      "gameday": "2026-12-27",
-      "weekday": "Sunday",
-      "gametime": "16:25",
-      "location": "Home",
-      "roof": "outdoors",
-      "surface": "grass",
-      "stadium": "GEHA Field at Arrowhead Stadium"
-     },
-     "17": {
-      "opponent": "LAC",
-      "is_home": false,
-      "home_team": "LAC",
-      "gameday": "2027-01-03",
-      "weekday": "Sunday",
-      "gametime": "13:00",
-      "location": "Home",
-      "roof": "dome",
-      "surface": "matrixturf",
-      "stadium": "SoFi Stadium"
-     },
-     "18": {
-      "opponent": "LV",
-      "is_home": true,
-      "home_team": "KC",
-      "gameday": "2027-01-10",
-      "weekday": "Sunday",
-      "gametime": "13:00",
-      "location": "Home",
-      "roof": "outdoors",
-      "surface": "grass",
-      "stadium": "GEHA Field at Arrowhead Stadium"
-     }
-    },
-    "this_week_opp": "vs DEN",
-    "kickoff_jst": "火 09:15",
-    "venue_str": "屋外/天然芝",
-    "implied_total": 22.7,
-    "game_ou": 42.8,
-    "opp_implied": 20.0
+    "opp_implied": 18.0,
+    "next_week_opp": "vs LV",
+    "next_implied_total": 25.5
    },
    {
     "id": 4360438,
@@ -78426,7 +79080,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.5,
     "game_ou": 48.5,
-    "opp_implied": 26.0
+    "opp_implied": 26.0,
+    "next_week_opp": "vs MIA",
+    "next_implied_total": 28.5
    },
    {
     "id": 5083754,
@@ -78659,7 +79315,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.6,
     "game_ou": 48.6,
-    "opp_implied": 23.0
+    "opp_implied": 23.0,
+    "next_week_opp": "vs WAS",
+    "next_implied_total": 28.0
    },
    {
     "id": 4428850,
@@ -78668,7 +79326,7 @@
     "pro_team": "PHI",
     "injury_status": "ACTIVE",
     "lineup_slot": "",
-    "percent_owned": 3.66,
+    "percent_owned": 3.65,
     "total_points": 0.0,
     "avg_points": 0.0,
     "proj_total": 108.31,
@@ -78892,7 +79550,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 25.7,
     "game_ou": 46.8,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ TEN",
+    "next_implied_total": 23.5
    },
    {
     "id": 4429022,
@@ -79125,7 +79785,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 20.2,
     "game_ou": 44.1,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "vs PIT",
+    "next_implied_total": 24.0
    },
    {
     "id": 16733,
@@ -79134,7 +79796,7 @@
     "pro_team": "NYG",
     "injury_status": "ACTIVE",
     "lineup_slot": "",
-    "percent_owned": 3.23,
+    "percent_owned": 3.22,
     "total_points": 0.0,
     "avg_points": 0.0,
     "proj_total": 24.14,
@@ -79358,7 +80020,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.0,
     "game_ou": 48.6,
-    "opp_implied": 25.6
+    "opp_implied": 25.6,
+    "next_week_opp": "@ LA",
+    "next_implied_total": 19.5
    },
    {
     "id": 4869961,
@@ -79591,7 +80255,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 18.4,
     "game_ou": 40.4,
-    "opp_implied": 22.0
+    "opp_implied": 22.0,
+    "next_week_opp": "@ SF",
+    "next_implied_total": 18.0
    },
    {
     "id": 4430034,
@@ -79824,7 +80490,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.5,
     "game_ou": 47.4,
-    "opp_implied": 25.0
+    "opp_implied": 25.0,
+    "next_week_opp": "@ ATL",
+    "next_implied_total": 21.2
    },
    {
     "id": 4635008,
@@ -80057,7 +80725,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.1,
     "game_ou": 44.5,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs DET",
+    "next_implied_total": 27.5
    },
    {
     "id": 4603186,
@@ -80290,7 +80960,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 22.0,
     "game_ou": 40.4,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "@ LAC",
+    "next_implied_total": 17.0
    },
    {
     "id": 4600981,
@@ -80523,7 +81195,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.0,
     "game_ou": 42.8,
-    "opp_implied": 22.7
+    "opp_implied": 22.7,
+    "next_week_opp": "vs JAX",
+    "next_implied_total": 23.0
    },
    {
     "id": 4586312,
@@ -80756,7 +81430,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 44.5,
-    "opp_implied": 22.1
+    "opp_implied": 22.1,
+    "next_week_opp": "vs CIN",
+    "next_implied_total": 24.5
    },
    {
     "id": 4431280,
@@ -80989,7 +81665,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.0,
     "game_ou": 42.8,
-    "opp_implied": 22.7
+    "opp_implied": 22.7,
+    "next_week_opp": "vs JAX",
+    "next_implied_total": 23.0
    },
    {
     "id": 3895856,
@@ -81222,7 +81900,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.5,
     "game_ou": 48.5,
-    "opp_implied": 26.0
+    "opp_implied": 26.0,
+    "next_week_opp": "vs MIA",
+    "next_implied_total": 28.5
    },
    {
     "id": 4597703,
@@ -81455,7 +82135,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.9,
     "game_ou": 44.1,
-    "opp_implied": 20.2
+    "opp_implied": 20.2,
+    "next_week_opp": "@ ARI",
+    "next_implied_total": 27.2
    },
    {
     "id": 4682648,
@@ -81688,7 +82370,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.0,
     "game_ou": 48.6,
-    "opp_implied": 25.6
+    "opp_implied": 25.6,
+    "next_week_opp": "@ LA",
+    "next_implied_total": 19.5
    },
    {
     "id": 4431268,
@@ -81921,7 +82605,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.9,
     "game_ou": 39.3,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "vs PHI",
+    "next_implied_total": 19.0
    },
    {
     "id": 3916945,
@@ -82154,7 +82840,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.0,
     "game_ou": 48.6,
-    "opp_implied": 25.6
+    "opp_implied": 25.6,
+    "next_week_opp": "@ LA",
+    "next_implied_total": 19.5
    },
    {
     "id": 4569559,
@@ -82387,7 +83075,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 21.1,
     "game_ou": 49.1,
-    "opp_implied": 28.1
+    "opp_implied": 28.1,
+    "next_week_opp": "@ BAL",
+    "next_implied_total": 19.5
    },
    {
     "id": 5220680,
@@ -82620,7 +83310,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.9,
     "game_ou": 51.4,
-    "opp_implied": 27.4
+    "opp_implied": 27.4,
+    "next_week_opp": "vs CLE",
+    "next_implied_total": 24.2
    },
    {
     "id": 3676833,
@@ -82853,7 +83545,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.6,
     "game_ou": 48.6,
-    "opp_implied": 23.0
+    "opp_implied": 23.0,
+    "next_week_opp": "vs WAS",
+    "next_implied_total": 28.0
    },
    {
     "id": 4249417,
@@ -83086,7 +83780,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 18.4,
     "game_ou": 40.4,
-    "opp_implied": 22.0
+    "opp_implied": 22.0,
+    "next_week_opp": "@ SF",
+    "next_implied_total": 18.0
    },
    {
     "id": 4686472,
@@ -83319,7 +84015,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.0,
     "game_ou": 42.8,
-    "opp_implied": 22.7
+    "opp_implied": 22.7,
+    "next_week_opp": "vs JAX",
+    "next_implied_total": 23.0
    },
    {
     "id": 4362921,
@@ -83552,7 +84250,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.7,
     "game_ou": 42.8,
-    "opp_implied": 20.0
+    "opp_implied": 20.0,
+    "next_week_opp": "vs IND",
+    "next_implied_total": 26.8
    },
    {
     "id": 15818,
@@ -83803,7 +84503,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 25.7,
     "game_ou": 46.8,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ TEN",
+    "next_implied_total": 23.5
    },
    {
     "id": 4368003,
@@ -84036,7 +84738,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 27.4,
     "game_ou": 51.4,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "@ HOU",
+    "next_implied_total": 22.0
    },
    {
     "id": 5088338,
@@ -84269,7 +84973,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.8,
     "game_ou": 48.2,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs NO",
+    "next_implied_total": 27.0
    },
    {
     "id": 4361409,
@@ -84502,7 +85208,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 19.6,
     "game_ou": 42.2,
-    "opp_implied": 22.6
+    "opp_implied": 22.6,
+    "next_week_opp": "vs CAR",
+    "next_implied_total": 22.8
    },
    {
     "id": 4431487,
@@ -84735,7 +85443,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.1,
     "game_ou": 45.0,
-    "opp_implied": 22.9
+    "opp_implied": 22.9,
+    "next_week_opp": "@ NYJ",
+    "next_implied_total": 24.0
    },
    {
     "id": 4683153,
@@ -84968,7 +85678,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.1,
     "game_ou": 44.5,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs DET",
+    "next_implied_total": 27.5
    },
    {
     "id": 4427095,
@@ -85201,7 +85913,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 20.2,
     "game_ou": 44.1,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "vs PIT",
+    "next_implied_total": 24.0
    },
    {
     "id": 5091739,
@@ -85434,7 +86148,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.5,
     "game_ou": 47.4,
-    "opp_implied": 25.0
+    "opp_implied": 25.0,
+    "next_week_opp": "@ ATL",
+    "next_implied_total": 21.2
    },
    {
     "id": 4426948,
@@ -85667,7 +86383,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 21.1,
     "game_ou": 46.8,
-    "opp_implied": 25.7
+    "opp_implied": 25.7,
+    "next_week_opp": "@ DAL",
+    "next_implied_total": 23.5
    },
    {
     "id": 4869748,
@@ -85900,7 +86618,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 25.0,
     "game_ou": 47.4,
-    "opp_implied": 22.5
+    "opp_implied": 22.5,
+    "next_week_opp": "vs MIN",
+    "next_implied_total": 24.5
    },
    {
     "id": 4613202,
@@ -86133,7 +86853,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 20.2,
     "game_ou": 44.1,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "vs PIT",
+    "next_implied_total": 24.0
    },
    {
     "id": 4361577,
@@ -86366,7 +87088,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 21.1,
     "game_ou": 46.8,
-    "opp_implied": 25.7
+    "opp_implied": 25.7,
+    "next_week_opp": "@ DAL",
+    "next_implied_total": 23.5
    },
    {
     "id": 4360797,
@@ -86599,7 +87323,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 18.4,
     "game_ou": 40.4,
-    "opp_implied": 22.0
+    "opp_implied": 22.0,
+    "next_week_opp": "@ SF",
+    "next_implied_total": 18.0
    },
    {
     "id": 3929785,
@@ -86832,7 +87558,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 48.2,
-    "opp_implied": 25.8
+    "opp_implied": 25.8,
+    "next_week_opp": "@ KC",
+    "next_implied_total": 20.8
    },
    {
     "id": 2991662,
@@ -87065,7 +87793,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 20.2,
     "game_ou": 44.1,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "vs PIT",
+    "next_implied_total": 24.0
    },
    {
     "id": 4883647,
@@ -87298,7 +88028,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.9,
     "game_ou": 39.3,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "vs PHI",
+    "next_implied_total": 19.0
    },
    {
     "id": 4808839,
@@ -87531,7 +88263,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 16.5,
     "game_ou": 40.5,
-    "opp_implied": 24.0
+    "opp_implied": 24.0,
+    "next_week_opp": "@ TB",
+    "next_implied_total": 18.2
    },
    {
     "id": 4608810,
@@ -87764,7 +88498,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.9,
     "game_ou": 51.4,
-    "opp_implied": 27.4
+    "opp_implied": 27.4,
+    "next_week_opp": "vs CLE",
+    "next_implied_total": 24.2
    },
    {
     "id": 4431492,
@@ -87997,7 +88733,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.6,
     "game_ou": 42.2,
-    "opp_implied": 19.6
+    "opp_implied": 19.6,
+    "next_week_opp": "@ NE",
+    "next_implied_total": 19.5
    },
    {
     "id": 4685553,
@@ -88230,7 +88968,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 28.3,
     "game_ou": 46.3,
-    "opp_implied": 18.0
+    "opp_implied": 18.0,
+    "next_week_opp": "vs LV",
+    "next_implied_total": 25.5
    },
    {
     "id": 4242433,
@@ -88463,7 +89203,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.1,
     "game_ou": 44.5,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs DET",
+    "next_implied_total": 27.5
    },
    {
     "id": 2973405,
@@ -88696,7 +89438,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 25.0,
     "game_ou": 47.4,
-    "opp_implied": 22.5
+    "opp_implied": 22.5,
+    "next_week_opp": "vs MIN",
+    "next_implied_total": 24.5
    },
    {
     "id": 4879276,
@@ -88929,7 +89673,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 21.1,
     "game_ou": 49.1,
-    "opp_implied": 28.1
+    "opp_implied": 28.1,
+    "next_week_opp": "@ BAL",
+    "next_implied_total": 19.5
    },
    {
     "id": 4243389,
@@ -89162,7 +89908,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.0,
     "game_ou": 48.6,
-    "opp_implied": 25.6
+    "opp_implied": 25.6,
+    "next_week_opp": "@ LA",
+    "next_implied_total": 19.5
    },
    {
     "id": 4039057,
@@ -89393,7 +90141,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.0,
     "game_ou": 42.8,
-    "opp_implied": 22.7
+    "opp_implied": 22.7,
+    "next_week_opp": "vs JAX",
+    "next_implied_total": 23.0
    },
    {
     "id": 4569382,
@@ -89626,7 +90376,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 26.0,
     "game_ou": 48.5,
-    "opp_implied": 22.5
+    "opp_implied": 22.5,
+    "next_week_opp": "vs NYG",
+    "next_implied_total": 28.5
    }
   ],
   "TE": [
@@ -89861,7 +90613,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 19.6,
     "game_ou": 42.2,
-    "opp_implied": 22.6
+    "opp_implied": 22.6,
+    "next_week_opp": "vs CAR",
+    "next_implied_total": 22.8
    },
    {
     "id": 4430027,
@@ -90094,7 +90848,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 28.1,
     "game_ou": 49.1,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ BUF",
+    "next_implied_total": 24.5
    },
    {
     "id": 5083076,
@@ -90327,7 +91083,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 16.5,
     "game_ou": 40.5,
-    "opp_implied": 24.0
+    "opp_implied": 24.0,
+    "next_week_opp": "@ TB",
+    "next_implied_total": 18.2
    },
    {
     "id": 3121023,
@@ -90560,7 +91318,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 25.7,
     "game_ou": 46.8,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ TEN",
+    "next_implied_total": 23.5
    },
    {
     "id": 15847,
@@ -90793,7 +91553,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.7,
     "game_ou": 42.8,
-    "opp_implied": 20.0
+    "opp_implied": 20.0,
+    "next_week_opp": "vs IND",
+    "next_implied_total": 26.8
    },
    {
     "id": 4242355,
@@ -91026,7 +91788,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.6,
     "game_ou": 48.6,
-    "opp_implied": 23.0
+    "opp_implied": 23.0,
+    "next_week_opp": "vs WAS",
+    "next_implied_total": 28.0
    },
    {
     "id": 3116365,
@@ -91259,7 +92023,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.8,
     "game_ou": 48.2,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs NO",
+    "next_implied_total": 27.0
    },
    {
     "id": 4361050,
@@ -91492,7 +92258,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.0,
     "game_ou": 48.6,
-    "opp_implied": 25.6
+    "opp_implied": 25.6,
+    "next_week_opp": "@ LA",
+    "next_implied_total": 19.5
    },
    {
     "id": 4036133,
@@ -91725,7 +92493,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.9,
     "game_ou": 45.0,
-    "opp_implied": 22.1
+    "opp_implied": 22.1,
+    "next_week_opp": "@ CHI",
+    "next_implied_total": 21.0
    },
    {
     "id": 5083315,
@@ -91958,7 +92728,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 18.4,
     "game_ou": 39.3,
-    "opp_implied": 20.9
+    "opp_implied": 20.9,
+    "next_week_opp": "vs GB",
+    "next_implied_total": 18.5
    },
    {
     "id": 4385690,
@@ -92191,7 +92963,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.1,
     "game_ou": 44.5,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs DET",
+    "next_implied_total": 27.5
    },
    {
     "id": 3046439,
@@ -92424,7 +93198,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 20.2,
     "game_ou": 44.1,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "vs PIT",
+    "next_implied_total": 24.0
    },
    {
     "id": 3929645,
@@ -92657,7 +93433,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 21.1,
     "game_ou": 49.1,
-    "opp_implied": 28.1
+    "opp_implied": 28.1,
+    "next_week_opp": "@ BAL",
+    "next_implied_total": 19.5
    },
    {
     "id": 4570037,
@@ -92890,7 +93668,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 26.0,
     "game_ou": 48.5,
-    "opp_implied": 22.5
+    "opp_implied": 22.5,
+    "next_week_opp": "vs NYG",
+    "next_implied_total": 28.5
    },
    {
     "id": 4430539,
@@ -93123,7 +93903,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 24.0,
     "game_ou": 40.5,
-    "opp_implied": 16.5
+    "opp_implied": 16.5,
+    "next_week_opp": "@ DEN",
+    "next_implied_total": 20.5
    },
    {
     "id": 3117256,
@@ -93356,7 +94138,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 44.5,
-    "opp_implied": 22.1
+    "opp_implied": 22.1,
+    "next_week_opp": "vs CIN",
+    "next_implied_total": 24.5
    },
    {
     "id": 4361411,
@@ -93365,7 +94149,7 @@
     "pro_team": "PIT",
     "injury_status": "ACTIVE",
     "lineup_slot": "",
-    "percent_owned": 10.56,
+    "percent_owned": 10.57,
     "total_points": 0.0,
     "avg_points": 0.0,
     "proj_total": 136.16,
@@ -93589,7 +94373,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.6,
     "game_ou": 42.2,
-    "opp_implied": 19.6
+    "opp_implied": 19.6,
+    "next_week_opp": "@ NE",
+    "next_implied_total": 19.5
    },
    {
     "id": 4360635,
@@ -93822,7 +94608,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 21.1,
     "game_ou": 46.8,
-    "opp_implied": 25.7
+    "opp_implied": 25.7,
+    "next_week_opp": "@ DAL",
+    "next_implied_total": 23.5
    },
    {
     "id": 4595342,
@@ -94055,7 +94843,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 28.3,
     "game_ou": 46.3,
-    "opp_implied": 18.0
+    "opp_implied": 18.0,
+    "next_week_opp": "vs LV",
+    "next_implied_total": 25.5
    },
    {
     "id": 4576297,
@@ -94288,7 +95078,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.9,
     "game_ou": 44.1,
-    "opp_implied": 20.2
+    "opp_implied": 20.2,
+    "next_week_opp": "@ ARI",
+    "next_implied_total": 27.2
    },
    {
     "id": 4686728,
@@ -94521,7 +95313,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.9,
     "game_ou": 39.3,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "vs PHI",
+    "next_implied_total": 19.0
    },
    {
     "id": 3123076,
@@ -94754,7 +95548,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 28.3,
     "game_ou": 46.3,
-    "opp_implied": 18.0
+    "opp_implied": 18.0,
+    "next_week_opp": "vs LV",
+    "next_implied_total": 25.5
    },
    {
     "id": 4367209,
@@ -94987,7 +95783,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 18.4,
     "game_ou": 40.4,
-    "opp_implied": 22.0
+    "opp_implied": 22.0,
+    "next_week_opp": "@ SF",
+    "next_implied_total": 18.0
    },
    {
     "id": 3051876,
@@ -95220,7 +96018,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.0,
     "game_ou": 42.8,
-    "opp_implied": 22.7
+    "opp_implied": 22.7,
+    "next_week_opp": "vs JAX",
+    "next_implied_total": 23.0
    },
    {
     "id": 4259147,
@@ -95453,7 +96253,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.5,
     "game_ou": 48.5,
-    "opp_implied": 26.0
+    "opp_implied": 26.0,
+    "next_week_opp": "vs MIA",
+    "next_implied_total": 28.5
    },
    {
     "id": 4243331,
@@ -95686,7 +96488,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.9,
     "game_ou": 51.4,
-    "opp_implied": 27.4
+    "opp_implied": 27.4,
+    "next_week_opp": "vs CLE",
+    "next_implied_total": 24.2
    },
    {
     "id": 3116164,
@@ -95919,7 +96723,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 27.4,
     "game_ou": 51.4,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "@ HOU",
+    "next_implied_total": 22.0
    },
    {
     "id": 4430802,
@@ -96152,7 +96958,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.6,
     "game_ou": 42.2,
-    "opp_implied": 19.6
+    "opp_implied": 19.6,
+    "next_week_opp": "@ NE",
+    "next_implied_total": 19.5
    },
    {
     "id": 2576925,
@@ -96385,7 +97193,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.5,
     "game_ou": 47.4,
-    "opp_implied": 25.0
+    "opp_implied": 25.0,
+    "next_week_opp": "@ ATL",
+    "next_implied_total": 21.2
    },
    {
     "id": 4242557,
@@ -96618,7 +97428,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 26.0,
     "game_ou": 48.5,
-    "opp_implied": 22.5
+    "opp_implied": 22.5,
+    "next_week_opp": "vs NYG",
+    "next_implied_total": 28.5
    },
    {
     "id": 4431574,
@@ -96851,7 +97663,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 25.7,
     "game_ou": 46.8,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ TEN",
+    "next_implied_total": 23.5
    },
    {
     "id": 4429086,
@@ -97084,7 +97898,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 22.0,
     "game_ou": 40.4,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "@ LAC",
+    "next_implied_total": 17.0
    },
    {
     "id": 3930086,
@@ -97317,7 +98133,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.1,
     "game_ou": 44.5,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs DET",
+    "next_implied_total": 27.5
    },
    {
     "id": 4429148,
@@ -97326,7 +98144,7 @@
     "pro_team": "NYG",
     "injury_status": "ACTIVE",
     "lineup_slot": "",
-    "percent_owned": 0.89,
+    "percent_owned": 0.9,
     "total_points": 0.0,
     "avg_points": 0.0,
     "proj_total": 61.85,
@@ -97550,7 +98368,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.0,
     "game_ou": 48.6,
-    "opp_implied": 25.6
+    "opp_implied": 25.6,
+    "next_week_opp": "@ LA",
+    "next_implied_total": 19.5
    },
    {
     "id": 4258595,
@@ -97783,7 +98603,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 25.0,
     "game_ou": 47.4,
-    "opp_implied": 22.5
+    "opp_implied": 22.5,
+    "next_week_opp": "vs MIN",
+    "next_implied_total": 24.5
    },
    {
     "id": 4678006,
@@ -98016,7 +98838,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.9,
     "game_ou": 44.1,
-    "opp_implied": 20.2
+    "opp_implied": 20.2,
+    "next_week_opp": "@ ARI",
+    "next_implied_total": 27.2
    },
    {
     "id": 4808766,
@@ -98249,7 +99073,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 18.4,
     "game_ou": 39.3,
-    "opp_implied": 20.9
+    "opp_implied": 20.9,
+    "next_week_opp": "vs GB",
+    "next_implied_total": 18.5
    },
    {
     "id": 2573401,
@@ -98482,7 +99308,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 26.0,
     "game_ou": 48.5,
-    "opp_implied": 22.5
+    "opp_implied": 22.5,
+    "next_week_opp": "vs NYG",
+    "next_implied_total": 28.5
    },
    {
     "id": 4431588,
@@ -98715,7 +99543,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.5,
     "game_ou": 47.4,
-    "opp_implied": 25.0
+    "opp_implied": 25.0,
+    "next_week_opp": "@ ATL",
+    "next_implied_total": 21.2
    },
    {
     "id": 4831959,
@@ -98948,7 +99778,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 20.2,
     "game_ou": 44.1,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "vs PIT",
+    "next_implied_total": 24.0
    },
    {
     "id": 4240472,
@@ -99181,7 +100013,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.7,
     "game_ou": 42.8,
-    "opp_implied": 20.0
+    "opp_implied": 20.0,
+    "next_week_opp": "vs IND",
+    "next_implied_total": 26.8
    },
    {
     "id": 4833029,
@@ -99414,7 +100248,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 26.0,
     "game_ou": 48.5,
-    "opp_implied": 22.5
+    "opp_implied": 22.5,
+    "next_week_opp": "vs NYG",
+    "next_implied_total": 28.5
    },
    {
     "id": 4702559,
@@ -99647,7 +100483,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 21.1,
     "game_ou": 49.1,
-    "opp_implied": 28.1
+    "opp_implied": 28.1,
+    "next_week_opp": "@ BAL",
+    "next_implied_total": 19.5
    },
    {
     "id": 4372780,
@@ -99880,7 +100718,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.5,
     "game_ou": 47.4,
-    "opp_implied": 25.0
+    "opp_implied": 25.0,
+    "next_week_opp": "@ ATL",
+    "next_implied_total": 21.2
    },
    {
     "id": 4428085,
@@ -100113,7 +100953,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.1,
     "game_ou": 45.0,
-    "opp_implied": 22.9
+    "opp_implied": 22.9,
+    "next_week_opp": "@ NYJ",
+    "next_implied_total": 24.0
    },
    {
     "id": 4036131,
@@ -100346,7 +101188,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 21.1,
     "game_ou": 49.1,
-    "opp_implied": 28.1
+    "opp_implied": 28.1,
+    "next_week_opp": "@ BAL",
+    "next_implied_total": 19.5
    },
    {
     "id": 4372096,
@@ -100579,7 +101423,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.6,
     "game_ou": 48.6,
-    "opp_implied": 23.0
+    "opp_implied": 23.0,
+    "next_week_opp": "vs WAS",
+    "next_implied_total": 28.0
    },
    {
     "id": 4427834,
@@ -100812,7 +101658,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 27.4,
     "game_ou": 51.4,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "@ HOU",
+    "next_implied_total": 22.0
    },
    {
     "id": 4426844,
@@ -101045,7 +101893,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 18.0,
     "game_ou": 46.3,
-    "opp_implied": 28.3
+    "opp_implied": 28.3,
+    "next_week_opp": "vs SEA",
+    "next_implied_total": 17.2
    },
    {
     "id": 4242392,
@@ -101278,7 +102128,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 28.1,
     "game_ou": 49.1,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ BUF",
+    "next_implied_total": 24.5
    },
    {
     "id": 15835,
@@ -101529,7 +102381,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 19.6,
     "game_ou": 42.2,
-    "opp_implied": 22.6
+    "opp_implied": 22.6,
+    "next_week_opp": "vs CAR",
+    "next_implied_total": 22.8
    },
    {
     "id": 3921690,
@@ -101762,7 +102616,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.9,
     "game_ou": 45.0,
-    "opp_implied": 22.1
+    "opp_implied": 22.1,
+    "next_week_opp": "@ CHI",
+    "next_implied_total": 21.0
    },
    {
     "id": 4912052,
@@ -101995,7 +102851,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.0,
     "game_ou": 42.8,
-    "opp_implied": 22.7
+    "opp_implied": 22.7,
+    "next_week_opp": "vs JAX",
+    "next_implied_total": 23.0
    },
    {
     "id": 4685504,
@@ -102228,7 +103086,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 25.0,
     "game_ou": 47.4,
-    "opp_implied": 22.5
+    "opp_implied": 22.5,
+    "next_week_opp": "vs MIN",
+    "next_implied_total": 24.5
    },
    {
     "id": 2468609,
@@ -102479,7 +103339,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 18.4,
     "game_ou": 40.4,
-    "opp_implied": 22.0
+    "opp_implied": 22.0,
+    "next_week_opp": "@ SF",
+    "next_implied_total": 18.0
    },
    {
     "id": 4695705,
@@ -102712,7 +103574,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 44.5,
-    "opp_implied": 22.1
+    "opp_implied": 22.1,
+    "next_week_opp": "vs CIN",
+    "next_implied_total": 24.5
    },
    {
     "id": 3127310,
@@ -102945,7 +103809,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 27.4,
     "game_ou": 51.4,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "@ HOU",
+    "next_implied_total": 22.0
    },
    {
     "id": 3911853,
@@ -103178,7 +104044,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.0,
     "game_ou": 42.8,
-    "opp_implied": 22.7
+    "opp_implied": 22.7,
+    "next_week_opp": "vs JAX",
+    "next_implied_total": 23.0
    },
    {
     "id": 4690923,
@@ -103411,7 +104279,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 21.1,
     "game_ou": 46.8,
-    "opp_implied": 25.7
+    "opp_implied": 25.7,
+    "next_week_opp": "@ DAL",
+    "next_implied_total": 23.5
    },
    {
     "id": 4426496,
@@ -103644,7 +104514,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 44.5,
-    "opp_implied": 22.1
+    "opp_implied": 22.1,
+    "next_week_opp": "vs CIN",
+    "next_implied_total": 24.5
    },
    {
     "id": 4573699,
@@ -103877,7 +104749,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.1,
     "game_ou": 44.5,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs DET",
+    "next_implied_total": 27.5
    },
    {
     "id": 2998565,
@@ -104110,7 +104984,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 48.2,
-    "opp_implied": 25.8
+    "opp_implied": 25.8,
+    "next_week_opp": "@ KC",
+    "next_implied_total": 20.8
    },
    {
     "id": 4360967,
@@ -104343,7 +105219,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.6,
     "game_ou": 48.6,
-    "opp_implied": 23.0
+    "opp_implied": 23.0,
+    "next_week_opp": "vs WAS",
+    "next_implied_total": 28.0
    },
    {
     "id": 4594749,
@@ -104574,7 +105452,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.6,
     "game_ou": 48.6,
-    "opp_implied": 23.0
+    "opp_implied": 23.0,
+    "next_week_opp": "vs WAS",
+    "next_implied_total": 28.0
    },
    {
     "id": 4432260,
@@ -104807,7 +105687,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.8,
     "game_ou": 48.2,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs NO",
+    "next_implied_total": 27.0
    },
    {
     "id": 4361516,
@@ -105040,7 +105922,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.9,
     "game_ou": 39.3,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "vs PHI",
+    "next_implied_total": 19.0
    },
    {
     "id": 3052897,
@@ -105273,7 +106157,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.8,
     "game_ou": 48.2,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs NO",
+    "next_implied_total": 27.0
    },
    {
     "id": 4686248,
@@ -105506,7 +106392,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 24.0,
     "game_ou": 40.5,
-    "opp_implied": 16.5
+    "opp_implied": 16.5,
+    "next_week_opp": "@ DEN",
+    "next_implied_total": 20.5
    },
    {
     "id": 4565859,
@@ -105739,7 +106627,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 16.5,
     "game_ou": 40.5,
-    "opp_implied": 24.0
+    "opp_implied": 24.0,
+    "next_week_opp": "@ TB",
+    "next_implied_total": 18.2
    },
    {
     "id": 3915486,
@@ -105972,7 +106862,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 28.1,
     "game_ou": 49.1,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ BUF",
+    "next_implied_total": 24.5
    },
    {
     "id": 4683243,
@@ -106205,7 +107097,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.5,
     "game_ou": 47.4,
-    "opp_implied": 25.0
+    "opp_implied": 25.0,
+    "next_week_opp": "@ ATL",
+    "next_implied_total": 21.2
    },
    {
     "id": 4241263,
@@ -106438,7 +107332,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 28.3,
     "game_ou": 46.3,
-    "opp_implied": 18.0
+    "opp_implied": 18.0,
+    "next_week_opp": "vs LV",
+    "next_implied_total": 25.5
    },
    {
     "id": 4361372,
@@ -106671,7 +107567,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 18.4,
     "game_ou": 39.3,
-    "opp_implied": 20.9
+    "opp_implied": 20.9,
+    "next_week_opp": "vs GB",
+    "next_implied_total": 18.5
    },
    {
     "id": 2975863,
@@ -106904,7 +107802,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.9,
     "game_ou": 44.1,
-    "opp_implied": 20.2
+    "opp_implied": 20.2,
+    "next_week_opp": "@ ARI",
+    "next_implied_total": 27.2
    },
    {
     "id": 4242536,
@@ -107155,7 +108055,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 21.1,
     "game_ou": 46.8,
-    "opp_implied": 25.7
+    "opp_implied": 25.7,
+    "next_week_opp": "@ DAL",
+    "next_implied_total": 23.5
    },
    {
     "id": 3843945,
@@ -107388,7 +108290,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 44.5,
-    "opp_implied": 22.1
+    "opp_implied": 22.1,
+    "next_week_opp": "vs CIN",
+    "next_implied_total": 24.5
    },
    {
     "id": 4360086,
@@ -107621,7 +108525,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.1,
     "game_ou": 45.0,
-    "opp_implied": 22.9
+    "opp_implied": 22.9,
+    "next_week_opp": "@ NYJ",
+    "next_implied_total": 24.0
    },
    {
     "id": 4241374,
@@ -107854,7 +108760,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 25.7,
     "game_ou": 46.8,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ TEN",
+    "next_implied_total": 23.5
    },
    {
     "id": 3054212,
@@ -108105,7 +109013,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 27.4,
     "game_ou": 51.4,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "@ HOU",
+    "next_implied_total": 22.0
    },
    {
     "id": 4372505,
@@ -108338,7 +109248,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.9,
     "game_ou": 51.4,
-    "opp_implied": 27.4
+    "opp_implied": 27.4,
+    "next_week_opp": "vs CLE",
+    "next_implied_total": 24.2
    },
    {
     "id": 4040612,
@@ -108571,7 +109483,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.5,
     "game_ou": 48.5,
-    "opp_implied": 26.0
+    "opp_implied": 26.0,
+    "next_week_opp": "vs MIA",
+    "next_implied_total": 28.5
    },
    {
     "id": 4596545,
@@ -108804,7 +109718,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 20.2,
     "game_ou": 44.1,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "vs PIT",
+    "next_implied_total": 24.0
    },
    {
     "id": 4917427,
@@ -109037,7 +109953,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 24.0,
     "game_ou": 40.5,
-    "opp_implied": 16.5
+    "opp_implied": 16.5,
+    "next_week_opp": "@ DEN",
+    "next_implied_total": 20.5
    },
    {
     "id": 4696700,
@@ -109270,7 +110188,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 18.0,
     "game_ou": 46.3,
-    "opp_implied": 28.3
+    "opp_implied": 28.3,
+    "next_week_opp": "vs SEA",
+    "next_implied_total": 17.2
    },
    {
     "id": 2531358,
@@ -109503,7 +110423,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.0,
     "game_ou": 48.6,
-    "opp_implied": 25.6
+    "opp_implied": 25.6,
+    "next_week_opp": "@ LA",
+    "next_implied_total": 19.5
    },
    {
     "id": 2975674,
@@ -109734,7 +110656,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.6,
     "game_ou": 42.2,
-    "opp_implied": 19.6
+    "opp_implied": 19.6,
+    "next_week_opp": "@ NE",
+    "next_implied_total": 19.5
    },
    {
     "id": 4242526,
@@ -109985,7 +110909,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 26.0,
     "game_ou": 48.5,
-    "opp_implied": 22.5
+    "opp_implied": 22.5,
+    "next_week_opp": "vs NYG",
+    "next_implied_total": 28.5
    },
    {
     "id": 4383440,
@@ -110218,7 +111144,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.0,
     "game_ou": 42.8,
-    "opp_implied": 22.7
+    "opp_implied": 22.7,
+    "next_week_opp": "vs JAX",
+    "next_implied_total": 23.0
    },
    {
     "id": 4373030,
@@ -110451,7 +111379,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 18.4,
     "game_ou": 40.4,
-    "opp_implied": 22.0
+    "opp_implied": 22.0,
+    "next_week_opp": "@ SF",
+    "next_implied_total": 18.0
    },
    {
     "id": 4722908,
@@ -110684,7 +111614,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 48.2,
-    "opp_implied": 25.8
+    "opp_implied": 25.8,
+    "next_week_opp": "@ KC",
+    "next_implied_total": 20.8
    },
    {
     "id": 4876132,
@@ -110917,7 +111849,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.8,
     "game_ou": 48.2,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs NO",
+    "next_implied_total": 27.0
    },
    {
     "id": 3052096,
@@ -111150,7 +112084,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 25.7,
     "game_ou": 46.8,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ TEN",
+    "next_implied_total": 23.5
    },
    {
     "id": 4035115,
@@ -111381,7 +112317,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 22.0,
     "game_ou": 40.4,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "@ LAC",
+    "next_implied_total": 17.0
    },
    {
     "id": 4365395,
@@ -111614,7 +112552,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 20.2,
     "game_ou": 44.1,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "vs PIT",
+    "next_implied_total": 24.0
    },
    {
     "id": 4362018,
@@ -111847,7 +112787,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 16.5,
     "game_ou": 40.5,
-    "opp_implied": 24.0
+    "opp_implied": 24.0,
+    "next_week_opp": "@ TB",
+    "next_implied_total": 18.2
    }
   ],
   "D/ST": [
@@ -112087,7 +113029,9 @@
     },
     "implied_total": 20.2,
     "game_ou": 44.1,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "vs PIT",
+    "next_implied_total": 24.0
    },
    {
     "id": -16008,
@@ -112325,7 +113269,9 @@
     },
     "implied_total": 28.1,
     "game_ou": 49.1,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ BUF",
+    "next_implied_total": 24.5
    },
    {
     "id": -16005,
@@ -112563,7 +113509,9 @@
     },
     "implied_total": 16.5,
     "game_ou": 40.5,
-    "opp_implied": 24.0
+    "opp_implied": 24.0,
+    "next_week_opp": "@ TB",
+    "next_implied_total": 18.2
    },
    {
     "id": -16030,
@@ -112572,7 +113520,7 @@
     "pro_team": "JAX",
     "injury_status": "",
     "lineup_slot": "",
-    "percent_owned": 50.81,
+    "percent_owned": 50.82,
     "total_points": 0.0,
     "avg_points": 0.0,
     "proj_total": 83.82,
@@ -112801,7 +113749,9 @@
     },
     "implied_total": 24.0,
     "game_ou": 40.5,
-    "opp_implied": 16.5
+    "opp_implied": 16.5,
+    "next_week_opp": "@ DEN",
+    "next_implied_total": 20.5
    },
    {
     "id": -16024,
@@ -112810,7 +113760,7 @@
     "pro_team": "LAC",
     "injury_status": "",
     "lineup_slot": "",
-    "percent_owned": 46.38,
+    "percent_owned": 46.39,
     "total_points": 0.0,
     "avg_points": 0.0,
     "proj_total": 93.8,
@@ -113039,7 +113989,9 @@
     },
     "implied_total": 28.3,
     "game_ou": 46.3,
-    "opp_implied": 18.0
+    "opp_implied": 18.0,
+    "next_week_opp": "vs LV",
+    "next_implied_total": 25.5
    },
    {
     "id": -16012,
@@ -113277,7 +114229,9 @@
     },
     "implied_total": 22.7,
     "game_ou": 42.8,
-    "opp_implied": 20.0
+    "opp_implied": 20.0,
+    "next_week_opp": "vs IND",
+    "next_implied_total": 26.8
    },
    {
     "id": -16016,
@@ -113515,7 +114469,9 @@
     },
     "implied_total": 22.9,
     "game_ou": 45.0,
-    "opp_implied": 22.1
+    "opp_implied": 22.1,
+    "next_week_opp": "@ CHI",
+    "next_implied_total": 21.0
    },
    {
     "id": -16009,
@@ -113753,7 +114709,9 @@
     },
     "implied_total": 22.1,
     "game_ou": 45.0,
-    "opp_implied": 22.9
+    "opp_implied": 22.9,
+    "next_week_opp": "@ NYJ",
+    "next_implied_total": 24.0
    },
    {
     "id": -16027,
@@ -113991,7 +114949,9 @@
     },
     "implied_total": 23.9,
     "game_ou": 51.4,
-    "opp_implied": 27.4
+    "opp_implied": 27.4,
+    "next_week_opp": "vs CLE",
+    "next_implied_total": 24.2
    },
    {
     "id": -16003,
@@ -114000,7 +114960,7 @@
     "pro_team": "CHI",
     "injury_status": "",
     "lineup_slot": "",
-    "percent_owned": 9.79,
+    "percent_owned": 9.8,
     "total_points": 0.0,
     "avg_points": 0.0,
     "proj_total": 86.64,
@@ -114229,7 +115189,9 @@
     },
     "implied_total": 25.0,
     "game_ou": 47.4,
-    "opp_implied": 22.5
+    "opp_implied": 22.5,
+    "next_week_opp": "vs MIN",
+    "next_implied_total": 24.5
    },
    {
     "id": -16006,
@@ -114467,7 +115429,9 @@
     },
     "implied_total": 25.6,
     "game_ou": 48.6,
-    "opp_implied": 23.0
+    "opp_implied": 23.0,
+    "next_week_opp": "vs WAS",
+    "next_implied_total": 28.0
    },
    {
     "id": -16025,
@@ -114705,7 +115669,9 @@
     },
     "implied_total": 22.5,
     "game_ou": 48.5,
-    "opp_implied": 26.0
+    "opp_implied": 26.0,
+    "next_week_opp": "vs MIA",
+    "next_implied_total": 28.5
    },
    {
     "id": -16002,
@@ -114943,7 +115909,9 @@
     },
     "implied_total": 22.1,
     "game_ou": 44.5,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs DET",
+    "next_implied_total": 27.5
    },
    {
     "id": -16010,
@@ -115181,7 +116149,9 @@
     },
     "implied_total": 20.9,
     "game_ou": 39.3,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "vs PHI",
+    "next_implied_total": 19.0
    },
    {
     "id": -16011,
@@ -115419,7 +116389,9 @@
     },
     "implied_total": 22.4,
     "game_ou": 48.2,
-    "opp_implied": 25.8
+    "opp_implied": 25.8,
+    "next_week_opp": "@ KC",
+    "next_implied_total": 20.8
    },
    {
     "id": -16018,
@@ -115657,7 +116629,9 @@
     },
     "implied_total": 21.1,
     "game_ou": 49.1,
-    "opp_implied": 28.1
+    "opp_implied": 28.1,
+    "next_week_opp": "@ BAL",
+    "next_implied_total": 19.5
    },
    {
     "id": -16019,
@@ -115895,7 +116869,9 @@
     },
     "implied_total": 23.0,
     "game_ou": 48.6,
-    "opp_implied": 25.6
+    "opp_implied": 25.6,
+    "next_week_opp": "@ LA",
+    "next_implied_total": 19.5
    },
    {
     "id": -16004,
@@ -116133,7 +117109,9 @@
     },
     "implied_total": 27.4,
     "game_ou": 51.4,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "@ HOU",
+    "next_implied_total": 22.0
    },
    {
     "id": -16013,
@@ -116371,7 +117349,9 @@
     },
     "implied_total": 22.0,
     "game_ou": 40.4,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "@ LAC",
+    "next_implied_total": 17.0
    },
    {
     "id": -16001,
@@ -116609,7 +117589,9 @@
     },
     "implied_total": 19.6,
     "game_ou": 42.2,
-    "opp_implied": 22.6
+    "opp_implied": 22.6,
+    "next_week_opp": "vs CAR",
+    "next_implied_total": 22.8
    },
    {
     "id": -16020,
@@ -116847,7 +117829,9 @@
     },
     "implied_total": 18.4,
     "game_ou": 39.3,
-    "opp_implied": 20.9
+    "opp_implied": 20.9,
+    "next_week_opp": "vs GB",
+    "next_implied_total": 18.5
    },
    {
     "id": -16029,
@@ -117085,7 +118069,9 @@
     },
     "implied_total": 22.5,
     "game_ou": 47.4,
-    "opp_implied": 25.0
+    "opp_implied": 25.0,
+    "next_week_opp": "@ ATL",
+    "next_implied_total": 21.2
    },
    {
     "id": -16028,
@@ -117323,7 +118309,9 @@
     },
     "implied_total": 21.1,
     "game_ou": 46.8,
-    "opp_implied": 25.7
+    "opp_implied": 25.7,
+    "next_week_opp": "@ DAL",
+    "next_implied_total": 23.5
    },
    {
     "id": -16015,
@@ -117561,7 +118549,9 @@
     },
     "implied_total": 18.4,
     "game_ou": 40.4,
-    "opp_implied": 22.0
+    "opp_implied": 22.0,
+    "next_week_opp": "@ SF",
+    "next_implied_total": 18.0
    },
    {
     "id": -16022,
@@ -117799,7 +118789,9 @@
     },
     "implied_total": 18.0,
     "game_ou": 46.3,
-    "opp_implied": 28.3
+    "opp_implied": 28.3,
+    "next_week_opp": "vs SEA",
+    "next_implied_total": 17.2
    }
   ],
   "K": [
@@ -117810,7 +118802,7 @@
     "pro_team": "LAR",
     "injury_status": "ACTIVE",
     "lineup_slot": "",
-    "percent_owned": 91.94,
+    "percent_owned": 91.95,
     "total_points": 0.0,
     "avg_points": 0.0,
     "proj_total": 159.53,
@@ -118034,7 +119026,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 26.0,
     "game_ou": 48.5,
-    "opp_implied": 22.5
+    "opp_implied": 22.5,
+    "next_week_opp": "vs NYG",
+    "next_implied_total": 28.5
    },
    {
     "id": 4686361,
@@ -118267,7 +119261,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 24.0,
     "game_ou": 40.5,
-    "opp_implied": 16.5
+    "opp_implied": 16.5,
+    "next_week_opp": "@ DEN",
+    "next_implied_total": 20.5
    },
    {
     "id": 4034949,
@@ -118500,7 +119496,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.5,
     "game_ou": 48.5,
-    "opp_implied": 26.0
+    "opp_implied": 26.0,
+    "next_week_opp": "vs MIA",
+    "next_implied_total": 28.5
    },
    {
     "id": 3055899,
@@ -118733,7 +119731,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.7,
     "game_ou": 42.8,
-    "opp_implied": 20.0
+    "opp_implied": 20.0,
+    "next_week_opp": "vs IND",
+    "next_implied_total": 26.8
    },
    {
     "id": 4697745,
@@ -118742,7 +119742,7 @@
     "pro_team": "BAL",
     "injury_status": "ACTIVE",
     "lineup_slot": "",
-    "percent_owned": 49.19,
+    "percent_owned": 49.18,
     "total_points": 0.0,
     "avg_points": 0.0,
     "proj_total": 145.93,
@@ -118966,7 +119966,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 25.8,
     "game_ou": 48.2,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs NO",
+    "next_implied_total": 27.0
    },
    {
     "id": 17427,
@@ -119199,7 +120201,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 25.0,
     "game_ou": 47.4,
-    "opp_implied": 22.5
+    "opp_implied": 22.5,
+    "next_week_opp": "vs MIN",
+    "next_implied_total": 24.5
    },
    {
     "id": 4567104,
@@ -119432,7 +120436,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.9,
     "game_ou": 45.0,
-    "opp_implied": 22.1
+    "opp_implied": 22.1,
+    "next_week_opp": "@ CHI",
+    "next_implied_total": 21.0
    },
    {
     "id": 3150744,
@@ -119665,7 +120671,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.9,
     "game_ou": 51.4,
-    "opp_implied": 27.4
+    "opp_implied": 27.4,
+    "next_week_opp": "vs CLE",
+    "next_implied_total": 24.2
    },
    {
     "id": 4360234,
@@ -119898,7 +120906,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 27.4,
     "game_ou": 51.4,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "@ HOU",
+    "next_implied_total": 22.0
    },
    {
     "id": 3050478,
@@ -120131,7 +121141,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 25.7,
     "game_ou": 46.8,
-    "opp_implied": 21.1
+    "opp_implied": 21.1,
+    "next_week_opp": "@ TEN",
+    "next_implied_total": 23.5
    },
    {
     "id": 4869461,
@@ -120364,7 +121376,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 22.1,
     "game_ou": 45.0,
-    "opp_implied": 22.9
+    "opp_implied": 22.9,
+    "next_week_opp": "@ NYJ",
+    "next_implied_total": 24.0
    },
    {
     "id": 2985659,
@@ -120597,7 +121611,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.0,
     "game_ou": 42.8,
-    "opp_implied": 22.7
+    "opp_implied": 22.7,
+    "next_week_opp": "vs JAX",
+    "next_implied_total": 23.0
    },
    {
     "id": 10621,
@@ -120830,7 +121846,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 19.6,
     "game_ou": 42.2,
-    "opp_implied": 22.6
+    "opp_implied": 22.6,
+    "next_week_opp": "vs CAR",
+    "next_implied_total": 22.8
    },
    {
     "id": 3917232,
@@ -121063,7 +122081,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.1,
     "game_ou": 44.5,
-    "opp_implied": 22.4
+    "opp_implied": 22.4,
+    "next_week_opp": "vs DET",
+    "next_implied_total": 27.5
    },
    {
     "id": 4569923,
@@ -121296,7 +122316,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 20.2,
     "game_ou": 44.1,
-    "opp_implied": 23.9
+    "opp_implied": 23.9,
+    "next_week_opp": "vs PIT",
+    "next_implied_total": 24.0
    },
    {
     "id": 5208518,
@@ -121529,7 +122551,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 21.1,
     "game_ou": 49.1,
-    "opp_implied": 28.1
+    "opp_implied": 28.1,
+    "next_week_opp": "@ BAL",
+    "next_implied_total": 19.5
    },
    {
     "id": 4249087,
@@ -121762,7 +122786,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 22.0,
     "game_ou": 40.4,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "@ LAC",
+    "next_implied_total": 17.0
    },
    {
     "id": 4259619,
@@ -121995,7 +123021,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 48.2,
-    "opp_implied": 25.8
+    "opp_implied": 25.8,
+    "next_week_opp": "@ KC",
+    "next_implied_total": 20.8
    },
    {
     "id": 3124679,
@@ -122228,7 +123256,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 18.4,
     "game_ou": 39.3,
-    "opp_implied": 20.9
+    "opp_implied": 20.9,
+    "next_week_opp": "vs GB",
+    "next_implied_total": 18.5
    },
    {
     "id": 5082424,
@@ -122461,7 +123491,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.0,
     "game_ou": 48.6,
-    "opp_implied": 25.6
+    "opp_implied": 25.6,
+    "next_week_opp": "@ LA",
+    "next_implied_total": 19.5
    },
    {
     "id": 4372066,
@@ -122694,7 +123726,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 21.1,
     "game_ou": 46.8,
-    "opp_implied": 25.7
+    "opp_implied": 25.7,
+    "next_week_opp": "@ DAL",
+    "next_implied_total": 23.5
    },
    {
     "id": 4568263,
@@ -122927,7 +123961,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 22.5,
     "game_ou": 47.4,
-    "opp_implied": 25.0
+    "opp_implied": 25.0,
+    "next_week_opp": "@ ATL",
+    "next_implied_total": 21.2
    },
    {
     "id": 15683,
@@ -123178,7 +124214,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 20.9,
     "game_ou": 39.3,
-    "opp_implied": 18.4
+    "opp_implied": 18.4,
+    "next_week_opp": "vs PHI",
+    "next_implied_total": 19.0
    },
    {
     "id": 4258620,
@@ -123411,7 +124449,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 16.5,
     "game_ou": 40.5,
-    "opp_implied": 24.0
+    "opp_implied": 24.0,
+    "next_week_opp": "@ TB",
+    "next_implied_total": 18.2
    },
    {
     "id": 4363538,
@@ -123644,7 +124684,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 18.0,
     "game_ou": 46.3,
-    "opp_implied": 28.3
+    "opp_implied": 28.3,
+    "next_week_opp": "vs SEA",
+    "next_implied_total": 17.2
    },
    {
     "id": 4566158,
@@ -123877,7 +124919,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 23.0,
     "game_ou": 48.6,
-    "opp_implied": 25.6
+    "opp_implied": 25.6,
+    "next_week_opp": "@ LA",
+    "next_implied_total": 19.5
    },
    {
     "id": 3049899,
@@ -124130,7 +125174,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 18.4,
     "game_ou": 40.4,
-    "opp_implied": 22.0
+    "opp_implied": 22.0,
+    "next_week_opp": "@ SF",
+    "next_implied_total": 18.0
    },
    {
     "id": 11122,
@@ -124381,7 +125427,9 @@
     "venue_str": "ドーム/天然芝",
     "implied_total": 18.4,
     "game_ou": 40.4,
-    "opp_implied": 22.0
+    "opp_implied": 22.0,
+    "next_week_opp": "@ SF",
+    "next_implied_total": 18.0
    },
    {
     "id": 4571557,
@@ -124614,7 +125662,9 @@
     "venue_str": "屋外/人工芝",
     "implied_total": 22.4,
     "game_ou": 48.2,
-    "opp_implied": 25.8
+    "opp_implied": 25.8,
+    "next_week_opp": "@ KC",
+    "next_implied_total": 20.8
    },
    {
     "id": 16339,
@@ -124905,7 +125955,9 @@
     "venue_str": "屋外/天然芝",
     "implied_total": 18.4,
     "game_ou": 39.3,
-    "opp_implied": 20.9
+    "opp_implied": 20.9,
+    "next_week_opp": "vs GB",
+    "next_implied_total": 18.5
    },
    {
     "id": 4570688,
@@ -125192,7 +126244,9 @@
     "venue_str": "ドーム/人工芝",
     "implied_total": 21.1,
     "game_ou": 49.1,
-    "opp_implied": 28.1
+    "opp_implied": 28.1,
+    "next_week_opp": "@ BAL",
+    "next_implied_total": 19.5
    }
   ]
  },
@@ -125201,6 +126255,20 @@
   "reg_season_count": 14
  },
  "recent_activity": [
+  {
+   "date": 1786967053369,
+   "team": "Fourth and Way Down",
+   "action": "DROPPED",
+   "player": "Dak Prescott",
+   "bid": 0
+  },
+  {
+   "date": 1786967053369,
+   "team": "Fourth and Way Down",
+   "action": "FA ADDED",
+   "player": "Justin Herbert",
+   "bid": 0
+  },
   {
    "date": 1786786056390,
    "team": "Fuward Trump",
@@ -125217,5 +126285,6 @@
   }
  ],
  "has_odds": true,
+ "has_next_odds": true,
  "dst_metrics_season": 2025
 }
