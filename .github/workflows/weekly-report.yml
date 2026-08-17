@@ -1,0 +1,55 @@
+name: Weekly Report
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 水曜 12:17 JST (水曜 03:17 UTC) — Waiver/FA判断用
+    - cron: "17 3 * * 3"
+    # 日曜 12:17 JST (日曜 03:17 UTC) — スタメン大枠決定用
+    - cron: "17 3 * * 0"
+    # 月曜 00:45 JST (日曜 15:45 UTC) — 直前チェック(9-10月のinactives発表直後)
+    - cron: "45 15 * * 0"
+    # 月曜 01:45 JST (日曜 16:45 UTC) — 直前チェック(11月以降のinactives発表直後)
+    - cron: "45 16 * * 0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-report
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate report
+        env:
+          LEAGUE_ID: ${{ secrets.LEAGUE_ID }}
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          SWID: ${{ secrets.SWID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python scripts/weekly_report.py
+
+      - name: Commit and push report
+        run: |
+          git config user.name "ff-analytics bot"
+          git config user.email "actions@github.com"
+          git add docs
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "report: weekly update ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git pull --rebase origin main
+            git push origin main
+          fi
