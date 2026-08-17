@@ -242,9 +242,12 @@ def render(ctx):
         threat = max((t for t in teams if t["team_id"] != my_id),
                      key=lambda t: sim["teams"][t["team_id"]]["champ_pct"])
         tm = sim["teams"][threat["team_id"]]
+        all_in = sim.get("all_in_playoffs")
+        po_label = (f"上位2シード(W15 Bye)獲得 {me.get('bye_pct', 0)}%" if all_in
+                    else f"PO進出 {me['playoff_pct']}%")
         s.append("<div class='banner'>")
         s.append(f"<div class='big'>優勝確率 {me['champ_pct']}%{delta_html}</div>")
-        s.append(f"<div class='line'>PO進出 {me['playoff_pct']}% / 最大の脅威: "
+        s.append(f"<div class='line'>{po_label} / 最大の脅威: "
                  f"{esc(names[threat['team_id']])} (優勝{tm['champ_pct']}%)</div>")
         cond = sim.get("conditional")
         if cond:
@@ -259,14 +262,17 @@ def render(ctx):
         s.append("</div>")
 
     # ③ 順位 + 確率
+    all_in = (sim or {}).get("all_in_playoffs")
+    po_col = "Bye獲得%" if all_in else "PO進出%"
     s.append("<h2>順位とシミュレーション</h2><div class='card'><table>")
-    s.append("<tr><th>#</th><th>チーム</th><th>成績</th><th class='num'>PF</th>"
-             "<th class='num'>PA</th><th>PO進出%</th><th>優勝%</th><th class='num'>平均勝数</th></tr>")
+    s.append(f"<tr><th>#</th><th>チーム</th><th>成績</th><th class='num'>PF</th>"
+             f"<th class='num'>PA</th><th>{po_col}</th><th>優勝%</th><th class='num'>平均勝数</th></tr>")
     for t in sorted(teams, key=lambda t: (t.get("standing") or 99)):
         tid = t["team_id"]
         cls = " class='me'" if tid == my_id else ""
         m = (sim or {}).get("teams", {}).get(tid, {})
-        po, ch = m.get("playoff_pct", 0), m.get("champ_pct", 0)
+        po = m.get("bye_pct", 0) if all_in else m.get("playoff_pct", 0)
+        ch = m.get("champ_pct", 0)
         sw = team_color(tids, tid)
         s.append(f"<tr{cls}><td>{t.get('standing', '')}</td>"
                  f"<td><span class='sw' style='display:inline-block;width:10px;height:10px;"
@@ -282,6 +288,7 @@ def render(ctx):
     s.append("</table>")
     if sim:
         s.append(f"<div class='note'>モンテカルロ{sim['sims']:,}回。前提: {esc(sim['assumption'])}。"
+                 + ("全チームがW15-17に進出する形式のため「Bye獲得%」(レギュラー2位以内でW15を休める確率)を表示。" if all_in else "")
                  + ("W1-3は季節予測への依存が大きく確率は過信しないこと。" if week <= 3 else "")
                  + "</div>")
     s.append("</div>")

@@ -86,6 +86,10 @@ POS_WEEKLY_SD = {
 
 # プレーオフ設定のフォールバック(ESPN設定が取れない場合に使用)
 PLAYOFF_TEAMS_FALLBACK = 4
+
+# リーグ独自ルール: プレーオフのホームアドバンテージ
+# W15(1回戦)・W16(準決勝)はレギュラーシーズン順位が上のチームに加算。W17決勝は中立
+PLAYOFF_HOME_BONUS = 5.0
 DIAMOND_BACKING = {
     "WR": {"ts": 0.15, "snap": 0.55},
     "TE": {"ts": 0.13, "snap": 0.50},
