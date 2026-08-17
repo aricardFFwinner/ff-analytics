@@ -111,7 +111,7 @@ def maybe_gemini_comment(ai_summary):
     key = os.environ.get("GEMINI_API_KEY", "").strip()
     if not key:
         return None
-    model = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+    model = os.environ.get("GEMINI_MODEL", "gemini-3.5-flash")
     try:
         import urllib.request
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
