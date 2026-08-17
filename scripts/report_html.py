@@ -61,7 +61,8 @@ def render(ctx):
     if (ctx.get("opp_info") or {}).get("available"):
         sources += " + 機会指標(nflverse)"
     s.append(f"<div class='sub'>生成: {esc(ctx['generated_at'])} (日本時間) / チーム: {esc(ctx['my_team_name'])} / "
-             f"データ: {sources}{esc(ctx.get('mode_note',''))}</div>")
+             f"データ: {sources}{esc(ctx.get('mode_note',''))} / "
+             f"<a href='dashboard.html'>📊 リーグダッシュボード →</a></div>")
 
     # 推奨スタメン
     has_odds = ctx.get("has_odds")

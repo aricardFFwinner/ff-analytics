@@ -103,11 +103,62 @@ def main():
     for p in ranked:
         if p["id"] not in drafted and len(fa[p["position"]]) < 100:
             fa[p["position"]].append(p)
-    # 2025年出場済みで2024実績ゼロ(=無名)の選手もFA末尾に含まれていることを確認
+
+    # --- P2用: リーグ内対戦(6チーム総当たりの繰り返し)と週次スコア・成績 ---
+    # サークル法の5ラウンドを14週にわたって繰り返す
+    rounds = []
+    ids = [1, 2, 3, 4, 5, 6]
+    for r in range(5):
+        rot = [ids[0]] + ids[1:][r:] + ids[1:][:r]
+        rounds.append([(rot[0], rot[5]), (rot[1], rot[4]), (rot[2], rot[3])])
+    for t in teams:
+        t["matchups"], t["weekly_scores"] = {}, {}
+    for wk in range(1, 15):
+        for a, b in rounds[(wk - 1) % 5]:
+            teams[a - 1]["matchups"][wk] = b
+            teams[b - 1]["matchups"][wk] = a
+
+    def best_lineup_actual(roster, wk):
+        """その週の実績ptベースの最適スタメン合計(モック用の簡易版、K/DSTなし)。"""
+        slots = {"QB": 1, "RB": 2, "WR": 2, "TE": 1}
+        pool = sorted(roster, key=lambda p: p["weekly_actual"].get(str(wk), 0.0), reverse=True)
+        total, used = 0.0, set()
+        for pos, need in slots.items():
+            got = 0
+            for p in pool:
+                if got >= need:
+                    break
+                if p["id"] in used or p["position"] != pos:
+                    continue
+                total += p["weekly_actual"].get(str(wk), 0.0)
+                used.add(p["id"])
+                got += 1
+        for p in pool:  # FLEX
+            if p["id"] not in used and p["position"] in ("RB", "WR", "TE"):
+                total += p["weekly_actual"].get(str(wk), 0.0)
+                break
+        return round(total, 1)
+
+    for wk in range(1, upto_week + 1):
+        for t in teams:
+            t["weekly_scores"][wk] = best_lineup_actual(t["roster"], wk)
+    for t in teams:
+        t["wins"] = sum(1 for wk, sc in t["weekly_scores"].items()
+                        if sc > teams[t["matchups"][wk] - 1]["weekly_scores"].get(wk, 0))
+        t["losses"] = len(t["weekly_scores"]) - t["wins"]
+        t["points_for"] = round(sum(t["weekly_scores"].values()), 1)
+        t["points_against"] = round(sum(
+            teams[t["matchups"][wk] - 1]["weekly_scores"].get(wk, 0)
+            for wk in t["weekly_scores"]), 1)
+    order = sorted(teams, key=lambda t: (-t["wins"], -t["points_for"]))
+    for i, t in enumerate(order):
+        t["standing"] = i + 1
+
     snapshot = {
         "league_name": "MOCK Outsidrs_FFNFL (2025 as-of検証)",
         "season": 2025, "current_week": upto_week + 1, "my_team_id": 1,
         "teams": teams, "free_agents": fa,
+        "settings": {"playoff_team_count": 4, "reg_season_count": 14},
     }
     with open(out, "w", encoding="utf-8") as f:
         json.dump(snapshot, f, ensure_ascii=False)

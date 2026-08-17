@@ -217,6 +217,14 @@ def main():
     with open(os.path.join(DOCS, "data.json"), "w", encoding="utf-8") as f:
         json.dump(snapshot, f, ensure_ascii=False, indent=1)
 
+    # P2: リーグダッシュボード(失敗しても週次レポートは維持)
+    try:
+        import dashboard
+        print(dashboard.build_and_write(snapshot, week, ctx["generated_at"]))
+    except Exception as e:
+        print(f"[warn] ダッシュボード生成に失敗(週次レポートのみ): {e}")
+        traceback.print_exc()
+
     # Actionsログ用サマリー
     print("=" * 50)
     print(f"レポート生成完了: {snapshot['league_name']} Week {week}{mode_note}")

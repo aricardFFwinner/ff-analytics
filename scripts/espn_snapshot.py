@@ -64,6 +64,21 @@ def fetch_snapshot():
         owner = ""
         if t.owners and isinstance(t.owners, list) and isinstance(t.owners[0], dict):
             owner = t.owners[0].get("firstName", "") or ""
+
+        # リーグ内対戦スケジュール(P2ダッシュボード用): {week: 相手team_id}
+        matchups, weekly_scores = {}, {}
+        try:
+            for i, opp in enumerate(t.schedule or []):
+                wk = i + 1
+                opp_id = getattr(opp, "team_id", None)
+                if opp_id is not None:
+                    matchups[wk] = opp_id
+            for i, sc in enumerate(getattr(t, "scores", []) or []):
+                if sc:
+                    weekly_scores[i + 1] = round(float(sc), 1)
+        except Exception as e:
+            print(f"[warn] チーム{t.team_id}の日程取得失敗(続行): {e}")
+
         teams.append({
             "team_id": t.team_id,
             "name": t.team_name,
@@ -75,6 +90,8 @@ def fetch_snapshot():
             "waiver_rank": getattr(t, "waiver_rank", 0),
             "playoff_pct": round(getattr(t, "playoff_pct", 0.0), 1),
             "standing": getattr(t, "standing", 0),
+            "matchups": matchups,
+            "weekly_scores": weekly_scores,
             "roster": [_player_to_dict(p, current_week) for p in t.roster],
         })
 
@@ -87,6 +104,16 @@ def fetch_snapshot():
             players = []
         fa[pos] = [_player_to_dict(p, current_week) for p in players]
 
+    # プレーオフ設定(P2ダッシュボード用)
+    settings = {}
+    try:
+        settings = {
+            "playoff_team_count": int(getattr(lg.settings, "playoff_team_count", 0) or 0),
+            "reg_season_count": int(getattr(lg.settings, "reg_season_count", 0) or 0),
+        }
+    except Exception as e:
+        print(f"[warn] リーグ設定の取得失敗(続行): {e}")
+
     return {
         "league_name": lg.settings.name,
         "season": SEASON,
@@ -94,4 +121,5 @@ def fetch_snapshot():
         "my_team_id": MY_TEAM_ID,
         "teams": teams,
         "free_agents": fa,
+        "settings": settings,
     }
