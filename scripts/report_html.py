@@ -58,6 +58,8 @@ def render(ctx):
     sources = "ESPN予測 + NFL日程 + 天候(Open-Meteo)"
     if ctx.get("has_odds"):
         sources += " + ブックメーカーライン(The Odds API)"
+    if (ctx.get("opp_info") or {}).get("available"):
+        sources += " + 機会指標(nflverse)"
     s.append(f"<div class='sub'>生成: {esc(ctx['generated_at'])} (日本時間) / チーム: {esc(ctx['my_team_name'])} / "
              f"データ: {sources}{esc(ctx.get('mode_note',''))}</div>")
 
@@ -130,6 +132,71 @@ def render(ctx):
             for c in ctx["close_calls"]) + "</div>")
     s.append("</div>")
 
+    # P1.5: 機会指標アラート
+    oi = ctx.get("opp_info") or {}
+    if oi.get("available"):
+        early = oi["mode"] == "early"
+        mode_tag = ("<span class='tag warn'>アーリーモード(単週判定)</span>" if early
+                    else "<span class='tag good'>通常モード</span>")
+        s.append(f"<h2>機会指標アラート <span class='sub'>(nflverse実データ W{oi['last_week']}時点)</span></h2>")
+        s.append("<div class='card'>")
+        s.append(f"<div class='note'>{mode_tag} 🔥=機会はスタメン級・得点まだ(ブレイク前夜、即獲得検討) "
+                 "👀=その一歩手前 💎=得点も機会も実証済みなのにFA放置 ⚠️=自軍で機会減少中(売り時)。"
+                 "「E」付きは単週データ判定(確度低め。ただし機会は嘘をつきにくい)。</div>")
+        if oi.get("small_sample"):
+            s.append("<div class='note'>⚠ データが2週以下のため小サンプル。閾値は意図的に「速度優先」設定"
+                     "(6人リーグは誤拾いコスト≈0、見逃しコスト大)。</div>")
+
+        if oi.get("swap_pairs"):
+            s.append("<table><tr><th>入れ替え案</th><th>獲得</th><th>放出</th>"
+                     "<th class='num'>ネット改善</th></tr>")
+            for i, sp in enumerate(oi["swap_pairs"][:5], 1):
+                a, d = sp["add"], sp["drop"]
+                net_cls = "gain-pos" if sp["net"] > 0 else ""
+                s.append(f"<tr><td><b>案{i}</b></td>"
+                         f"<td>{esc(a['opp_tag'])} <b>{esc(a['name'])}</b> ({esc(a['position'])}/{esc(a['pro_team'])})"
+                         f"<br><span class='sub'>{sp['add_value']}pt/G ({esc(sp['add_basis'])})</span></td>"
+                         f"<td>{esc(d['name'])} ({esc(d['position'])})"
+                         f"<br><span class='sub'>{sp['drop_value']}pt/G ({esc(sp['drop_basis'])}) {esc(sp['drop_zone_note'])}</span></td>"
+                         f"<td class='num'><span class='{net_cls}'>{sp['net']:+}</span></td></tr>")
+            s.append("</table>")
+
+        if oi.get("fa_tagged"):
+            s.append("<table style='margin-top:10px'><tr><th></th><th>FA選手</th><th>Pos/Team</th>"
+                     "<th class='num'>Snap%</th><th class='num'>TS%/加重機会</th><th class='num'>WOPR</th>"
+                     "<th class='num'>RZ(2週)</th><th class='num'>直近pt/G</th><th class='num'>xFP/G</th><th>傾向</th></tr>")
+            for p in oi["fa_tagged"][:12]:
+                o = p.get("opp") or {}
+                snap = f"{round(o['snap']*100)}" if o.get("snap") is not None else "-"
+                if p["position"] == "RB":
+                    usage = f"{round(o['wtd_avg'],1)}" if o.get("wtd_avg") is not None else "-"
+                else:
+                    usage = f"{round(o['ts_avg']*100)}%" if o.get("ts_avg") is not None else "-"
+                wopr = f"{o['wopr_avg']:.2f}" if o.get("wopr_avg") is not None else "-"
+                ppg = o.get("ppg3", "-")
+                xfp = o.get("xfp3", "-") if o.get("xfp3") is not None else "-"
+                s.append(f"<tr><td>{esc(p['opp_tag'])}</td><td><b>{esc(p['name'])}</b>{_inj_tag(p.get('injury_status'))}</td>"
+                         f"<td>{esc(p['position'])}/{esc(p['pro_team'])}</td>"
+                         f"<td class='num'>{snap}</td><td class='num'>{usage}</td><td class='num'>{wopr}</td>"
+                         f"<td class='num'>{o.get('rz2','-')}</td><td class='num'><b>{ppg}</b></td>"
+                         f"<td class='num'>{xfp}</td><td>{esc(o.get('trend','-'))}</td></tr>")
+            s.append("</table>")
+            st = oi.get("startable") or {}
+            s.append("<div class='note'>スタメン級ライン(直近実PPG基準): "
+                     + " / ".join(f"{esc(k)} {v}pt" for k, v in st.items())
+                     + "。xFP/G=機会から算出した期待FP(参考列)。直近pt/Gがこれより大きく下なら不運の可能性=買い。</div>")
+
+        if oi.get("my_sell"):
+            s.append("<table style='margin-top:10px'><tr><th>⚠️ 自軍の売り時シグナル</th><th>理由</th></tr>")
+            for p in oi["my_sell"]:
+                s.append(f"<tr><td><b>{esc(p['name'])}</b> ({esc(p['position'])}/{esc(p['pro_team'])})</td>"
+                         f"<td>{esc(p.get('sell_reason',''))}</td></tr>")
+            s.append("</table><div class='note'>ブローアウト週(21点差以上)は判定から除外済み。怪我による欠場明けは1週見てから判断。</div>")
+
+        if not oi.get("fa_tagged") and not oi.get("my_sell") and not oi.get("swap_pairs"):
+            s.append("<div class='note'>今週のアラートなし(タグ条件を満たす選手がいません)。</div>")
+        s.append("</div>")
+
     # FA推奨
     s.append("<h2>FA / Waiver おすすめ</h2>")
     for pos, r in ctx["recs"].items():
@@ -139,18 +206,28 @@ def render(ctx):
         worst_note = f"あなたの同ポジ最弱: {esc(my_worst[0])} {my_worst[1]}pt" if my_worst else "同ポジの保有なし"
         fa_tot_th = "<th class='num'>自軍Tot</th>" if has_odds else ""
         s.append(f"<div class='card'><b>{esc(pos)}</b> <span class='sub'>({worst_note})</span><table>")
+        opp_th = ("<th class='num'>Snap%</th><th class='num'>直近pt/G</th><th>傾向</th>"
+                  if (ctx.get("opp_info") or {}).get("available") and pos not in ("D/ST", "K") else "")
         s.append(f"<tr><th>選手</th><th>Team</th><th>今週の相手</th>{fa_tot_th}<th class='num'>予測pt</th>"
-                 "<th class='num'>最弱比</th><th class='num'>own%</th></tr>")
+                 f"<th class='num'>最弱比</th>{opp_th}<th class='num'>own%</th></tr>")
         for x in r["fa"]:
             gain = x.get("gain_vs_my_worst")
             gain_html = f"<span class='gain-pos'>+{gain}</span>" if (gain is not None and gain > 0) else (esc(gain) if gain is not None else "-")
+            opp_td = ""
+            if opp_th:
+                o = x.get("opp") or {}
+                snap = f"{round(o['snap']*100)}" if o.get("snap") is not None else "-"
+                ppg = o.get("ppg3", "-") if o.get("ppg3") is not None else "-"
+                tag = f" {esc(x['opp_tag'])}" if x.get("opp_tag") else ""
+                opp_td = (f"<td class='num'>{snap}</td><td class='num'>{ppg}</td>"
+                          f"<td>{esc(o.get('trend','-'))}{tag}</td>")
             s.append(f"<tr><td>{_name_cell(x)}</td><td>{esc(x['pro_team'])}</td>"
                      f"<td>{_opp_cell(x)}</td>{_tot_cell(x)}<td class='num'>{x['score']}</td>"
-                     f"<td class='num'>{gain_html}</td><td class='num'>{esc(x.get('percent_owned',''))}</td></tr>")
+                     f"<td class='num'>{gain_html}</td>{opp_td}<td class='num'>{esc(x.get('percent_owned',''))}</td></tr>")
         s.append("</table></div>")
     if ctx["drop_candidates"]:
-        s.append("<div class='note'>ドロップ候補(低予測順、\"R\"=ルーキー): " + ", ".join(
-            f"{esc(n)}({esc(p)}) {sc}pt" for n, p, sc in ctx["drop_candidates"]) + "</div>")
+        s.append("<div class='note'>ドロップ候補(低予測順、\"R\"=ルーキー、✅=期待も機会も低く安全 / 🟡=期待は高いが機会低下・1週様子見推奨): " + ", ".join(
+            f"{esc(z)}{esc(n)}({esc(p)}) {sc}pt" for n, p, sc, z in ctx["drop_candidates"]) + "</div>")
 
     # ルーキールール(Week5まで)
     ri = ctx.get("rookie_info")

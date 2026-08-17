@@ -95,10 +95,13 @@ def fa_recommendations(snapshot, week, top_n=8):
          for p in my_team["roster"]],
         key=lambda x: x[2],
     )
+    zone_by_name = {p["name"]: p.get("drop_zone") for p in my_team["roster"]}
+    zone_icon = {"safe": "✅", "hold": "🚫", "watch": "🟡", "core": "🚫"}
     drop_candidates = [
-        (n, pos + (" R" if rk else ""), s)
+        (n, pos + (" R" if rk else ""), s, zone_icon.get(zone_by_name.get(n), ""))
         for n, pos, s, rk in all_mine_scored
         if pos not in ("D/ST", "K") and not (rk and protect_rookies)
+        and zone_by_name.get(n) not in ("hold", "core")
     ][:3]
 
     recs = {}
@@ -202,7 +205,7 @@ def league_table(snapshot):
 
 
 def build_ai_summary(snapshot, week, starters, bench, close_calls, recs, drop_candidates,
-                     rookie_info=None):
+                     rookie_info=None, opp_info=None):
     """無料AIに貼り付ける用の要約テキスト。"""
     my_team = next(t for t in snapshot["teams"] if t["team_id"] == snapshot["my_team_id"])
     L = []
@@ -244,7 +247,28 @@ def build_ai_summary(snapshot, week, starters, bench, close_calls, recs, drop_ca
             for x in r["fa"][:3])
         L.append(f'  {pos}: {tops}')
     if drop_candidates:
-        L.append("■ドロップ候補(自ロスター低予測順、\"R\"=ルーキー): " + ", ".join(f'{n}({p}){s}pt' for n, p, s in drop_candidates))
+        L.append("■ドロップ候補(自ロスター低予測順、\"R\"=ルーキー、✅=期待も機会も低く安全/🟡=期待は高いが機会低下・1週様子見推奨): "
+                 + ", ".join(f'{z}{n}({p}){s}pt' for n, p, s, z in drop_candidates))
+    if opp_info and opp_info.get("available"):
+        mode_s = "アーリーモード(単週判定・確度低め)" if opp_info["mode"] == "early" else "通常モード"
+        L.append(f'■機会指標アラート(nflverse実データ W{opp_info["last_week"]}時点、{mode_s}):')
+        L.append("  タグ: 🔥=機会がスタメン級なのに得点まだ(ブレイク前夜・即獲得検討) 👀=その一歩手前 "
+                 "💎=既に得点も機会も実証済みなのにFAに放置 ⚠️=自軍で機会が減少中(売り時)")
+        for p in opp_info["fa_tagged"][:8]:
+            o = p.get("opp") or {}
+            det = []
+            if o.get("snap") is not None:
+                det.append(f'Snap{round(o["snap"]*100)}%')
+            if o.get("ts") is not None and p["position"] != "QB":
+                det.append(f'TS{round(o["ts"]*100)}%')
+            if o.get("ppg3") is not None:
+                det.append(f'直近{o["ppg3"]}pt/G')
+            L.append(f'  {p["opp_tag"]} {p["name"]} ({p["position"]}/{p["pro_team"]}) ' + " ".join(det))
+        for p in opp_info["my_sell"]:
+            L.append(f'  ⚠️ {p["name"]} (自軍{p["position"]}): {p.get("sell_reason","機会低下")}')
+        for sp in opp_info["swap_pairs"][:5]:
+            L.append(f'  入替案: {sp["add"]["opp_tag"]}{sp["add"]["name"]}を獲得 ⇄ '
+                     f'{sp["drop"]["name"]}を放出 ({sp["drop_zone_note"]}) ネット{sp["net"]:+}pt/G')
     if rookie_info:
         L.append(f'■リーグルール: Week{rookie_info["until_week"]}終了までNFL1年目の選手を常に{rookie_info["min_count"]}人以上ロスターに保持する義務あり。')
         L.append(f'  現在の保有ルーキー({rookie_info["my_count"]}人): ' + ", ".join(

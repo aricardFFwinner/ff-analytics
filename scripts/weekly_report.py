@@ -170,6 +170,14 @@ def main():
     week = int(snapshot.get("current_week") or 1)
     enrich_with_nfl_schedule(snapshot, week)
 
+    # P1.5: 機会指標(nflverse)。開幕前・取得失敗時は available=False で続行
+    try:
+        import opportunity
+        opp_info = opportunity.annotate_snapshot(snapshot, week)
+    except Exception as e:
+        print(f"[warn] 機会指標の統合に失敗(なしで続行): {e}")
+        opp_info = {"available": False}
+
     my_team = next(t for t in snapshot["teams"] if t["team_id"] == snapshot["my_team_id"])
     starters, bench, close_calls = analysis.pick_lineup(my_team["roster"], week)
     recs, drop_candidates = analysis.fa_recommendations(snapshot, week)
@@ -179,7 +187,7 @@ def main():
     league = analysis.league_table(snapshot)
     ai_summary = analysis.build_ai_summary(
         snapshot, week, starters, bench, close_calls, recs, drop_candidates,
-        rookie_info=rookie_info)
+        rookie_info=rookie_info, opp_info=opp_info)
     ai_comment = maybe_gemini_comment(ai_summary)
 
     now = datetime.now(JST)
@@ -195,6 +203,7 @@ def main():
         "ai_summary": ai_summary, "ai_comment": ai_comment,
         "has_odds": snapshot.get("has_odds", False),
         "rookie_info": rookie_info,
+        "opp_info": opp_info,
     }
     html_text = report_html.render(ctx)
 
