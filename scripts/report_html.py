@@ -68,6 +68,18 @@ def render(ctx):
     s.append(f"<tr><th>枠</th><th>選手</th><th>Pos/Team</th><th>今週の相手</th><th>キックオフ(日本)</th>"
              f"<th>会場/天候</th>{tot_th}<th class='num'>予測pt</th></tr>")
 
+    def _name_cell(p):
+        r = " <span class='tag'>R</span>" if p.get("is_rookie") else ""
+        return f"{esc(p['name'])}{r}{_inj_tag(p.get('injury_status'))}"
+
+    def _opp_cell(p):
+        v = esc(p.get("this_week_opp", ""))
+        m = p.get("dst_opp_metrics")
+        if m:
+            v += (f"<br><span class='sub'>被Sk{m['sk_g']}/G・TO{m['to_g']}/G"
+                  f" ({m['season']}実績)</span>")
+        return v
+
     def _venue_cell(p):
         v = esc(p.get("venue_str", ""))
         w = p.get("weather_str", "")
@@ -79,6 +91,14 @@ def render(ctx):
     def _tot_cell(p):
         if not has_odds:
             return ""
+        if p.get("position") == "D/ST":
+            # DSTは相手オフェンスの予想得点が低いほど良い(表示・色を反転)
+            it = p.get("opp_implied")
+            if it is None:
+                return "<td class='num'>-</td>"
+            hi = " style='color:var(--good);font-weight:600'" if it <= 18 else (
+                 " style='color:var(--bad)'" if it >= 26 else "")
+            return f"<td class='num'{hi}>相手{it}</td>"
         it = p.get("implied_total")
         if it is None:
             return "<td class='num'>-</td>"
@@ -87,22 +107,23 @@ def render(ctx):
         return f"<td class='num'{hi}>{it}</td>"
 
     for p in ctx["starters"]:
-        s.append(f"<tr><td><b>{esc(p['slot'])}</b></td><td>{esc(p['name'])}{_inj_tag(p.get('injury_status'))}</td>"
-                 f"<td>{esc(p['position'])}/{esc(p['pro_team'])}</td><td>{esc(p.get('this_week_opp',''))}</td>"
+        s.append(f"<tr><td><b>{esc(p['slot'])}</b></td><td>{_name_cell(p)}</td>"
+                 f"<td>{esc(p['position'])}/{esc(p['pro_team'])}</td><td>{_opp_cell(p)}</td>"
                  f"<td>{esc(p.get('kickoff_jst',''))}</td><td>{_venue_cell(p)}</td>{_tot_cell(p)}"
                  f"<td class='num'><b>{p['score']}</b></td></tr>")
     s.append("</table>")
     s.append(f"<table style='margin-top:10px'><tr><th>ベンチ</th><th>Pos/Team</th><th>今週の相手</th>"
              f"<th>キックオフ(日本)</th><th>会場/天候</th>{tot_th}<th class='num'>予測pt</th></tr>")
     for p in ctx["bench"]:
-        s.append(f"<tr><td>{esc(p['name'])}{_inj_tag(p.get('injury_status'))}</td>"
-                 f"<td>{esc(p['position'])}/{esc(p['pro_team'])}</td><td>{esc(p.get('this_week_opp',''))}</td>"
+        s.append(f"<tr><td>{_name_cell(p)}</td>"
+                 f"<td>{esc(p['position'])}/{esc(p['pro_team'])}</td><td>{_opp_cell(p)}</td>"
                  f"<td>{esc(p.get('kickoff_jst',''))}</td><td>{_venue_cell(p)}</td>{_tot_cell(p)}"
                  f"<td class='num'>{p['score']}</td></tr>")
     s.append("</table>")
     if has_odds:
         s.append("<div class='note'>「自軍Tot」= ブックメーカーが予想するその選手の所属チームの得点(インプライドトータル)。"
-                 "26点以上は攻撃が期待できる試合(緑)、18点以下はロースコア警戒(赤)。</div>")
+                 "26点以上は攻撃が期待できる試合(緑)、18点以下はロースコア警戒(赤)。"
+                 "<b>D/STのみ「相手Tot」=相手オフェンスの予想得点</b>で、低いほど守備の得点機会が多い(18以下=緑が狙い目、26以上=赤は危険)。</div>")
     if ctx["close_calls"]:
         s.append("<div class='note'>⚖️ <b>僅差の枠</b>(AIに相談する価値あり): " + " / ".join(
             f"{esc(c['slot'])}: {esc(c['starter'])}({c['starter_score']}) vs {esc(c['rival'])}({c['rival_score']})"
@@ -123,13 +144,40 @@ def render(ctx):
         for x in r["fa"]:
             gain = x.get("gain_vs_my_worst")
             gain_html = f"<span class='gain-pos'>+{gain}</span>" if (gain is not None and gain > 0) else (esc(gain) if gain is not None else "-")
-            s.append(f"<tr><td>{esc(x['name'])}{_inj_tag(x.get('injury_status'))}</td><td>{esc(x['pro_team'])}</td>"
-                     f"<td>{esc(x.get('this_week_opp',''))}</td>{_tot_cell(x)}<td class='num'>{x['score']}</td>"
+            s.append(f"<tr><td>{_name_cell(x)}</td><td>{esc(x['pro_team'])}</td>"
+                     f"<td>{_opp_cell(x)}</td>{_tot_cell(x)}<td class='num'>{x['score']}</td>"
                      f"<td class='num'>{gain_html}</td><td class='num'>{esc(x.get('percent_owned',''))}</td></tr>")
         s.append("</table></div>")
     if ctx["drop_candidates"]:
-        s.append("<div class='note'>ドロップ候補(低予測順): " + ", ".join(
+        s.append("<div class='note'>ドロップ候補(低予測順、\"R\"=ルーキー): " + ", ".join(
             f"{esc(n)}({esc(p)}) {sc}pt" for n, p, sc in ctx["drop_candidates"]) + "</div>")
+
+    # ルーキールール(Week5まで)
+    ri = ctx.get("rookie_info")
+    if ri:
+        ok = ri["my_count"] >= ri["min_count"]
+        status = ("<span class='tag good'>ルール充足</span>" if ok
+                  else "<span class='tag bad'>ルール違反状態!</span>")
+        s.append(f"<h2>ルーキー保有ルール(Week{ri['until_week']}まで)</h2><div class='card'>")
+        s.append(f"<div class='note'>NFL1年目の選手を常に{ri['min_count']}人以上保持する義務。現在{ri['my_count']}人 {status}"
+                 f"<br>ルーキーを切る場合は、必ず別のルーキー獲得と同時に行うこと。</div>")
+        s.append("<table><tr><th>保有中のルーキー</th><th>Pos/Team</th><th class='num'>予測pt</th></tr>")
+        for p in ri["my_rookies"]:
+            s.append(f"<tr><td>{_name_cell(p)}</td><td>{esc(p['position'])}/{esc(p['pro_team'])}</td>"
+                     f"<td class='num'>{p['score']}</td></tr>")
+        s.append("</table>")
+        if ri["fa_rookies"]:
+            s.append("<table style='margin-top:10px'><tr><th>FAで獲れるルーキー上位</th><th>Pos/Team</th>"
+                     "<th>今週の相手</th><th class='num'>予測pt</th><th class='num'>最弱R比</th><th class='num'>own%</th></tr>")
+            for p in ri["fa_rookies"]:
+                g = p.get("gain_vs_my_worst_rookie")
+                gh = f"<span class='gain-pos'>+{g}</span>" if (g is not None and g > 0) else (esc(g) if g is not None else "-")
+                s.append(f"<tr><td>{_name_cell(p)}</td><td>{esc(p['position'])}/{esc(p['pro_team'])}</td>"
+                         f"<td>{esc(p.get('this_week_opp',''))}</td><td class='num'>{p['score']}</td>"
+                         f"<td class='num'>{gh}</td><td class='num'>{esc(p.get('percent_owned',''))}</td></tr>")
+            s.append("</table>")
+            s.append("<div class='note'>「最弱R比」= あなたの保有ルーキーで最も予測ptが低い選手との差。プラスなら入れ替え候補。</div>")
+        s.append("</div>")
 
     # Bye週
     s.append("<h2>Bye週マップ(自ロスター)</h2><div class='card'><table><tr><th>Week</th><th>Bye選手</th></tr>")

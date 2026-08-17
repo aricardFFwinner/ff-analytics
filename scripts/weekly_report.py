@@ -57,7 +57,34 @@ def enrich_with_nfl_schedule(snapshot, week):
     except Exception:
         stadium_weather = None
 
+    # ルーキー判定(entry_year==当年)と、DST用の相手オフェンス指標
+    rookies = set()
+    try:
+        import nfl_extra
+        rookies = nfl_extra.fetch_rookies(SEASON)
+        print(f"[info] ルーキー判定: {len(rookies)}名(entry_year={SEASON})")
+    except Exception as e:
+        print(f"[warn] ルーキーデータ取得失敗(続行): {e}")
+        nfl_extra = None
+
+    off_metrics, metrics_season = {}, None
+    if nfl_extra:
+        for season_try in (SEASON, SEASON - 1):
+            try:
+                m = nfl_extra.fetch_offense_metrics(season_try)
+                games_max = max((v["games"] for v in m.values()), default=0)
+                if m and (season_try < SEASON or games_max >= 3):
+                    off_metrics, metrics_season = m, season_try
+                    break
+            except Exception as e:
+                print(f"[warn] {season_try}オフェンス指標取得失敗: {e}")
+        if metrics_season:
+            print(f"[info] DST用オフェンス指標: {metrics_season}シーズン実績を使用")
+    snapshot["dst_metrics_season"] = metrics_season
+
     def apply(p, fetch_weather=False):
+        if nfl_extra and p.get("position") != "D/ST":
+            p["is_rookie"] = nfl_extra.norm_name(p.get("name", "")) in rookies
         ab = nfl_schedule.to_nflverse_abbrev(p.get("pro_team", ""))
         ti = info.get(ab)
         if not ti:
@@ -88,6 +115,12 @@ def enrich_with_nfl_schedule(snapshot, week):
                 if w and w not in ("ドーム",):
                     p["weather_str"] = w
                     p["wind_warn"] = warn
+
+        if p.get("position") == "D/ST" and off_metrics:
+            opp_ab_m = nfl_schedule.to_nflverse_abbrev(g["opponent"])
+            om = off_metrics.get(opp_ab_m)
+            if om:
+                p["dst_opp_metrics"] = {**om, "season": metrics_season}
 
         team_line = implied.get(ab)
         if team_line:
@@ -140,11 +173,13 @@ def main():
     my_team = next(t for t in snapshot["teams"] if t["team_id"] == snapshot["my_team_id"])
     starters, bench, close_calls = analysis.pick_lineup(my_team["roster"], week)
     recs, drop_candidates = analysis.fa_recommendations(snapshot, week)
+    rookie_info = analysis.rookie_swap(snapshot, week)
     byes = analysis.bye_overview(my_team["roster"])
     champ = analysis.championship_opponents(my_team["roster"])
     league = analysis.league_table(snapshot)
     ai_summary = analysis.build_ai_summary(
-        snapshot, week, starters, bench, close_calls, recs, drop_candidates)
+        snapshot, week, starters, bench, close_calls, recs, drop_candidates,
+        rookie_info=rookie_info)
     ai_comment = maybe_gemini_comment(ai_summary)
 
     now = datetime.now(JST)
@@ -159,6 +194,7 @@ def main():
         "byes": byes, "champ": champ, "league": league,
         "ai_summary": ai_summary, "ai_comment": ai_comment,
         "has_odds": snapshot.get("has_odds", False),
+        "rookie_info": rookie_info,
     }
     html_text = report_html.render(ctx)
 

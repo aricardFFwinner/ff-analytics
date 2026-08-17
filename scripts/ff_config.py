@@ -29,3 +29,7 @@ INJURY_RISK = {"DOUBTFUL", "QUESTIONABLE"}
 
 # 「僅差」とみなすポイント差(AI相談を推奨するライン)
 CLOSE_CALL_MARGIN = 2.0
+
+# リーグルール: Week5終了まではNFL1年目の選手(ドラフト外含む)を常に1人以上ロスターに保持
+ROOKIE_RULE_UNTIL_WEEK = 5
+ROOKIE_MIN_COUNT = 1

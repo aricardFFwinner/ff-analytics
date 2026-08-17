@@ -80,9 +80,9 @@ def fetch_snapshot():
 
     # FA(各ポジション別に取得して結合)
     fa = {}
-    for pos in ["QB", "RB", "WR", "TE", "D/ST", "K"]:
+    for pos, size in [("QB", 100), ("RB", 100), ("WR", 100), ("TE", 100), ("D/ST", 25), ("K", 40)]:
         try:
-            players = lg.free_agents(size=60, position=pos)
+            players = lg.free_agents(size=size, position=pos)
         except Exception:
             players = []
         fa[pos] = [_player_to_dict(p, current_week) for p in players]

@@ -3,6 +3,7 @@
 from ff_config import (
     STARTER_SLOTS, FLEX_ELIGIBLE, INJURY_OUT, INJURY_RISK,
     CLOSE_CALL_MARGIN, CHAMPIONSHIP_WEEKS,
+    ROOKIE_RULE_UNTIL_WEEK, ROOKIE_MIN_COUNT,
 )
 
 
@@ -87,12 +88,18 @@ def fa_recommendations(snapshot, week, top_n=8):
     for pos in my_by_pos:
         my_by_pos[pos].sort(key=lambda x: x[1], reverse=True)
 
+    my_rookie_count = sum(1 for p in my_team["roster"] if p.get("is_rookie"))
+    protect_rookies = week <= ROOKIE_RULE_UNTIL_WEEK and my_rookie_count <= ROOKIE_MIN_COUNT
     all_mine_scored = sorted(
-        [(p["name"], p["position"], round(player_week_score(p, week)[0], 2))
+        [(p["name"], p["position"], round(player_week_score(p, week)[0], 2), bool(p.get("is_rookie")))
          for p in my_team["roster"]],
         key=lambda x: x[2],
     )
-    drop_candidates = [x for x in all_mine_scored if x[1] not in ("D/ST", "K")][:3]
+    drop_candidates = [
+        (n, pos + (" R" if rk else ""), s)
+        for n, pos, s, rk in all_mine_scored
+        if pos not in ("D/ST", "K") and not (rk and protect_rookies)
+    ][:3]
 
     recs = {}
     for pos, players in (snapshot.get("free_agents") or {}).items():
@@ -116,6 +123,42 @@ def fa_recommendations(snapshot, week, top_n=8):
             "my_worst": my_worst,
         }
     return recs, drop_candidates
+
+
+def rookie_swap(snapshot, week, top_n=10):
+    """Week5ルール用: 自分のルーキーと、FAで獲れるルーキーの比較。
+
+    ルール期間(week <= ROOKIE_RULE_UNTIL_WEEK)のみ返す。それ以外はNone。
+    """
+    if week > ROOKIE_RULE_UNTIL_WEEK:
+        return None
+    my_team = next(t for t in snapshot["teams"] if t["team_id"] == snapshot["my_team_id"])
+    mine = []
+    for p in my_team["roster"]:
+        if p.get("is_rookie"):
+            s, _ = player_week_score(p, week)
+            mine.append({**p, "score": round(s, 2)})
+    mine.sort(key=lambda x: x["score"], reverse=True)
+    my_worst = mine[-1]["score"] if mine else None
+
+    fa_rookies = []
+    for pos, players in (snapshot.get("free_agents") or {}).items():
+        for p in players:
+            if p.get("is_rookie"):
+                s, _ = player_week_score(p, week)
+                if s <= 0:
+                    continue
+                gain = round(s - my_worst, 2) if my_worst is not None else None
+                fa_rookies.append({**p, "score": round(s, 2), "gain_vs_my_worst_rookie": gain})
+    fa_rookies.sort(key=lambda x: x["score"], reverse=True)
+
+    return {
+        "my_rookies": mine,
+        "fa_rookies": fa_rookies[:top_n],
+        "my_count": len(mine),
+        "min_count": ROOKIE_MIN_COUNT,
+        "until_week": ROOKIE_RULE_UNTIL_WEEK,
+    }
 
 
 def bye_overview(roster):
@@ -158,7 +201,8 @@ def league_table(snapshot):
     } for t in teams]
 
 
-def build_ai_summary(snapshot, week, starters, bench, close_calls, recs, drop_candidates):
+def build_ai_summary(snapshot, week, starters, bench, close_calls, recs, drop_candidates,
+                     rookie_info=None):
     """無料AIに貼り付ける用の要約テキスト。"""
     my_team = next(t for t in snapshot["teams"] if t["team_id"] == snapshot["my_team_id"])
     L = []
@@ -169,8 +213,16 @@ def build_ai_summary(snapshot, week, starters, bench, close_calls, recs, drop_ca
     for s in starters:
         inj = f' [{s["injury_status"]}]' if s.get("injury_status") and s["injury_status"] != "ACTIVE" else ""
         extra = ""
-        if s.get("implied_total") is not None:
+        if s["position"] == "D/ST":
+            if s.get("opp_implied") is not None:
+                extra += f' 相手Tot{s["opp_implied"]}(低いほど良い)'
+            m = s.get("dst_opp_metrics")
+            if m:
+                extra += f' 相手被Sk{m["sk_g"]}/G・TO{m["to_g"]}/G({m["season"]}実績)'
+        elif s.get("implied_total") is not None:
             extra += f' Tot{s["implied_total"]}'
+        if s.get("is_rookie"):
+            extra += " [ルーキー]"
         if s.get("weather_str"):
             extra += f' {s["weather_str"]}' + ("(強風注意)" if s.get("wind_warn") else "")
         L.append(f'  {s["slot"]}: {s["name"]} ({s["position"]}/{s["pro_team"]} {s.get("this_week_opp","")}) {s["score"]}pt{inj}{extra}')
@@ -192,7 +244,17 @@ def build_ai_summary(snapshot, week, starters, bench, close_calls, recs, drop_ca
             for x in r["fa"][:3])
         L.append(f'  {pos}: {tops}')
     if drop_candidates:
-        L.append("■ドロップ候補(自ロスター低予測順): " + ", ".join(f'{n}({p}){s}pt' for n, p, s in drop_candidates))
+        L.append("■ドロップ候補(自ロスター低予測順、\"R\"=ルーキー): " + ", ".join(f'{n}({p}){s}pt' for n, p, s in drop_candidates))
+    if rookie_info:
+        L.append(f'■リーグルール: Week{rookie_info["until_week"]}終了までNFL1年目の選手を常に{rookie_info["min_count"]}人以上ロスターに保持する義務あり。')
+        L.append(f'  現在の保有ルーキー({rookie_info["my_count"]}人): ' + ", ".join(
+            f'{p["name"]}({p["position"]}){p["score"]}pt' for p in rookie_info["my_rookies"]) )
+        if rookie_info["fa_rookies"]:
+            L.append("  FAで獲れるルーキー上位(括弧=自分の最弱ルーキーとの差): " + ", ".join(
+                f'{p["name"]}({p["position"]}){p["score"]}pt'
+                + (f'(+{p["gain_vs_my_worst_rookie"]})' if p.get("gain_vs_my_worst_rookie") and p["gain_vs_my_worst_rookie"] > 0 else "")
+                for p in rookie_info["fa_rookies"][:5]))
+        L.append("  ルーキーを切る場合は必ず別のルーキーの獲得とセットで(同時に行う)こと。")
     L.append("")
     L.append("質問: このスタメンとFA獲得判断で見落としはある?僅差の枠はどちらを使うべき?理由も教えて。")
     return "\n".join(L)
