@@ -30,17 +30,19 @@ def _team_sigma():
     return math.sqrt(var)
 
 
-def _bye_aware_score(p, week):
+def _bye_aware_score(p, week, use_blend=True):
     if p.get("bye") == week:
         return 0.0
+    if use_blend:
+        return analysis.player_value_ppg(p)  # ブレンド値(なければESPN予測)
     s, _ = analysis.player_week_score(p, week)
     return s
 
 
-def _lineup_total(roster, week):
+def _lineup_total(roster, week, use_blend=True):
     """その週の最適スタメン合計(Bye反映。将来週は怪我状態を織り込まない簡略化)。"""
     from ff_config import FLEX_ELIGIBLE
-    scored = sorted(((p, _bye_aware_score(p, week)) for p in roster),
+    scored = sorted(((p, _bye_aware_score(p, week, use_blend)) for p in roster),
                     key=lambda x: x[1], reverse=True)
     total, used = 0.0, set()
     for pos in ("QB", "RB", "WR", "TE", "D/ST", "K"):

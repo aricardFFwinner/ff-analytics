@@ -38,9 +38,10 @@ def team_strength_table(snapshot):
     返り値: {"rows": [{team_id,name,owner,by_pos:{pos:pt},total}], "avg": {pos:pt}}
     FLEXは各ポジション枠を埋めた後の最良のRB/WR/TE。
     """
+    import analysis
     rows = []
     for t in snapshot["teams"]:
-        pool = sorted(t["roster"], key=lambda p: _num(p.get("proj_avg")), reverse=True)
+        pool = sorted(t["roster"], key=analysis.player_value_ppg, reverse=True)
         used = set()
         by_pos = {}
         for pos in ("QB", "RB", "WR", "TE", "D/ST", "K"):
@@ -51,14 +52,14 @@ def team_strength_table(snapshot):
                     break
                 if id(p) in used or p.get("position") != pos:
                     continue
-                val += _num(p.get("proj_avg"))
+                val += analysis.player_value_ppg(p)
                 used.add(id(p))
                 got += 1
             by_pos[pos] = round(val, 1)
         flex = 0.0
         for p in pool:
             if id(p) not in used and p.get("position") in FLEX_ELIGIBLE:
-                flex = _num(p.get("proj_avg"))
+                flex = analysis.player_value_ppg(p)
                 break
         by_pos["FLEX"] = round(flex, 1)
         total = round(sum(by_pos.values()), 1)
@@ -76,13 +77,15 @@ def team_strength_table(snapshot):
 # ------------------------------------------------------------------
 
 def _expectation_lines(snapshot):
+    """現在の戦力(ブレンド値)ベースのスタメン級ライン(v3.1で事前予測→現在値に変更)。"""
+    import analysis
     pool = {}
     for t in snapshot["teams"]:
         for p in t["roster"]:
-            pool.setdefault(p["position"], []).append(_num(p.get("proj_avg")))
+            pool.setdefault(p["position"], []).append(analysis.player_value_ppg(p))
     for pos, players in (snapshot.get("free_agents") or {}).items():
         for p in players:
-            pool.setdefault(pos, []).append(_num(p.get("proj_avg")))
+            pool.setdefault(pos, []).append(analysis.player_value_ppg(p))
     lines = {}
     for pos, rank in STARTABLE_RANK.items():
         vals = sorted(pool.get(pos, []), reverse=True)
@@ -92,21 +95,22 @@ def _expectation_lines(snapshot):
 
 def surplus_deficit(snapshot):
     """各チームの余剰(スタメン級がスタメン枠を超えて何人いるか)と不足を文章化。"""
+    import analysis
+    val = analysis.player_value_ppg
     lines = _expectation_lines(snapshot)
     out = []
     for t in snapshot["teams"]:
         surplus, deficit = [], []
         for pos in OFFENSE_POS:
             grade = sum(1 for p in t["roster"]
-                        if p["position"] == pos and _num(p.get("proj_avg")) >= lines[pos])
-            slots = STARTER_SLOTS.get(pos, 0) + (1 if pos in FLEX_ELIGIBLE else 0) * 0
+                        if p["position"] == pos and val(p) >= lines[pos])
             extra = grade - STARTER_SLOTS.get(pos, 0)
             if extra >= 2 or (extra >= 1 and pos in ("QB", "TE")):
                 surplus.append(f"{pos}+{extra}")
             starters = sorted((p for p in t["roster"] if p["position"] == pos),
-                              key=lambda p: _num(p.get("proj_avg")), reverse=True)
+                              key=val, reverse=True)
             starters = starters[:STARTER_SLOTS.get(pos, 0)]
-            weak = sum(1 for p in starters if _num(p.get("proj_avg")) < lines[pos])
+            weak = sum(1 for p in starters if val(p) < lines[pos])
             if len(starters) < STARTER_SLOTS.get(pos, 0) or weak:
                 deficit.append(pos)
         out.append({"team_id": t["team_id"], "name": t["name"], "owner": t.get("owner", ""),
@@ -190,13 +194,14 @@ def champ_sos(snapshot, defvs):
     """
     if not defvs:
         return None
+    import analysis
     import nfl_schedule
     out = []
     for t in snapshot["teams"]:
         by_pos = {}
         for pos in OFFENSE_POS:
             starters = sorted((p for p in t["roster"] if p["position"] == pos),
-                              key=lambda p: _num(p.get("proj_avg")), reverse=True)
+                              key=analysis.player_value_ppg, reverse=True)
             starters = starters[:max(STARTER_SLOTS.get(pos, 0), 1)]
             ranks = []
             for p in starters:
@@ -254,6 +259,66 @@ def prev_week_champ_pct(history, week, team_id):
 
 
 # ------------------------------------------------------------------
+# eval_log: 予測方式の検証ログ(W5/W10/シーズン後のチェックポイントで採点)
+# ------------------------------------------------------------------
+
+EVAL_LOG_PATH = os.path.join(DOCS, "data", "eval_log.json")
+
+
+def write_eval_log(snapshot, week, generated_at):
+    """今週の各チーム得点予測をESPNのみ版/ブレンド版の両方で記録(週キー上書き)。
+
+    実スコアはESPNスナップショットのweekly_scoresに残るため、後からMAE採点できる。
+    """
+    import simulate
+    try:
+        with open(EVAL_LOG_PATH, encoding="utf-8") as f:
+            log = json.load(f)
+    except Exception:
+        log = {}
+    entry = {"generated_at": generated_at, "preds": {}}
+    for t in snapshot["teams"]:
+        entry["preds"][str(t["team_id"])] = {
+            "espn": round(simulate._lineup_total(t["roster"], week, use_blend=False), 1),
+            "blend": round(simulate._lineup_total(t["roster"], week, use_blend=True), 1),
+        }
+    log[str(week)] = entry
+    os.makedirs(os.path.dirname(EVAL_LOG_PATH), exist_ok=True)
+    with open(EVAL_LOG_PATH, "w", encoding="utf-8") as f:
+        json.dump(log, f, ensure_ascii=False, indent=1)
+
+
+def score_eval_log(snapshot):
+    """チェックポイント用: eval_logと実スコアを突き合わせてMAEを返す(手動実行)。"""
+    try:
+        with open(EVAL_LOG_PATH, encoding="utf-8") as f:
+            log = json.load(f)
+    except Exception:
+        return None
+    actual = {}
+    for t in snapshot["teams"]:
+        for wk, sc in (t.get("weekly_scores") or {}).items():
+            actual[(str(t["team_id"]), str(wk))] = float(sc)
+    errs = {"espn": [], "blend": []}
+    detail = []
+    for wk, e in sorted(log.items(), key=lambda kv: int(kv[0])):
+        for tid, pred in e.get("preds", {}).items():
+            a = actual.get((tid, wk))
+            if a is None or a <= 0:
+                continue
+            errs["espn"].append(abs(pred["espn"] - a))
+            errs["blend"].append(abs(pred["blend"] - a))
+            detail.append({"week": int(wk), "team_id": int(tid), "actual": a,
+                           "espn": pred["espn"], "blend": pred["blend"]})
+    if not errs["espn"]:
+        return None
+    return {"n": len(errs["espn"]),
+            "mae_espn": round(sum(errs["espn"]) / len(errs["espn"]), 2),
+            "mae_blend": round(sum(errs["blend"]) / len(errs["blend"]), 2),
+            "detail": detail}
+
+
+# ------------------------------------------------------------------
 # 生成の入口(weekly_report.pyから呼ぶ)
 # ------------------------------------------------------------------
 
@@ -270,6 +335,10 @@ def build_and_write(snapshot, week, generated_at):
     strength = team_strength_table(snapshot)
     surplus = surplus_deficit(snapshot)
     try:
+        write_eval_log(snapshot, week, generated_at)
+    except Exception as e:
+        print(f"[warn] eval_log書き込み失敗(続行): {e}")
+    try:
         defvs = fetch_def_vs_pos()
     except Exception as e:
         print(f"[warn] 被FP取得失敗(SoSなしで続行): {e}")
@@ -281,6 +350,17 @@ def build_and_write(snapshot, week, generated_at):
     prev_champ, _ = prev_week_champ_pct(history, week, my_id)
     if sim:
         history = save_history(history, week, sim, strength, generated_at)
+
+    # P2完成版: トレード候補 + 競合カード(失敗しても骨格部分は出す)
+    trade_list, cards = [], []
+    try:
+        import trades
+        trade_list = trades.generate_trades(snapshot, week, surplus, sos)
+        cards = trades.competitor_cards(snapshot, week, sim, surplus, sos, history)
+    except Exception as e:
+        print(f"[warn] トレード/競合カード生成失敗(骨格のみで続行): {e}")
+        import traceback
+        traceback.print_exc()
 
     base_ctx = {
         "league_name": snapshot["league_name"],
@@ -294,6 +374,8 @@ def build_and_write(snapshot, week, generated_at):
         "sos": sos,
         "history": history,
         "prev_champ": prev_champ,
+        "trades": trade_list,
+        "cards": cards,
     }
     weeks_avail = sorted(int(w) for w in history.keys())
 

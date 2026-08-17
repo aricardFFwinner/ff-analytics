@@ -104,6 +104,24 @@ def fetch_snapshot():
             players = []
         fa[pos] = [_player_to_dict(p, current_week) for p in players]
 
+    # トランザクション活動(GM行動パターン分析の素材。取れなくても続行)
+    recent = []
+    try:
+        for a in lg.recent_activity(size=50):
+            for tup in getattr(a, "actions", []):
+                try:
+                    recent.append({
+                        "date": getattr(a, "date", None),
+                        "team": getattr(tup[0], "team_name", str(tup[0])),
+                        "action": tup[1] if len(tup) > 1 else "",
+                        "player": getattr(tup[2], "name", str(tup[2])) if len(tup) > 2 else "",
+                        "bid": tup[3] if len(tup) > 3 else None,
+                    })
+                except Exception:
+                    continue
+    except Exception as e:
+        print(f"[warn] トランザクション取得失敗(続行): {e}")
+
     # プレーオフ設定(P2ダッシュボード用)
     settings = {}
     try:
@@ -122,4 +140,5 @@ def fetch_snapshot():
         "teams": teams,
         "free_agents": fa,
         "settings": settings,
+        "recent_activity": recent,
     }

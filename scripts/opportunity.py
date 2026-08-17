@@ -28,7 +28,7 @@ from ff_config import (
     FIRE_WRTE, WATCH_WRTE, FIRE_RB, WATCH_RB,
     FIRE_WRTE_E, WATCH_WRTE_E, FIRE_RB_E, WATCH_RB_E,
     RZ_PROMOTE_COUNT, SELL_DECLINE_RATIO, DIAMOND_BACKING, DIAMOND_MIN_GAMES,
-    FIRE_WATCH_POSITIONS,
+    FIRE_WATCH_POSITIONS, BLEND_W_ANCHORS, BLEND_RECENT_WEEKS,
 )
 from nfl_extra import norm_name
 
@@ -347,6 +347,42 @@ def metrics_summary(opp, rec):
 
 
 # ------------------------------------------------------------------
+# ブレンド評価(v3.1): w×ESPN予測 + (1-w)×実力推定
+# ------------------------------------------------------------------
+
+def blend_weight(games):
+    """出場試合数→ESPN予測の重みw。アンカー間は線形補間、超過は最終値で固定。"""
+    anchors = sorted(BLEND_W_ANCHORS.items())
+    if games <= anchors[0][0]:
+        return anchors[0][1]
+    for (g0, w0), (g1, w1) in zip(anchors, anchors[1:]):
+        if games <= g1:
+            return w0 + (w1 - w0) * (games - g0) / (g1 - g0)
+    return anchors[-1][1]
+
+
+def blended_ppg(opp, espn_player):
+    """ブレンド見込みpt/G。機会データが無い選手はNone(呼び出し側でESPN予測に戻す)。
+
+    実力推定 = 直近BLEND_RECENT_WEEKS出場週の実績PPGとxFPの平均
+               (実績だけだと運のブレを拾うため、機会由来の期待FPで均す)
+    """
+    rec = match_player(opp, espn_player)
+    if not rec:
+        return None
+    lw = opp["last_week"]
+    wk = rec["weeks"]
+    ppg = _recent_avg(wk, "ppr", BLEND_RECENT_WEEKS, lw)
+    if ppg is None:
+        return None
+    xfp = _recent_avg(wk, "xfp", BLEND_RECENT_WEEKS, lw)
+    skill = (ppg + xfp) / 2.0 if xfp is not None else ppg
+    proj = _num(espn_player.get("proj_avg"))
+    w = blend_weight(len(_played_weeks(wk, lw))) if proj > 0 else 0.0
+    return round(w * proj + (1.0 - w) * skill, 2)
+
+
+# ------------------------------------------------------------------
 # タグ判定
 # ------------------------------------------------------------------
 
@@ -570,7 +606,19 @@ def annotate_snapshot(snapshot, week):
         ppgs = [v for v in (_espn_recent_ppg(p, week) for p in group) if v is not None]
         weakest[pos] = min(ppgs) if ppgs else None
 
-    # FAタグ
+    # 全チームのロスターに機会指標+ブレンド値を付与(戦力表・シミュ・トレード評価の土台)
+    for t in snapshot["teams"]:
+        for p in t["roster"]:
+            if p["position"] not in OFFENSE_POS:
+                continue
+            rec = match_player(opp, p)
+            if rec:
+                p["opp"] = metrics_summary(opp, rec)
+            bv = blended_ppg(opp, p)
+            if bv is not None:
+                p["blend_ppg"] = bv
+
+    # FAタグ(+ブレンド値)
     fa_tagged = []
     for pos, players in (snapshot.get("free_agents") or {}).items():
         if pos not in OFFENSE_POS:
@@ -579,6 +627,9 @@ def annotate_snapshot(snapshot, week):
             tag, rec = evaluate_fa_tag(opp, p, expectation_low(p), weakest.get(pos))
             if rec:
                 p["opp"] = metrics_summary(opp, rec)
+            bv = blended_ppg(opp, p)
+            if bv is not None:
+                p["blend_ppg"] = bv
             if tag:
                 p["opp_tag"] = tag
                 fa_tagged.append(p)

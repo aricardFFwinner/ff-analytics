@@ -225,6 +225,13 @@ def main():
         print(f"[warn] ダッシュボード生成に失敗(週次レポートのみ): {e}")
         traceback.print_exc()
 
+    # トランザクション記録(GM行動パターン分析の素材集め。失敗しても続行)
+    try:
+        import txlog
+        txlog.record(snapshot)
+    except Exception as e:
+        print(f"[warn] トランザクション記録失敗(続行): {e}")
+
     # Actionsログ用サマリー
     print("=" * 50)
     print(f"レポート生成完了: {snapshot['league_name']} Week {week}{mode_note}")

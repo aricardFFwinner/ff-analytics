@@ -7,6 +7,22 @@ from ff_config import (
 )
 
 
+def player_value_ppg(p):
+    """選手の見込みpt/G(v3.1)。ブレンド値(ESPN予測×実力推定)があれば優先。
+
+    ヒートマップ・モンテカルロ・トレード評価が共通で使う「番付」の物差し。
+    開幕前・機会データなしの選手はESPN季節予測にフォールバック。
+    """
+    v = p.get("blend_ppg")
+    if v is not None:
+        return float(v)
+    if p.get("proj_avg"):
+        return float(p["proj_avg"])
+    if p.get("proj_total"):
+        return float(p["proj_total"]) / 14.0
+    return 0.0
+
+
 def player_week_score(p, week):
     """その週の期待ポイント。週次プロジェクションがあれば優先、なければ季節平均。"""
     wp = p.get("weekly_proj") or {}

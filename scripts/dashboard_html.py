@@ -63,6 +63,14 @@ def esc(x):
     return html.escape(str(x if x is not None else ""))
 
 
+def _dhv(p):
+    """表示用の選手見込みpt/G(ブレンド優先)。"""
+    v = p.get("blend_ppg")
+    if v is not None:
+        return float(v)
+    return float(p.get("proj_avg") or 0.0)
+
+
 def team_color(team_ids_sorted, tid):
     """系列色はteam_idに固定割当(順位や表示順で塗り替えない)。"""
     return SERIES[team_ids_sorted.index(tid) % len(SERIES)]
@@ -252,6 +260,12 @@ def render(ctx):
         cond = sim.get("conditional")
         if cond:
             s.append(f"<div class='line'>今週勝てば {cond['win']}% ↔ 負ければ {cond['lose']}%</div>")
+        top_trade = (ctx.get("trades") or [None])[0]
+        if top_trade:
+            g = "+".join(p["name"] for p in top_trade["give"])
+            r = "+".join(p["name"] for p in top_trade["get"])
+            s.append(f"<div class='line'>推奨アクション: {esc(names[top_trade['opp_team']['team_id']])}に"
+                     f"トレード打診 ({esc(g)} ⇄ {esc(r)}) ↓詳細は候補一覧</div>")
         s.append("</div>")
 
     # ② 推移グラフ
@@ -311,7 +325,7 @@ def render(ctx):
         s.append(_heat_cell(r["total"], st["avg"]["total"], span_total))
         s.append("</tr>")
     s.append("</table><div class='note'>青=リーグ平均より強い / 赤=弱い(色の濃さ=差の大きさ)。"
-             "ESPN季節予測ベース。</div></div>")
+             "評価はブレンド値(ESPN予測×直近実績×機会指標。週が進むほど実績側に重心移動。開幕前はESPN予測のみ)。</div></div>")
 
     # ⑤ 余剰 / 不足
     sd = ctx["surplus"]
@@ -345,6 +359,59 @@ def render(ctx):
         s.append(f"</table><div class='note'>数値=スタメンが対戦する守備の「被FPランク」平均"
                  f"(1-32、小さいほど楽な相手。{sos['season']}シーズン被FP実績ベース)。"
                  "🟢=1-10楽 / ⚪=11-22普通 / 🔴=23-32きつい。トレードで取る選手はここが🟢のチームの選手を優先。</div></div>")
+
+    # ⑥ 競合カード(アコーディオン)
+    cards = ctx.get("cards") or []
+    if cards:
+        s.append("<h2>競合チーム分析 <span class='sub'>(優勝確率順)</span></h2>")
+        for c in cards:
+            t = c["team"]
+            m = c["sim"]
+            trend_str = " → ".join(f"W{w}:{v}%" for w, v in c["trend"]) or "-"
+            s.append(f"<div class='card'><details><summary><b>{esc(names[t['team_id']])}</b> "
+                     f"({esc(t['name'])}) — 優勝{m.get('champ_pct', '-')}% / Bye{m.get('bye_pct', '-')}%"
+                     f"</summary>")
+            s.append("<table style='margin-top:8px'>")
+            s.append(f"<tr><th>余剰</th><td>{esc(', '.join(c['surplus']) or '-')}</td></tr>")
+            s.append(f"<tr><th>不足(=トレードの当てどころ)</th><td>{esc(', '.join(c['deficit']) or '-')}</td></tr>")
+            if c["sos"]:
+                sos_str = " / ".join(f"{pos} {v}" for pos, v in c["sos"].items())
+                s.append(f"<tr><th>W15-17 SoS</th><td>{esc(sos_str)}</td></tr>")
+            s.append(f"<tr><th>優勝確率の推移</th><td>{esc(trend_str)}</td></tr>")
+            for w in c["watch"]:
+                fa = w["fa"]
+                d = (f" → 取られると相手の優勝確率{w['d_champ_pct']:+}pt"
+                     if w.get("d_champ_pct") is not None else "")
+                s.append(f"<tr><th>⚠️ブロック警戒FA</th><td>{esc(fa['name'])} "
+                         f"({esc(fa['position'])}/{esc(fa['pro_team'])}) "
+                         f"{round(_dhv(fa), 1)}pt/G{esc(d)}</td></tr>")
+            s.append("</table></details></div>")
+
+    # ⑧ トレード候補
+    trades_list = ctx.get("trades") or []
+    s.append("<h2>トレード候補 <span class='sub'>(自チーム視点、◎=win-win / ○=要交渉)</span></h2>")
+    if trades_list:
+        s.append("<div class='card'><table>")
+        s.append("<tr><th></th><th>相手</th><th>出す</th><th>貰う</th>"
+                 "<th class='num'>自分Δ<br>残り/W15-17</th><th class='num'>相手Δ<br>残り/W15-17</th>"
+                 "<th class='num'>Δ優勝%</th><th>売り文句</th></tr>")
+        for c in trades_list:
+            give = "<br>".join(esc(p["name"]) + f" ({esc(p['position'])})" for p in c["give"])
+            get = "<br>".join(esc(p["name"]) + f" ({esc(p['position'])})" for p in c["get"])
+            dch = f"{c['d_champ_pct']:+}" if c.get("d_champ_pct") is not None else "-"
+            s.append(f"<tr><td>{esc(c['grade'])}</td>"
+                     f"<td>{esc(names[c['opp_team']['team_id']])}</td>"
+                     f"<td>{give}</td><td>{get}</td>"
+                     f"<td class='num'>{c['d_my_ros']:+} / {c['d_my_champ']:+}</td>"
+                     f"<td class='num'>{c['d_opp_ros']:+} / {c['d_opp_champ']:+}</td>"
+                     f"<td class='num'><b>{dch}</b></td>"
+                     f"<td style='white-space:normal;min-width:10em'>{esc(c['pitch'])}</td></tr>")
+        s.append("</table><div class='note'>Δ=スタメン合計pt/週の変化(ブレンド値)。"
+                 "◎は双方プラスで即打診可、○は相手が微マイナス(週2pt以内)なので売り文句付きで交渉。"
+                 "Δ優勝%は上位案のみロスター入替後の再シミュレーションで算出。2対1は空き枠にFA最良を充当した前提。</div></div>")
+    else:
+        s.append("<div class='card'><div class='note'>現在の条件(自分プラス かつ 相手の損失が週2pt以内)を満たす案はありません。"
+                 "戦力バランスが変わる(怪我・ブレイク発生)と候補が出てきます。</div></div>")
 
     s.append(f"<div class='sub' style='margin:20px 0'>アーカイブ: <a href='./dashboard/'>dashboard/</a>"
              f" / <a href='{esc(ctx['report_href'])}'>週次レポート</a></div>")
