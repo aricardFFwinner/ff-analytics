@@ -34,6 +34,20 @@
    "action": "FA ADDED",
    "player": "Sam LaPorta",
    "bid": 0
+  },
+  {
+   "date": 1787119732600,
+   "team": "Fourth and Way Down",
+   "action": "FA ADDED",
+   "player": "Harrison Mevis",
+   "bid": 0
+  },
+  {
+   "date": 1787119732600,
+   "team": "Fourth and Way Down",
+   "action": "DROPPED",
+   "player": "Jake Bates",
+   "bid": 0
   }
  ]
 }
