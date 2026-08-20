@@ -45,6 +45,42 @@ def _best_fa_value(snapshot):
     return best
 
 
+def _fa_pool(snapshot, top_n=3):
+    """ポジション別のFA上位(FA代替の材料)。"""
+    pool = {}
+    for pos in OFFENSE_POS:
+        players = sorted((snapshot.get("free_agents") or {}).get(pos, [])[:25],
+                         key=_val, reverse=True)
+        pool[pos] = players[:top_n]
+    return pool
+
+
+def _apply_fa_upgrades(roster, fa_pool):
+    """FAで実現できる最良形に整えたロスターを返す(仮想)。
+
+    トレード評価の基準線をこれにすることで「FAでタダで埋まる改善」を
+    トレードの手柄から差し引く(機会費用の反映)。
+    同ポジションの最弱選手よりFA候補が上なら入れ替える。
+    """
+    r = list(roster)
+    used = set()
+    for pos in OFFENSE_POS:
+        for fa in fa_pool.get(pos, []):
+            fid = id(fa)
+            if fid in used:
+                continue
+            same = [p for p in r if p.get("position") == pos]
+            if not same:
+                r.append(fa)
+                used.add(fid)
+                continue
+            worst = min(same, key=_val)
+            if _val(fa) > _val(worst) + 0.01:
+                r[r.index(worst)] = fa
+                used.add(fid)
+    return r
+
+
 def _virtual_fa(value):
     return {"name": "(FA補充)", "position": "WR", "pro_team": "-",
             "proj_avg": value, "weekly_proj": {}, "bye": None}
@@ -100,14 +136,18 @@ def generate_trades(snapshot, week, surplus, sos):
     surplus_map = {r["team_id"]: r for r in surplus["rows"]}
     sos_map = {r["team_id"]: r["by_pos"] for r in (sos or {}).get("rows", [])} if sos else {}
 
-    my_base_ros, my_base_champ = _team_metrics(me["roster"], week)
+    # 基準線=「FAで補強し尽くした後」の戦力。FAで埋まる改善はトレードの手柄にしない
+    fa_pool = _fa_pool(snapshot)
+    my_base_ros, my_base_champ = _team_metrics(
+        _apply_fa_upgrades(me["roster"], fa_pool), week)
     protected = _protected_names(me, week)
     my_tradeable = [p for p in me["roster"]
                     if p["position"] in OFFENSE_POS and p["name"] not in protected]
 
     candidates = []
     for opp in others:
-        opp_base_ros, opp_base_champ = _team_metrics(opp["roster"], week)
+        opp_base_ros, opp_base_champ = _team_metrics(
+            _apply_fa_upgrades(opp["roster"], fa_pool), week)
         opp_tradeable = [p for p in opp["roster"] if p["position"] in OFFENSE_POS]
 
         combos = []
@@ -138,15 +178,16 @@ def generate_trades(snapshot, week, surplus, sos):
             my_new = _adjust_size(my_new, len(me["roster"]), fa_value)
             opp_new = _adjust_size(opp_new, len(opp["roster"]), fa_value)
 
-            my_ros, my_champ = _team_metrics(my_new, week)
-            opp_ros, opp_champ = _team_metrics(opp_new, week)
+            # トレード後も双方FA補強できる前提で評価(基準線と同じ土俵)
+            my_ros, my_champ = _team_metrics(_apply_fa_upgrades(my_new, fa_pool), week)
+            opp_ros, opp_champ = _team_metrics(_apply_fa_upgrades(opp_new, fa_pool), week)
             d_my_ros = my_ros - my_base_ros
             d_my_champ = my_champ - my_base_champ
             d_opp_ros = opp_ros - opp_base_ros
             d_opp_champ = opp_champ - opp_base_champ
 
-            if d_my_ros <= 0.05 and d_my_champ <= 0.05:
-                continue
+            if d_my_ros <= 0.3 and d_my_champ <= 0.3:
+                continue  # FA代替で埋まる程度の改善は提示しない
             winwin = d_opp_ros > 0.05 or d_opp_champ > 0.05
             if not winwin and min(d_opp_ros, d_opp_champ) < -TRADE_OPP_MAX_LOSS:
                 continue

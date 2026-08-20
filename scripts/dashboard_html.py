@@ -406,12 +406,13 @@ def render(ctx):
                      f"<td class='num'>{c['d_opp_ros']:+} / {c['d_opp_champ']:+}</td>"
                      f"<td class='num'><b>{dch}</b></td>"
                      f"<td style='white-space:normal;min-width:10em'>{esc(c['pitch'])}</td></tr>")
-        s.append("</table><div class='note'>Δ=スタメン合計pt/週の変化(ブレンド値)。"
+        s.append("</table><div class='note'>Δ=<b>FAで補強し尽くした場合と比べた</b>スタメン合計pt/週の改善幅(ブレンド値)。"
+                 "FAでタダで手に入る改善はトレードの価値に数えない(機会費用を反映)。双方ともトレード後にFA補強できる前提で評価。"
                  "◎は双方プラスで即打診可、○は相手が微マイナス(週2pt以内)なので売り文句付きで交渉。"
-                 "Δ優勝%は上位案のみロスター入替後の再シミュレーションで算出。2対1は空き枠にFA最良を充当した前提。</div></div>")
+                 "Δ優勝%は上位案のみロスター入替後の再シミュレーションで算出。</div></div>")
     else:
-        s.append("<div class='card'><div class='note'>現在の条件(自分プラス かつ 相手の損失が週2pt以内)を満たす案はありません。"
-                 "戦力バランスが変わる(怪我・ブレイク発生)と候補が出てきます。</div></div>")
+        s.append("<div class='card'><div class='note'>現在の条件(FA補強後と比べて自分がプラス かつ 相手の損失が週2pt以内)を満たす案はありません。"
+                 "= いま欲しいものはFAで拾う方が安い状態。戦力バランスが変わると候補が出てきます。</div></div>")
 
     s.append(f"<div class='sub' style='margin:20px 0'>アーカイブ: <a href='./dashboard/'>dashboard/</a>"
              f" / <a href='{esc(ctx['report_href'])}'>週次レポート</a></div>")
