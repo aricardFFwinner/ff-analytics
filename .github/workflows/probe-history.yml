@@ -1,5 +1,6 @@
 name: Probe History
-
+permissions:
+  contents: write
 on:
   workflow_dispatch:
 
@@ -19,3 +20,15 @@ jobs:
           ESPN_S2: ${{ secrets.ESPN_S2 }}
           SWID: ${{ secrets.SWID }}
         run: python scripts/probe_history.py
+      - name: Commit and push probe result
+        run: |
+          git config user.name "ff-analytics bot"
+          git config user.email "actions@github.com"
+          git add docs/data/probe_espn_proj.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "probe: espn projection dump"
+            git pull --rebase -X theirs origin main
+            git push origin main
+          fi
