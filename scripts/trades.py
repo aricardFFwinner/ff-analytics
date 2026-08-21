@@ -4,11 +4,16 @@
 評価はブレンド値(analysis.player_value_ppg)ベース。
 - 1対1と2対1(双方向)を列挙し、双方のスタメン合計の変化を
   「残シーズン平均」「W15-17平均」の2軸で算出
-- ◎win-win(双方プラス) / ○要交渉(自分プラス、相手の損失が閾値以内)
-- 2対1はロスター枠の過不足を補正(空いた枠にはFA最良を仮想充当、
-  溢れた枠は最弱を仮想ドロップ)
+- ◎win-win(双方プラス、かつΔ優勝%を算出できた場合はそれも正) / ○要交渉(自分プラス、相手の損失が閾値以内)
+- 2対1/1対2はロスター枠の過不足を補正(空いた枠には実際に不足したポジションの
+  FAプール最良=実在の選手を充当。溢れた枠は最弱を仮想ドロップ)
 - 上位案はロスター入替後の再シミュレーションでΔ優勝確率を算出
-  (同一シードの共通乱数で差分のノイズを抑制)
+  (同一シードの共通乱数で差分のノイズを抑制)。
+  再シミュレーションもスコアリングと同じ「双方FA補強後」の土俵で行う
+  (_apply_fa_upgradesをbase/modified双方・全チームに適用)。
+  |Δ優勝%|がTRADE_CHAMP_NOISE_FLOOR未満はノイズと区別できないため、
+  それを明確に下回る(=大きくマイナス)案は候補から除外し、
+  残りはΔ優勝%優先で並べ替える。
 """
 import itertools
 
@@ -22,6 +27,8 @@ from ff_config import (
 
 OFFENSE_POS = ("QB", "RB", "WR", "TE")
 FLEX_GROUP = ("RB", "WR", "TE")
+FA_POOL_LOOKAHEAD = 20         # 枠paddingで各ポジションを見るFA候補数(_fa_poolのtop_n=3とは別)
+TRADE_CHAMP_NOISE_FLOOR = 2.0  # |Δ優勝%|がこれ未満は共通乱数ノイズと見分けがつかない値として扱う
 
 
 def _val(p):
@@ -34,15 +41,6 @@ def _team_metrics(roster, week):
     ros = sum(simulate._lineup_total(roster, w) for w in reg) / len(reg)
     champ = sum(simulate._lineup_total(roster, w) for w in CHAMPIONSHIP_WEEKS) / len(CHAMPIONSHIP_WEEKS)
     return ros, champ
-
-
-def _best_fa_value(snapshot):
-    """FA最良のブレンド値(FLEX系)。2対1で空いた枠の代替価値に使う。"""
-    best = 0.0
-    for pos in FLEX_GROUP:
-        for p in (snapshot.get("free_agents") or {}).get(pos, [])[:20]:
-            best = max(best, _val(p))
-    return best
 
 
 def _fa_pool(snapshot, top_n=3):
@@ -82,15 +80,60 @@ def _apply_fa_upgrades(roster, fa_pool):
 
 
 def _virtual_fa(value):
+    """raw_faに候補が1人もいない場合の最終フォールバックのみに使う。"""
     return {"name": "(FA補充)", "position": "WR", "pro_team": "-",
             "proj_avg": value, "weekly_proj": {}, "bye": None}
 
 
-def _adjust_size(roster, target_len, fa_value):
-    """トレード後のロスター枠を補正。不足→FA最良を仮想充当 / 超過→最弱を仮想ドロップ。"""
-    r = list(roster)
-    while len(r) < target_len:
-        r.append(_virtual_fa(fa_value))
+def _fa_candidates(raw_fa, pos, exclude_names):
+    return [p for p in (raw_fa or {}).get(pos, [])[:FA_POOL_LOOKAHEAD]
+            if p["name"] not in exclude_names]
+
+
+def _position_shortfall(orig_roster, merged_roster):
+    """トレード後(枠調整前)のロスターが元のロスターと比べて
+    どのポジションで何人減っているか({pos: 不足数}。減っていないポジションは含めない)。
+    """
+    orig_cnt, new_cnt = {}, {}
+    for p in orig_roster:
+        if p["position"] in OFFENSE_POS:
+            orig_cnt[p["position"]] = orig_cnt.get(p["position"], 0) + 1
+    for p in merged_roster:
+        if p["position"] in OFFENSE_POS:
+            new_cnt[p["position"]] = new_cnt.get(p["position"], 0) + 1
+    return {pos: orig_cnt.get(pos, 0) - new_cnt.get(pos, 0) for pos in OFFENSE_POS
+            if orig_cnt.get(pos, 0) > new_cnt.get(pos, 0)}
+
+
+def _adjust_size(orig_roster, merged_roster, target_len, raw_fa):
+    """トレード後のロスター枠を補正。
+
+    不足→実際に空いたポジションのFA最良(raw_fa=snapshot["free_agents"]の実選手。
+    weekly_proj/byeも本物)を充当。そのポジションにFAがいなければ全ポジション最良に
+    フォールバック、それも無ければ最終手段として仮想FA(価値0)を置く。
+    超過→最弱を仮想ドロップ(従来通り)。
+    """
+    r = list(merged_roster)
+    need = target_len - len(r)
+    if need > 0:
+        shortfall = sorted(_position_shortfall(orig_roster, r).items(), key=lambda kv: -kv[1])
+        used = {p["name"] for p in r}
+        for _ in range(need):
+            fa = None
+            for pos, _n in shortfall:
+                cands = _fa_candidates(raw_fa, pos, used)
+                if cands:
+                    fa = max(cands, key=_val)
+                    break
+            if fa is None:
+                for pos in FLEX_GROUP:
+                    for cand in _fa_candidates(raw_fa, pos, used):
+                        if fa is None or _val(cand) > _val(fa):
+                            fa = cand
+            if fa is None:
+                fa = _virtual_fa(0.0)
+            r.append(fa)
+            used.add(fa["name"])
     while len(r) > target_len:
         r.remove(min(r, key=_val))
     return r
@@ -132,7 +175,7 @@ def generate_trades(snapshot, week, surplus, sos):
     teams = snapshot["teams"]
     me = next(t for t in teams if t["team_id"] == snapshot["my_team_id"])
     others = [t for t in teams if t["team_id"] != snapshot["my_team_id"]]
-    fa_value = _best_fa_value(snapshot)
+    raw_fa = snapshot.get("free_agents")  # 枠paddingで実選手を引くための生FAプール(_fa_poolとは別物)
     surplus_map = {r["team_id"]: r for r in surplus["rows"]}
     sos_map = {r["team_id"]: r["by_pos"] for r in (sos or {}).get("rows", [])} if sos else {}
 
@@ -173,10 +216,10 @@ def generate_trades(snapshot, week, surplus, sos):
             evals += 1
             give_names = {p["name"] for p in give}
             get_names = {p["name"] for p in get}
-            my_new = [p for p in me["roster"] if p["name"] not in give_names] + get
-            opp_new = [p for p in opp["roster"] if p["name"] not in get_names] + give
-            my_new = _adjust_size(my_new, len(me["roster"]), fa_value)
-            opp_new = _adjust_size(opp_new, len(opp["roster"]), fa_value)
+            my_merged = [p for p in me["roster"] if p["name"] not in give_names] + get
+            opp_merged = [p for p in opp["roster"] if p["name"] not in get_names] + give
+            my_new = _adjust_size(me["roster"], my_merged, len(me["roster"]), raw_fa)
+            opp_new = _adjust_size(opp["roster"], opp_merged, len(opp["roster"]), raw_fa)
 
             # トレード後も双方FA補強できる前提で評価(基準線と同じ土俵)
             my_ros, my_champ = _team_metrics(_apply_fa_upgrades(my_new, fa_pool), week)
@@ -206,7 +249,17 @@ def generate_trades(snapshot, week, surplus, sos):
 
     # 上位案のΔ優勝確率(共通乱数で差分のノイズを抑える)
     if candidates and all(t.get("matchups") for t in teams):
-        base = simulate.run(snapshot, week, sims=TRADE_RESIM_SIMS)
+        # 修正1: 再シミュレーションもスコアリングと同じ「双方FA補強後」の土俵で行う。
+        # base側も全チームに_apply_fa_upgradesを適用してから走らせる(土俵を揃える)。
+        # 同一FAを複数チームに重複して割り当てる簡略化はスコアリング側の既存挙動を踏襲。
+        base_teams = []
+        for t in teams:
+            t2 = dict(t)
+            t2["roster"] = _apply_fa_upgrades(t["roster"], fa_pool)
+            base_teams.append(t2)
+        base_snapshot = dict(snapshot)
+        base_snapshot["teams"] = base_teams
+        base = simulate.run(base_snapshot, week, sims=TRADE_RESIM_SIMS)
         base_champ = base["teams"][me["team_id"]]["champ_pct"] if base else None
         for c in candidates[:TRADE_TOP_RESIM]:
             if base_champ is None:
@@ -215,12 +268,14 @@ def generate_trades(snapshot, week, surplus, sos):
             for t in teams:
                 t2 = dict(t)
                 if t["team_id"] == me["team_id"]:
-                    t2["roster"] = c["my_new_roster"]
+                    t2["roster"] = _apply_fa_upgrades(c["my_new_roster"], fa_pool)
                 elif t["team_id"] == c["opp_team"]["team_id"]:
                     get_names = {p["name"] for p in c["get"]}
-                    t2["roster"] = _adjust_size(
-                        [p for p in t["roster"] if p["name"] not in get_names] + c["give"],
-                        len(t["roster"]), _best_fa_value(snapshot))
+                    opp_merged = [p for p in t["roster"] if p["name"] not in get_names] + c["give"]
+                    opp_new = _adjust_size(t["roster"], opp_merged, len(t["roster"]), raw_fa)
+                    t2["roster"] = _apply_fa_upgrades(opp_new, fa_pool)
+                else:
+                    t2["roster"] = _apply_fa_upgrades(t["roster"], fa_pool)
                 mod_teams.append(t2)
             mod = dict(snapshot)
             mod["teams"] = mod_teams
@@ -228,6 +283,20 @@ def generate_trades(snapshot, week, surplus, sos):
             if r:
                 c["d_champ_pct"] = round(
                     r["teams"][me["team_id"]]["champ_pct"] - base_champ, 1)
+                if c["grade"] == "◎" and c["d_champ_pct"] <= 0:
+                    c["grade"] = "○"  # 修正3: ◎はΔ優勝%も正であることが条件(算出済みの場合のみ)
+
+        # 修正2: Δ優勝%が算出済みの案は、ノイズ下限(TRADE_CHAMP_NOISE_FLOOR)を明確に
+        # 下回るものを落とし、残りはΔ優勝%を最優先の並び順にする
+        # (算出できなかった案は末尾に残す)。
+        candidates = [c for c in candidates
+                      if c.get("d_champ_pct") is None or c["d_champ_pct"] >= -TRADE_CHAMP_NOISE_FLOOR]
+        candidates.sort(key=lambda c: (
+            c["grade"] != "◎",
+            c.get("d_champ_pct") is None,
+            -(c["d_champ_pct"] if c.get("d_champ_pct") is not None else 0.0),
+            -(c["d_my_ros"] + 0.5 * c["d_my_champ"]),
+        ))
     for c in candidates:
         c.pop("my_new_roster", None)
     return candidates
