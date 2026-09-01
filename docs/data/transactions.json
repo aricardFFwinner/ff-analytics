@@ -48,6 +48,13 @@
    "action": "DROPPED",
    "player": "Jake Bates",
    "bid": 0
+  },
+  {
+   "date": 1788129373547,
+   "team": "Fourth and Way Down",
+   "action": "FA ADDED",
+   "player": "Harold Fannin Jr.",
+   "bid": 0
   }
  ]
 }
