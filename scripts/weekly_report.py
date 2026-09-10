@@ -5,6 +5,7 @@
   LEAGUE_ID / ESPN_S2 / SWID : ESPN認証(必須)
   GEMINI_API_KEY             : 任意。あればAIコメントを埋め込む
   MOCK_SNAPSHOT              : テスト用。JSONパスを指定するとESPNを呼ばない
+  BACKFILL_WEEKS             : P4 §4.7。例"1"や"1,2"。空でなければ後追い採点を実行する
 """
 import json
 import os
@@ -249,6 +250,35 @@ def main():
         txlog.record(snapshot)
     except Exception as e:
         print(f"[warn] トランザクション記録失敗(続行): {e}")
+
+    # P4 §4.1/4.2: 火曜18:17の実行時のみ、選手粒度の予測を記録する(失敗しても続行)
+    if now.weekday() == 1:  # 0=月, 1=火(JST)
+        try:
+            import fp_source
+            import scoring
+            fp_result = fp_source.run(SEASON, week)
+            scoring.record_player_preds(
+                SEASON, week, now.isoformat(), my_team["roster"], starters,
+                fp_by_espn_id=fp_result["by_espn_id"])
+        except Exception as e:
+            print(f"[warn] P4選手粒度記録に失敗(続行): {e}")
+            traceback.print_exc()
+
+    # P4 §4.7: 後追い採点(workflow_dispatchのbackfill_weeksが空でなければ実行)
+    backfill_weeks = os.environ.get("BACKFILL_WEEKS", "").strip()
+    if backfill_weeks:
+        import scoring
+        for wk_str in backfill_weeks.split(","):
+            wk_str = wk_str.strip()
+            if not wk_str:
+                continue
+            try:
+                wk = int(wk_str)
+                result = scoring.backfill_week(SEASON, wk)
+                print(f"[info] backfill week{wk}: {result.get('status')}")
+            except Exception as e:
+                print(f"[warn] backfill week{wk_str}に失敗(続行): {e}")
+                traceback.print_exc()
 
     # Actionsログ用サマリー
     print("=" * 50)

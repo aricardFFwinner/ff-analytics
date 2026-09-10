@@ -266,9 +266,13 @@ EVAL_LOG_PATH = os.path.join(DOCS, "data", "eval_log.json")
 
 
 def write_eval_log(snapshot, week, generated_at):
-    """今週の各チーム得点予測をESPNのみ版/ブレンド版の両方で記録(週キー上書き)。
+    """今週の各チーム得点予測をESPNのみ版/ブレンド版の両方で記録。
 
-    実スコアはESPNスナップショットのweekly_scoresに残るため、後からMAE採点できる。
+    P4 §4.2: この関数は火・水・日・月すべての実行で毎回呼ばれるため、
+    週キーを丸ごと置き換えると、火曜に記録された player_preds/rec_lineup/
+    backfilled等(scoring.record_player_preds/backfill_weekが書いたもの)が
+    水曜・日曜の実行で消えてしまう。generated_atとpredsだけを更新し、
+    他のキーは既存値を保持するマージ方式にする。
     """
     import simulate
     try:
@@ -276,13 +280,16 @@ def write_eval_log(snapshot, week, generated_at):
             log = json.load(f)
     except Exception:
         log = {}
-    entry = {"generated_at": generated_at, "preds": {}}
+    preds = {}
     for t in snapshot["teams"]:
-        entry["preds"][str(t["team_id"])] = {
+        preds[str(t["team_id"])] = {
             "espn": round(simulate._lineup_total(t["roster"], week, use_blend=False), 1),
             "blend": round(simulate._lineup_total(t["roster"], week, use_blend=True), 1),
         }
-    log[str(week)] = entry
+    existing = dict(log.get(str(week)) or {})
+    existing["generated_at"] = generated_at
+    existing["preds"] = preds
+    log[str(week)] = existing
     os.makedirs(os.path.dirname(EVAL_LOG_PATH), exist_ok=True)
     with open(EVAL_LOG_PATH, "w", encoding="utf-8") as f:
         json.dump(log, f, ensure_ascii=False, indent=1)
