@@ -456,15 +456,26 @@ def _load_fp_for_backfill(season, week, asof_dt, docs_dir=None, parquet_path=Non
             raise RuntimeError(
                 f"backfill_week: 週次ページなのにecr_type!='wp'が{len(bad)}件混入(仕様§6.1④違反の疑い)。処理を停止"
             )
-        asof_date = asof_dt.astimezone(timezone.utc).date().isoformat()
-        df_before = df[df["scrape_date"] <= asof_date]
-        if df_before.empty:
+        asof_date_obj = asof_dt.astimezone(timezone.utc).date()
+        asof_date = asof_date_obj.isoformat()
+        # parquetにはseason/week相当の列が無い(実測確認済み: fp_page/page_type/player/id/
+        # pos/team/ecr/sd/best/worst/mergename/.../ecr_type/scrape_dateのみ)。
+        # そのため「scrape_date <= asof」だけで最新行を拾うと、対象週の行が
+        # parquetにまだ存在しない場合に**前シーズンの古い行**を「最新」として誤採用する
+        # (例: 2026 W1のasofに対し2025年12月26日=前シーズンW17の行を採用してしまう事故)。
+        # 火曜締めの1週間サイクルに合わせ、「asofの直前7日間(前週水曜〜当該火曜)」に
+        # 限定することで、対象週の集計期間外の行を対象週の値として使わないようにする。
+        window_start_date = (asof_date_obj - timedelta(days=6)).isoformat()
+        df_window = df[(df["scrape_date"] > window_start_date) & (df["scrape_date"] <= asof_date)]
+        if df_window.empty:
             max_scrape = df["scrape_date"].max() if not df.empty else None
-            print(f"[warn] backfill_week: FP as-ofデータなし(parquet最新scrape_date={max_scrape}, "
+            print(f"[warn] backfill_week: FP as-ofデータなし(parquet最新scrape_date={max_scrape}は"
+                  f"対象週の集計期間外[{window_start_date}<scrape_date<={asof_date}], "
                   f"asof={asof_date})。src.fpはNoneのまま進む(0にはしない)")
             return {}, "none", None
-        df = df_before
-        # fantasypros_id毎に、asof以前で最も新しいscrape_dateの行を採用(先読み防止のas-ofルール)
+        df = df_window
+        # fantasypros_id毎に、対象週の集計期間内で最も新しいscrape_dateの行を採用
+        # (先読み防止のas-ofルール+前シーズン混入防止の期間ルール)
         fp_scrape_date_max = str(df["scrape_date"].max())
         df = df.sort_values("scrape_date").groupby("id", as_index=False).last()
 
