@@ -2,6 +2,11 @@ name: Weekly Report
 
 on:
   workflow_dispatch:
+    inputs:
+      backfill_weeks:
+        description: "後追い採点する週(例: 1 や 1,2)。空なら通常実行"
+        required: false
+        default: ""
   schedule:
   # 火曜 18:17 JST (火曜 09:17 UTC) — 日曜分の機会指標を1日早く反映(waiver先取り用)
     - cron: "17 9 * * 2"
@@ -41,6 +46,7 @@ jobs:
           SWID: ${{ secrets.SWID }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          BACKFILL_WEEKS: ${{ github.event.inputs.backfill_weeks }}
         run: python scripts/weekly_report.py
 
       - name: Commit and push report
