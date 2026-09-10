@@ -1,31 +1,352 @@
 {
  "1": {
-  "generated_at": "2026-09-09 12:27",
+  "generated_at": "2026-09-10T17:10:54.408933+09:00",
   "preds": {
    "1": {
     "espn": 131.7,
     "blend": 129.0
    },
    "2": {
-    "espn": 134.3,
+    "espn": 134.1,
     "blend": 133.6
    },
    "3": {
-    "espn": 136.7,
-    "blend": 135.7
+    "espn": 136.8,
+    "blend": 135.1
    },
    "4": {
     "espn": 119.1,
     "blend": 122.9
    },
    "5": {
-    "espn": 132.3,
-    "blend": 132.8
+    "espn": 133.7,
+    "blend": 132.9
    },
    "6": {
-    "espn": 129.4,
-    "blend": 134.7
+    "espn": 130.1,
+    "blend": 134.4
    }
-  }
+  },
+  "player_preds": {
+   "4362628": {
+    "name": "Ja'Marr Chase",
+    "pos": "WR",
+    "pro_team": "CIN",
+    "src": {
+     "espn": null,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": null,
+    "sd": null,
+    "slot": "WR1",
+    "rec_start": true,
+    "snap_pct_prior": null
+   },
+   "4242335": {
+    "name": "Jonathan Taylor",
+    "pos": "RB",
+    "pro_team": "IND",
+    "src": {
+     "espn": null,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": null,
+    "sd": null,
+    "slot": "RB1",
+    "rec_start": true,
+    "snap_pct_prior": null
+   },
+   "4258173": {
+    "name": "Nico Collins",
+    "pos": "WR",
+    "pro_team": "HOU",
+    "src": {
+     "espn": null,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": null,
+    "sd": null,
+    "slot": "WR2",
+    "rec_start": true,
+    "snap_pct_prior": null
+   },
+   "4685382": {
+    "name": "Omarion Hampton",
+    "pos": "RB",
+    "pro_team": "LAC",
+    "src": {
+     "espn": null,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": null,
+    "sd": null,
+    "slot": "RB2",
+    "rec_start": true,
+    "snap_pct_prior": null
+   },
+   "4426502": {
+    "name": "Drake London",
+    "pos": "WR",
+    "pro_team": "ATL",
+    "src": {
+     "espn": null,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": null,
+    "sd": null,
+    "slot": "FLEX1",
+    "rec_start": true,
+    "snap_pct_prior": null
+   },
+   "4047365": {
+    "name": "Josh Jacobs",
+    "pos": "RB",
+    "pro_team": "GB",
+    "src": {
+     "espn": null,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": null,
+    "sd": null,
+    "slot": null,
+    "rec_start": false,
+    "snap_pct_prior": null
+   },
+   "4595348": {
+    "name": "Malik Nabers",
+    "pos": "WR",
+    "pro_team": "NYG",
+    "src": {
+     "espn": null,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": null,
+    "sd": null,
+    "slot": null,
+    "rec_start": false,
+    "snap_pct_prior": null
+   },
+   "4572680": {
+    "name": "Tucker Kraft",
+    "pos": "TE",
+    "pro_team": "GB",
+    "src": {
+     "espn": null,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": null,
+    "sd": null,
+    "slot": null,
+    "rec_start": false,
+    "snap_pct_prior": null
+   },
+   "4372016": {
+    "name": "Jaylen Waddle",
+    "pos": "WR",
+    "pro_team": "DEN",
+    "src": {
+     "espn": null,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": null,
+    "sd": null,
+    "slot": null,
+    "rec_start": false,
+    "snap_pct_prior": null
+   },
+   "4685702": {
+    "name": "Quinshon Judkins",
+    "pos": "RB",
+    "pro_team": "CLE",
+    "src": {
+     "espn": null,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": null,
+    "sd": null,
+    "slot": null,
+    "rec_start": false,
+    "snap_pct_prior": null
+   },
+   "4431299": {
+    "name": "Rome Odunze",
+    "pos": "WR",
+    "pro_team": "CHI",
+    "src": {
+     "espn": null,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": null,
+    "sd": null,
+    "slot": null,
+    "rec_start": false,
+    "snap_pct_prior": null
+   },
+   "-16014": {
+    "name": "Rams D/ST",
+    "pos": "D/ST",
+    "pro_team": "LAR",
+    "src": {
+     "espn": null,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": null,
+    "sd": null,
+    "slot": "D/ST1",
+    "rec_start": true,
+    "snap_pct_prior": null
+   },
+   "4710714": {
+    "name": "De'Zhaun Stribling",
+    "pos": "WR",
+    "pro_team": "SF",
+    "src": {
+     "espn": null,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": null,
+    "sd": null,
+    "slot": null,
+    "rec_start": false,
+    "snap_pct_prior": null
+   },
+   "4038941": {
+    "name": "Justin Herbert",
+    "pos": "QB",
+    "pro_team": "LAC",
+    "src": {
+     "espn": null,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": null,
+    "sd": null,
+    "slot": "QB1",
+    "rec_start": true,
+    "snap_pct_prior": null
+   },
+   "4574716": {
+    "name": "Harrison Mevis",
+    "pos": "K",
+    "pro_team": "LAR",
+    "src": {
+     "espn": null,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": null,
+    "sd": null,
+    "slot": "K1",
+    "rec_start": true,
+    "snap_pct_prior": null
+   },
+   "5083076": {
+    "name": "Harold Fannin Jr.",
+    "pos": "TE",
+    "pro_team": "CLE",
+    "src": {
+     "espn": null,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": null,
+    "sd": null,
+    "slot": "TE1",
+    "rec_start": true,
+    "snap_pct_prior": null
+   }
+  },
+  "rec_lineup": [
+   "4038941",
+   "4242335",
+   "4685382",
+   "4362628",
+   "4258173",
+   "5083076",
+   "-16014",
+   "4574716",
+   "4426502"
+  ],
+  "rec_lineup_alt": null,
+  "actual_lineup": [
+   "4362628",
+   "4242335",
+   "4258173",
+   "4685382",
+   "4426502",
+   "4572680",
+   "-16014",
+   "4038941",
+   "4574716"
+  ],
+  "actual": {
+   "4362628": 0,
+   "4242335": 0,
+   "4258173": 0,
+   "4685382": 0,
+   "4426502": 0,
+   "4047365": 0,
+   "4595348": 0,
+   "4572680": 0,
+   "4372016": 0,
+   "4685702": 0,
+   "4431299": 0,
+   "-16014": 0,
+   "4710714": 0,
+   "4038941": 0,
+   "4574716": 0,
+   "5083076": 0
+  },
+  "score": {
+   "optimal_pts": 0.0,
+   "optimal_lineup": [
+    "4038941",
+    "4242335",
+    "4685382",
+    "4362628",
+    "4258173",
+    "4572680",
+    "-16014",
+    "4574716",
+    "4426502"
+   ],
+   "rec_pts": 0.0,
+   "actual_pts": 0.0,
+   "rec_quality": 0.0,
+   "exec_quality": 0.0
+  },
+  "backfilled": true,
+  "backfill_generated_at": "2026-09-10T17:10:54.408933+09:00",
+  "asof": "2026-09-08T18:17:00+09:00",
+  "roster_reconstructed": false
  }
 }
