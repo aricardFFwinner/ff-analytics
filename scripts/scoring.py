@@ -370,6 +370,25 @@ def _reconstruct_roster(current_rows, my_team_name, asof_dt, tx_path=None):
     return list(rows_by_name.values()), True, f"txlog逆適用: 自チーム取引{len(relevant)}件を取り消し"
 
 
+PARQUET_URL = "https://raw.githubusercontent.com/dynastyprocess/data/master/files/db_fpecr.parquet"
+
+
+def _download_parquet_to_tempfile(url=PARQUET_URL, timeout=120):
+    """db_fpecr.parquet(38MB)を一時ファイルに取得する。呼び出し側が削除の責任を持つ。
+
+    fp_source._download()と同じurllibパターン(User-Agent付与)を使う。バイナリなので
+    そのままファイルに書き出す。
+    """
+    import tempfile
+    import urllib.request
+    req = urllib.request.Request(url, headers={"User-Agent": "ff-analytics-p4/1.0"})
+    fd, tmp_path = tempfile.mkstemp(suffix=".parquet")
+    os.close(fd)
+    with urllib.request.urlopen(req, timeout=timeout) as r, open(tmp_path, "wb") as f:
+        f.write(r.read())
+    return tmp_path
+
+
 def _load_fp_for_backfill(season, week, asof_dt, docs_dir=None, parquet_path=None):
     """fp_history優先、無ければdb_fpecr.parquetをasofで切って使う(2経路のみ)。
 
@@ -378,6 +397,11 @@ def _load_fp_for_backfill(season, week, asof_dt, docs_dir=None, parquet_path=Non
     「今」の値を取ると試合後の情報が混ざり得るため、これは先読み(§8禁止事項②)に
     あたり許可しない。asofを過ぎている場合は fp_history と parquet の2経路のみで、
     どちらも無ければ fp は null のまま(0点扱いにはしない)。
+
+    parquet_pathが指定されなかった場合(=本番の通常呼び出し。手元のparquetファイルを
+    誰も渡していないため、これまでparquet経路が本番で一度も通れなかった)、
+    db_fpecr.parquet(38MB)を一時ファイルにダウンロードして使い、読み終えたら削除する。
+    取得に失敗しても後続の処理は落とさず、src.fpはNoneのまま進む。
 
     parquet側の週次ページ(weekly-qb/rb/wr/te/k/dst)はecr_type='wp'のみで
     構成されている(2026-09-10時点で実測確認済み)ため、ecr_type混在は起きないが、
@@ -406,61 +430,79 @@ def _load_fp_for_backfill(season, week, asof_dt, docs_dir=None, parquet_path=Non
             print(f"[warn] backfill_week: asof前のFP取得に失敗(続行、src.fpはNoneのまま): "
                   f"{type(e).__name__}: {e}")
 
-    if not parquet_path or not os.path.exists(parquet_path):
-        print(f"[warn] backfill_week: FP as-ofデータなし(fp_historyなし、parquet未指定/未取得, "
-              f"asof={asof_dt.isoformat()})。src.fpはNoneのまま進む(0にはしない)")
-        return {}, "none", None
+    downloaded_path = None
+    if not parquet_path:
+        try:
+            downloaded_path = _download_parquet_to_tempfile()
+            parquet_path = downloaded_path
+            print(f"[info] backfill_week: parquet_path未指定のためdb_fpecr.parquetを取得 "
+                  f"({parquet_path})")
+        except Exception as e:
+            print(f"[warn] backfill_week: db_fpecr.parquetの取得に失敗(続行、src.fpはNoneのまま): "
+                  f"{type(e).__name__}: {e}")
 
-    import pandas as pd
-    weekly_pages = {"weekly-qb", "weekly-rb", "weekly-wr", "weekly-te", "weekly-k", "weekly-dst"}
-    df = pd.read_parquet(parquet_path, columns=["page_type", "ecr_type", "id", "ecr", "sd", "best", "worst", "scrape_date"])
-    df = df[df["page_type"].isin(weekly_pages)]
-    bad = df[df["ecr_type"] != "wp"]
-    if len(bad):
-        raise RuntimeError(
-            f"backfill_week: 週次ページなのにecr_type!='wp'が{len(bad)}件混入(仕様§6.1④違反の疑い)。処理を停止"
-        )
-    asof_date = asof_dt.astimezone(timezone.utc).date().isoformat()
-    df_before = df[df["scrape_date"] <= asof_date]
-    if df_before.empty:
-        max_scrape = df["scrape_date"].max() if not df.empty else None
-        print(f"[warn] backfill_week: FP as-ofデータなし(parquet最新scrape_date={max_scrape}, "
-              f"asof={asof_date})。src.fpはNoneのまま進む(0にはしない)")
-        return {}, "none", None
-    df = df_before
-    # fantasypros_id毎に、asof以前で最も新しいscrape_dateの行を採用(先読み防止のas-ofルール)
-    fp_scrape_date_max = str(df["scrape_date"].max())
-    df = df.sort_values("scrape_date").groupby("id", as_index=False).last()
+    try:
+        if not parquet_path or not os.path.exists(parquet_path):
+            print(f"[warn] backfill_week: FP as-ofデータなし(fp_historyなし、parquet未指定/未取得, "
+                  f"asof={asof_dt.isoformat()})。src.fpはNoneのまま進む(0にはしない)")
+            return {}, "none", None
 
-    id_map_text = None
-    playerids_path = os.environ.get("PLAYERIDS_CSV_PATH")
-    if playerids_path and os.path.exists(playerids_path):
-        with open(playerids_path, encoding="utf-8") as f:
-            id_map_text = f.read()
-    else:
-        id_map_text = fp_source.fetch_playerids_text()
-    id_map = fp_source.load_playerid_map(id_map_text)
+        import pandas as pd
+        weekly_pages = {"weekly-qb", "weekly-rb", "weekly-wr", "weekly-te", "weekly-k", "weekly-dst"}
+        df = pd.read_parquet(parquet_path, columns=["page_type", "ecr_type", "id", "ecr", "sd", "best", "worst", "scrape_date"])
+        df = df[df["page_type"].isin(weekly_pages)]
+        bad = df[df["ecr_type"] != "wp"]
+        if len(bad):
+            raise RuntimeError(
+                f"backfill_week: 週次ページなのにecr_type!='wp'が{len(bad)}件混入(仕様§6.1④違反の疑い)。処理を停止"
+            )
+        asof_date = asof_dt.astimezone(timezone.utc).date().isoformat()
+        df_before = df[df["scrape_date"] <= asof_date]
+        if df_before.empty:
+            max_scrape = df["scrape_date"].max() if not df.empty else None
+            print(f"[warn] backfill_week: FP as-ofデータなし(parquet最新scrape_date={max_scrape}, "
+                  f"asof={asof_date})。src.fpはNoneのまま進む(0にはしない)")
+            return {}, "none", None
+        df = df_before
+        # fantasypros_id毎に、asof以前で最も新しいscrape_dateの行を採用(先読み防止のas-ofルール)
+        fp_scrape_date_max = str(df["scrape_date"].max())
+        df = df.sort_values("scrape_date").groupby("id", as_index=False).last()
 
-    out = {}
-    unmatched = 0
-    for _, row in df.iterrows():
-        fid = str(row["id"])
-        eid = id_map.get(fid)
-        if not eid:
-            unmatched += 1
-            continue
-        out[str(eid)] = {
-            "r2p_pts": None,  # parquetにはr2p_ptsが無い(ECR/sd/best/worstのみ復元可能)
-            "ecr": float(row["ecr"]) if row["ecr"] is not None else None,
-            "sd": float(row["sd"]) if row["sd"] is not None else None,
-            "best": float(row["best"]) if row["best"] is not None else None,
-            "worst": float(row["worst"]) if row["worst"] is not None else None,
-        }
-    if unmatched:
-        print(f"[warn] backfill_week(parquet経路): ID突合失敗 {unmatched}件")
-    print(f"[info] backfill_week: FPをdb_fpecr.parquetから復元(asof<={asof_date}, "
-          f"採用scrape_date最大={fp_scrape_date_max}, {len(out)}名, r2p_ptsなし)")
-    return out, "parquet_asof", fp_scrape_date_max
+        id_map_text = None
+        playerids_path = os.environ.get("PLAYERIDS_CSV_PATH")
+        if playerids_path and os.path.exists(playerids_path):
+            with open(playerids_path, encoding="utf-8") as f:
+                id_map_text = f.read()
+        else:
+            id_map_text = fp_source.fetch_playerids_text()
+        id_map = fp_source.load_playerid_map(id_map_text)
+
+        out = {}
+        unmatched = 0
+        for _, row in df.iterrows():
+            fid = str(row["id"])
+            eid = id_map.get(fid)
+            if not eid:
+                unmatched += 1
+                continue
+            out[str(eid)] = {
+                "r2p_pts": None,  # parquetにはr2p_ptsが無い(ECR/sd/best/worstのみ復元可能)
+                "ecr": float(row["ecr"]) if row["ecr"] is not None else None,
+                "sd": float(row["sd"]) if row["sd"] is not None else None,
+                "best": float(row["best"]) if row["best"] is not None else None,
+                "worst": float(row["worst"]) if row["worst"] is not None else None,
+            }
+        if unmatched:
+            print(f"[warn] backfill_week(parquet経路): ID突合失敗 {unmatched}件")
+        print(f"[info] backfill_week: FPをdb_fpecr.parquetから復元(asof<={asof_date}, "
+              f"採用scrape_date最大={fp_scrape_date_max}, {len(out)}名, r2p_ptsなし)")
+        return out, "parquet_asof", fp_scrape_date_max
+    finally:
+        if downloaded_path and os.path.exists(downloaded_path):
+            try:
+                os.remove(downloaded_path)
+            except OSError as e:
+                print(f"[warn] backfill_week: 一時parquetファイルの削除に失敗(無視して続行): {e}")
 
 
 def backfill_week(season, week, asof=None, path=None, parquet_path=None, docs_dir=None,
