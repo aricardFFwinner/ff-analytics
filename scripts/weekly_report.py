@@ -259,7 +259,7 @@ def main():
             fp_result = fp_source.run(SEASON, week)
             scoring.record_player_preds(
                 SEASON, week, now.isoformat(), my_team["roster"], starters,
-                fp_by_espn_id=fp_result["by_espn_id"])
+                fp_by_espn_id=fp_result["by_espn_id"], bench=bench)
         except Exception as e:
             print(f"[warn] P4選手粒度記録に失敗(続行): {e}")
             traceback.print_exc()

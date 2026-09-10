@@ -70,23 +70,39 @@ def _slot_labels(starters):
     return labels
 
 
-def build_player_preds_entry(week, generated_at, roster, starters, fp_by_espn_id=None):
+def build_player_preds_entry(week, generated_at, roster, starters, fp_by_espn_id=None, bench=None):
     """eval_log[week] に書く player_preds / rec_lineup を作る(I/Oなし・純粋関数)。
 
-    roster: player dict のリスト(id/name/position/pro_team/score等を含む)。
+    roster: player dict のリスト(id/name/position/pro_team等を含む)。
             id は espn_id 相当のキー(str化して扱う)。
+            注意: roster自体は"score"を持たない(analysis.pick_lineup()が
+            {**p, "score":...}で新しいdictを作って返すだけで、roster側は
+            変更されない)。espn予測値は必ずstarters/benchの方から引く。
     starters: analysis.pick_lineup() が返す starters(score/slotを含む)。
+    bench: analysis.pick_lineup() が返す bench(score付き)。渡さない場合、
+           ベンチ選手の src.espn/combined は取れない(呼び出し側の実装漏れ)。
     fp_by_espn_id: fp_source.by_espn_id() の戻り値(無ければ None のまま)。
     """
     fp_by_espn_id = fp_by_espn_id or {}
     starter_ids = {str(s.get("id")) for s in starters}
     slot_labels = _slot_labels(starters)
 
+    # starters/benchはanalysis.pick_lineup()が"score"付きで返す別オブジェクト
+    # (roster自体はscoreを持たない)。id→scoreの対応表をここで作ってから引く。
+    scored_by_id = {}
+    for s in list(starters) + list(bench or []):
+        pid = str(s.get("id"))
+        if pid not in scored_by_id:
+            scored_by_id[pid] = s.get("score")
+    if bench is None:
+        print("[warn] build_player_preds_entry: bench未指定。ベンチ選手のsrc.espnはNoneのまま")
+
     player_preds = {}
     for p in roster:
         pid = str(p.get("id"))
         fp = fp_by_espn_id.get(pid)
-        espn_val = p.get("score")  # analysis.player_week_score()が既に計算した値(Phase0では変更しない)
+        # scored_by_id優先。無ければp自身のscore(roster側で既に付与されているテスト/呼び出し向けの保険)
+        espn_val = scored_by_id.get(pid, p.get("score"))
         player_preds[pid] = {
             "name": p.get("name"),
             "pos": p.get("position"),
@@ -117,11 +133,12 @@ def build_player_preds_entry(week, generated_at, roster, starters, fp_by_espn_id
 
 
 def record_player_preds(season, week, generated_at, roster, starters, fp_by_espn_id=None,
-                         path=None, eval_log=None):
+                         path=None, eval_log=None, bench=None):
     """火曜18:17の記録本体。既存の同週記録(backfillでない本記録)は上書きしない(§4.2)。
 
     eval_log を渡した場合はその dict を直接更新して返す(保存はしない=テスト用)。
     渡さない場合は path(既定 docs/data/eval_log.json)から読み込み、更新して保存する。
+    bench: analysis.pick_lineup()が返すbench。src.espnをベンチ選手にも埋めるために必要。
     """
     own_log = eval_log is None
     log = eval_log if eval_log is not None else load_eval_log(path)
@@ -132,7 +149,7 @@ def record_player_preds(season, week, generated_at, roster, starters, fp_by_espn
         print(f"[info] scoring.record_player_preds: week{week}は既に本記録あり。上書きしない")
         return {"status": "skipped_exists", "week": week}
 
-    entry = build_player_preds_entry(week, generated_at, roster, starters, fp_by_espn_id)
+    entry = build_player_preds_entry(week, generated_at, roster, starters, fp_by_espn_id, bench=bench)
     merged = dict(existing or {})
     # 既存の preds キー(チーム粒度)は残す(後方互換)
     merged.update(entry)
@@ -260,9 +277,24 @@ def _iter_raw_players(schedule):
                     yield side, team, player
 
 
+def _extract_week_projection(raw_player, week):
+    """box_view(mMatchupScore/mScoreboard)の生player dict1件から、その週の
+    週次予測値(appliedTotal)を取り出す(probe_history.py §4.7で確認済みの解釈)。
+
+    statSourceId=1(予測。0は実測) / statSplitTypeId=1(週次。0は通算) /
+    scoringPeriodId=week の行のみを採用する。見つからなければNone
+    (黙って0点扱いにはしない=仕様§8「欠損の0pt化禁止」)。
+    """
+    for st in raw_player.get("stats") or []:
+        if (st.get("statSourceId") == 1 and st.get("statSplitTypeId") == 1
+                and st.get("scoringPeriodId") == week):
+            return st.get("appliedTotal")
+    return None
+
+
 def _espn_week_projections(lg, week, my_team_id):
-    """box_view(mMatchupScore+mScoreboard, statSourceId=1/statSplitTypeId=1)から
-    自チーム選手の週次投影を取る。1週=1リクエスト(仕様の上限を守る)。
+    """box_view(mMatchupScore+mScoreboard)から自チーム選手の週次投影を取る。
+    1週=1リクエスト(仕様の上限を守る)。抽出自体は_extract_week_projection()に委譲。
     """
     params = {"view": ["mMatchupScore", "mScoreboard"], "scoringPeriodId": week}
     data = lg.espn_request.league_get(params=params)
@@ -272,13 +304,7 @@ def _espn_week_projections(lg, week, my_team_id):
         if team.get("teamId") != my_team_id:
             continue
         pid = str(player.get("id"))
-        val = None
-        for st in player.get("stats") or []:
-            if (st.get("statSourceId") == 1 and st.get("statSplitTypeId") == 1
-                    and st.get("scoringPeriodId") == week):
-                val = st.get("appliedTotal")
-                break
-        proj[pid] = val
+        proj[pid] = _extract_week_projection(player, week)
     return proj
 
 
@@ -311,7 +337,9 @@ def _reconstruct_roster(current_rows, my_team_name, asof_dt, tx_path=None):
         d = e.get("date")
         try:
             return datetime.fromtimestamp(int(d) / 1000.0, tz=timezone.utc)
-        except Exception:
+        except Exception as ex:
+            print(f"[warn] backfill_week: transactions.jsonのdate解析失敗(この取引は無視して続行): "
+                  f"date={d!r} error={ex}")
             return None
 
     relevant = []
@@ -343,20 +371,45 @@ def _reconstruct_roster(current_rows, my_team_name, asof_dt, tx_path=None):
 
 
 def _load_fp_for_backfill(season, week, asof_dt, docs_dir=None, parquet_path=None):
-    """fp_history優先、無ければdb_fpecr.parquetをasofで切って使う。
+    """fp_history優先、無ければdb_fpecr.parquetをasofで切って使う(2経路のみ)。
+
+    ライブ取得(fp_latest_weekly.csv を今すぐ取得)は、現在時刻がasof(登録締め日、
+    火曜18:17 JST)を**まだ過ぎていない**場合に限り許可する。asofを過ぎた後に
+    「今」の値を取ると試合後の情報が混ざり得るため、これは先読み(§8禁止事項②)に
+    あたり許可しない。asofを過ぎている場合は fp_history と parquet の2経路のみで、
+    どちらも無ければ fp は null のまま(0点扱いにはしない)。
 
     parquet側の週次ページ(weekly-qb/rb/wr/te/k/dst)はecr_type='wp'のみで
     構成されている(2026-09-10時点で実測確認済み)ため、ecr_type混在は起きないが、
     念のため 'wp' 以外が混入していないかを検査し、混入時はエラーにする(§6.1④)。
+
+    戻り値: (by_espn_id: dict, fp_src: "fp_history"|"parquet_asof"|"none",
+             fp_scrape_date_max: str|None ※parquet_asof時のみ、採用した中で最新のscrape_date)
     """
     import fp_source
     rows = fp_source.load_fp_history(season, week, docs_dir=docs_dir)
     if rows:
-        return fp_source.by_espn_id(rows), "fp_history"
+        return fp_source.by_espn_id(rows), "fp_history", None
+
+    now = datetime.now(JST)
+    if now <= asof_dt:
+        # asofをまだ過ぎていない時点でこの関数が呼ばれた場合のみ、「今」の
+        # fp_latest_weekly.csv(軽量。38MBのparquetは使わない)を取得することは
+        # 先読みにならない。保存先はfp_historyそのもの(通常の火曜記録と同じ形)。
+        try:
+            fp_result = fp_source.run(season, week, docs_dir=docs_dir)
+            if fp_result.get("by_espn_id"):
+                print(f"[info] backfill_week: asof({asof_dt.isoformat()})未到来のため"
+                      f"FPをその場で取得・fp_historyに保存 (matched={fp_result.get('matched')})")
+                return fp_result["by_espn_id"], "fp_history", None
+        except Exception as e:
+            print(f"[warn] backfill_week: asof前のFP取得に失敗(続行、src.fpはNoneのまま): "
+                  f"{type(e).__name__}: {e}")
 
     if not parquet_path or not os.path.exists(parquet_path):
-        print(f"[warn] backfill_week: FP復元不可(fp_historyなし、parquet未指定/未取得)。src.fpはNoneのまま進む")
-        return {}, "none"
+        print(f"[warn] backfill_week: FP as-ofデータなし(fp_historyなし、parquet未指定/未取得, "
+              f"asof={asof_dt.isoformat()})。src.fpはNoneのまま進む(0にはしない)")
+        return {}, "none", None
 
     import pandas as pd
     weekly_pages = {"weekly-qb", "weekly-rb", "weekly-wr", "weekly-te", "weekly-k", "weekly-dst"}
@@ -368,11 +421,15 @@ def _load_fp_for_backfill(season, week, asof_dt, docs_dir=None, parquet_path=Non
             f"backfill_week: 週次ページなのにecr_type!='wp'が{len(bad)}件混入(仕様§6.1④違反の疑い)。処理を停止"
         )
     asof_date = asof_dt.astimezone(timezone.utc).date().isoformat()
-    df = df[df["scrape_date"] <= asof_date]
-    if df.empty:
-        print(f"[warn] backfill_week: asof({asof_date})以前のFPスナップショットが無い週。src.fpはNoneのまま進む")
-        return {}, "none"
+    df_before = df[df["scrape_date"] <= asof_date]
+    if df_before.empty:
+        max_scrape = df["scrape_date"].max() if not df.empty else None
+        print(f"[warn] backfill_week: FP as-ofデータなし(parquet最新scrape_date={max_scrape}, "
+              f"asof={asof_date})。src.fpはNoneのまま進む(0にはしない)")
+        return {}, "none", None
+    df = df_before
     # fantasypros_id毎に、asof以前で最も新しいscrape_dateの行を採用(先読み防止のas-ofルール)
+    fp_scrape_date_max = str(df["scrape_date"].max())
     df = df.sort_values("scrape_date").groupby("id", as_index=False).last()
 
     id_map_text = None
@@ -401,8 +458,9 @@ def _load_fp_for_backfill(season, week, asof_dt, docs_dir=None, parquet_path=Non
         }
     if unmatched:
         print(f"[warn] backfill_week(parquet経路): ID突合失敗 {unmatched}件")
-    print(f"[info] backfill_week: FPをdb_fpecr.parquetから復元(asof<={asof_date}, {len(out)}名, r2p_ptsなし)")
-    return out, "parquet"
+    print(f"[info] backfill_week: FPをdb_fpecr.parquetから復元(asof<={asof_date}, "
+          f"採用scrape_date最大={fp_scrape_date_max}, {len(out)}名, r2p_ptsなし)")
+    return out, "parquet_asof", fp_scrape_date_max
 
 
 def backfill_week(season, week, asof=None, path=None, parquet_path=None, docs_dir=None,
@@ -451,8 +509,9 @@ def backfill_week(season, week, asof=None, path=None, parquet_path=None, docs_di
     # --- box_view 1回: ESPN週次予測 ---
     proj_raw = _espn_week_projections(lg, week, ff_config.MY_TEAM_ID)
 
-    # --- FP: fp_history優先、無ければparquet(asof切り) ---
-    fp_by_espn_id, fp_src = _load_fp_for_backfill(season, week, asof, docs_dir=docs_dir, parquet_path=parquet_path)
+    # --- FP: fp_history優先、無ければparquet(asof切り)。ライブ取得はasof未到来時のみ ---
+    fp_by_espn_id, fp_src, fp_scrape_date_max = _load_fp_for_backfill(
+        season, week, asof, docs_dir=docs_dir, parquet_path=parquet_path)
 
     # --- 推奨ロジックは変えない。analysis.pick_lineup()をそのまま使う ---
     fake_roster = []
@@ -466,7 +525,7 @@ def backfill_week(season, week, asof=None, path=None, parquet_path=None, docs_di
     rec_lineup_ids = [str(s.get("id")) for s in starters]
 
     generated_at = datetime.now(JST).isoformat()
-    entry = build_player_preds_entry(week, generated_at, fake_roster, starters, fp_by_espn_id)
+    entry = build_player_preds_entry(week, generated_at, fake_roster, starters, fp_by_espn_id, bench=bench)
     entry["rec_lineup"] = rec_lineup_ids
     entry["backfilled"] = True
     entry["backfill_generated_at"] = generated_at
@@ -474,6 +533,8 @@ def backfill_week(season, week, asof=None, path=None, parquet_path=None, docs_di
     entry["roster_reconstructed"] = roster_reconstructed
     entry["actual_lineup"] = actual_lineup_ids
     entry["actual"] = actual_points_by_id
+    entry["fp_src"] = fp_src  # "fp_history" / "parquet_asof" / "none"
+    entry["fp_scrape_date_max"] = fp_scrape_date_max  # parquet_asof時のみ非None
 
     have_actuals = any(v is not None for v in actual_points_by_id.values())
     if have_actuals:
@@ -501,10 +562,12 @@ def backfill_week(season, week, asof=None, path=None, parquet_path=None, docs_di
     save_eval_log(log, path)
 
     print(f"[info] backfill_week: week{week} 後追い記録完了 "
-          f"(fp_src={fp_src}, roster_reconstructed={roster_reconstructed}, "
+          f"(fp_src={fp_src}, fp_scrape_date_max={fp_scrape_date_max}, "
+          f"roster_reconstructed={roster_reconstructed}, "
           f"score={'あり' if have_actuals else '未確定'})")
     return {
         "status": "backfilled", "week": week, "fp_source": fp_src,
+        "fp_scrape_date_max": fp_scrape_date_max,
         "roster_reconstructed": roster_reconstructed, "n_players": len(fake_roster),
         "score": entry["score"],
     }
