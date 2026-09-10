@@ -1,6 +1,6 @@
 {
  "1": {
-  "generated_at": "2026-09-10T17:31:35.542347+09:00",
+  "generated_at": "2026-09-10T17:41:30.628490+09:00",
   "preds": {
    "1": {
     "espn": 131.7,
@@ -345,10 +345,10 @@
    "exec_quality": 0.0
   },
   "backfilled": true,
-  "backfill_generated_at": "2026-09-10T17:31:35.542347+09:00",
+  "backfill_generated_at": "2026-09-10T17:41:30.628490+09:00",
   "asof": "2026-09-08T18:17:00+09:00",
   "roster_reconstructed": false,
-  "fp_src": "none",
-  "fp_scrape_date_max": null
+  "fp_src": "parquet_asof",
+  "fp_scrape_date_max": "2025-12-26"
  }
 }
