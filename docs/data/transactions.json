@@ -90,6 +90,27 @@
    "action": "DROPPED",
    "player": "Bucky Irving",
    "bid": 0
+  },
+  {
+   "date": 1789084621095,
+   "team": "Fourth and Way Down",
+   "action": "DROPPED",
+   "player": "Rams D/ST",
+   "bid": 0
+  },
+  {
+   "date": 1789084621095,
+   "team": "Fourth and Way Down",
+   "action": "FA ADDED",
+   "player": "Jaguars D/ST",
+   "bid": 0
+  },
+  {
+   "date": 1789086501210,
+   "team": "Imaginary Blue",
+   "action": "DROPPED",
+   "player": "Sam LaPorta",
+   "bid": 0
   }
  ]
 }
