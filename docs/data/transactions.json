@@ -111,6 +111,20 @@
    "action": "DROPPED",
    "player": "Sam LaPorta",
    "bid": 0
+  },
+  {
+   "date": 1789313605181,
+   "team": "Fuward Trump",
+   "action": "DROPPED",
+   "player": "RJ Harvey",
+   "bid": 0
+  },
+  {
+   "date": 1789313605181,
+   "team": "Fuward Trump",
+   "action": "FA ADDED",
+   "player": "J.K. Dobbins",
+   "bid": 0
   }
  ]
 }
