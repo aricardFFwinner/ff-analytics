@@ -78,6 +78,20 @@
    "bid": 0
   },
   {
+   "date": 1788993704728,
+   "team": "Darnold's Butt",
+   "action": "DROPPED",
+   "player": "Tony Pollard",
+   "bid": 0
+  },
+  {
+   "date": 1788993704728,
+   "team": "Darnold's Butt",
+   "action": "FA ADDED",
+   "player": "Jake Ferguson",
+   "bid": 0
+  },
+  {
    "date": 1788993770208,
    "team": "SB Champion",
    "action": "FA ADDED",
@@ -87,6 +101,20 @@
   {
    "date": 1788993770208,
    "team": "SB Champion",
+   "action": "DROPPED",
+   "player": "Bucky Irving",
+   "bid": 0
+  },
+  {
+   "date": 1788993770208,
+   "team": "Darnold's Butt",
+   "action": "FA ADDED",
+   "player": "Jaxson Dart",
+   "bid": 0
+  },
+  {
+   "date": 1788993770208,
+   "team": "Darnold's Butt",
    "action": "DROPPED",
    "player": "Bucky Irving",
    "bid": 0

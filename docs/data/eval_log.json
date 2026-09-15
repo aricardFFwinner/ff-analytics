@@ -350,5 +350,307 @@
   "roster_reconstructed": false,
   "fp_src": "none",
   "fp_scrape_date_max": null
+ },
+ "2": {
+  "generated_at": "2026-09-15T18:35:30.224128+09:00",
+  "preds": {
+   "1": {
+    "espn": 127.5,
+    "blend": 124.2
+   },
+   "2": {
+    "espn": 139.3,
+    "blend": 137.0
+   },
+   "3": {
+    "espn": 139.0,
+    "blend": 137.4
+   },
+   "4": {
+    "espn": 125.5,
+    "blend": 127.7
+   },
+   "5": {
+    "espn": 135.4,
+    "blend": 131.4
+   },
+   "6": {
+    "espn": 134.4,
+    "blend": 133.7
+   }
+  },
+  "player_preds": {
+   "4362628": {
+    "name": "Ja'Marr Chase",
+    "pos": "WR",
+    "pro_team": "CIN",
+    "src": {
+     "espn": 18.85,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 18.85,
+    "sd": null,
+    "slot": null,
+    "rec_start": true,
+    "snap_pct_prior": null
+   },
+   "4242335": {
+    "name": "Jonathan Taylor",
+    "pos": "RB",
+    "pro_team": "IND",
+    "src": {
+     "espn": 17.68,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 17.68,
+    "sd": null,
+    "slot": null,
+    "rec_start": true,
+    "snap_pct_prior": null
+   },
+   "4258173": {
+    "name": "Nico Collins",
+    "pos": "WR",
+    "pro_team": "HOU",
+    "src": {
+     "espn": 15.53,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 15.53,
+    "sd": null,
+    "slot": null,
+    "rec_start": true,
+    "snap_pct_prior": null
+   },
+   "4685382": {
+    "name": "Omarion Hampton",
+    "pos": "RB",
+    "pro_team": "LAC",
+    "src": {
+     "espn": 16.01,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 16.01,
+    "sd": null,
+    "slot": null,
+    "rec_start": true,
+    "snap_pct_prior": null
+   },
+   "4426502": {
+    "name": "Drake London",
+    "pos": "WR",
+    "pro_team": "ATL",
+    "src": {
+     "espn": 15.59,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 15.59,
+    "sd": null,
+    "slot": null,
+    "rec_start": true,
+    "snap_pct_prior": null
+   },
+   "4047365": {
+    "name": "Josh Jacobs",
+    "pos": "RB",
+    "pro_team": "GB",
+    "src": {
+     "espn": 14.93,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 14.93,
+    "sd": null,
+    "slot": null,
+    "rec_start": false,
+    "snap_pct_prior": null
+   },
+   "4595348": {
+    "name": "Malik Nabers",
+    "pos": "WR",
+    "pro_team": "NYG",
+    "src": {
+     "espn": 14.72,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 14.72,
+    "sd": null,
+    "slot": null,
+    "rec_start": false,
+    "snap_pct_prior": null
+   },
+   "4572680": {
+    "name": "Tucker Kraft",
+    "pos": "TE",
+    "pro_team": "GB",
+    "src": {
+     "espn": 10.78,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 10.78,
+    "sd": null,
+    "slot": null,
+    "rec_start": true,
+    "snap_pct_prior": null
+   },
+   "4372016": {
+    "name": "Jaylen Waddle",
+    "pos": "WR",
+    "pro_team": "DEN",
+    "src": {
+     "espn": 12.8,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 12.8,
+    "sd": null,
+    "slot": null,
+    "rec_start": false,
+    "snap_pct_prior": null
+   },
+   "4685702": {
+    "name": "Quinshon Judkins",
+    "pos": "RB",
+    "pro_team": "CLE",
+    "src": {
+     "espn": 11.81,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 11.81,
+    "sd": null,
+    "slot": null,
+    "rec_start": false,
+    "snap_pct_prior": null
+   },
+   "4431299": {
+    "name": "Rome Odunze",
+    "pos": "WR",
+    "pro_team": "CHI",
+    "src": {
+     "espn": 11.81,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 11.81,
+    "sd": null,
+    "slot": null,
+    "rec_start": false,
+    "snap_pct_prior": null
+   },
+   "4710714": {
+    "name": "De'Zhaun Stribling",
+    "pos": "WR",
+    "pro_team": "SF",
+    "src": {
+     "espn": 8.32,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 8.32,
+    "sd": null,
+    "slot": null,
+    "rec_start": false,
+    "snap_pct_prior": null
+   },
+   "4038941": {
+    "name": "Justin Herbert",
+    "pos": "QB",
+    "pro_team": "LAC",
+    "src": {
+     "espn": 19.14,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 19.14,
+    "sd": null,
+    "slot": null,
+    "rec_start": true,
+    "snap_pct_prior": null
+   },
+   "4574716": {
+    "name": "Harrison Mevis",
+    "pos": "K",
+    "pro_team": "LAR",
+    "src": {
+     "espn": 9.55,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 9.55,
+    "sd": null,
+    "slot": null,
+    "rec_start": true,
+    "snap_pct_prior": null
+   },
+   "5083076": {
+    "name": "Harold Fannin Jr.",
+    "pos": "TE",
+    "pro_team": "CLE",
+    "src": {
+     "espn": 10.17,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 10.17,
+    "sd": null,
+    "slot": null,
+    "rec_start": false,
+    "snap_pct_prior": null
+   },
+   "-16030": {
+    "name": "Jaguars D/ST",
+    "pos": "D/ST",
+    "pro_team": "JAX",
+    "src": {
+     "espn": 4.33,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 4.33,
+    "sd": null,
+    "slot": null,
+    "rec_start": true,
+    "snap_pct_prior": null
+   }
+  },
+  "rec_lineup": [
+   "4038941",
+   "4242335",
+   "4685382",
+   "4362628",
+   "4426502",
+   "4572680",
+   "-16030",
+   "4574716",
+   "4258173"
+  ],
+  "rec_lineup_alt": null,
+  "actual_lineup": null,
+  "actual": {},
+  "score": {}
  }
 }
