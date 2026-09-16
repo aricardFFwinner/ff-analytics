@@ -352,15 +352,15 @@
   "fp_scrape_date_max": null
  },
  "2": {
-  "generated_at": "2026-09-16 12:27",
+  "generated_at": "2026-09-16 18:53",
   "preds": {
    "1": {
-    "espn": 128.6,
-    "blend": 124.2
+    "espn": 132.3,
+    "blend": 126.0
    },
    "2": {
-    "espn": 141.5,
-    "blend": 137.0
+    "espn": 142.7,
+    "blend": 137.1
    },
    "3": {
     "espn": 139.1,
