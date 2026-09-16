@@ -35,7 +35,7 @@
   }
  },
  "2": {
-  "generated_at": "2026-09-15 18:35",
+  "generated_at": "2026-09-16 12:27",
   "teams": {
    "1": {
     "champ_pct": 5.2,
@@ -43,19 +43,19 @@
     "power": 124.2
    },
    "2": {
-    "champ_pct": 26.2,
+    "champ_pct": 26.3,
     "playoff_pct": 100.0,
-    "power": 137.1
+    "power": 137.0
    },
    "3": {
-    "champ_pct": 24.2,
+    "champ_pct": 24.3,
     "playoff_pct": 100.0,
     "power": 137.4
    },
    "4": {
-    "champ_pct": 10.2,
+    "champ_pct": 9.9,
     "playoff_pct": 100.0,
-    "power": 127.8
+    "power": 127.4
    },
    "5": {
     "champ_pct": 12.3,
@@ -63,9 +63,9 @@
     "power": 131.2
    },
    "6": {
-    "champ_pct": 21.9,
+    "champ_pct": 22.0,
     "playoff_pct": 100.0,
-    "power": 133.7
+    "power": 133.6
    }
   }
  }
