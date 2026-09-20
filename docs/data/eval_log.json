@@ -352,30 +352,30 @@
   "fp_scrape_date_max": null
  },
  "2": {
-  "generated_at": "2026-09-16 18:53",
+  "generated_at": "2026-09-20 12:30",
   "preds": {
    "1": {
-    "espn": 132.3,
+    "espn": 130.5,
     "blend": 126.0
    },
    "2": {
-    "espn": 142.7,
-    "blend": 137.1
+    "espn": 142.0,
+    "blend": 137.2
    },
    "3": {
-    "espn": 139.1,
-    "blend": 137.4
+    "espn": 140.0,
+    "blend": 138.5
    },
    "4": {
-    "espn": 126.1,
-    "blend": 127.3
+    "espn": 127.3,
+    "blend": 128.3
    },
    "5": {
-    "espn": 136.4,
-    "blend": 131.3
+    "espn": 139.4,
+    "blend": 132.2
    },
    "6": {
-    "espn": 133.2,
+    "espn": 134.1,
     "blend": 133.7
    }
   },
