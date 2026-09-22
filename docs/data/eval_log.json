@@ -652,5 +652,307 @@
   "actual_lineup": null,
   "actual": {},
   "score": {}
+ },
+ "3": {
+  "generated_at": "2026-09-22T18:29:33.555710+09:00",
+  "preds": {
+   "1": {
+    "espn": 133.9,
+    "blend": 133.7
+   },
+   "2": {
+    "espn": 145.7,
+    "blend": 147.4
+   },
+   "3": {
+    "espn": 140.0,
+    "blend": 139.9
+   },
+   "4": {
+    "espn": 131.8,
+    "blend": 135.6
+   },
+   "5": {
+    "espn": 136.0,
+    "blend": 138.0
+   },
+   "6": {
+    "espn": 132.4,
+    "blend": 133.7
+   }
+  },
+  "player_preds": {
+   "4362628": {
+    "name": "Ja'Marr Chase",
+    "pos": "WR",
+    "pro_team": "CIN",
+    "src": {
+     "espn": 19.03,
+     "fp": 19.4,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 19.03,
+    "sd": null,
+    "slot": null,
+    "rec_start": true,
+    "snap_pct_prior": null
+   },
+   "4242335": {
+    "name": "Jonathan Taylor",
+    "pos": "RB",
+    "pro_team": "IND",
+    "src": {
+     "espn": 20.62,
+     "fp": 17.6,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 20.62,
+    "sd": null,
+    "slot": null,
+    "rec_start": true,
+    "snap_pct_prior": null
+   },
+   "4258173": {
+    "name": "Nico Collins",
+    "pos": "WR",
+    "pro_team": "HOU",
+    "src": {
+     "espn": 0.0,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 0.0,
+    "sd": null,
+    "slot": null,
+    "rec_start": false,
+    "snap_pct_prior": null
+   },
+   "4685382": {
+    "name": "Omarion Hampton",
+    "pos": "RB",
+    "pro_team": "LAC",
+    "src": {
+     "espn": 15.02,
+     "fp": 15.3,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 15.02,
+    "sd": null,
+    "slot": null,
+    "rec_start": false,
+    "snap_pct_prior": null
+   },
+   "4426502": {
+    "name": "Drake London",
+    "pos": "WR",
+    "pro_team": "ATL",
+    "src": {
+     "espn": 15.39,
+     "fp": 13.0,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 15.39,
+    "sd": null,
+    "slot": null,
+    "rec_start": true,
+    "snap_pct_prior": null
+   },
+   "4047365": {
+    "name": "Josh Jacobs",
+    "pos": "RB",
+    "pro_team": "GB",
+    "src": {
+     "espn": 15.24,
+     "fp": 0.0,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 15.24,
+    "sd": null,
+    "slot": null,
+    "rec_start": true,
+    "snap_pct_prior": null
+   },
+   "4595348": {
+    "name": "Malik Nabers",
+    "pos": "WR",
+    "pro_team": "NYG",
+    "src": {
+     "espn": 15.22,
+     "fp": 14.9,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 15.22,
+    "sd": null,
+    "slot": null,
+    "rec_start": false,
+    "snap_pct_prior": null
+   },
+   "4572680": {
+    "name": "Tucker Kraft",
+    "pos": "TE",
+    "pro_team": "GB",
+    "src": {
+     "espn": 10.27,
+     "fp": 11.1,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 10.27,
+    "sd": null,
+    "slot": null,
+    "rec_start": false,
+    "snap_pct_prior": null
+   },
+   "4372016": {
+    "name": "Jaylen Waddle",
+    "pos": "WR",
+    "pro_team": "DEN",
+    "src": {
+     "espn": 13.42,
+     "fp": 13.0,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 13.42,
+    "sd": null,
+    "slot": null,
+    "rec_start": false,
+    "snap_pct_prior": null
+   },
+   "4431299": {
+    "name": "Rome Odunze",
+    "pos": "WR",
+    "pro_team": "CHI",
+    "src": {
+     "espn": 10.3,
+     "fp": 11.7,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 10.3,
+    "sd": null,
+    "slot": null,
+    "rec_start": false,
+    "snap_pct_prior": null
+   },
+   "4574716": {
+    "name": "Harrison Mevis",
+    "pos": "K",
+    "pro_team": "LAR",
+    "src": {
+     "espn": 8.43,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 8.43,
+    "sd": null,
+    "slot": null,
+    "rec_start": true,
+    "snap_pct_prior": null
+   },
+   "4596448": {
+    "name": "Bucky Irving",
+    "pos": "RB",
+    "pro_team": "TB",
+    "src": {
+     "espn": 15.78,
+     "fp": 14.2,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 15.78,
+    "sd": null,
+    "slot": null,
+    "rec_start": true,
+    "snap_pct_prior": null
+   },
+   "3121023": {
+    "name": "Dallas Goedert",
+    "pos": "TE",
+    "pro_team": "PHI",
+    "src": {
+     "espn": 10.84,
+     "fp": 11.4,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 10.84,
+    "sd": null,
+    "slot": null,
+    "rec_start": true,
+    "snap_pct_prior": null
+   },
+   "4361741": {
+    "name": "Brock Purdy",
+    "pos": "QB",
+    "pro_team": "SF",
+    "src": {
+     "espn": 20.8,
+     "fp": 20.9,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 20.8,
+    "sd": null,
+    "slot": null,
+    "rec_start": true,
+    "snap_pct_prior": null
+   },
+   "4869645": {
+    "name": "Caleb Douglas",
+    "pos": "WR",
+    "pro_team": "MIA",
+    "src": {
+     "espn": 8.75,
+     "fp": 9.2,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 8.75,
+    "sd": null,
+    "slot": null,
+    "rec_start": false,
+    "snap_pct_prior": null
+   },
+   "-16025": {
+    "name": "49ers D/ST",
+    "pos": "D/ST",
+    "pro_team": "SF",
+    "src": {
+     "espn": 7.21,
+     "fp": null,
+     "blend": null,
+     "vegas_scale": null
+    },
+    "combined": 7.21,
+    "sd": null,
+    "slot": null,
+    "rec_start": true,
+    "snap_pct_prior": null
+   }
+  },
+  "rec_lineup": [
+   "4361741",
+   "4242335",
+   "4596448",
+   "4362628",
+   "4426502",
+   "3121023",
+   "-16025",
+   "4574716",
+   "4047365"
+  ],
+  "rec_lineup_alt": null,
+  "actual_lineup": null,
+  "actual": {},
+  "score": {}
  }
 }
