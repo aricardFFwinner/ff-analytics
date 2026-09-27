@@ -538,6 +538,69 @@
    "action": "DROPPED",
    "player": "Harrison Butker",
    "bid": 0
+  },
+  {
+   "date": 1790313631547,
+   "team": "Burgerkings",
+   "action": "FA ADDED",
+   "player": "Tyler Shough",
+   "bid": 0
+  },
+  {
+   "date": 1790313722375,
+   "team": "Burgerkings",
+   "action": "FA ADDED",
+   "player": "Eddy Pineiro",
+   "bid": 0
+  },
+  {
+   "date": 1790313722375,
+   "team": "Burgerkings",
+   "action": "DROPPED",
+   "player": "Cameron Dicker",
+   "bid": 0
+  },
+  {
+   "date": 1790323185012,
+   "team": "Burgerkings",
+   "action": "FA ADDED",
+   "player": "Brock Purdy",
+   "bid": 0
+  },
+  {
+   "date": 1790323185012,
+   "team": "Burgerkings",
+   "action": "DROPPED",
+   "player": "Tyler Shough",
+   "bid": 0
+  },
+  {
+   "date": 1790323370624,
+   "team": "Burgerkings",
+   "action": "DROPPED",
+   "player": "Eagles D/ST",
+   "bid": 0
+  },
+  {
+   "date": 1790323370624,
+   "team": "Burgerkings",
+   "action": "FA ADDED",
+   "player": "49ers D/ST",
+   "bid": 0
+  },
+  {
+   "date": 1790364512076,
+   "team": "Burgerkings",
+   "action": "DROPPED",
+   "player": "49ers D/ST",
+   "bid": 0
+  },
+  {
+   "date": 1790364512076,
+   "team": "Burgerkings",
+   "action": "FA ADDED",
+   "player": "Panthers D/ST",
+   "bid": 0
   }
  ]
 }
