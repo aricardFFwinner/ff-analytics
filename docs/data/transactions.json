@@ -601,6 +601,20 @@
    "action": "FA ADDED",
    "player": "Panthers D/ST",
    "bid": 0
+  },
+  {
+   "date": 1790522097612,
+   "team": "Imaginary Blue",
+   "action": "FA ADDED",
+   "player": "Bengals D/ST",
+   "bid": 0
+  },
+  {
+   "date": 1790522097612,
+   "team": "Imaginary Blue",
+   "action": "DROPPED",
+   "player": "Ravens D/ST",
+   "bid": 0
   }
  ]
 }
