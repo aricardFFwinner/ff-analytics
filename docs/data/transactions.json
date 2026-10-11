@@ -1154,6 +1154,20 @@
    "action": "DROPPED",
    "player": "Will Reichard",
    "bid": 0
+  },
+  {
+   "date": 1791714351004,
+   "team": "Fuward Trump",
+   "action": "DROPPED",
+   "player": "Texans D/ST",
+   "bid": 0
+  },
+  {
+   "date": 1791714351004,
+   "team": "Fuward Trump",
+   "action": "FA ADDED",
+   "player": "Raiders D/ST",
+   "bid": 0
   }
  ]
 }
