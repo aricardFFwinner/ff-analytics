@@ -1434,6 +1434,48 @@
    "action": "DROPPED",
    "player": "Harold Fannin Jr.",
    "bid": 0
+  },
+  {
+   "date": 1792331641484,
+   "team": "Fuward Trump",
+   "action": "FA ADDED",
+   "player": "Bryce Young",
+   "bid": 0
+  },
+  {
+   "date": 1792331641484,
+   "team": "Fuward Trump",
+   "action": "DROPPED",
+   "player": "Carnell Tate",
+   "bid": 0
+  },
+  {
+   "date": 1792334067520,
+   "team": "Imaginary Blue",
+   "action": "DROPPED",
+   "player": "Dak Prescott",
+   "bid": 0
+  },
+  {
+   "date": 1792334067520,
+   "team": "Imaginary Blue",
+   "action": "FA ADDED",
+   "player": "Kirk Cousins",
+   "bid": 0
+  },
+  {
+   "date": 1792338800154,
+   "team": "Rodgers Last Dance",
+   "action": "FA ADDED",
+   "player": "Pat Freiermuth",
+   "bid": 0
+  },
+  {
+   "date": 1792338800154,
+   "team": "Rodgers Last Dance",
+   "action": "DROPPED",
+   "player": "DK Metcalf",
+   "bid": 0
   }
  ]
 }
