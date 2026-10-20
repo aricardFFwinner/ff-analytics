@@ -1476,6 +1476,20 @@
    "action": "DROPPED",
    "player": "DK Metcalf",
    "bid": 0
+  },
+  {
+   "date": 1792493796953,
+   "team": "Imaginary Blue",
+   "action": "DROPPED",
+   "player": "Jadarian Price",
+   "bid": 0
+  },
+  {
+   "date": 1792503668516,
+   "team": "Fuward Trump",
+   "action": "DROPPED",
+   "player": "Cam Skattebo",
+   "bid": 0
   }
  ]
 }
