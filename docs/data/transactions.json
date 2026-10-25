@@ -1756,6 +1756,20 @@
    "action": "TRADE_RECEIVED",
    "player": "Tyler Warren",
    "bid": 0
+  },
+  {
+   "date": 1792936647947,
+   "team": "Fourth and Way Down",
+   "action": "DROPPED",
+   "player": "Jordan Love",
+   "bid": 0
+  },
+  {
+   "date": 1792936684193,
+   "team": "Fourth and Way Down",
+   "action": "FA ADDED",
+   "player": "Marvin Harrison Jr.",
+   "bid": 0
   }
  ]
 }
