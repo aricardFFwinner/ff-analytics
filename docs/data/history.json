@@ -243,5 +243,40 @@
     "power": 145.4
    }
   }
+ },
+ "8": {
+  "generated_at": "2026-10-28 00:24",
+  "teams": {
+   "1": {
+    "champ_pct": 7.6,
+    "playoff_pct": 100.0,
+    "power": 138.9
+   },
+   "2": {
+    "champ_pct": 42.8,
+    "playoff_pct": 100.0,
+    "power": 150.6
+   },
+   "3": {
+    "champ_pct": 6.2,
+    "playoff_pct": 100.0,
+    "power": 134.9
+   },
+   "4": {
+    "champ_pct": 16.2,
+    "playoff_pct": 100.0,
+    "power": 137.7
+   },
+   "5": {
+    "champ_pct": 10.9,
+    "playoff_pct": 100.0,
+    "power": 140.1
+   },
+   "6": {
+    "champ_pct": 16.3,
+    "playoff_pct": 100.0,
+    "power": 140.5
+   }
+  }
  }
 }
