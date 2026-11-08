@@ -2190,6 +2190,20 @@
    "action": "FA ADDED",
    "player": "Jonah Coleman",
    "bid": 0
+  },
+  {
+   "date": 1794148325089,
+   "team": "Fuward Trump",
+   "action": "DROPPED",
+   "player": "Cam Skattebo",
+   "bid": 0
+  },
+  {
+   "date": 1794148325089,
+   "team": "Fuward Trump",
+   "action": "FA ADDED",
+   "player": "Devin Singletary",
+   "bid": 0
   }
  ]
 }
