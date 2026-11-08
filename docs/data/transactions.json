@@ -2120,6 +2120,76 @@
    "action": "DROPPED",
    "player": "Braelon Allen",
    "bid": 0
+  },
+  {
+   "date": 1793828797998,
+   "team": "Fuward Trump",
+   "action": "DROPPED",
+   "player": "Tyler Loop",
+   "bid": 0
+  },
+  {
+   "date": 1793828797998,
+   "team": "Fuward Trump",
+   "action": "FA ADDED",
+   "player": "Harrison Butker",
+   "bid": 0
+  },
+  {
+   "date": 1793829027808,
+   "team": "Fuward Trump",
+   "action": "DROPPED",
+   "player": "Bengals D/ST",
+   "bid": 0
+  },
+  {
+   "date": 1793829027808,
+   "team": "Fuward Trump",
+   "action": "FA ADDED",
+   "player": "Bears D/ST",
+   "bid": 0
+  },
+  {
+   "date": 1793829143588,
+   "team": "Fuward Trump",
+   "action": "FA ADDED",
+   "player": "Cam Skattebo",
+   "bid": 0
+  },
+  {
+   "date": 1793829143588,
+   "team": "Fuward Trump",
+   "action": "DROPPED",
+   "player": "Jordan Mason",
+   "bid": 0
+  },
+  {
+   "date": 1793829198666,
+   "team": "Fuward Trump",
+   "action": "FA ADDED",
+   "player": "Rhamondre Stevenson",
+   "bid": 0
+  },
+  {
+   "date": 1793829198666,
+   "team": "Fuward Trump",
+   "action": "DROPPED",
+   "player": "Rachaad White",
+   "bid": 0
+  },
+  {
+   "date": 1794045436078,
+   "team": "Jollibees",
+   "action": "DROPPED",
+   "player": "De'Zhaun Stribling",
+   "bid": 0
+  },
+  {
+   "date": 1794045466239,
+   "team": "Jollibees",
+   "action": "FA ADDED",
+   "player": "Jonah Coleman",
+   "bid": 0
   }
  ]
 }
