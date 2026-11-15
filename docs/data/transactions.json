@@ -2400,6 +2400,20 @@
    "action": "FA ADDED",
    "player": "C.J. Stroud",
    "bid": 0
+  },
+  {
+   "date": 1794756661941,
+   "team": "Imaginary Blue",
+   "action": "DROPPED",
+   "player": "Will Reichard",
+   "bid": 0
+  },
+  {
+   "date": 1794756661941,
+   "team": "Imaginary Blue",
+   "action": "FA ADDED",
+   "player": "Jordan Love",
+   "bid": 0
   }
  ]
 }
