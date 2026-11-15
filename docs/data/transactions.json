@@ -2295,6 +2295,111 @@
    "action": "FA ADDED",
    "player": "Keenan Allen",
    "bid": 0
+  },
+  {
+   "date": 1794400456412,
+   "team": "Fuward Trump",
+   "action": "FA ADDED",
+   "player": "Dominic Zvada",
+   "bid": 0
+  },
+  {
+   "date": 1794400456412,
+   "team": "Fuward Trump",
+   "action": "DROPPED",
+   "player": "Harrison Butker",
+   "bid": 0
+  },
+  {
+   "date": 1794446304439,
+   "team": "Darnold's Butt",
+   "action": "FA ADDED",
+   "player": "Ravens D/ST",
+   "bid": 0
+  },
+  {
+   "date": 1794446338109,
+   "team": "Darnold's Butt",
+   "action": "DROPPED",
+   "player": "Jameson Williams",
+   "bid": 0
+  },
+  {
+   "date": 1794446338109,
+   "team": "Darnold's Butt",
+   "action": "FA ADDED",
+   "player": "Tank Dell",
+   "bid": 0
+  },
+  {
+   "date": 1794450557989,
+   "team": "Jollibees",
+   "action": "DROPPED",
+   "player": "DeVonta Smith",
+   "bid": 0
+  },
+  {
+   "date": 1794450575170,
+   "team": "Jollibees",
+   "action": "FA ADDED",
+   "player": "Tony Pollard",
+   "bid": 0
+  },
+  {
+   "date": 1794472777929,
+   "team": "Fourth and Way Down",
+   "action": "FA ADDED",
+   "player": "Zach Charbonnet",
+   "bid": 0
+  },
+  {
+   "date": 1794472777929,
+   "team": "Fourth and Way Down",
+   "action": "DROPPED",
+   "player": "Michael Wilson",
+   "bid": 0
+  },
+  {
+   "date": 1794650940297,
+   "team": "Jollibees",
+   "action": "FA ADDED",
+   "player": "Jameson Williams",
+   "bid": 0
+  },
+  {
+   "date": 1794650940297,
+   "team": "Jollibees",
+   "action": "DROPPED",
+   "player": "DeMario Douglas",
+   "bid": 0
+  },
+  {
+   "date": 1794712630357,
+   "team": "Jollibees",
+   "action": "FA ADDED",
+   "player": "Emmett Johnson",
+   "bid": 0
+  },
+  {
+   "date": 1794712630357,
+   "team": "Jollibees",
+   "action": "DROPPED",
+   "player": "Ollie Gordon II",
+   "bid": 0
+  },
+  {
+   "date": 1794716449921,
+   "team": "Imaginary Blue",
+   "action": "DROPPED",
+   "player": "Lamar Jackson",
+   "bid": 0
+  },
+  {
+   "date": 1794716449921,
+   "team": "Imaginary Blue",
+   "action": "FA ADDED",
+   "player": "C.J. Stroud",
+   "bid": 0
   }
  ]
 }
