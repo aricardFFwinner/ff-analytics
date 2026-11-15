@@ -299,7 +299,7 @@
      "game_ou": 49.5,
      "opp_implied": 23.0,
      "next_week_opp": "@ WAS",
-     "next_implied_total": 27.6,
+     "next_implied_total": 27.5,
      "opp": {
       "snap": 0.84,
       "snap_avg": 0.9,
@@ -324,8 +324,8 @@
      "injury_status": "ACTIVE",
      "lineup_slot": "RB",
      "percent_owned": 99.88,
-     "total_points": 164.5,
-     "avg_points": 16.45,
+     "total_points": 165.9,
+     "avg_points": 16.59,
      "proj_total": 132.67,
      "proj_avg": 16.58,
      "weekly_proj": {
@@ -333,7 +333,7 @@
       "9": 19.56
      },
      "weekly_actual": {
-      "10": 10.9,
+      "10": 12.3,
       "9": 9.4
      },
      "opponents": {
@@ -569,9 +569,9 @@
      "venue_str": "屋外/人工芝",
      "weather_str": "9°C 風2m/s 雨0%",
      "wind_warn": false,
-     "implied_total": 28.5,
-     "game_ou": 54.5,
-     "opp_implied": 26.0,
+     "implied_total": 24.1,
+     "game_ou": 48.0,
+     "opp_implied": 23.9,
      "next_week_opp": "@ HOU",
      "opp": {
       "snap": 0.69,
@@ -844,9 +844,9 @@
      "venue_str": "屋外/天然芝",
      "weather_str": "8°C 風6m/s 雨2%",
      "wind_warn": false,
-     "implied_total": 24.9,
-     "game_ou": 48.2,
-     "opp_implied": 23.2,
+     "implied_total": 24.5,
+     "game_ou": 51.5,
+     "opp_implied": 27.0,
      "next_week_opp": "vs IND",
      "opp": {
       "snap": 0.73,
@@ -869,7 +869,7 @@
      "name": "Drake London",
      "position": "WR",
      "pro_team": "ATL",
-     "injury_status": "ACTIVE",
+     "injury_status": "QUESTIONABLE",
      "lineup_slot": "WR",
      "percent_owned": 99.52,
      "total_points": 138.5,
@@ -1117,9 +1117,9 @@
      "venue_str": "屋外/人工芝",
      "weather_str": "12°C 風1m/s 雨0%",
      "wind_warn": false,
-     "implied_total": 9.1,
-     "game_ou": 38.8,
-     "opp_implied": 29.8,
+     "implied_total": 13.8,
+     "game_ou": 48.5,
+     "opp_implied": 34.8,
      "next_week_opp": "BYE",
      "opp": {
       "snap": 0.97,
@@ -1392,9 +1392,6 @@
      "venue_str": "屋外/天然芝",
      "weather_str": "7°C 風1m/s 雨0%",
      "wind_warn": false,
-     "implied_total": 13.5,
-     "game_ou": 43.6,
-     "opp_implied": 30.0,
      "next_week_opp": "BYE",
      "opp": {
       "snap": 0.15,
@@ -2204,7 +2201,7 @@
      "game_ou": 49.5,
      "opp_implied": 23.0,
      "next_week_opp": "@ WAS",
-     "next_implied_total": 27.6,
+     "next_implied_total": 27.5,
      "opp": {
       "snap": 1.0,
       "snap_avg": 1.0,
@@ -2229,8 +2226,8 @@
      "injury_status": "ACTIVE",
      "lineup_slot": "K",
      "percent_owned": 87.37,
-     "total_points": 98.0,
-     "avg_points": 10.89,
+     "total_points": 99.0,
+     "avg_points": 11.0,
      "proj_total": 92.75,
      "proj_avg": 10.31,
      "weekly_proj": {
@@ -2238,7 +2235,7 @@
       "9": 9.84
      },
      "weekly_actual": {
-      "10": 6.0,
+      "10": 7.0,
       "9": 17.0
      },
      "opponents": {
@@ -2474,9 +2471,9 @@
      "venue_str": "屋外/天然芝",
      "weather_str": "8°C 風6m/s 雨2%",
      "wind_warn": false,
-     "implied_total": 24.9,
-     "game_ou": 48.2,
-     "opp_implied": 23.2,
+     "implied_total": 24.5,
+     "game_ou": 51.5,
+     "opp_implied": 27.0,
      "next_week_opp": "vs IND"
     },
     {
@@ -3260,9 +3257,6 @@
      "venue_str": "屋外/天然芝",
      "weather_str": "7°C 風1m/s 雨0%",
      "wind_warn": false,
-     "implied_total": 13.5,
-     "game_ou": 43.6,
-     "opp_implied": 30.0,
      "next_week_opp": "BYE",
      "opp": {
       "snap": 0.82,
@@ -3554,8 +3548,8 @@
      "injury_status": "NORMAL",
      "lineup_slot": "D/ST",
      "percent_owned": 93.23,
-     "total_points": 43.0,
-     "avg_points": 4.78,
+     "total_points": 46.0,
+     "avg_points": 5.11,
      "proj_total": 50.21,
      "proj_avg": 2.95,
      "weekly_proj": {
@@ -3563,7 +3557,7 @@
       "9": 7.75
      },
      "weekly_actual": {
-      "10": 2.0,
+      "10": 5.0,
       "9": 12.0
      },
      "opponents": {
@@ -3804,9 +3798,9 @@
       "to_g": 1.2,
       "season": 2026
      },
-     "implied_total": 24.9,
-     "game_ou": 48.2,
-     "opp_implied": 23.2,
+     "implied_total": 24.5,
+     "game_ou": 51.5,
+     "opp_implied": 27.0,
      "next_week_opp": "vs IND"
     },
     {
@@ -3817,8 +3811,8 @@
      "injury_status": "ACTIVE",
      "lineup_slot": "RB",
      "percent_owned": 85.26,
-     "total_points": 15.5,
-     "avg_points": 7.75,
+     "total_points": 16.1,
+     "avg_points": 5.37,
      "proj_total": 96.93,
      "proj_avg": 12.12,
      "weekly_proj": {
@@ -3826,7 +3820,8 @@
       "10": 14.52
      },
      "weekly_actual": {
-      "9": 9.6
+      "9": 9.6,
+      "10": 0.6
      },
      "opponents": {
       "1": "NE",
@@ -4059,9 +4054,9 @@
      "this_week_opp": "@ LV",
      "kickoff_jst": "月 06:05",
      "venue_str": "ドーム/天然芝",
-     "implied_total": 23.5,
-     "game_ou": 40.6,
-     "opp_implied": 17.0,
+     "implied_total": 22.8,
+     "game_ou": 41.7,
+     "opp_implied": 18.9,
      "next_week_opp": "BYE",
      "opp": {
       "snap": 0.57,
@@ -4637,9 +4632,9 @@
      "this_week_opp": "vs SF",
      "kickoff_jst": "月 06:25",
      "venue_str": "屋外/人工芝",
-     "implied_total": 25.9,
+     "implied_total": 26.1,
      "game_ou": 55.9,
-     "opp_implied": 30.0,
+     "opp_implied": 29.8,
      "next_week_opp": "vs TEN",
      "opp": {
       "snap": 0.94,
@@ -5179,7 +5174,7 @@
      "game_ou": 49.5,
      "opp_implied": 23.0,
      "next_week_opp": "@ WAS",
-     "next_implied_total": 27.6,
+     "next_implied_total": 27.5,
      "opp": {
       "snap": 0.63,
       "snap_avg": 0.66,
@@ -5203,8 +5198,8 @@
      "injury_status": "ACTIVE",
      "lineup_slot": "WR",
      "percent_owned": 99.42,
-     "total_points": 143.5,
-     "avg_points": 15.94,
+     "total_points": 147.4,
+     "avg_points": 16.38,
      "proj_total": 136.9,
      "proj_avg": 15.21,
      "weekly_proj": {
@@ -5213,7 +5208,7 @@
      },
      "weekly_actual": {
       "9": 16.8,
-      "10": 2.1
+      "10": 6.0
      },
      "opponents": {
       "1": "DET",
@@ -5446,9 +5441,9 @@
      "this_week_opp": "vs CAR",
      "kickoff_jst": "月 03:00",
      "venue_str": "ドーム/人工芝",
-     "implied_total": 11.0,
-     "game_ou": 24.5,
-     "opp_implied": 13.5,
+     "implied_total": 17.5,
+     "game_ou": 37.5,
+     "opp_implied": 20.0,
      "next_week_opp": "@ CHI",
      "opp": {
       "snap": 0.85,
@@ -5482,7 +5477,8 @@
       "10": 0.0
      },
      "weekly_actual": {
-      "9": 0.0
+      "9": 0.0,
+      "10": 0.0
      },
      "opponents": {
       "1": "SF",
@@ -5715,9 +5711,9 @@
      "this_week_opp": "@ ARI",
      "kickoff_jst": "月 06:05",
      "venue_str": "屋外/天然芝",
-     "implied_total": 24.1,
-     "game_ou": 38.3,
-     "opp_implied": 14.2,
+     "implied_total": 24.2,
+     "game_ou": 39.4,
+     "opp_implied": 15.1,
      "next_week_opp": "BYE",
      "opp": {
       "snap": 0.74,
@@ -5988,7 +5984,7 @@
      "game_ou": 49.5,
      "opp_implied": 23.0,
      "next_week_opp": "@ WAS",
-     "next_implied_total": 27.6,
+     "next_implied_total": 27.5,
      "opp": {
       "snap": 0.68,
       "snap_avg": 0.78,
@@ -6012,8 +6008,8 @@
      "injury_status": "NORMAL",
      "lineup_slot": "D/ST",
      "percent_owned": 97.75,
-     "total_points": 77.0,
-     "avg_points": 8.56,
+     "total_points": 85.0,
+     "avg_points": 8.5,
      "proj_total": 59.54,
      "proj_avg": 3.5,
      "weekly_proj": {
@@ -6021,7 +6017,8 @@
       "10": 7.0
      },
      "weekly_actual": {
-      "9": 10.0
+      "9": 10.0,
+      "10": 8.0
      },
      "opponents": {
       "1": "NE",
@@ -6259,9 +6256,9 @@
       "to_g": 1.4,
       "season": 2026
      },
-     "implied_total": 23.5,
-     "game_ou": 40.6,
-     "opp_implied": 17.0,
+     "implied_total": 22.8,
+     "game_ou": 41.7,
+     "opp_implied": 18.9,
      "next_week_opp": "BYE"
     },
     {
@@ -6514,9 +6511,9 @@
      "this_week_opp": "@ DAL",
      "kickoff_jst": "月 06:25",
      "venue_str": "屋外/人工芝",
-     "implied_total": 30.0,
+     "implied_total": 29.8,
      "game_ou": 55.9,
-     "opp_implied": 25.9,
+     "opp_implied": 26.1,
      "next_week_opp": "vs MIN",
      "opp": {
       "snap": 0.78,
@@ -6541,8 +6538,8 @@
      "injury_status": "NORMAL",
      "lineup_slot": "BE",
      "percent_owned": 84.97,
-     "total_points": 104.0,
-     "avg_points": 11.56,
+     "total_points": 106.0,
+     "avg_points": 11.78,
      "proj_total": 49.46,
      "proj_avg": 2.91,
      "weekly_proj": {
@@ -6550,7 +6547,7 @@
       "9": 4.01
      },
      "weekly_actual": {
-      "10": 19.0,
+      "10": 21.0,
       "9": 6.0
      },
      "opponents": {
@@ -6789,9 +6786,6 @@
       "to_g": 1.2,
       "season": 2026
      },
-     "implied_total": 30.0,
-     "game_ou": 43.6,
-     "opp_implied": 13.5,
      "next_week_opp": "@ SF"
     },
     {
@@ -7312,9 +7306,9 @@
      "this_week_opp": "@ TEN",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/天然芝",
-     "implied_total": 28.9,
-     "game_ou": 49.3,
-     "opp_implied": 20.4,
+     "implied_total": 39.9,
+     "game_ou": 63.5,
+     "opp_implied": 23.6,
      "next_week_opp": "@ NYG",
      "opp": {
       "snap": 0.68,
@@ -7848,9 +7842,9 @@
      "this_week_opp": "vs SF",
      "kickoff_jst": "月 06:25",
      "venue_str": "屋外/人工芝",
-     "implied_total": 25.9,
+     "implied_total": 26.1,
      "game_ou": 55.9,
-     "opp_implied": 30.0,
+     "opp_implied": 29.8,
      "next_week_opp": "vs TEN"
     },
     {
@@ -7861,8 +7855,8 @@
      "injury_status": "ACTIVE",
      "lineup_slot": "BE",
      "percent_owned": 80.2,
-     "total_points": 179.56,
-     "avg_points": 19.95,
+     "total_points": 184.48,
+     "avg_points": 20.5,
      "proj_total": 170.92,
      "proj_avg": 18.99,
      "weekly_proj": {
@@ -7870,7 +7864,7 @@
       "9": 16.95
      },
      "weekly_actual": {
-      "10": 15.52,
+      "10": 20.44,
       "9": 35.36
      },
      "opponents": {
@@ -8104,9 +8098,9 @@
      "this_week_opp": "@ CLE",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/天然芝",
-     "implied_total": 24.9,
-     "game_ou": 48.2,
-     "opp_implied": 23.2,
+     "implied_total": 24.5,
+     "game_ou": 51.5,
+     "opp_implied": 27.0,
      "next_week_opp": "vs IND",
      "opp": {
       "snap": 0.89,
@@ -8374,9 +8368,6 @@
      "this_week_opp": "vs MIN",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/天然芝",
-     "implied_total": 13.5,
-     "game_ou": 43.6,
-     "opp_implied": 30.0,
      "next_week_opp": "BYE",
      "opp": {
       "snap": 0.88,
@@ -8442,8 +8433,8 @@
      "injury_status": "ACTIVE",
      "lineup_slot": "RB",
      "percent_owned": 99.92,
-     "total_points": 190.8,
-     "avg_points": 19.08,
+     "total_points": 197.7,
+     "avg_points": 19.77,
      "proj_total": 162.28,
      "proj_avg": 20.28,
      "weekly_proj": {
@@ -8452,7 +8443,7 @@
      },
      "weekly_actual": {
       "9": 26.7,
-      "10": 10.8
+      "10": 17.7
      },
      "opponents": {
       "1": "PIT",
@@ -8685,9 +8676,9 @@
      "this_week_opp": "vs KC",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/人工芝",
-     "implied_total": 9.1,
-     "game_ou": 38.8,
-     "opp_implied": 29.8,
+     "implied_total": 13.8,
+     "game_ou": 48.5,
+     "opp_implied": 34.8,
      "next_week_opp": "BYE",
      "opp": {
       "snap": 0.82,
@@ -8979,8 +8970,8 @@
      "injury_status": "ACTIVE",
      "lineup_slot": "TE",
      "percent_owned": 99.88,
-     "total_points": 162.8,
-     "avg_points": 18.09,
+     "total_points": 166.1,
+     "avg_points": 16.61,
      "proj_total": 122.09,
      "proj_avg": 15.26,
      "weekly_proj": {
@@ -8988,7 +8979,8 @@
       "10": 14.1
      },
      "weekly_actual": {
-      "9": 12.4
+      "9": 12.4,
+      "10": 3.3
      },
      "opponents": {
       "1": "LAC",
@@ -9221,9 +9213,9 @@
      "this_week_opp": "vs LA",
      "kickoff_jst": "月 06:05",
      "venue_str": "屋外/天然芝",
-     "implied_total": 14.2,
-     "game_ou": 38.3,
-     "opp_implied": 24.1,
+     "implied_total": 15.1,
+     "game_ou": 39.4,
+     "opp_implied": 24.2,
      "next_week_opp": "@ KC",
      "opp": {
       "snap": 0.83,
@@ -9778,8 +9770,8 @@
      "injury_status": "ACTIVE",
      "lineup_slot": "RB",
      "percent_owned": 95.93,
-     "total_points": 63.2,
-     "avg_points": 12.64,
+     "total_points": 69.0,
+     "avg_points": 13.8,
      "proj_total": 100.4,
      "proj_avg": 12.55,
      "weekly_proj": {
@@ -9788,7 +9780,7 @@
      },
      "weekly_actual": {
       "9": 11.7,
-      "10": 9.0
+      "10": 14.8
      },
      "opponents": {
       "1": "TEN",
@@ -10021,9 +10013,9 @@
      "this_week_opp": "vs BUF",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/人工芝",
-     "implied_total": 16.1,
-     "game_ou": 45.8,
-     "opp_implied": 29.6,
+     "implied_total": 12.8,
+     "game_ou": 43.5,
+     "opp_implied": 30.8,
      "next_week_opp": "@ LAC",
      "opp": {
       "snap": 0.43,
@@ -10290,9 +10282,9 @@
      "this_week_opp": "@ DAL",
      "kickoff_jst": "月 06:25",
      "venue_str": "屋外/人工芝",
-     "implied_total": 30.0,
+     "implied_total": 29.8,
      "game_ou": 55.9,
-     "opp_implied": 25.9,
+     "opp_implied": 26.1,
      "next_week_opp": "vs MIN",
      "opp": {
       "snap": 0.4,
@@ -10326,7 +10318,8 @@
       "10": 16.98
      },
      "weekly_actual": {
-      "9": 11.22
+      "9": 11.22,
+      "10": 0.0
      },
      "opponents": {
       "1": "SF",
@@ -10559,9 +10552,9 @@
      "this_week_opp": "@ ARI",
      "kickoff_jst": "月 06:05",
      "venue_str": "屋外/天然芝",
-     "implied_total": 24.1,
-     "game_ou": 38.3,
-     "opp_implied": 14.2,
+     "implied_total": 24.2,
+     "game_ou": 39.4,
+     "opp_implied": 15.1,
      "next_week_opp": "BYE",
      "opp": {
       "snap": 1.0,
@@ -10829,9 +10822,9 @@
      "this_week_opp": "@ NO",
      "kickoff_jst": "月 03:00",
      "venue_str": "ドーム/人工芝",
-     "implied_total": 13.5,
-     "game_ou": 24.5,
-     "opp_implied": 11.0,
+     "implied_total": 20.0,
+     "game_ou": 37.5,
+     "opp_implied": 17.5,
      "next_week_opp": "vs BAL",
      "opp": {
       "snap": 0.82,
@@ -11099,9 +11092,6 @@
      "this_week_opp": "vs MIN",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/天然芝",
-     "implied_total": 13.5,
-     "game_ou": 43.6,
-     "opp_implied": 30.0,
      "next_week_opp": "BYE",
      "opp": {
       "snap": 0.74,
@@ -11126,8 +11116,8 @@
      "injury_status": "ACTIVE",
      "lineup_slot": "QB",
      "percent_owned": 94.81,
-     "total_points": 164.64,
-     "avg_points": 18.29,
+     "total_points": 173.96,
+     "avg_points": 19.33,
      "proj_total": 177.52,
      "proj_avg": 19.72,
      "weekly_proj": {
@@ -11136,7 +11126,7 @@
      },
      "weekly_actual": {
       "9": 13.58,
-      "10": 17.46
+      "10": 26.78
      },
      "opponents": {
       "1": "CLE",
@@ -11369,9 +11359,9 @@
      "this_week_opp": "@ TEN",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/天然芝",
-     "implied_total": 28.9,
-     "game_ou": 49.3,
-     "opp_implied": 20.4,
+     "implied_total": 39.9,
+     "game_ou": 63.5,
+     "opp_implied": 23.6,
      "next_week_opp": "@ NYG",
      "opp": {
       "snap": 1.0,
@@ -11397,7 +11387,7 @@
      "lineup_slot": "BE",
      "percent_owned": 81.36,
      "total_points": 31.5,
-     "avg_points": 5.25,
+     "avg_points": 4.5,
      "proj_total": 80.93,
      "proj_avg": 10.12,
      "weekly_proj": {
@@ -11405,7 +11395,8 @@
       "10": 11.86
      },
      "weekly_actual": {
-      "9": 11.8
+      "9": 11.8,
+      "10": 0.0
      },
      "opponents": {
       "1": "NE",
@@ -11638,9 +11629,9 @@
      "this_week_opp": "@ LV",
      "kickoff_jst": "月 06:05",
      "venue_str": "ドーム/天然芝",
-     "implied_total": 23.5,
-     "game_ou": 40.6,
-     "opp_implied": 17.0,
+     "implied_total": 22.8,
+     "game_ou": 41.7,
+     "opp_implied": 18.9,
      "next_week_opp": "BYE",
      "opp": {
       "snap": 0.36,
@@ -11665,8 +11656,8 @@
      "injury_status": "NORMAL",
      "lineup_slot": "D/ST",
      "percent_owned": 94.89,
-     "total_points": 48.0,
-     "avg_points": 5.33,
+     "total_points": 58.0,
+     "avg_points": 5.8,
      "proj_total": 63.39,
      "proj_avg": 3.73,
      "weekly_proj": {
@@ -11674,7 +11665,8 @@
       "10": 8.27
      },
      "weekly_actual": {
-      "9": 11.0
+      "9": 11.0,
+      "10": 10.0
      },
      "opponents": {
       "1": "SF",
@@ -11912,9 +11904,9 @@
       "to_g": 0.9,
       "season": 2026
      },
-     "implied_total": 24.1,
-     "game_ou": 38.3,
-     "opp_implied": 14.2,
+     "implied_total": 24.2,
+     "game_ou": 39.4,
+     "opp_implied": 15.1,
      "next_week_opp": "BYE"
     },
     {
@@ -12168,9 +12160,9 @@
      "this_week_opp": "@ ATL",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/人工芝",
-     "implied_total": 29.8,
-     "game_ou": 38.8,
-     "opp_implied": 9.1,
+     "implied_total": 34.8,
+     "game_ou": 48.5,
+     "opp_implied": 13.8,
      "next_week_opp": "vs ARI",
      "opp": {
       "snap": 0.7,
@@ -12438,9 +12430,9 @@
      "this_week_opp": "@ TEN",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/天然芝",
-     "implied_total": 28.9,
-     "game_ou": 49.3,
-     "opp_implied": 20.4,
+     "implied_total": 39.9,
+     "game_ou": 63.5,
+     "opp_implied": 23.6,
      "next_week_opp": "@ NYG",
      "opp": {
       "snap": 0.68,
@@ -13002,9 +12994,6 @@
      "this_week_opp": "@ GB",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/天然芝",
-     "implied_total": 30.0,
-     "game_ou": 43.6,
-     "opp_implied": 13.5,
      "next_week_opp": "@ SF",
      "opp": {
       "snap": 0.98,
@@ -13038,7 +13027,8 @@
       "10": 18.63
      },
      "weekly_actual": {
-      "9": 9.1
+      "9": 9.1,
+      "10": 0.0
      },
      "opponents": {
       "1": "SF",
@@ -13271,9 +13261,9 @@
      "this_week_opp": "@ ARI",
      "kickoff_jst": "月 06:05",
      "venue_str": "屋外/天然芝",
-     "implied_total": 24.1,
-     "game_ou": 38.3,
-     "opp_implied": 14.2,
+     "implied_total": 24.2,
+     "game_ou": 39.4,
+     "opp_implied": 15.1,
      "next_week_opp": "BYE",
      "opp": {
       "snap": 0.64,
@@ -13541,9 +13531,9 @@
      "this_week_opp": "@ NYJ",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/人工芝",
-     "implied_total": 29.6,
-     "game_ou": 45.8,
-     "opp_implied": 16.1,
+     "implied_total": 30.8,
+     "game_ou": 43.5,
+     "opp_implied": 12.8,
      "next_week_opp": "vs MIA",
      "opp": {
       "snap": 0.59,
@@ -13811,9 +13801,9 @@
      "this_week_opp": "@ ATL",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/人工芝",
-     "implied_total": 29.8,
-     "game_ou": 38.8,
-     "opp_implied": 9.1,
+     "implied_total": 34.8,
+     "game_ou": 48.5,
+     "opp_implied": 13.8,
      "next_week_opp": "vs ARI",
      "opp": {
       "snap": 0.65,
@@ -14081,9 +14071,9 @@
      "this_week_opp": "@ NYJ",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/人工芝",
-     "implied_total": 29.6,
-     "game_ou": 45.8,
-     "opp_implied": 16.1,
+     "implied_total": 30.8,
+     "game_ou": 43.5,
+     "opp_implied": 12.8,
      "next_week_opp": "vs MIA",
      "opp": {
       "snap": 0.96,
@@ -14872,9 +14862,6 @@
      "this_week_opp": "vs MIN",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/天然芝",
-     "implied_total": 13.5,
-     "game_ou": 43.6,
-     "opp_implied": 30.0,
      "next_week_opp": "BYE",
      "opp": {
       "snap": 0.77,
@@ -15433,8 +15420,8 @@
      "injury_status": "ACTIVE",
      "lineup_slot": "RB/WR/TE",
      "percent_owned": 97.79,
-     "total_points": 166.0,
-     "avg_points": 18.44,
+     "total_points": 180.8,
+     "avg_points": 20.09,
      "proj_total": 167.51,
      "proj_avg": 18.61,
      "weekly_proj": {
@@ -15443,7 +15430,7 @@
      },
      "weekly_actual": {
       "9": 13.6,
-      "10": 19.4
+      "10": 34.2
      },
      "opponents": {
       "1": "CHI",
@@ -15676,9 +15663,9 @@
      "this_week_opp": "@ NO",
      "kickoff_jst": "月 03:00",
      "venue_str": "ドーム/人工芝",
-     "implied_total": 13.5,
-     "game_ou": 24.5,
-     "opp_implied": 11.0,
+     "implied_total": 20.0,
+     "game_ou": 37.5,
+     "opp_implied": 17.5,
      "next_week_opp": "vs BAL",
      "opp": {
       "snap": 0.89,
@@ -15703,8 +15690,8 @@
      "injury_status": "ACTIVE",
      "lineup_slot": "K",
      "percent_owned": 76.47,
-     "total_points": 92.0,
-     "avg_points": 10.22,
+     "total_points": 98.0,
+     "avg_points": 10.89,
      "proj_total": 85.76,
      "proj_avg": 9.53,
      "weekly_proj": {
@@ -15713,7 +15700,7 @@
      },
      "weekly_actual": {
       "9": 17.0,
-      "10": 13.0
+      "10": 19.0
      },
      "opponents": {
       "1": "CLE",
@@ -15946,9 +15933,9 @@
      "this_week_opp": "@ TEN",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/天然芝",
-     "implied_total": 28.9,
-     "game_ou": 49.3,
-     "opp_implied": 20.4,
+     "implied_total": 39.9,
+     "game_ou": 63.5,
+     "opp_implied": 23.6,
      "next_week_opp": "@ NYG"
     },
     {
@@ -15959,8 +15946,8 @@
      "injury_status": "ACTIVE",
      "lineup_slot": "TE",
      "percent_owned": 96.64,
-     "total_points": 84.4,
-     "avg_points": 10.55,
+     "total_points": 86.5,
+     "avg_points": 10.81,
      "proj_total": 80.29,
      "proj_avg": 10.04,
      "weekly_proj": {
@@ -15968,7 +15955,7 @@
       "9": 11.86
      },
      "weekly_actual": {
-      "10": 0.3,
+      "10": 2.4,
       "9": 8.4
      },
      "opponents": {
@@ -16202,9 +16189,9 @@
      "this_week_opp": "vs MIA",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/人工芝",
-     "implied_total": 28.5,
-     "game_ou": 54.5,
-     "opp_implied": 26.0,
+     "implied_total": 24.1,
+     "game_ou": 48.0,
+     "opp_implied": 23.9,
      "next_week_opp": "@ HOU",
      "opp": {
       "snap": 0.83,
@@ -16729,9 +16716,9 @@
      "this_week_opp": "@ DAL",
      "kickoff_jst": "月 06:25",
      "venue_str": "屋外/人工芝",
-     "implied_total": 30.0,
+     "implied_total": 29.8,
      "game_ou": 55.9,
-     "opp_implied": 25.9,
+     "opp_implied": 26.1,
      "next_week_opp": "vs MIN",
      "opp": {
       "snap": 0.56,
@@ -16806,7 +16793,8 @@
       "10": 0.0
      },
      "weekly_actual": {
-      "9": 35.0
+      "9": 35.0,
+      "10": 0.0
      },
      "opponents": {
       "1": "SF",
@@ -17039,9 +17027,9 @@
      "this_week_opp": "@ ARI",
      "kickoff_jst": "月 06:05",
      "venue_str": "屋外/天然芝",
-     "implied_total": 24.1,
-     "game_ou": 38.3,
-     "opp_implied": 14.2,
+     "implied_total": 24.2,
+     "game_ou": 39.4,
+     "opp_implied": 15.1,
      "next_week_opp": "BYE",
      "opp": {
       "snap": 0.93,
@@ -17066,8 +17054,8 @@
      "injury_status": "ACTIVE",
      "lineup_slot": "BE",
      "percent_owned": 99.19,
-     "total_points": 139.3,
-     "avg_points": 15.48,
+     "total_points": 140.0,
+     "avg_points": 14.0,
      "proj_total": 121.55,
      "proj_avg": 15.19,
      "weekly_proj": {
@@ -17075,7 +17063,8 @@
       "10": 13.59
      },
      "weekly_actual": {
-      "9": 7.0
+      "9": 7.0,
+      "10": 0.7
      },
      "opponents": {
       "1": "MIA",
@@ -17308,9 +17297,9 @@
      "this_week_opp": "vs SEA",
      "kickoff_jst": "月 06:05",
      "venue_str": "ドーム/天然芝",
-     "implied_total": 17.0,
-     "game_ou": 40.6,
-     "opp_implied": 23.5,
+     "implied_total": 18.9,
+     "game_ou": 41.7,
+     "opp_implied": 22.8,
      "next_week_opp": "@ DEN",
      "opp": {
       "snap": 0.64,
@@ -17335,8 +17324,8 @@
      "injury_status": "ACTIVE",
      "lineup_slot": "RB",
      "percent_owned": 99.91,
-     "total_points": 156.5,
-     "avg_points": 17.39,
+     "total_points": 170.1,
+     "avg_points": 18.9,
      "proj_total": 171.08,
      "proj_avg": 19.01,
      "weekly_proj": {
@@ -17345,7 +17334,7 @@
      },
      "weekly_actual": {
       "9": 16.7,
-      "10": 8.1
+      "10": 21.7
      },
      "opponents": {
       "1": "HOU",
@@ -17578,9 +17567,9 @@
      "this_week_opp": "@ NYJ",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/人工芝",
-     "implied_total": 29.6,
-     "game_ou": 45.8,
-     "opp_implied": 16.1,
+     "implied_total": 30.8,
+     "game_ou": 43.5,
+     "opp_implied": 12.8,
      "next_week_opp": "vs MIA",
      "opp": {
       "snap": 0.64,
@@ -17848,9 +17837,9 @@
      "this_week_opp": "@ ATL",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/人工芝",
-     "implied_total": 29.8,
-     "game_ou": 38.8,
-     "opp_implied": 9.1,
+     "implied_total": 34.8,
+     "game_ou": 48.5,
+     "opp_implied": 13.8,
      "next_week_opp": "vs ARI",
      "opp": {
       "snap": 0.58,
@@ -18117,9 +18106,9 @@
      "this_week_opp": "vs SF",
      "kickoff_jst": "月 06:25",
      "venue_str": "屋外/人工芝",
-     "implied_total": 25.9,
+     "implied_total": 26.1,
      "game_ou": 55.9,
-     "opp_implied": 30.0,
+     "opp_implied": 29.8,
      "next_week_opp": "vs TEN",
      "opp": {
       "snap": 0.57,
@@ -18413,8 +18402,8 @@
      "injury_status": "ACTIVE",
      "lineup_slot": "BE",
      "percent_owned": 97.49,
-     "total_points": 126.2,
-     "avg_points": 14.02,
+     "total_points": 129.3,
+     "avg_points": 14.37,
      "proj_total": 101.96,
      "proj_avg": 12.74,
      "weekly_proj": {
@@ -18423,7 +18412,7 @@
      },
      "weekly_actual": {
       "9": 0.0,
-      "10": 12.5
+      "10": 15.6
      },
      "opponents": {
       "1": "TEN",
@@ -18656,9 +18645,9 @@
      "this_week_opp": "vs BUF",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/人工芝",
-     "implied_total": 16.1,
-     "game_ou": 45.8,
-     "opp_implied": 29.6,
+     "implied_total": 12.8,
+     "game_ou": 43.5,
+     "opp_implied": 30.8,
      "next_week_opp": "@ LAC",
      "opp": {
       "snap": 0.81,
@@ -19193,9 +19182,9 @@
      "this_week_opp": "vs MIA",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/人工芝",
-     "implied_total": 28.5,
-     "game_ou": 54.5,
-     "opp_implied": 26.0,
+     "implied_total": 24.1,
+     "game_ou": 48.0,
+     "opp_implied": 23.9,
      "next_week_opp": "@ HOU"
     },
     {
@@ -19206,8 +19195,8 @@
      "injury_status": "ACTIVE",
      "lineup_slot": "RB",
      "percent_owned": 95.91,
-     "total_points": 137.0,
-     "avg_points": 15.22,
+     "total_points": 147.5,
+     "avg_points": 16.39,
      "proj_total": 143.57,
      "proj_avg": 15.95,
      "weekly_proj": {
@@ -19216,7 +19205,7 @@
      },
      "weekly_actual": {
       "9": 8.9,
-      "10": 9.8
+      "10": 20.3
      },
      "opponents": {
       "1": "CLE",
@@ -19449,9 +19438,9 @@
      "this_week_opp": "@ TEN",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/天然芝",
-     "implied_total": 28.9,
-     "game_ou": 49.3,
-     "opp_implied": 20.4,
+     "implied_total": 39.9,
+     "game_ou": 63.5,
+     "opp_implied": 23.6,
      "next_week_opp": "@ NYG",
      "opp": {
       "snap": 0.36,
@@ -19476,8 +19465,8 @@
      "injury_status": "NORMAL",
      "lineup_slot": "D/ST",
      "percent_owned": 89.78,
-     "total_points": 73.0,
-     "avg_points": 8.11,
+     "total_points": 70.0,
+     "avg_points": 7.78,
      "proj_total": 57.06,
      "proj_avg": 3.36,
      "weekly_proj": {
@@ -19486,7 +19475,7 @@
      },
      "weekly_actual": {
       "9": 12.0,
-      "10": 6.0
+      "10": 3.0
      },
      "opponents": {
       "1": "CLE",
@@ -19724,9 +19713,9 @@
       "to_g": 1.5,
       "season": 2026
      },
-     "implied_total": 28.9,
-     "game_ou": 49.3,
-     "opp_implied": 20.4,
+     "implied_total": 39.9,
+     "game_ou": 63.5,
+     "opp_implied": 23.6,
      "next_week_opp": "@ NYG"
     },
     {
@@ -19979,9 +19968,9 @@
      "this_week_opp": "@ DAL",
      "kickoff_jst": "月 06:25",
      "venue_str": "屋外/人工芝",
-     "implied_total": 30.0,
+     "implied_total": 29.8,
      "game_ou": 55.9,
-     "opp_implied": 25.9,
+     "opp_implied": 26.1,
      "next_week_opp": "vs MIN",
      "opp": {
       "snap": 0.92,
@@ -20269,8 +20258,8 @@
      "injury_status": "ACTIVE",
      "lineup_slot": "BE",
      "percent_owned": 90.97,
-     "total_points": 127.2,
-     "avg_points": 14.13,
+     "total_points": 140.4,
+     "avg_points": 15.6,
      "proj_total": 139.29,
      "proj_avg": 15.48,
      "weekly_proj": {
@@ -20278,7 +20267,7 @@
       "10": 13.47
      },
      "weekly_actual": {
-      "10": 10.7
+      "10": 23.9
      },
      "opponents": {
       "1": "NYJ",
@@ -20511,9 +20500,9 @@
      "this_week_opp": "vs JAX",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/天然芝",
-     "implied_total": 20.4,
-     "game_ou": 49.3,
-     "opp_implied": 28.9,
+     "implied_total": 23.6,
+     "game_ou": 63.5,
+     "opp_implied": 39.9,
      "next_week_opp": "@ DAL",
      "opp": {
       "snap": 0.82,
@@ -20805,8 +20794,8 @@
      "injury_status": "ACTIVE",
      "lineup_slot": "RB/WR/TE",
      "percent_owned": 75.04,
-     "total_points": 90.9,
-     "avg_points": 10.1,
+     "total_points": 95.9,
+     "avg_points": 10.66,
      "proj_total": 67.27,
      "proj_avg": 7.47,
      "weekly_proj": {
@@ -20814,7 +20803,7 @@
       "9": 7.51
      },
      "weekly_actual": {
-      "10": 30.1,
+      "10": 35.1,
       "9": 9.4
      },
      "opponents": {
@@ -21048,9 +21037,9 @@
      "this_week_opp": "@ ATL",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/人工芝",
-     "implied_total": 29.8,
-     "game_ou": 38.8,
-     "opp_implied": 9.1,
+     "implied_total": 34.8,
+     "game_ou": 48.5,
+     "opp_implied": 13.8,
      "next_week_opp": "vs ARI",
      "opp": {
       "snap": 0.3,
@@ -21358,9 +21347,9 @@
      "this_week_opp": "@ DAL",
      "kickoff_jst": "月 06:25",
      "venue_str": "屋外/人工芝",
-     "implied_total": 30.0,
+     "implied_total": 29.8,
      "game_ou": 55.9,
-     "opp_implied": 25.9,
+     "opp_implied": 26.1,
      "next_week_opp": "vs MIN",
      "opp": {
       "snap": 0.68,
@@ -21394,7 +21383,8 @@
       "10": 22.29
      },
      "weekly_actual": {
-      "9": 12.1
+      "9": 12.1,
+      "10": 0.0
      },
      "opponents": {
       "1": "NE",
@@ -21627,9 +21617,9 @@
      "this_week_opp": "@ LV",
      "kickoff_jst": "月 06:05",
      "venue_str": "ドーム/天然芝",
-     "implied_total": 23.5,
-     "game_ou": 40.6,
-     "opp_implied": 17.0,
+     "implied_total": 22.8,
+     "game_ou": 41.7,
+     "opp_implied": 18.9,
      "next_week_opp": "BYE",
      "opp": {
       "snap": 0.76,
@@ -21663,7 +21653,8 @@
       "10": 0.0
      },
      "weekly_actual": {
-      "9": 0.0
+      "9": 0.0,
+      "10": 0.0
      },
      "opponents": {
       "1": "LAC",
@@ -21896,9 +21887,9 @@
      "this_week_opp": "vs LA",
      "kickoff_jst": "月 06:05",
      "venue_str": "屋外/天然芝",
-     "implied_total": 14.2,
-     "game_ou": 38.3,
-     "opp_implied": 24.1,
+     "implied_total": 15.1,
+     "game_ou": 39.4,
+     "opp_implied": 24.2,
      "next_week_opp": "@ KC",
      "opp": {
       "snap": 0.19,
@@ -21920,11 +21911,11 @@
      "name": "Brock Bowers",
      "position": "TE",
      "pro_team": "LV",
-     "injury_status": "ACTIVE",
+     "injury_status": "QUESTIONABLE",
      "lineup_slot": "TE",
      "percent_owned": 99.88,
-     "total_points": 146.0,
-     "avg_points": 20.86,
+     "total_points": 147.6,
+     "avg_points": 18.45,
      "proj_total": 129.83,
      "proj_avg": 16.23,
      "weekly_proj": {
@@ -21932,7 +21923,8 @@
       "10": 15.41
      },
      "weekly_actual": {
-      "9": 22.3
+      "9": 22.3,
+      "10": 1.6
      },
      "opponents": {
       "1": "MIA",
@@ -22165,9 +22157,9 @@
      "this_week_opp": "vs SEA",
      "kickoff_jst": "月 06:05",
      "venue_str": "ドーム/天然芝",
-     "implied_total": 17.0,
-     "game_ou": 40.6,
-     "opp_implied": 23.5,
+     "implied_total": 18.9,
+     "game_ou": 41.7,
+     "opp_implied": 22.8,
      "next_week_opp": "@ DEN",
      "opp": {
       "snap": 1.0,
@@ -22434,9 +22426,9 @@
      "this_week_opp": "vs SF",
      "kickoff_jst": "月 06:25",
      "venue_str": "屋外/人工芝",
-     "implied_total": 25.9,
+     "implied_total": 26.1,
      "game_ou": 55.9,
-     "opp_implied": 30.0,
+     "opp_implied": 29.8,
      "next_week_opp": "vs TEN",
      "opp": {
       "snap": 0.72,
@@ -22704,9 +22696,9 @@
      "this_week_opp": "@ NO",
      "kickoff_jst": "月 03:00",
      "venue_str": "ドーム/人工芝",
-     "implied_total": 13.5,
-     "game_ou": 24.5,
-     "opp_implied": 11.0,
+     "implied_total": 20.0,
+     "game_ou": 37.5,
+     "opp_implied": 17.5,
      "next_week_opp": "vs BAL",
      "opp": {
       "snap": 0.8,
@@ -23251,7 +23243,8 @@
       "10": 9.04
      },
      "weekly_actual": {
-      "9": 6.0
+      "9": 6.0,
+      "10": 0.0
      },
      "opponents": {
       "1": "NE",
@@ -23484,9 +23477,9 @@
      "this_week_opp": "@ LV",
      "kickoff_jst": "月 06:05",
      "venue_str": "ドーム/天然芝",
-     "implied_total": 23.5,
-     "game_ou": 40.6,
-     "opp_implied": 17.0,
+     "implied_total": 22.8,
+     "game_ou": 41.7,
+     "opp_implied": 18.9,
      "next_week_opp": "BYE"
     },
     {
@@ -23497,8 +23490,8 @@
      "injury_status": "ACTIVE",
      "lineup_slot": "BE",
      "percent_owned": 92.39,
-     "total_points": 171.32,
-     "avg_points": 19.04,
+     "total_points": 177.4,
+     "avg_points": 19.71,
      "proj_total": 163.12,
      "proj_avg": 18.12,
      "weekly_proj": {
@@ -23506,7 +23499,7 @@
       "9": 18.17
      },
      "weekly_actual": {
-      "10": 29.34,
+      "10": 35.42,
       "9": 16.48
      },
      "opponents": {
@@ -23740,9 +23733,9 @@
      "this_week_opp": "@ ATL",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/人工芝",
-     "implied_total": 29.8,
-     "game_ou": 38.8,
-     "opp_implied": 9.1,
+     "implied_total": 34.8,
+     "game_ou": 48.5,
+     "opp_implied": 13.8,
      "next_week_opp": "vs ARI",
      "opp": {
       "snap": 0.94,
@@ -24031,7 +24024,7 @@
      "name": "Omar Cooper Jr.",
      "position": "WR",
      "pro_team": "NYJ",
-     "injury_status": "OUT",
+     "injury_status": "QUESTIONABLE",
      "lineup_slot": "RB/WR/TE",
      "percent_owned": 55.76,
      "total_points": 62.6,
@@ -24277,9 +24270,9 @@
      "this_week_opp": "vs BUF",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/人工芝",
-     "implied_total": 16.1,
-     "game_ou": 45.8,
-     "opp_implied": 29.6,
+     "implied_total": 12.8,
+     "game_ou": 43.5,
+     "opp_implied": 30.8,
      "next_week_opp": "@ LAC",
      "opp": {
       "snap": 0.86,
@@ -24304,8 +24297,8 @@
      "injury_status": "ACTIVE",
      "lineup_slot": "BE",
      "percent_owned": 93.45,
-     "total_points": 99.2,
-     "avg_points": 11.02,
+     "total_points": 108.2,
+     "avg_points": 12.02,
      "proj_total": 99.42,
      "proj_avg": 12.43,
      "weekly_proj": {
@@ -24314,7 +24307,7 @@
      },
      "weekly_actual": {
       "9": 5.5,
-      "10": 7.1
+      "10": 16.1
      },
      "opponents": {
       "1": "JAX",
@@ -24547,9 +24540,9 @@
      "this_week_opp": "vs HOU",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/天然芝",
-     "implied_total": 23.2,
-     "game_ou": 48.2,
-     "opp_implied": 24.9,
+     "implied_total": 27.0,
+     "game_ou": 51.5,
+     "opp_implied": 24.5,
      "next_week_opp": "BYE",
      "opp": {
       "snap": 0.34,
@@ -24816,9 +24809,9 @@
      "this_week_opp": "vs SF",
      "kickoff_jst": "月 06:25",
      "venue_str": "屋外/人工芝",
-     "implied_total": 25.9,
+     "implied_total": 26.1,
      "game_ou": 55.9,
-     "opp_implied": 30.0,
+     "opp_implied": 29.8,
      "next_week_opp": "vs TEN",
      "opp": {
       "snap": 1.0,
@@ -25346,9 +25339,9 @@
      "this_week_opp": "@ CLE",
      "kickoff_jst": "月 03:00",
      "venue_str": "屋外/天然芝",
-     "implied_total": 24.9,
-     "game_ou": 48.2,
-     "opp_implied": 23.2,
+     "implied_total": 24.5,
+     "game_ou": 51.5,
+     "opp_implied": 27.0,
      "next_week_opp": "vs IND",
      "opp": {
       "snap": 0.47,
@@ -25602,7 +25595,7 @@
     "kickoff_jst": "金 10:15",
     "venue_str": "屋外",
     "next_week_opp": "vs CIN",
-    "next_implied_total": 23.9,
+    "next_implied_total": 24.0,
     "opp": {
      "snap": 1.0,
      "snap_avg": 1.0,
@@ -25626,15 +25619,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 81.2,
-    "total_points": 152.16,
-    "avg_points": 16.91,
+    "total_points": 154.68,
+    "avg_points": 17.19,
     "proj_total": 151.67,
     "proj_avg": 16.85,
     "weekly_proj": {
      "10": 18.8
     },
     "weekly_actual": {
-     "10": 5.58
+     "10": 8.1
     },
     "opponents": {},
     "pos_rank": 11,
@@ -25849,9 +25842,9 @@
     "this_week_opp": "@ NO",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 13.5,
-    "game_ou": 24.5,
-    "opp_implied": 11.0,
+    "implied_total": 20.0,
+    "game_ou": 37.5,
+    "opp_implied": 17.5,
     "next_week_opp": "vs BAL",
     "opp": {
      "snap": 1.0,
@@ -26124,15 +26117,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 70.26,
-    "total_points": 149.44,
-    "avg_points": 16.6,
+    "total_points": 155.62,
+    "avg_points": 17.29,
     "proj_total": 142.51,
     "proj_avg": 15.83,
     "weekly_proj": {
      "10": 17.47
     },
     "weekly_actual": {
-     "10": 3.8
+     "10": 9.98
     },
     "opponents": {},
     "pos_rank": 12,
@@ -26347,9 +26340,9 @@
     "this_week_opp": "vs CAR",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 11.0,
-    "game_ou": 24.5,
-    "opp_implied": 13.5,
+    "implied_total": 17.5,
+    "game_ou": 37.5,
+    "opp_implied": 20.0,
     "next_week_opp": "@ CHI",
     "opp": {
      "snap": 1.0,
@@ -26374,15 +26367,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 63.68,
-    "total_points": 187.2,
-    "avg_points": 18.72,
+    "total_points": 187.68,
+    "avg_points": 18.77,
     "proj_total": 134.28,
     "proj_avg": 14.92,
     "weekly_proj": {
      "10": 12.98
     },
     "weekly_actual": {
-     "10": 14.9
+     "10": 15.38
     },
     "opponents": {},
     "pos_rank": 5,
@@ -26597,9 +26590,6 @@
     "this_week_opp": "@ GB",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 30.0,
-    "game_ou": 43.6,
-    "opp_implied": 13.5,
     "next_week_opp": "@ SF",
     "opp": {
      "snap": 1.0,
@@ -27338,9 +27328,6 @@
     "this_week_opp": "@ GB",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 30.0,
-    "game_ou": 43.6,
-    "opp_implied": 13.5,
     "next_week_opp": "@ SF",
     "opp": {
      "snap": 1.0,
@@ -28109,7 +28096,9 @@
     "weekly_proj": {
      "10": 0.0
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 25,
     "is_rookie": false,
@@ -28323,9 +28312,9 @@
     "this_week_opp": "@ LV",
     "kickoff_jst": "月 06:05",
     "venue_str": "ドーム/天然芝",
-    "implied_total": 23.5,
-    "game_ou": 40.6,
-    "opp_implied": 17.0,
+    "implied_total": 22.8,
+    "game_ou": 41.7,
+    "opp_implied": 18.9,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 1.0,
@@ -28573,9 +28562,9 @@
     "this_week_opp": "vs BUF",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 16.1,
-    "game_ou": 45.8,
-    "opp_implied": 29.6,
+    "implied_total": 12.8,
+    "game_ou": 43.5,
+    "opp_implied": 30.8,
     "next_week_opp": "@ LAC",
     "opp": {
      "snap": 1.0,
@@ -28847,14 +28836,16 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 19.9,
-    "total_points": 46.78,
-    "avg_points": 9.36,
+    "total_points": 44.78,
+    "avg_points": 7.46,
     "proj_total": 17.59,
     "proj_avg": 8.8,
     "weekly_proj": {
      "10": 17.59
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": -2.0
+    },
     "opponents": {},
     "pos_rank": 35,
     "is_rookie": false,
@@ -29068,9 +29059,9 @@
     "this_week_opp": "@ LV",
     "kickoff_jst": "月 06:05",
     "venue_str": "ドーム/天然芝",
-    "implied_total": 23.5,
-    "game_ou": 40.6,
-    "opp_implied": 17.0,
+    "implied_total": 22.8,
+    "game_ou": 41.7,
+    "opp_implied": 18.9,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 1.0,
@@ -29337,14 +29328,16 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 19.46,
-    "total_points": 2.22,
-    "avg_points": 0.74,
+    "total_points": 10.12,
+    "avg_points": 2.53,
     "proj_total": 125.2,
     "proj_avg": 15.65,
     "weekly_proj": {
      "10": 13.52
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 7.9
+    },
     "opponents": {},
     "pos_rank": 52,
     "is_rookie": true,
@@ -29558,9 +29551,9 @@
     "this_week_opp": "vs SEA",
     "kickoff_jst": "月 06:05",
     "venue_str": "ドーム/天然芝",
-    "implied_total": 17.0,
-    "game_ou": 40.6,
-    "opp_implied": 23.5,
+    "implied_total": 18.9,
+    "game_ou": 41.7,
+    "opp_implied": 22.8,
     "next_week_opp": "@ DEN",
     "opp": {
      "snap": 0.17,
@@ -29833,15 +29826,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 12.74,
-    "total_points": 104.56,
-    "avg_points": 13.07,
+    "total_points": 108.6,
+    "avg_points": 13.57,
     "proj_total": 112.3,
     "proj_avg": 14.04,
     "weekly_proj": {
      "10": 12.9
     },
     "weekly_actual": {
-     "10": 8.3
+     "10": 12.34
     },
     "opponents": {},
     "pos_rank": 24,
@@ -30056,9 +30049,9 @@
     "this_week_opp": "vs KC",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 9.1,
-    "game_ou": 38.8,
-    "opp_implied": 29.8,
+    "implied_total": 13.8,
+    "game_ou": 48.5,
+    "opp_implied": 34.8,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 1.0,
@@ -30083,15 +30076,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 11.73,
-    "total_points": 138.38,
-    "avg_points": 15.38,
+    "total_points": 139.32,
+    "avg_points": 15.48,
     "proj_total": 123.82,
     "proj_avg": 15.48,
     "weekly_proj": {
      "10": 15.17
     },
     "weekly_actual": {
-     "10": 20.44
+     "10": 21.38
     },
     "opponents": {},
     "pos_rank": 18,
@@ -30306,9 +30299,9 @@
     "this_week_opp": "vs HOU",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 23.2,
-    "game_ou": 48.2,
-    "opp_implied": 24.9,
+    "implied_total": 27.0,
+    "game_ou": 51.5,
+    "opp_implied": 24.5,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.94,
@@ -30333,15 +30326,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 11.07,
-    "total_points": 85.96,
-    "avg_points": 8.6,
+    "total_points": 86.7,
+    "avg_points": 8.67,
     "proj_total": 86.47,
     "proj_avg": 10.81,
     "weekly_proj": {
      "10": 12.14
     },
     "weekly_actual": {
-     "10": 4.48
+     "10": 5.22
     },
     "opponents": {},
     "pos_rank": 26,
@@ -30556,9 +30549,9 @@
     "this_week_opp": "vs MIA",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 28.5,
-    "game_ou": 54.5,
-    "opp_implied": 26.0,
+    "implied_total": 24.1,
+    "game_ou": 48.0,
+    "opp_implied": 23.9,
     "next_week_opp": "@ HOU",
     "opp": {
      "snap": 1.0,
@@ -30806,9 +30799,9 @@
     "this_week_opp": "@ IND",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 26.0,
-    "game_ou": 54.5,
-    "opp_implied": 28.5,
+    "implied_total": 23.9,
+    "game_ou": 48.0,
+    "opp_implied": 24.1,
     "next_week_opp": "@ BUF",
     "opp": {
      "snap": 1.0,
@@ -30833,15 +30826,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 4.49,
-    "total_points": 111.78,
-    "avg_points": 12.42,
+    "total_points": 119.66,
+    "avg_points": 13.3,
     "proj_total": 119.74,
     "proj_avg": 13.3,
     "weekly_proj": {
      "10": 11.67
     },
     "weekly_actual": {
-     "10": 11.26
+     "10": 19.14
     },
     "opponents": {},
     "pos_rank": 23,
@@ -31056,9 +31049,9 @@
     "this_week_opp": "vs JAX",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 20.4,
-    "game_ou": 49.3,
-    "opp_implied": 28.9,
+    "implied_total": 23.6,
+    "game_ou": 63.5,
+    "opp_implied": 39.9,
     "next_week_opp": "@ DAL",
     "opp": {
      "snap": 1.0,
@@ -31795,9 +31788,9 @@
     "this_week_opp": "vs HOU",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 23.2,
-    "game_ou": 48.2,
-    "opp_implied": 24.9,
+    "implied_total": 27.0,
+    "game_ou": 51.5,
+    "opp_implied": 24.5,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 1.0,
@@ -31822,14 +31815,16 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 1.69,
-    "total_points": 0.0,
-    "avg_points": 0.0,
+    "total_points": 1.36,
+    "avg_points": 1.36,
     "proj_total": 101.31,
     "proj_avg": 12.66,
     "weekly_proj": {
      "10": 9.28
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 1.36
+    },
     "opponents": {},
     "pos_rank": 0,
     "is_rookie": true,
@@ -32043,9 +32038,9 @@
     "this_week_opp": "vs LA",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 14.2,
-    "game_ou": 38.3,
-    "opp_implied": 24.1,
+    "implied_total": 15.1,
+    "game_ou": 39.4,
+    "opp_implied": 24.2,
     "next_week_opp": "@ KC"
    },
    {
@@ -32298,15 +32293,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 1.22,
-    "total_points": 11.16,
-    "avg_points": 11.16,
+    "total_points": 12.76,
+    "avg_points": 12.76,
     "proj_total": 41.62,
     "proj_avg": 10.4,
     "weekly_proj": {
      "10": 11.1
     },
     "weekly_actual": {
-     "10": 11.16
+     "10": 12.76
     },
     "opponents": {},
     "pos_rank": 0,
@@ -32521,9 +32516,9 @@
     "this_week_opp": "@ IND",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 26.0,
-    "game_ou": 54.5,
-    "opp_implied": 28.5,
+    "implied_total": 23.9,
+    "game_ou": 48.0,
+    "opp_implied": 24.1,
     "next_week_opp": "@ BUF"
    },
    {
@@ -32757,9 +32752,6 @@
     "this_week_opp": "@ GB",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 30.0,
-    "game_ou": 43.6,
-    "opp_implied": 13.5,
     "next_week_opp": "@ SF",
     "opp": {
      "snap": 0.83,
@@ -33008,7 +33000,7 @@
     "kickoff_jst": "金 10:15",
     "venue_str": "屋外",
     "next_week_opp": "vs CIN",
-    "next_implied_total": 23.9,
+    "next_implied_total": 24.0,
     "opp": {
      "snap": 0.16,
      "snap_avg": 0.58,
@@ -33287,7 +33279,9 @@
     "weekly_proj": {
      "10": 0.0
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 40,
     "is_rookie": false,
@@ -33501,9 +33495,9 @@
     "this_week_opp": "vs LA",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 14.2,
-    "game_ou": 38.3,
-    "opp_implied": 24.1,
+    "implied_total": 15.1,
+    "game_ou": 39.4,
+    "opp_implied": 24.2,
     "next_week_opp": "@ KC",
     "opp": {
      "snap": 1.0,
@@ -33993,9 +33987,9 @@
     "this_week_opp": "vs KC",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 9.1,
-    "game_ou": 38.8,
-    "opp_implied": 29.8,
+    "implied_total": 13.8,
+    "game_ou": 48.5,
+    "opp_implied": 34.8,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.05,
@@ -34485,9 +34479,9 @@
     "this_week_opp": "@ ATL",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.8,
-    "game_ou": 38.8,
-    "opp_implied": 9.1,
+    "implied_total": 34.8,
+    "game_ou": 48.5,
+    "opp_implied": 13.8,
     "next_week_opp": "vs ARI",
     "opp": {
      "snap": 0.08,
@@ -34761,7 +34755,9 @@
     "weekly_proj": {
      "10": 0.0
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 0,
     "is_rookie": true,
@@ -34975,9 +34971,9 @@
     "this_week_opp": "@ ARI",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.1,
-    "game_ou": 38.3,
-    "opp_implied": 14.2,
+    "implied_total": 24.2,
+    "game_ou": 39.4,
+    "opp_implied": 15.1,
     "next_week_opp": "BYE"
    },
    {
@@ -35211,9 +35207,9 @@
     "this_week_opp": "vs MIA",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 28.5,
-    "game_ou": 54.5,
-    "opp_implied": 26.0,
+    "implied_total": 24.1,
+    "game_ou": 48.0,
+    "opp_implied": 23.9,
     "next_week_opp": "@ HOU",
     "opp": {
      "snap": 0.21,
@@ -35459,9 +35455,9 @@
     "this_week_opp": "@ DAL",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 30.0,
+    "implied_total": 29.8,
     "game_ou": 55.9,
-    "opp_implied": 25.9,
+    "opp_implied": 26.1,
     "next_week_opp": "vs MIN",
     "opp": {
      "snap": 0.08,
@@ -35711,7 +35707,7 @@
     "game_ou": 49.5,
     "opp_implied": 23.0,
     "next_week_opp": "@ WAS",
-    "next_implied_total": 27.6
+    "next_implied_total": 27.5
    },
    {
     "id": 4429582,
@@ -36190,9 +36186,9 @@
     "this_week_opp": "vs MIA",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 28.5,
-    "game_ou": 54.5,
-    "opp_implied": 26.0,
+    "implied_total": 24.1,
+    "game_ou": 48.0,
+    "opp_implied": 23.9,
     "next_week_opp": "@ HOU"
    },
    {
@@ -36442,7 +36438,9 @@
     "proj_total": 0,
     "proj_avg": 0,
     "weekly_proj": {},
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 0,
     "is_rookie": false,
@@ -36656,9 +36654,9 @@
     "this_week_opp": "@ LV",
     "kickoff_jst": "月 06:05",
     "venue_str": "ドーム/天然芝",
-    "implied_total": 23.5,
-    "game_ou": 40.6,
-    "opp_implied": 17.0,
+    "implied_total": 22.8,
+    "game_ou": 41.7,
+    "opp_implied": 18.9,
     "next_week_opp": "BYE"
    },
    {
@@ -37137,9 +37135,9 @@
     "this_week_opp": "vs SF",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 25.9,
+    "implied_total": 26.1,
     "game_ou": 55.9,
-    "opp_implied": 30.0,
+    "opp_implied": 29.8,
     "next_week_opp": "vs TEN"
    },
    {
@@ -37150,7 +37148,7 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 0.09,
-    "total_points": -0.4,
+    "total_points": -0.6,
     "avg_points": -0.2,
     "proj_total": 0.0,
     "proj_avg": 0.0,
@@ -37158,7 +37156,7 @@
      "10": 0.0
     },
     "weekly_actual": {
-     "10": 0.0
+     "10": -0.2
     },
     "opponents": {},
     "pos_rank": 68,
@@ -37373,9 +37371,9 @@
     "this_week_opp": "@ NYJ",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.6,
-    "game_ou": 45.8,
-    "opp_implied": 16.1,
+    "implied_total": 30.8,
+    "game_ou": 43.5,
+    "opp_implied": 12.8,
     "next_week_opp": "vs MIA",
     "opp": {
      "snap": 0.04,
@@ -37400,15 +37398,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 0.07,
-    "total_points": -0.2,
-    "avg_points": -0.1,
+    "total_points": -0.08,
+    "avg_points": -0.03,
     "proj_total": 0.0,
     "proj_avg": 0.0,
     "weekly_proj": {
      "10": 0.0
     },
     "weekly_actual": {
-     "10": 0.0
+     "10": 0.12
     },
     "opponents": {},
     "pos_rank": 65,
@@ -37623,9 +37621,6 @@
     "this_week_opp": "vs MIN",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 13.5,
-    "game_ou": 43.6,
-    "opp_implied": 30.0,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.03,
@@ -37883,15 +37878,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 0.07,
-    "total_points": 1.82,
-    "avg_points": 0.91,
+    "total_points": 6.08,
+    "avg_points": 3.04,
     "proj_total": 0.0,
     "proj_avg": 0.0,
     "weekly_proj": {
      "10": 0.0
     },
     "weekly_actual": {
-     "10": 1.82
+     "10": 6.08
     },
     "opponents": {},
     "pos_rank": 58,
@@ -38106,9 +38101,9 @@
     "this_week_opp": "vs BUF",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 16.1,
-    "game_ou": 45.8,
-    "opp_implied": 29.6,
+    "implied_total": 12.8,
+    "game_ou": 43.5,
+    "opp_implied": 30.8,
     "next_week_opp": "@ LAC"
    },
    {
@@ -38570,9 +38565,9 @@
     "this_week_opp": "@ NO",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 13.5,
-    "game_ou": 24.5,
-    "opp_implied": 11.0,
+    "implied_total": 20.0,
+    "game_ou": 37.5,
+    "opp_implied": 17.5,
     "next_week_opp": "vs BAL",
     "opp": {
      "snap": 0.23,
@@ -38852,7 +38847,9 @@
     "weekly_proj": {
      "10": 0.0
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 53,
     "is_rookie": false,
@@ -39066,9 +39063,9 @@
     "this_week_opp": "@ ARI",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.1,
-    "game_ou": 38.3,
-    "opp_implied": 14.2,
+    "implied_total": 24.2,
+    "game_ou": 39.4,
+    "opp_implied": 15.1,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.16,
@@ -39784,9 +39781,9 @@
     "this_week_opp": "@ TEN",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 28.9,
-    "game_ou": 49.3,
-    "opp_implied": 20.4,
+    "implied_total": 39.9,
+    "game_ou": 63.5,
+    "opp_implied": 23.6,
     "next_week_opp": "@ NYG",
     "opp": {
      "snap": 0.19,
@@ -40034,9 +40031,9 @@
     "this_week_opp": "vs CAR",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 11.0,
-    "game_ou": 24.5,
-    "opp_implied": 13.5,
+    "implied_total": 17.5,
+    "game_ou": 37.5,
+    "opp_implied": 20.0,
     "next_week_opp": "@ CHI"
    },
    {
@@ -40306,9 +40303,9 @@
     "this_week_opp": "vs MIA",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 28.5,
-    "game_ou": 54.5,
-    "opp_implied": 26.0,
+    "implied_total": 24.1,
+    "game_ou": 48.0,
+    "opp_implied": 23.9,
     "next_week_opp": "@ HOU"
    },
    {
@@ -40542,9 +40539,9 @@
     "this_week_opp": "@ CLE",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.9,
-    "game_ou": 48.2,
-    "opp_implied": 23.2,
+    "implied_total": 24.5,
+    "game_ou": 51.5,
+    "opp_implied": 27.0,
     "next_week_opp": "vs IND",
     "opp": {
      "snap": 0.11,
@@ -40792,9 +40789,9 @@
     "this_week_opp": "vs JAX",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 20.4,
-    "game_ou": 49.3,
-    "opp_implied": 28.9,
+    "implied_total": 23.6,
+    "game_ou": 63.5,
+    "opp_implied": 39.9,
     "next_week_opp": "@ DAL"
    },
    {
@@ -41062,9 +41059,9 @@
     "this_week_opp": "vs KC",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 9.1,
-    "game_ou": 38.8,
-    "opp_implied": 29.8,
+    "implied_total": 13.8,
+    "game_ou": 48.5,
+    "opp_implied": 34.8,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.08,
@@ -41310,9 +41307,9 @@
     "this_week_opp": "vs HOU",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 23.2,
-    "game_ou": 48.2,
-    "opp_implied": 24.9,
+    "implied_total": 27.0,
+    "game_ou": 51.5,
+    "opp_implied": 24.5,
     "next_week_opp": "BYE"
    },
    {
@@ -41544,9 +41541,9 @@
     "this_week_opp": "vs HOU",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 23.2,
-    "game_ou": 48.2,
-    "opp_implied": 24.9,
+    "implied_total": 27.0,
+    "game_ou": 51.5,
+    "opp_implied": 24.5,
     "next_week_opp": "BYE"
    },
    {
@@ -41778,9 +41775,9 @@
     "this_week_opp": "@ ATL",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.8,
-    "game_ou": 38.8,
-    "opp_implied": 9.1,
+    "implied_total": 34.8,
+    "game_ou": 48.5,
+    "opp_implied": 13.8,
     "next_week_opp": "vs ARI"
    },
    {
@@ -42245,9 +42242,6 @@
     "this_week_opp": "@ GB",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 30.0,
-    "game_ou": 43.6,
-    "opp_implied": 13.5,
     "next_week_opp": "@ SF",
     "opp": {
      "snap": 0.17,
@@ -42493,9 +42487,9 @@
     "this_week_opp": "vs CAR",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 11.0,
-    "game_ou": 24.5,
-    "opp_implied": 13.5,
+    "implied_total": 17.5,
+    "game_ou": 37.5,
+    "opp_implied": 20.0,
     "next_week_opp": "@ CHI"
    },
    {
@@ -42513,7 +42507,9 @@
     "weekly_proj": {
      "10": 0.0
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 0,
     "is_rookie": false,
@@ -42727,9 +42723,9 @@
     "this_week_opp": "vs SEA",
     "kickoff_jst": "月 06:05",
     "venue_str": "ドーム/天然芝",
-    "implied_total": 17.0,
-    "game_ou": 40.6,
-    "opp_implied": 23.5,
+    "implied_total": 18.9,
+    "game_ou": 41.7,
+    "opp_implied": 22.8,
     "next_week_opp": "@ DEN"
    },
    {
@@ -42963,9 +42959,9 @@
     "this_week_opp": "@ IND",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 26.0,
-    "game_ou": 54.5,
-    "opp_implied": 28.5,
+    "implied_total": 23.9,
+    "game_ou": 48.0,
+    "opp_implied": 24.1,
     "next_week_opp": "@ BUF"
    },
    {
@@ -43429,7 +43425,7 @@
     "kickoff_jst": "金 10:15",
     "venue_str": "屋外",
     "next_week_opp": "vs CIN",
-    "next_implied_total": 23.9,
+    "next_implied_total": 24.0,
     "opp": {
      "snap": 0.84,
      "snap_avg": 0.84,
@@ -43900,9 +43896,9 @@
     "this_week_opp": "vs KC",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 9.1,
-    "game_ou": 38.8,
-    "opp_implied": 29.8,
+    "implied_total": 13.8,
+    "game_ou": 48.5,
+    "opp_implied": 34.8,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.42,
@@ -44148,9 +44144,9 @@
     "this_week_opp": "@ NO",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 13.5,
-    "game_ou": 24.5,
-    "opp_implied": 11.0,
+    "implied_total": 20.0,
+    "game_ou": 37.5,
+    "opp_implied": 17.5,
     "next_week_opp": "vs BAL"
    },
    {
@@ -44384,9 +44380,9 @@
     "this_week_opp": "@ TEN",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 28.9,
-    "game_ou": 49.3,
-    "opp_implied": 20.4,
+    "implied_total": 39.9,
+    "game_ou": 63.5,
+    "opp_implied": 23.6,
     "next_week_opp": "@ NYG",
     "opp": {
      "snap": 0.12,
@@ -44632,9 +44628,9 @@
     "this_week_opp": "vs CAR",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 11.0,
-    "game_ou": 24.5,
-    "opp_implied": 13.5,
+    "implied_total": 17.5,
+    "game_ou": 37.5,
+    "opp_implied": 20.0,
     "next_week_opp": "@ CHI"
    },
    {
@@ -44670,7 +44666,9 @@
     "weekly_proj": {
      "10": 0.0
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 0,
     "is_rookie": false,
@@ -44884,9 +44882,9 @@
     "this_week_opp": "vs LA",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 14.2,
-    "game_ou": 38.3,
-    "opp_implied": 24.1,
+    "implied_total": 15.1,
+    "game_ou": 39.4,
+    "opp_implied": 24.2,
     "next_week_opp": "@ KC"
    },
    {
@@ -45118,9 +45116,9 @@
     "this_week_opp": "vs BUF",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 16.1,
-    "game_ou": 45.8,
-    "opp_implied": 29.6,
+    "implied_total": 12.8,
+    "game_ou": 43.5,
+    "opp_implied": 30.8,
     "next_week_opp": "@ LAC"
    },
    {
@@ -46060,9 +46058,9 @@
     "this_week_opp": "@ CLE",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.9,
-    "game_ou": 48.2,
-    "opp_implied": 23.2,
+    "implied_total": 24.5,
+    "game_ou": 51.5,
+    "opp_implied": 27.0,
     "next_week_opp": "vs IND"
    },
    {
@@ -46292,9 +46290,9 @@
     "this_week_opp": "@ DAL",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 30.0,
+    "implied_total": 29.8,
     "game_ou": 55.9,
-    "opp_implied": 25.9,
+    "opp_implied": 26.1,
     "next_week_opp": "vs MIN"
    },
    {
@@ -47173,15 +47171,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 90.59,
-    "total_points": 92.5,
-    "avg_points": 10.28,
+    "total_points": 95.1,
+    "avg_points": 10.57,
     "proj_total": 123.42,
     "proj_avg": 13.71,
     "weekly_proj": {
      "10": 15.67
     },
     "weekly_actual": {
-     "10": 12.9
+     "10": 15.5
     },
     "opponents": {},
     "pos_rank": 25,
@@ -47396,9 +47394,9 @@
     "this_week_opp": "@ IND",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 26.0,
-    "game_ou": 54.5,
-    "opp_implied": 28.5,
+    "implied_total": 23.9,
+    "game_ou": 48.0,
+    "opp_implied": 24.1,
     "next_week_opp": "@ BUF",
     "opp": {
      "snap": 0.72,
@@ -47431,7 +47429,9 @@
     "weekly_proj": {
      "10": 11.58
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 21,
     "is_rookie": false,
@@ -47645,9 +47645,9 @@
     "this_week_opp": "@ ARI",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.1,
-    "game_ou": 38.3,
-    "opp_implied": 14.2,
+    "implied_total": 24.2,
+    "game_ou": 39.4,
+    "opp_implied": 15.1,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.36,
@@ -47672,15 +47672,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 83.14,
-    "total_points": 36.8,
-    "avg_points": 9.2,
+    "total_points": 37.3,
+    "avg_points": 9.32,
     "proj_total": 105.59,
     "proj_avg": 11.73,
     "weekly_proj": {
      "10": 10.53
     },
     "weekly_actual": {
-     "10": 5.9
+     "10": 6.4
     },
     "opponents": {},
     "pos_rank": 64,
@@ -47895,9 +47895,9 @@
     "this_week_opp": "vs CAR",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 11.0,
-    "game_ou": 24.5,
-    "opp_implied": 13.5,
+    "implied_total": 17.5,
+    "game_ou": 37.5,
+    "opp_implied": 20.0,
     "next_week_opp": "@ CHI",
     "opp": {
      "snap": 0.38,
@@ -48171,15 +48171,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 81.71,
-    "total_points": 93.1,
-    "avg_points": 10.34,
+    "total_points": 95.4,
+    "avg_points": 10.6,
     "proj_total": 82.63,
     "proj_avg": 9.18,
     "weekly_proj": {
      "10": 8.57
     },
     "weekly_actual": {
-     "10": 10.2
+     "10": 12.5
     },
     "opponents": {},
     "pos_rank": 24,
@@ -48394,9 +48394,6 @@
     "this_week_opp": "@ GB",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 30.0,
-    "game_ou": 43.6,
-    "opp_implied": 13.5,
     "next_week_opp": "@ SF",
     "opp": {
      "snap": 0.35,
@@ -48418,7 +48415,7 @@
     "name": "Woody Marks",
     "position": "RB",
     "pro_team": "HOU",
-    "injury_status": "OUT",
+    "injury_status": "QUESTIONABLE",
     "lineup_slot": "",
     "percent_owned": 80.57,
     "total_points": 78.4,
@@ -48644,9 +48641,9 @@
     "this_week_opp": "@ CLE",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.9,
-    "game_ou": 48.2,
-    "opp_implied": 23.2,
+    "implied_total": 24.5,
+    "game_ou": 51.5,
+    "opp_implied": 27.0,
     "next_week_opp": "vs IND",
     "opp": {
      "snap": 0.66,
@@ -48896,7 +48893,7 @@
     "kickoff_jst": "金 10:15",
     "venue_str": "屋外",
     "next_week_opp": "vs CIN",
-    "next_implied_total": 23.9,
+    "next_implied_total": 24.0,
     "opp": {
      "snap": 0.52,
      "snap_avg": 0.54,
@@ -48921,15 +48918,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 74.27,
-    "total_points": 109.0,
-    "avg_points": 10.9,
+    "total_points": 110.6,
+    "avg_points": 11.06,
     "proj_total": 65.3,
     "proj_avg": 8.16,
     "weekly_proj": {
      "10": 7.86
     },
     "weekly_actual": {
-     "10": 4.0
+     "10": 5.6
     },
     "opponents": {},
     "pos_rank": 18,
@@ -49144,9 +49141,9 @@
     "this_week_opp": "vs BUF",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 16.1,
-    "game_ou": 45.8,
-    "opp_implied": 29.6,
+    "implied_total": 12.8,
+    "game_ou": 43.5,
+    "opp_implied": 30.8,
     "next_week_opp": "@ LAC",
     "opp": {
      "snap": 0.59,
@@ -49395,9 +49392,9 @@
     "this_week_opp": "@ CLE",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.9,
-    "game_ou": 48.2,
-    "opp_implied": 23.2,
+    "implied_total": 24.5,
+    "game_ou": 51.5,
+    "opp_implied": 27.0,
     "next_week_opp": "vs IND",
     "opp": {
      "snap": 0.14,
@@ -49913,14 +49910,16 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 65.1,
-    "total_points": 90.7,
-    "avg_points": 10.08,
+    "total_points": 91.1,
+    "avg_points": 9.11,
     "proj_total": 68.81,
     "proj_avg": 8.6,
     "weekly_proj": {
      "10": 8.73
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.4
+    },
     "opponents": {},
     "pos_rank": 23,
     "is_rookie": false,
@@ -50134,9 +50133,9 @@
     "this_week_opp": "vs LA",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 14.2,
-    "game_ou": 38.3,
-    "opp_implied": 24.1,
+    "implied_total": 15.1,
+    "game_ou": 39.4,
+    "opp_implied": 24.2,
     "next_week_opp": "@ KC",
     "opp": {
      "snap": 0.96,
@@ -50162,15 +50161,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 62.57,
-    "total_points": 80.0,
-    "avg_points": 10.0,
+    "total_points": 90.1,
+    "avg_points": 11.26,
     "proj_total": 75.9,
     "proj_avg": 8.43,
     "weekly_proj": {
      "10": 8.11
     },
     "weekly_actual": {
-     "10": 6.3
+     "10": 16.4
     },
     "opponents": {},
     "pos_rank": 28,
@@ -50385,9 +50384,9 @@
     "this_week_opp": "vs CAR",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 11.0,
-    "game_ou": 24.5,
-    "opp_implied": 13.5,
+    "implied_total": 17.5,
+    "game_ou": 37.5,
+    "opp_implied": 20.0,
     "next_week_opp": "@ CHI",
     "opp": {
      "snap": 0.49,
@@ -50655,15 +50654,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 57.92,
-    "total_points": 30.5,
-    "avg_points": 6.1,
+    "total_points": 32.8,
+    "avg_points": 6.56,
     "proj_total": 90.7,
     "proj_avg": 10.08,
     "weekly_proj": {
      "10": 9.23
     },
     "weekly_actual": {
-     "10": 3.6
+     "10": 5.9
     },
     "opponents": {},
     "pos_rank": 69,
@@ -50878,9 +50877,6 @@
     "this_week_opp": "@ GB",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 30.0,
-    "game_ou": 43.6,
-    "opp_implied": 13.5,
     "next_week_opp": "@ SF",
     "opp": {
      "snap": 0.48,
@@ -51636,15 +51632,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 43.78,
-    "total_points": 24.9,
-    "avg_points": 8.3,
+    "total_points": 24.7,
+    "avg_points": 8.23,
     "proj_total": 4.96,
     "proj_avg": 4.96,
     "weekly_proj": {
      "10": 4.96
     },
     "weekly_actual": {
-     "10": 2.3
+     "10": 2.1
     },
     "opponents": {},
     "pos_rank": 75,
@@ -51859,9 +51855,9 @@
     "this_week_opp": "vs CAR",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 11.0,
-    "game_ou": 24.5,
-    "opp_implied": 13.5,
+    "implied_total": 17.5,
+    "game_ou": 37.5,
+    "opp_implied": 20.0,
     "next_week_opp": "@ CHI",
     "opp": {
      "snap": 0.47,
@@ -52357,7 +52353,7 @@
     "kickoff_jst": "金 10:15",
     "venue_str": "屋外",
     "next_week_opp": "vs CIN",
-    "next_implied_total": 23.9,
+    "next_implied_total": 24.0,
     "opp": {
      "snap": 0.35,
      "snap_avg": 0.4,
@@ -52602,9 +52598,9 @@
     "this_week_opp": "@ DAL",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 30.0,
+    "implied_total": 29.8,
     "game_ou": 55.9,
-    "opp_implied": 25.9,
+    "opp_implied": 26.1,
     "next_week_opp": "vs MIN",
     "opp": {
      "snap": 0.25,
@@ -52852,9 +52848,9 @@
     "this_week_opp": "@ NO",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 13.5,
-    "game_ou": 24.5,
-    "opp_implied": 11.0,
+    "implied_total": 20.0,
+    "game_ou": 37.5,
+    "opp_implied": 17.5,
     "next_week_opp": "vs BAL",
     "opp": {
      "snap": 0.3,
@@ -52879,15 +52875,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 31.88,
-    "total_points": 58.6,
-    "avg_points": 6.51,
+    "total_points": 58.7,
+    "avg_points": 6.52,
     "proj_total": 14.25,
     "proj_avg": 7.13,
     "weekly_proj": {
      "10": 7.42
     },
     "weekly_actual": {
-     "10": 6.8
+     "10": 6.9
     },
     "opponents": {},
     "pos_rank": 43,
@@ -53102,9 +53098,6 @@
     "this_week_opp": "vs MIN",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 13.5,
-    "game_ou": 43.6,
-    "opp_implied": 30.0,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.16,
@@ -53599,9 +53592,9 @@
     "this_week_opp": "@ IND",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 26.0,
-    "game_ou": 54.5,
-    "opp_implied": 28.5,
+    "implied_total": 23.9,
+    "game_ou": 48.0,
+    "opp_implied": 24.1,
     "next_week_opp": "@ BUF",
     "opp": {
      "snap": 0.05,
@@ -53626,15 +53619,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 26.32,
-    "total_points": 38.2,
-    "avg_points": 7.64,
+    "total_points": 39.1,
+    "avg_points": 7.82,
     "proj_total": 72.97,
     "proj_avg": 9.12,
     "weekly_proj": {
      "10": 8.95
     },
     "weekly_actual": {
-     "10": 6.8
+     "10": 7.7
     },
     "opponents": {},
     "pos_rank": 63,
@@ -53849,9 +53842,9 @@
     "this_week_opp": "vs HOU",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 23.2,
-    "game_ou": 48.2,
-    "opp_implied": 24.9,
+    "implied_total": 27.0,
+    "game_ou": 51.5,
+    "opp_implied": 24.5,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.64,
@@ -53884,7 +53877,9 @@
     "weekly_proj": {
      "10": 0.0
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 27,
     "is_rookie": false,
@@ -54098,9 +54093,9 @@
     "this_week_opp": "@ LV",
     "kickoff_jst": "月 06:05",
     "venue_str": "ドーム/天然芝",
-    "implied_total": 23.5,
-    "game_ou": 40.6,
-    "opp_implied": 17.0,
+    "implied_total": 22.8,
+    "game_ou": 41.7,
+    "opp_implied": 18.9,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.48,
@@ -54125,14 +54120,16 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 20.5,
-    "total_points": 37.6,
-    "avg_points": 4.18,
+    "total_points": 38.4,
+    "avg_points": 3.84,
     "proj_total": 57.27,
     "proj_avg": 7.16,
     "weekly_proj": {
      "10": 5.98
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.8
+    },
     "opponents": {},
     "pos_rank": 55,
     "is_rookie": true,
@@ -54346,9 +54343,9 @@
     "this_week_opp": "vs SEA",
     "kickoff_jst": "月 06:05",
     "venue_str": "ドーム/天然芝",
-    "implied_total": 17.0,
-    "game_ou": 40.6,
-    "opp_implied": 23.5,
+    "implied_total": 18.9,
+    "game_ou": 41.7,
+    "opp_implied": 22.8,
     "next_week_opp": "@ DEN",
     "opp": {
      "snap": 0.34,
@@ -54596,9 +54593,9 @@
     "this_week_opp": "@ TEN",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 28.9,
-    "game_ou": 49.3,
-    "opp_implied": 20.4,
+    "implied_total": 39.9,
+    "game_ou": 63.5,
+    "opp_implied": 23.6,
     "next_week_opp": "@ NYG",
     "opp": {
      "snap": 0.45,
@@ -54623,15 +54620,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 18.98,
-    "total_points": 28.5,
-    "avg_points": 4.07,
+    "total_points": 30.9,
+    "avg_points": 4.41,
     "proj_total": 58.37,
     "proj_avg": 6.49,
     "weekly_proj": {
      "10": 6.1
     },
     "weekly_actual": {
-     "10": 1.4
+     "10": 3.8
     },
     "opponents": {},
     "pos_rank": 68,
@@ -54846,9 +54843,9 @@
     "this_week_opp": "vs JAX",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 20.4,
-    "game_ou": 49.3,
-    "opp_implied": 28.9,
+    "implied_total": 23.6,
+    "game_ou": 63.5,
+    "opp_implied": 39.9,
     "next_week_opp": "@ DAL",
     "opp": {
      "snap": 0.24,
@@ -55096,9 +55093,9 @@
     "this_week_opp": "vs KC",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 9.1,
-    "game_ou": 38.8,
-    "opp_implied": 29.8,
+    "implied_total": 13.8,
+    "game_ou": 48.5,
+    "opp_implied": 34.8,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.18,
@@ -55595,9 +55592,6 @@
     "this_week_opp": "vs MIN",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 13.5,
-    "game_ou": 43.6,
-    "opp_implied": 30.0,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.39,
@@ -56103,15 +56097,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 10.88,
-    "total_points": 45.2,
-    "avg_points": 4.52,
+    "total_points": 46.4,
+    "avg_points": 4.64,
     "proj_total": 41.3,
     "proj_avg": 5.16,
     "weekly_proj": {
      "10": 5.53
     },
     "weekly_actual": {
-     "10": 12.5
+     "10": 13.7
     },
     "opponents": {},
     "pos_rank": 58,
@@ -56326,9 +56320,9 @@
     "this_week_opp": "vs MIA",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 28.5,
-    "game_ou": 54.5,
-    "opp_implied": 26.0,
+    "implied_total": 24.1,
+    "game_ou": 48.0,
+    "opp_implied": 23.9,
     "next_week_opp": "@ HOU",
     "opp": {
      "snap": 0.31,
@@ -57103,7 +57097,7 @@
     "game_ou": 49.5,
     "opp_implied": 23.0,
     "next_week_opp": "@ WAS",
-    "next_implied_total": 27.6,
+    "next_implied_total": 27.5,
     "opp": {
      "snap": 0.4,
      "snap_avg": 0.375,
@@ -57351,7 +57345,7 @@
     "kickoff_jst": "金 10:15",
     "venue_str": "屋外",
     "next_week_opp": "vs CIN",
-    "next_implied_total": 23.9,
+    "next_implied_total": 24.0,
     "opp": {
      "snap": 0.43,
      "snap_avg": 0.44,
@@ -57382,7 +57376,9 @@
     "weekly_proj": {
      "10": 7.0
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 71,
     "is_rookie": false,
@@ -57596,9 +57592,9 @@
     "this_week_opp": "vs LA",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 14.2,
-    "game_ou": 38.3,
-    "opp_implied": 24.1,
+    "implied_total": 15.1,
+    "game_ou": 39.4,
+    "opp_implied": 24.2,
     "next_week_opp": "@ KC",
     "opp": {
      "snap": null,
@@ -58603,7 +58599,9 @@
     "weekly_proj": {
      "10": 0.0
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 0,
     "is_rookie": false,
@@ -58817,9 +58815,9 @@
     "this_week_opp": "vs LA",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 14.2,
-    "game_ou": 38.3,
-    "opp_implied": 24.1,
+    "implied_total": 15.1,
+    "game_ou": 39.4,
+    "opp_implied": 24.2,
     "next_week_opp": "@ KC"
    },
    {
@@ -58837,7 +58835,9 @@
     "weekly_proj": {
      "10": 0.0
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 56,
     "is_rookie": false,
@@ -59051,9 +59051,9 @@
     "this_week_opp": "@ LV",
     "kickoff_jst": "月 06:05",
     "venue_str": "ドーム/天然芝",
-    "implied_total": 23.5,
-    "game_ou": 40.6,
-    "opp_implied": 17.0,
+    "implied_total": 22.8,
+    "game_ou": 41.7,
+    "opp_implied": 18.9,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.03,
@@ -59320,15 +59320,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 2.46,
-    "total_points": 12.0,
-    "avg_points": 1.33,
+    "total_points": 12.2,
+    "avg_points": 1.36,
     "proj_total": 16.84,
     "proj_avg": 1.87,
     "weekly_proj": {
      "10": 1.96
     },
     "weekly_actual": {
-     "10": 0.6
+     "10": 0.8
     },
     "opponents": {},
     "pos_rank": 89,
@@ -59543,9 +59543,9 @@
     "this_week_opp": "@ NYJ",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.6,
-    "game_ou": 45.8,
-    "opp_implied": 16.1,
+    "implied_total": 30.8,
+    "game_ou": 43.5,
+    "opp_implied": 12.8,
     "next_week_opp": "vs MIA",
     "opp": {
      "snap": 0.14,
@@ -59793,9 +59793,6 @@
     "this_week_opp": "vs MIN",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 13.5,
-    "game_ou": 43.6,
-    "opp_implied": 30.0,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.45,
@@ -59820,15 +59817,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 2.31,
-    "total_points": 6.4,
-    "avg_points": 0.91,
+    "total_points": 7.6,
+    "avg_points": 1.09,
     "proj_total": 31.63,
     "proj_avg": 3.51,
     "weekly_proj": {
      "10": 3.9
     },
     "weekly_actual": {
-     "10": 2.3
+     "10": 3.5
     },
     "opponents": {},
     "pos_rank": 107,
@@ -60043,9 +60040,9 @@
     "this_week_opp": "@ IND",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 26.0,
-    "game_ou": 54.5,
-    "opp_implied": 28.5,
+    "implied_total": 23.9,
+    "game_ou": 48.0,
+    "opp_implied": 24.1,
     "next_week_opp": "@ BUF",
     "opp": {
      "snap": 0.12,
@@ -60293,9 +60290,9 @@
     "this_week_opp": "@ NYJ",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.6,
-    "game_ou": 45.8,
-    "opp_implied": 16.1,
+    "implied_total": 30.8,
+    "game_ou": 43.5,
+    "opp_implied": 12.8,
     "next_week_opp": "vs MIA",
     "opp": {
      "snap": 0.21,
@@ -60543,9 +60540,6 @@
     "this_week_opp": "vs MIN",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 13.5,
-    "game_ou": 43.6,
-    "opp_implied": 30.0,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.17,
@@ -60827,9 +60821,9 @@
     "this_week_opp": "vs BUF",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 16.1,
-    "game_ou": 45.8,
-    "opp_implied": 29.6,
+    "implied_total": 12.8,
+    "game_ou": 43.5,
+    "opp_implied": 30.8,
     "next_week_opp": "@ LAC",
     "opp": {
      "snap": 0.0,
@@ -61324,9 +61318,9 @@
     "this_week_opp": "vs HOU",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 23.2,
-    "game_ou": 48.2,
-    "opp_implied": 24.9,
+    "implied_total": 27.0,
+    "game_ou": 51.5,
+    "opp_implied": 24.5,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.0,
@@ -61821,9 +61815,9 @@
     "this_week_opp": "@ ATL",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.8,
-    "game_ou": 38.8,
-    "opp_implied": 9.1,
+    "implied_total": 34.8,
+    "game_ou": 48.5,
+    "opp_implied": 13.8,
     "next_week_opp": "vs ARI",
     "opp": {
      "snap": 0.06,
@@ -62069,9 +62063,9 @@
     "this_week_opp": "vs SF",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 25.9,
+    "implied_total": 26.1,
     "game_ou": 55.9,
-    "opp_implied": 30.0,
+    "opp_implied": 29.8,
     "next_week_opp": "vs TEN",
     "opp": {
      "snap": 0.25,
@@ -62335,9 +62329,9 @@
     "this_week_opp": "@ DAL",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 30.0,
+    "implied_total": 29.8,
     "game_ou": 55.9,
-    "opp_implied": 25.9,
+    "opp_implied": 26.1,
     "next_week_opp": "vs MIN",
     "opp": {
      "snap": 0.08,
@@ -62583,9 +62577,9 @@
     "this_week_opp": "vs SF",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 25.9,
+    "implied_total": 26.1,
     "game_ou": 55.9,
-    "opp_implied": 30.0,
+    "opp_implied": 29.8,
     "next_week_opp": "vs TEN"
    },
    {
@@ -62817,9 +62811,9 @@
     "this_week_opp": "@ DAL",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 30.0,
+    "implied_total": 29.8,
     "game_ou": 55.9,
-    "opp_implied": 25.9,
+    "opp_implied": 26.1,
     "next_week_opp": "vs MIN"
    },
    {
@@ -63087,9 +63081,9 @@
     "this_week_opp": "vs JAX",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 20.4,
-    "game_ou": 49.3,
-    "opp_implied": 28.9,
+    "implied_total": 23.6,
+    "game_ou": 63.5,
+    "opp_implied": 39.9,
     "next_week_opp": "@ DAL",
     "opp": {
      "snap": 0.12,
@@ -63368,7 +63362,9 @@
     "weekly_proj": {
      "10": 0.11
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 84,
     "is_rookie": false,
@@ -63582,9 +63578,9 @@
     "this_week_opp": "vs SEA",
     "kickoff_jst": "月 06:05",
     "venue_str": "ドーム/天然芝",
-    "implied_total": 17.0,
-    "game_ou": 40.6,
-    "opp_implied": 23.5,
+    "implied_total": 18.9,
+    "game_ou": 41.7,
+    "opp_implied": 22.8,
     "next_week_opp": "@ DEN",
     "opp": {
      "snap": 0.02,
@@ -63609,15 +63605,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 0.35,
-    "total_points": 6.5,
-    "avg_points": 1.62,
+    "total_points": 7.4,
+    "avg_points": 1.85,
     "proj_total": 5.43,
     "proj_avg": 5.43,
     "weekly_proj": {
      "10": 5.43
     },
     "weekly_actual": {
-     "10": 1.6
+     "10": 2.5
     },
     "opponents": {},
     "pos_rank": 105,
@@ -63832,9 +63828,9 @@
     "this_week_opp": "@ CLE",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.9,
-    "game_ou": 48.2,
-    "opp_implied": 23.2,
+    "implied_total": 24.5,
+    "game_ou": 51.5,
+    "opp_implied": 27.0,
     "next_week_opp": "vs IND",
     "opp": {
      "snap": 0.23,
@@ -64101,15 +64097,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 0.33,
-    "total_points": 10.4,
-    "avg_points": 2.6,
+    "total_points": 11.9,
+    "avg_points": 2.98,
     "proj_total": 29.93,
     "proj_avg": 3.74,
     "weekly_proj": {
      "10": 3.55
     },
     "weekly_actual": {
-     "10": 1.2
+     "10": 2.7
     },
     "opponents": {},
     "pos_rank": 96,
@@ -64324,9 +64320,9 @@
     "this_week_opp": "vs KC",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 9.1,
-    "game_ou": 38.8,
-    "opp_implied": 29.8,
+    "implied_total": 13.8,
+    "game_ou": 48.5,
+    "opp_implied": 34.8,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.18,
@@ -64574,9 +64570,9 @@
     "this_week_opp": "@ ATL",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.8,
-    "game_ou": 38.8,
-    "opp_implied": 9.1,
+    "implied_total": 34.8,
+    "game_ou": 48.5,
+    "opp_implied": 13.8,
     "next_week_opp": "vs ARI",
     "opp": {
      "snap": 0.08,
@@ -64824,9 +64820,9 @@
     "this_week_opp": "@ IND",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 26.0,
-    "game_ou": 54.5,
-    "opp_implied": 28.5,
+    "implied_total": 23.9,
+    "game_ou": 48.0,
+    "opp_implied": 24.1,
     "next_week_opp": "@ BUF",
     "opp": {
      "snap": 0.11,
@@ -65074,9 +65070,9 @@
     "this_week_opp": "@ TEN",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 28.9,
-    "game_ou": 49.3,
-    "opp_implied": 20.4,
+    "implied_total": 39.9,
+    "game_ou": 63.5,
+    "opp_implied": 23.6,
     "next_week_opp": "@ NYG",
     "opp": {
      "snap": 0.07,
@@ -65324,9 +65320,9 @@
     "this_week_opp": "@ NO",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 13.5,
-    "game_ou": 24.5,
-    "opp_implied": 11.0,
+    "implied_total": 20.0,
+    "game_ou": 37.5,
+    "opp_implied": 17.5,
     "next_week_opp": "vs BAL",
     "opp": {
      "snap": 0.11,
@@ -65822,9 +65818,9 @@
     "this_week_opp": "vs HOU",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 23.2,
-    "game_ou": 48.2,
-    "opp_implied": 24.9,
+    "implied_total": 27.0,
+    "game_ou": 51.5,
+    "opp_implied": 24.5,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.29,
@@ -66072,9 +66068,6 @@
     "this_week_opp": "@ GB",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 30.0,
-    "game_ou": 43.6,
-    "opp_implied": 13.5,
     "next_week_opp": "@ SF",
     "opp": {
      "snap": 0.06,
@@ -66333,15 +66326,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 0.2,
-    "total_points": 0,
-    "avg_points": 0,
+    "total_points": 0.6,
+    "avg_points": 0.6,
     "proj_total": 7.3,
     "proj_avg": 7.3,
     "weekly_proj": {
      "10": 7.3
     },
     "weekly_actual": {
-     "10": 0.0
+     "10": 0.6
     },
     "opponents": {},
     "pos_rank": 0,
@@ -66556,9 +66549,9 @@
     "this_week_opp": "@ ATL",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.8,
-    "game_ou": 38.8,
-    "opp_implied": 9.1,
+    "implied_total": 34.8,
+    "game_ou": 48.5,
+    "opp_implied": 13.8,
     "next_week_opp": "vs ARI"
    },
    {
@@ -66792,9 +66785,9 @@
     "this_week_opp": "vs MIA",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 28.5,
-    "game_ou": 54.5,
-    "opp_implied": 26.0,
+    "implied_total": 24.1,
+    "game_ou": 48.0,
+    "opp_implied": 23.9,
     "next_week_opp": "@ HOU",
     "opp": {
      "snap": 0.13,
@@ -67042,9 +67035,9 @@
     "this_week_opp": "vs BUF",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 16.1,
-    "game_ou": 45.8,
-    "opp_implied": 29.6,
+    "implied_total": 12.8,
+    "game_ou": 43.5,
+    "opp_implied": 30.8,
     "next_week_opp": "@ LAC",
     "opp": {
      "snap": 0.0,
@@ -67293,7 +67286,7 @@
     "kickoff_jst": "金 10:15",
     "venue_str": "屋外",
     "next_week_opp": "vs CIN",
-    "next_implied_total": 23.9,
+    "next_implied_total": 24.0,
     "opp": {
      "snap": 0.2,
      "snap_avg": 0.19,
@@ -67542,7 +67535,7 @@
     "game_ou": 49.5,
     "opp_implied": 23.0,
     "next_week_opp": "@ WAS",
-    "next_implied_total": 27.6,
+    "next_implied_total": 27.5,
     "opp": {
      "snap": 0.0,
      "snap_avg": 0.0,
@@ -67789,9 +67782,9 @@
     "this_week_opp": "@ NO",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 13.5,
-    "game_ou": 24.5,
-    "opp_implied": 11.0,
+    "implied_total": 20.0,
+    "game_ou": 37.5,
+    "opp_implied": 17.5,
     "next_week_opp": "vs BAL",
     "opp": {
      "snap": 0.15,
@@ -68285,9 +68278,9 @@
     "this_week_opp": "vs SF",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 25.9,
+    "implied_total": 26.1,
     "game_ou": 55.9,
-    "opp_implied": 30.0,
+    "opp_implied": 29.8,
     "next_week_opp": "vs TEN"
    },
    {
@@ -68761,9 +68754,9 @@
     "this_week_opp": "vs SF",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 25.9,
+    "implied_total": 26.1,
     "game_ou": 55.9,
-    "opp_implied": 30.0,
+    "opp_implied": 29.8,
     "next_week_opp": "vs TEN",
     "opp": {
      "snap": 0.23,
@@ -68788,15 +68781,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 0.12,
-    "total_points": 1.5,
-    "avg_points": 0.25,
+    "total_points": 3.8,
+    "avg_points": 0.63,
     "proj_total": 0.0,
     "proj_avg": 0.0,
     "weekly_proj": {
      "10": 0.0
     },
     "weekly_actual": {
-     "10": 0.2
+     "10": 2.5
     },
     "opponents": {},
     "pos_rank": 127,
@@ -69011,9 +69004,9 @@
     "this_week_opp": "@ CLE",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.9,
-    "game_ou": 48.2,
-    "opp_implied": 23.2,
+    "implied_total": 24.5,
+    "game_ou": 51.5,
+    "opp_implied": 27.0,
     "next_week_opp": "vs IND",
     "opp": {
      "snap": 0.11,
@@ -69261,9 +69254,9 @@
     "this_week_opp": "@ TEN",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 28.9,
-    "game_ou": 49.3,
-    "opp_implied": 20.4,
+    "implied_total": 39.9,
+    "game_ou": 63.5,
+    "opp_implied": 23.6,
     "next_week_opp": "@ NYG",
     "opp": {
      "snap": 0.12,
@@ -69511,9 +69504,9 @@
     "this_week_opp": "@ CLE",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.9,
-    "game_ou": 48.2,
-    "opp_implied": 23.2,
+    "implied_total": 24.5,
+    "game_ou": 51.5,
+    "opp_implied": 27.0,
     "next_week_opp": "vs IND",
     "opp": {
      "snap": 0.22,
@@ -69545,7 +69538,9 @@
     "weekly_proj": {
      "10": 0.0
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 0,
     "is_rookie": false,
@@ -69759,9 +69754,9 @@
     "this_week_opp": "vs LA",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 14.2,
-    "game_ou": 38.3,
-    "opp_implied": 24.1,
+    "implied_total": 15.1,
+    "game_ou": 39.4,
+    "opp_implied": 24.2,
     "next_week_opp": "@ KC"
    },
    {
@@ -70038,13 +70033,15 @@
     "lineup_slot": "",
     "percent_owned": 0.07,
     "total_points": 3.4,
-    "avg_points": 1.13,
+    "avg_points": 0.85,
     "proj_total": 1.34,
     "proj_avg": 0.17,
     "weekly_proj": {
      "10": 0.18
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 113,
     "is_rookie": false,
@@ -70258,9 +70255,9 @@
     "this_week_opp": "@ ARI",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.1,
-    "game_ou": 38.3,
-    "opp_implied": 14.2,
+    "implied_total": 24.2,
+    "game_ou": 39.4,
+    "opp_implied": 15.1,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.0,
@@ -71003,7 +71000,7 @@
     "kickoff_jst": "金 10:15",
     "venue_str": "屋外",
     "next_week_opp": "vs CIN",
-    "next_implied_total": 23.9,
+    "next_implied_total": 24.0,
     "opp": {
      "snap": 0.64,
      "snap_avg": 0.625,
@@ -71494,9 +71491,9 @@
     "this_week_opp": "vs JAX",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 20.4,
-    "game_ou": 49.3,
-    "opp_implied": 28.9,
+    "implied_total": 23.6,
+    "game_ou": 63.5,
+    "opp_implied": 39.9,
     "next_week_opp": "@ DAL",
     "opp": {
      "snap": 0.89,
@@ -71987,9 +71984,9 @@
     "this_week_opp": "vs HOU",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 23.2,
-    "game_ou": 48.2,
-    "opp_implied": 24.9,
+    "implied_total": 27.0,
+    "game_ou": 51.5,
+    "opp_implied": 24.5,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.93,
@@ -72484,9 +72481,9 @@
     "this_week_opp": "@ DAL",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 30.0,
+    "implied_total": 29.8,
     "game_ou": 55.9,
-    "opp_implied": 25.9,
+    "opp_implied": 26.1,
     "next_week_opp": "vs MIN",
     "opp": {
      "snap": 0.43,
@@ -72735,9 +72732,6 @@
     "this_week_opp": "@ GB",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 30.0,
-    "game_ou": 43.6,
-    "opp_implied": 13.5,
     "next_week_opp": "@ SF",
     "opp": {
      "snap": 0.96,
@@ -72985,9 +72979,9 @@
     "this_week_opp": "@ ATL",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.8,
-    "game_ou": 38.8,
-    "opp_implied": 9.1,
+    "implied_total": 34.8,
+    "game_ou": 48.5,
+    "opp_implied": 13.8,
     "next_week_opp": "vs ARI",
     "opp": {
      "snap": 0.77,
@@ -73260,15 +73254,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 69.04,
-    "total_points": 98.4,
-    "avg_points": 9.84,
+    "total_points": 100.1,
+    "avg_points": 10.01,
     "proj_total": 85.38,
     "proj_avg": 10.67,
     "weekly_proj": {
      "10": 10.62
     },
     "weekly_actual": {
-     "10": 10.0
+     "10": 11.7
     },
     "opponents": {},
     "pos_rank": 30,
@@ -73483,9 +73477,9 @@
     "this_week_opp": "vs HOU",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 23.2,
-    "game_ou": 48.2,
-    "opp_implied": 24.9,
+    "implied_total": 27.0,
+    "game_ou": 51.5,
+    "opp_implied": 24.5,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.93,
@@ -73511,15 +73505,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 63.92,
-    "total_points": 82.6,
-    "avg_points": 9.18,
+    "total_points": 83.7,
+    "avg_points": 9.3,
     "proj_total": 89.98,
     "proj_avg": 10.0,
     "weekly_proj": {
      "10": 10.17
     },
     "weekly_actual": {
-     "10": 6.4
+     "10": 7.5
     },
     "opponents": {},
     "pos_rank": 39,
@@ -73734,9 +73728,9 @@
     "this_week_opp": "@ NYJ",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.6,
-    "game_ou": 45.8,
-    "opp_implied": 16.1,
+    "implied_total": 30.8,
+    "game_ou": 43.5,
+    "opp_implied": 12.8,
     "next_week_opp": "vs MIA",
     "opp": {
      "snap": 0.52,
@@ -73985,9 +73979,9 @@
     "this_week_opp": "@ ATL",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.8,
-    "game_ou": 38.8,
-    "opp_implied": 9.1,
+    "implied_total": 34.8,
+    "game_ou": 48.5,
+    "opp_implied": 13.8,
     "next_week_opp": "vs ARI",
     "opp": {
      "snap": 0.74,
@@ -74020,7 +74014,9 @@
     "weekly_proj": {
      "10": 8.42
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 19,
     "is_rookie": false,
@@ -74234,9 +74230,9 @@
     "this_week_opp": "vs SEA",
     "kickoff_jst": "月 06:05",
     "venue_str": "ドーム/天然芝",
-    "implied_total": 17.0,
-    "game_ou": 40.6,
-    "opp_implied": 23.5,
+    "implied_total": 18.9,
+    "game_ou": 41.7,
+    "opp_implied": 22.8,
     "next_week_opp": "@ DEN",
     "opp": {
      "snap": 0.64,
@@ -74502,7 +74498,7 @@
     "name": "Wan'Dale Robinson",
     "position": "WR",
     "pro_team": "TEN",
-    "injury_status": "ACTIVE",
+    "injury_status": "QUESTIONABLE",
     "lineup_slot": "",
     "percent_owned": 55.85,
     "total_points": 81.3,
@@ -74728,9 +74724,9 @@
     "this_week_opp": "vs JAX",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 20.4,
-    "game_ou": 49.3,
-    "opp_implied": 28.9,
+    "implied_total": 23.6,
+    "game_ou": 63.5,
+    "opp_implied": 39.9,
     "next_week_opp": "@ DAL",
     "opp": {
      "snap": 0.94,
@@ -74978,9 +74974,9 @@
     "this_week_opp": "@ CLE",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.9,
-    "game_ou": 48.2,
-    "opp_implied": 23.2,
+    "implied_total": 24.5,
+    "game_ou": 51.5,
+    "opp_implied": 27.0,
     "next_week_opp": "vs IND",
     "opp": {
      "snap": 0.46,
@@ -75255,7 +75251,9 @@
     "weekly_proj": {
      "10": 0.0
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 15,
     "is_rookie": false,
@@ -75469,9 +75467,9 @@
     "this_week_opp": "vs LA",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 14.2,
-    "game_ou": 38.3,
-    "opp_implied": 24.1,
+    "implied_total": 15.1,
+    "game_ou": 39.4,
+    "opp_implied": 24.2,
     "next_week_opp": "@ KC",
     "opp": {
      "snap": 0.83,
@@ -75720,9 +75718,9 @@
     "this_week_opp": "vs CAR",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 11.0,
-    "game_ou": 24.5,
-    "opp_implied": 13.5,
+    "implied_total": 17.5,
+    "game_ou": 37.5,
+    "opp_implied": 20.0,
     "next_week_opp": "@ CHI",
     "opp": {
      "snap": 0.93,
@@ -75970,9 +75968,9 @@
     "this_week_opp": "vs MIA",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 28.5,
-    "game_ou": 54.5,
-    "opp_implied": 26.0,
+    "implied_total": 24.1,
+    "game_ou": 48.0,
+    "opp_implied": 23.9,
     "next_week_opp": "@ HOU",
     "opp": {
      "snap": 0.26,
@@ -75997,15 +75995,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 42.24,
-    "total_points": 18.2,
-    "avg_points": 9.1,
+    "total_points": 24.0,
+    "avg_points": 12.0,
     "proj_total": 74.22,
     "proj_avg": 8.25,
     "weekly_proj": {
      "10": 8.56
     },
     "weekly_actual": {
-     "10": 13.2
+     "10": 19.0
     },
     "opponents": {},
     "pos_rank": 162,
@@ -76220,9 +76218,9 @@
     "this_week_opp": "vs CAR",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 11.0,
-    "game_ou": 24.5,
-    "opp_implied": 13.5,
+    "implied_total": 17.5,
+    "game_ou": 37.5,
+    "opp_implied": 20.0,
     "next_week_opp": "@ CHI",
     "opp": {
      "snap": 0.24,
@@ -76736,15 +76734,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 38.6,
-    "total_points": 52.0,
-    "avg_points": 8.67,
+    "total_points": 57.4,
+    "avg_points": 9.57,
     "proj_total": 82.94,
     "proj_avg": 10.37,
     "weekly_proj": {
      "10": 10.34
     },
     "weekly_actual": {
-     "10": 3.5
+     "10": 8.9
     },
     "opponents": {},
     "pos_rank": 72,
@@ -76959,9 +76957,9 @@
     "this_week_opp": "vs BUF",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 16.1,
-    "game_ou": 45.8,
-    "opp_implied": 29.6,
+    "implied_total": 12.8,
+    "game_ou": 43.5,
+    "opp_implied": 30.8,
     "next_week_opp": "@ LAC",
     "opp": {
      "snap": 0.89,
@@ -77235,15 +77233,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 34.89,
-    "total_points": 37.6,
-    "avg_points": 4.18,
+    "total_points": 39.6,
+    "avg_points": 4.4,
     "proj_total": 53.52,
     "proj_avg": 5.95,
     "weekly_proj": {
      "10": 6.26
     },
     "weekly_actual": {
-     "10": 3.9
+     "10": 5.9
     },
     "opponents": {},
     "pos_rank": 94,
@@ -77458,9 +77456,9 @@
     "this_week_opp": "@ TEN",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 28.9,
-    "game_ou": 49.3,
-    "opp_implied": 20.4,
+    "implied_total": 39.9,
+    "game_ou": 63.5,
+    "opp_implied": 23.6,
     "next_week_opp": "@ NYG",
     "opp": {
      "snap": 0.52,
@@ -77708,9 +77706,9 @@
     "this_week_opp": "@ IND",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 26.0,
-    "game_ou": 54.5,
-    "opp_implied": 28.5,
+    "implied_total": 23.9,
+    "game_ou": 48.0,
+    "opp_implied": 24.1,
     "next_week_opp": "@ BUF",
     "opp": {
      "snap": 0.77,
@@ -77959,7 +77957,7 @@
     "kickoff_jst": "金 10:15",
     "venue_str": "屋外",
     "next_week_opp": "vs CIN",
-    "next_implied_total": 23.9,
+    "next_implied_total": 24.0,
     "opp": {
      "snap": 0.1,
      "snap_avg": 0.34,
@@ -77983,15 +77981,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 30.37,
-    "total_points": 65.4,
-    "avg_points": 10.9,
+    "total_points": 70.7,
+    "avg_points": 11.78,
     "proj_total": 78.05,
     "proj_avg": 8.67,
     "weekly_proj": {
      "10": 8.71
     },
     "weekly_actual": {
-     "10": 4.8
+     "10": 10.1
     },
     "opponents": {},
     "pos_rank": 58,
@@ -78206,9 +78204,9 @@
     "this_week_opp": "@ IND",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 26.0,
-    "game_ou": 54.5,
-    "opp_implied": 28.5,
+    "implied_total": 23.9,
+    "game_ou": 48.0,
+    "opp_implied": 24.1,
     "next_week_opp": "@ BUF",
     "opp": {
      "snap": 0.74,
@@ -78455,9 +78453,9 @@
     "this_week_opp": "vs SF",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 25.9,
+    "implied_total": 26.1,
     "game_ou": 55.9,
-    "opp_implied": 30.0,
+    "opp_implied": 29.8,
     "next_week_opp": "vs TEN",
     "opp": {
      "snap": 0.97,
@@ -78729,15 +78727,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 24.8,
-    "total_points": 21.2,
-    "avg_points": 2.36,
+    "total_points": 23.2,
+    "avg_points": 2.58,
     "proj_total": 32.68,
     "proj_avg": 3.63,
     "weekly_proj": {
      "10": 3.83
     },
     "weekly_actual": {
-     "10": 1.9
+     "10": 3.9
     },
     "opponents": {},
     "pos_rank": 112,
@@ -78952,9 +78950,9 @@
     "this_week_opp": "@ TEN",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 28.9,
-    "game_ou": 49.3,
-    "opp_implied": 20.4,
+    "implied_total": 39.9,
+    "game_ou": 63.5,
+    "opp_implied": 23.6,
     "next_week_opp": "@ NYG"
    },
    {
@@ -79220,7 +79218,9 @@
     "weekly_proj": {
      "10": 7.18
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 83,
     "is_rookie": false,
@@ -79434,9 +79434,9 @@
     "this_week_opp": "@ LV",
     "kickoff_jst": "月 06:05",
     "venue_str": "ドーム/天然芝",
-    "implied_total": 23.5,
-    "game_ou": 40.6,
-    "opp_implied": 17.0,
+    "implied_total": 22.8,
+    "game_ou": 41.7,
+    "opp_implied": 18.9,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.32,
@@ -79682,9 +79682,9 @@
     "this_week_opp": "@ DAL",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 30.0,
+    "implied_total": 29.8,
     "game_ou": 55.9,
-    "opp_implied": 25.9,
+    "opp_implied": 26.1,
     "next_week_opp": "vs MIN"
    },
    {
@@ -79918,9 +79918,9 @@
     "this_week_opp": "@ NYJ",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.6,
-    "game_ou": 45.8,
-    "opp_implied": 16.1,
+    "implied_total": 30.8,
+    "game_ou": 43.5,
+    "opp_implied": 12.8,
     "next_week_opp": "vs MIA",
     "opp": {
      "snap": 0.61,
@@ -80168,9 +80168,6 @@
     "this_week_opp": "vs MIN",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 13.5,
-    "game_ou": 43.6,
-    "opp_implied": 30.0,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.03,
@@ -80419,7 +80416,7 @@
     "kickoff_jst": "金 10:15",
     "venue_str": "屋外",
     "next_week_opp": "vs CIN",
-    "next_implied_total": 23.9,
+    "next_implied_total": 24.0,
     "opp": {
      "snap": 0.86,
      "snap_avg": 0.85,
@@ -80450,7 +80447,9 @@
     "weekly_proj": {
      "10": 8.9
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 119,
     "is_rookie": false,
@@ -80664,9 +80663,9 @@
     "this_week_opp": "@ ARI",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.1,
-    "game_ou": 38.3,
-    "opp_implied": 14.2,
+    "implied_total": 24.2,
+    "game_ou": 39.4,
+    "opp_implied": 15.1,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.47,
@@ -80958,7 +80957,9 @@
     "weekly_proj": {
      "10": 8.84
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 96,
     "is_rookie": false,
@@ -81172,9 +81173,9 @@
     "this_week_opp": "@ ARI",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.1,
-    "game_ou": 38.3,
-    "opp_implied": 14.2,
+    "implied_total": 24.2,
+    "game_ou": 39.4,
+    "opp_implied": 15.1,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.44,
@@ -81670,9 +81671,9 @@
     "this_week_opp": "@ CLE",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.9,
-    "game_ou": 48.2,
-    "opp_implied": 23.2,
+    "implied_total": 24.5,
+    "game_ou": 51.5,
+    "opp_implied": 27.0,
     "next_week_opp": "vs IND",
     "opp": {
      "snap": 0.81,
@@ -81916,9 +81917,9 @@
     "this_week_opp": "@ DAL",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 30.0,
+    "implied_total": 29.8,
     "game_ou": 55.9,
-    "opp_implied": 25.9,
+    "opp_implied": 26.1,
     "next_week_opp": "vs MIN"
    },
    {
@@ -82178,7 +82179,9 @@
     "weekly_proj": {
      "10": 5.46
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 63,
     "is_rookie": false,
@@ -82392,9 +82395,9 @@
     "this_week_opp": "@ LV",
     "kickoff_jst": "月 06:05",
     "venue_str": "ドーム/天然芝",
-    "implied_total": 23.5,
-    "game_ou": 40.6,
-    "opp_implied": 17.0,
+    "implied_total": 22.8,
+    "game_ou": 41.7,
+    "opp_implied": 18.9,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.73,
@@ -82643,7 +82646,7 @@
     "kickoff_jst": "金 10:15",
     "venue_str": "屋外",
     "next_week_opp": "vs CIN",
-    "next_implied_total": 23.9,
+    "next_implied_total": 24.0,
     "opp": {
      "snap": 0.61,
      "snap_avg": 0.64,
@@ -83138,9 +83141,9 @@
     "this_week_opp": "vs HOU",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 23.2,
-    "game_ou": 48.2,
-    "opp_implied": 24.9,
+    "implied_total": 27.0,
+    "game_ou": 51.5,
+    "opp_implied": 24.5,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.68,
@@ -84367,9 +84370,9 @@
     "this_week_opp": "@ DAL",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 30.0,
+    "implied_total": 29.8,
     "game_ou": 55.9,
-    "opp_implied": 25.9,
+    "opp_implied": 26.1,
     "next_week_opp": "vs MIN",
     "opp": {
      "snap": 0.51,
@@ -84618,9 +84621,9 @@
     "this_week_opp": "vs JAX",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 20.4,
-    "game_ou": 49.3,
-    "opp_implied": 28.9,
+    "implied_total": 23.6,
+    "game_ou": 63.5,
+    "opp_implied": 39.9,
     "next_week_opp": "@ DAL",
     "opp": {
      "snap": 0.52,
@@ -84868,9 +84871,9 @@
     "this_week_opp": "@ CLE",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.9,
-    "game_ou": 48.2,
-    "opp_implied": 23.2,
+    "implied_total": 24.5,
+    "game_ou": 51.5,
+    "opp_implied": 27.0,
     "next_week_opp": "vs IND",
     "opp": {
      "snap": 0.31,
@@ -84896,7 +84899,7 @@
     "lineup_slot": "",
     "percent_owned": 3.88,
     "total_points": 62.9,
-    "avg_points": 7.86,
+    "avg_points": 6.99,
     "proj_total": 50.02,
     "proj_avg": 5.56,
     "weekly_proj": {
@@ -85118,9 +85121,9 @@
     "this_week_opp": "@ CLE",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.9,
-    "game_ou": 48.2,
-    "opp_implied": 23.2,
+    "implied_total": 24.5,
+    "game_ou": 51.5,
+    "opp_implied": 27.0,
     "next_week_opp": "vs IND",
     "opp": {
      "snap": 0.33,
@@ -85368,9 +85371,9 @@
     "this_week_opp": "vs KC",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 9.1,
-    "game_ou": 38.8,
-    "opp_implied": 29.8,
+    "implied_total": 13.8,
+    "game_ou": 48.5,
+    "opp_implied": 34.8,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.84,
@@ -85402,7 +85405,9 @@
     "weekly_proj": {
      "10": 6.18
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 98,
     "is_rookie": false,
@@ -85616,9 +85621,9 @@
     "this_week_opp": "vs SEA",
     "kickoff_jst": "月 06:05",
     "venue_str": "ドーム/天然芝",
-    "implied_total": 17.0,
-    "game_ou": 40.6,
-    "opp_implied": 23.5,
+    "implied_total": 18.9,
+    "game_ou": 41.7,
+    "opp_implied": 22.8,
     "next_week_opp": "@ DEN",
     "opp": {
      "snap": 0.74,
@@ -85864,9 +85869,9 @@
     "this_week_opp": "@ DAL",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 30.0,
+    "implied_total": 29.8,
     "game_ou": 55.9,
-    "opp_implied": 25.9,
+    "opp_implied": 26.1,
     "next_week_opp": "vs MIN",
     "opp": {
      "snap": 0.77,
@@ -86376,15 +86381,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 2.29,
-    "total_points": 27.2,
-    "avg_points": 3.02,
+    "total_points": 29.5,
+    "avg_points": 3.28,
     "proj_total": 21.51,
     "proj_avg": 2.39,
     "weekly_proj": {
      "10": 7.7
     },
     "weekly_actual": {
-     "10": 1.8
+     "10": 4.1
     },
     "opponents": {},
     "pos_rank": 105,
@@ -86599,9 +86604,9 @@
     "this_week_opp": "vs JAX",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 20.4,
-    "game_ou": 49.3,
-    "opp_implied": 28.9,
+    "implied_total": 23.6,
+    "game_ou": 63.5,
+    "opp_implied": 39.9,
     "next_week_opp": "@ DAL",
     "opp": {
      "snap": 0.82,
@@ -87340,7 +87345,7 @@
     "game_ou": 49.5,
     "opp_implied": 23.0,
     "next_week_opp": "@ WAS",
-    "next_implied_total": 27.6,
+    "next_implied_total": 27.5,
     "opp": {
      "snap": 0.42,
      "snap_avg": 0.505,
@@ -87836,9 +87841,6 @@
     "this_week_opp": "@ GB",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 30.0,
-    "game_ou": 43.6,
-    "opp_implied": 13.5,
     "next_week_opp": "@ SF",
     "opp": {
      "snap": 0.55,
@@ -88084,9 +88086,9 @@
     "this_week_opp": "@ DAL",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 30.0,
+    "implied_total": 29.8,
     "game_ou": 55.9,
-    "opp_implied": 25.9,
+    "opp_implied": 26.1,
     "next_week_opp": "vs MIN"
    },
    {
@@ -88318,9 +88320,9 @@
     "this_week_opp": "@ DAL",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 30.0,
+    "implied_total": 29.8,
     "game_ou": 55.9,
-    "opp_implied": 25.9,
+    "opp_implied": 26.1,
     "next_week_opp": "vs MIN"
    },
    {
@@ -88554,9 +88556,9 @@
     "this_week_opp": "@ CLE",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.9,
-    "game_ou": 48.2,
-    "opp_implied": 23.2,
+    "implied_total": 24.5,
+    "game_ou": 51.5,
+    "opp_implied": 27.0,
     "next_week_opp": "vs IND"
    },
    {
@@ -88574,7 +88576,9 @@
     "weekly_proj": {
      "10": 7.16
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 148,
     "is_rookie": true,
@@ -88788,9 +88792,9 @@
     "this_week_opp": "vs LA",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 14.2,
-    "game_ou": 38.3,
-    "opp_implied": 24.1,
+    "implied_total": 15.1,
+    "game_ou": 39.4,
+    "opp_implied": 24.2,
     "next_week_opp": "@ KC",
     "opp": {
      "snap": 0.34,
@@ -89285,9 +89289,9 @@
     "this_week_opp": "@ IND",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 26.0,
-    "game_ou": 54.5,
-    "opp_implied": 28.5,
+    "implied_total": 23.9,
+    "game_ou": 48.0,
+    "opp_implied": 24.1,
     "next_week_opp": "@ BUF",
     "opp": {
      "snap": 0.63,
@@ -89535,9 +89539,9 @@
     "this_week_opp": "vs MIA",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 28.5,
-    "game_ou": 54.5,
-    "opp_implied": 26.0,
+    "implied_total": 24.1,
+    "game_ou": 48.0,
+    "opp_implied": 23.9,
     "next_week_opp": "@ HOU",
     "opp": {
      "snap": 0.81,
@@ -89562,15 +89566,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 1.14,
-    "total_points": 35.7,
-    "avg_points": 7.14,
+    "total_points": 37.0,
+    "avg_points": 7.4,
     "proj_total": 65.93,
     "proj_avg": 8.24,
     "weekly_proj": {
      "10": 7.62
     },
     "weekly_actual": {
-     "10": 3.4
+     "10": 4.7
     },
     "opponents": {},
     "pos_rank": 97,
@@ -89785,9 +89789,6 @@
     "this_week_opp": "vs MIN",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 13.5,
-    "game_ou": 43.6,
-    "opp_implied": 30.0,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.48,
@@ -90035,9 +90036,9 @@
     "this_week_opp": "vs KC",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 9.1,
-    "game_ou": 38.8,
-    "opp_implied": 29.8,
+    "implied_total": 13.8,
+    "game_ou": 48.5,
+    "opp_implied": 34.8,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.09,
@@ -90069,7 +90070,9 @@
     "weekly_proj": {
      "10": 5.99
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 191,
     "is_rookie": true,
@@ -90283,9 +90286,9 @@
     "this_week_opp": "@ ARI",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.1,
-    "game_ou": 38.3,
-    "opp_implied": 14.2,
+    "implied_total": 24.2,
+    "game_ou": 39.4,
+    "opp_implied": 15.1,
     "next_week_opp": "BYE"
    },
    {
@@ -90303,7 +90306,9 @@
     "weekly_proj": {
      "10": 0.0
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 68,
     "is_rookie": false,
@@ -90517,9 +90522,9 @@
     "this_week_opp": "vs LA",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 14.2,
-    "game_ou": 38.3,
-    "opp_implied": 24.1,
+    "implied_total": 15.1,
+    "game_ou": 39.4,
+    "opp_implied": 24.2,
     "next_week_opp": "@ KC",
     "opp": {
      "snap": 0.31,
@@ -90765,9 +90770,9 @@
     "this_week_opp": "vs SF",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 25.9,
+    "implied_total": 26.1,
     "game_ou": 55.9,
-    "opp_implied": 30.0,
+    "opp_implied": 29.8,
     "next_week_opp": "vs TEN",
     "opp": {
      "snap": 0.0,
@@ -91015,9 +91020,6 @@
     "this_week_opp": "@ GB",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 30.0,
-    "game_ou": 43.6,
-    "opp_implied": 13.5,
     "next_week_opp": "@ SF",
     "opp": {
      "snap": 0.09,
@@ -91042,15 +91044,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 0.83,
-    "total_points": 28.1,
-    "avg_points": 3.12,
+    "total_points": 29.5,
+    "avg_points": 3.28,
     "proj_total": 15.67,
     "proj_avg": 1.74,
     "weekly_proj": {
      "10": 6.37
     },
     "weekly_actual": {
-     "10": 14.7
+     "10": 16.1
     },
     "opponents": {},
     "pos_rank": 131,
@@ -91265,9 +91267,6 @@
     "this_week_opp": "@ GB",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 30.0,
-    "game_ou": 43.6,
-    "opp_implied": 13.5,
     "next_week_opp": "@ SF",
     "opp": {
      "snap": 0.6,
@@ -92009,9 +92008,9 @@
     "this_week_opp": "@ NO",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 13.5,
-    "game_ou": 24.5,
-    "opp_implied": 11.0,
+    "implied_total": 20.0,
+    "game_ou": 37.5,
+    "opp_implied": 17.5,
     "next_week_opp": "vs BAL",
     "opp": {
      "snap": 0.5,
@@ -92501,9 +92500,9 @@
     "this_week_opp": "@ ATL",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.8,
-    "game_ou": 38.8,
-    "opp_implied": 9.1,
+    "implied_total": 34.8,
+    "game_ou": 48.5,
+    "opp_implied": 13.8,
     "next_week_opp": "vs ARI",
     "opp": {
      "snap": 0.29,
@@ -92535,7 +92534,9 @@
     "weekly_proj": {
      "10": 3.84
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 101,
     "is_rookie": false,
@@ -92749,9 +92750,9 @@
     "this_week_opp": "@ LV",
     "kickoff_jst": "月 06:05",
     "venue_str": "ドーム/天然芝",
-    "implied_total": 23.5,
-    "game_ou": 40.6,
-    "opp_implied": 17.0,
+    "implied_total": 22.8,
+    "game_ou": 41.7,
+    "opp_implied": 18.9,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.61,
@@ -92783,7 +92784,9 @@
     "weekly_proj": {
      "10": 4.06
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 157,
     "is_rookie": false,
@@ -92997,9 +93000,9 @@
     "this_week_opp": "vs LA",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 14.2,
-    "game_ou": 38.3,
-    "opp_implied": 24.1,
+    "implied_total": 15.1,
+    "game_ou": 39.4,
+    "opp_implied": 24.2,
     "next_week_opp": "@ KC",
     "opp": {
      "snap": 0.45,
@@ -93266,15 +93269,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 0.42,
-    "total_points": 48.4,
-    "avg_points": 4.84,
+    "total_points": 49.8,
+    "avg_points": 4.98,
     "proj_total": 8.41,
     "proj_avg": 1.05,
     "weekly_proj": {
      "10": 1.01
     },
     "weekly_actual": {
-     "10": 5.0
+     "10": 6.4
     },
     "opponents": {},
     "pos_rank": 81,
@@ -93489,9 +93492,9 @@
     "this_week_opp": "vs BUF",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 16.1,
-    "game_ou": 45.8,
-    "opp_implied": 29.6,
+    "implied_total": 12.8,
+    "game_ou": 43.5,
+    "opp_implied": 30.8,
     "next_week_opp": "@ LAC",
     "opp": {
      "snap": 0.6,
@@ -93739,9 +93742,9 @@
     "this_week_opp": "@ ATL",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.8,
-    "game_ou": 38.8,
-    "opp_implied": 9.1,
+    "implied_total": 34.8,
+    "game_ou": 48.5,
+    "opp_implied": 13.8,
     "next_week_opp": "vs ARI",
     "opp": {
      "snap": 0.63,
@@ -93987,9 +93990,9 @@
     "this_week_opp": "@ DAL",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 30.0,
+    "implied_total": 29.8,
     "game_ou": 55.9,
-    "opp_implied": 25.9,
+    "opp_implied": 26.1,
     "next_week_opp": "vs MIN",
     "opp": {
      "snap": 0.44,
@@ -94237,9 +94240,9 @@
     "this_week_opp": "@ NYJ",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.6,
-    "game_ou": 45.8,
-    "opp_implied": 16.1,
+    "implied_total": 30.8,
+    "game_ou": 43.5,
+    "opp_implied": 12.8,
     "next_week_opp": "vs MIA"
    },
    {
@@ -94473,9 +94476,9 @@
     "this_week_opp": "@ ATL",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.8,
-    "game_ou": 38.8,
-    "opp_implied": 9.1,
+    "implied_total": 34.8,
+    "game_ou": 48.5,
+    "opp_implied": 13.8,
     "next_week_opp": "vs ARI",
     "opp": {
      "snap": 0.32,
@@ -94744,15 +94747,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 90.83,
-    "total_points": 110.2,
-    "avg_points": 11.02,
+    "total_points": 118.4,
+    "avg_points": 11.84,
     "proj_total": 80.63,
     "proj_avg": 10.08,
     "weekly_proj": {
      "10": 10.09
     },
     "weekly_actual": {
-     "10": 7.9
+     "10": 16.1
     },
     "opponents": {},
     "pos_rank": 5,
@@ -94967,9 +94970,9 @@
     "this_week_opp": "vs HOU",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 23.2,
-    "game_ou": 48.2,
-    "opp_implied": 24.9,
+    "implied_total": 27.0,
+    "game_ou": 51.5,
+    "opp_implied": 24.5,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.84,
@@ -94995,15 +94998,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 82.25,
-    "total_points": 73.9,
-    "avg_points": 7.39,
+    "total_points": 78.0,
+    "avg_points": 7.8,
     "proj_total": 74.96,
     "proj_avg": 9.37,
     "weekly_proj": {
      "10": 9.17
     },
     "weekly_actual": {
-     "10": 2.9
+     "10": 7.0
     },
     "opponents": {},
     "pos_rank": 22,
@@ -95218,9 +95221,9 @@
     "this_week_opp": "vs KC",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 9.1,
-    "game_ou": 38.8,
-    "opp_implied": 29.8,
+    "implied_total": 13.8,
+    "game_ou": 48.5,
+    "opp_implied": 34.8,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.68,
@@ -95468,9 +95471,9 @@
     "this_week_opp": "@ NYJ",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.6,
-    "game_ou": 45.8,
-    "opp_implied": 16.1,
+    "implied_total": 30.8,
+    "game_ou": 43.5,
+    "opp_implied": 12.8,
     "next_week_opp": "vs MIA",
     "opp": {
      "snap": 0.5,
@@ -95719,9 +95722,6 @@
     "this_week_opp": "@ GB",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 30.0,
-    "game_ou": 43.6,
-    "opp_implied": 13.5,
     "next_week_opp": "@ SF",
     "opp": {
      "snap": 0.81,
@@ -96460,9 +96460,9 @@
     "this_week_opp": "@ TEN",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 28.9,
-    "game_ou": 49.3,
-    "opp_implied": 20.4,
+    "implied_total": 39.9,
+    "game_ou": 63.5,
+    "opp_implied": 23.6,
     "next_week_opp": "@ NYG",
     "opp": {
      "snap": 0.79,
@@ -96958,9 +96958,9 @@
     "this_week_opp": "vs CAR",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 11.0,
-    "game_ou": 24.5,
-    "opp_implied": 13.5,
+    "implied_total": 17.5,
+    "game_ou": 37.5,
+    "opp_implied": 20.0,
     "next_week_opp": "@ CHI",
     "opp": {
      "snap": 0.53,
@@ -97454,9 +97454,9 @@
     "this_week_opp": "vs SF",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 25.9,
+    "implied_total": 26.1,
     "game_ou": 55.9,
-    "opp_implied": 30.0,
+    "opp_implied": 29.8,
     "next_week_opp": "vs TEN",
     "opp": {
      "snap": 0.34,
@@ -97704,9 +97704,9 @@
     "this_week_opp": "@ NO",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 13.5,
-    "game_ou": 24.5,
-    "opp_implied": 11.0,
+    "implied_total": 20.0,
+    "game_ou": 37.5,
+    "opp_implied": 17.5,
     "next_week_opp": "vs BAL",
     "opp": {
      "snap": 0.53,
@@ -97957,7 +97957,7 @@
     "game_ou": 49.5,
     "opp_implied": 23.0,
     "next_week_opp": "@ WAS",
-    "next_implied_total": 27.6,
+    "next_implied_total": 27.5,
     "opp": {
      "snap": 0.47,
      "snap_avg": 0.575,
@@ -97981,15 +97981,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 22.0,
-    "total_points": 71.4,
-    "avg_points": 7.93,
+    "total_points": 79.5,
+    "avg_points": 8.83,
     "proj_total": 71.96,
     "proj_avg": 8.0,
     "weekly_proj": {
      "10": 7.53
     },
     "weekly_actual": {
-     "10": 0.0
+     "10": 8.1
     },
     "opponents": {},
     "pos_rank": 21,
@@ -98204,9 +98204,9 @@
     "this_week_opp": "@ CLE",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.9,
-    "game_ou": 48.2,
-    "opp_implied": 23.2,
+    "implied_total": 24.5,
+    "game_ou": 51.5,
+    "opp_implied": 27.0,
     "next_week_opp": "vs IND",
     "opp": {
      "snap": 0.44,
@@ -98231,14 +98231,16 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 18.5,
-    "total_points": 81.8,
-    "avg_points": 9.09,
+    "total_points": 83.7,
+    "avg_points": 8.37,
     "proj_total": 61.42,
     "proj_avg": 7.68,
     "weekly_proj": {
      "10": 7.22
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 1.9
+    },
     "opponents": {},
     "pos_rank": 13,
     "is_rookie": false,
@@ -98452,9 +98454,9 @@
     "this_week_opp": "vs SEA",
     "kickoff_jst": "月 06:05",
     "venue_str": "ドーム/天然芝",
-    "implied_total": 17.0,
-    "game_ou": 40.6,
-    "opp_implied": 23.5,
+    "implied_total": 18.9,
+    "game_ou": 41.7,
+    "opp_implied": 22.8,
     "next_week_opp": "@ DEN",
     "opp": {
      "snap": 0.76,
@@ -98702,9 +98704,9 @@
     "this_week_opp": "vs BUF",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 16.1,
-    "game_ou": 45.8,
-    "opp_implied": 29.6,
+    "implied_total": 12.8,
+    "game_ou": 43.5,
+    "opp_implied": 30.8,
     "next_week_opp": "@ LAC",
     "opp": {
      "snap": 0.57,
@@ -98953,7 +98955,7 @@
     "kickoff_jst": "金 10:15",
     "venue_str": "屋外",
     "next_week_opp": "vs CIN",
-    "next_implied_total": 23.9,
+    "next_implied_total": 24.0,
     "opp": {
      "snap": 0.59,
      "snap_avg": 0.665,
@@ -98985,7 +98987,9 @@
     "weekly_proj": {
      "10": 8.66
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 23,
     "is_rookie": false,
@@ -99199,9 +99203,9 @@
     "this_week_opp": "@ LV",
     "kickoff_jst": "月 06:05",
     "venue_str": "ドーム/天然芝",
-    "implied_total": 23.5,
-    "game_ou": 40.6,
-    "opp_implied": 17.0,
+    "implied_total": 22.8,
+    "game_ou": 41.7,
+    "opp_implied": 18.9,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.72,
@@ -99233,7 +99237,9 @@
     "weekly_proj": {
      "10": 0.0
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 54,
     "is_rookie": false,
@@ -99447,9 +99453,9 @@
     "this_week_opp": "@ ARI",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.1,
-    "game_ou": 38.3,
-    "opp_implied": 14.2,
+    "implied_total": 24.2,
+    "game_ou": 39.4,
+    "opp_implied": 15.1,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.26,
@@ -99481,7 +99487,9 @@
     "weekly_proj": {
      "10": 7.69
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 25,
     "is_rookie": false,
@@ -99695,9 +99703,9 @@
     "this_week_opp": "@ ARI",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.1,
-    "game_ou": 38.3,
-    "opp_implied": 14.2,
+    "implied_total": 24.2,
+    "game_ou": 39.4,
+    "opp_implied": 15.1,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.8,
@@ -100441,9 +100449,9 @@
     "this_week_opp": "vs BUF",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 16.1,
-    "game_ou": 45.8,
-    "opp_implied": 29.6,
+    "implied_total": 12.8,
+    "game_ou": 43.5,
+    "opp_implied": 30.8,
     "next_week_opp": "@ LAC",
     "opp": {
      "snap": 0.63,
@@ -100475,7 +100483,9 @@
     "weekly_proj": {
      "10": 8.08
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 42,
     "is_rookie": false,
@@ -100689,9 +100699,9 @@
     "this_week_opp": "@ ARI",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.1,
-    "game_ou": 38.3,
-    "opp_implied": 14.2,
+    "implied_total": 24.2,
+    "game_ou": 39.4,
+    "opp_implied": 15.1,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.73,
@@ -100940,9 +100950,9 @@
     "this_week_opp": "@ IND",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 26.0,
-    "game_ou": 54.5,
-    "opp_implied": 28.5,
+    "implied_total": 23.9,
+    "game_ou": 48.0,
+    "opp_implied": 24.1,
     "next_week_opp": "@ BUF",
     "opp": {
      "snap": 0.65,
@@ -101452,15 +101462,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 1.55,
-    "total_points": 42.0,
-    "avg_points": 4.67,
+    "total_points": 43.3,
+    "avg_points": 4.81,
     "proj_total": 54.34,
     "proj_avg": 6.04,
     "weekly_proj": {
      "10": 6.76
     },
     "weekly_actual": {
-     "10": 5.0
+     "10": 6.3
     },
     "opponents": {},
     "pos_rank": 40,
@@ -101675,9 +101685,9 @@
     "this_week_opp": "vs JAX",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 20.4,
-    "game_ou": 49.3,
-    "opp_implied": 28.9,
+    "implied_total": 23.6,
+    "game_ou": 63.5,
+    "opp_implied": 39.9,
     "next_week_opp": "@ DAL",
     "opp": {
      "snap": 0.64,
@@ -101926,9 +101936,6 @@
     "this_week_opp": "@ GB",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 30.0,
-    "game_ou": 43.6,
-    "opp_implied": 13.5,
     "next_week_opp": "@ SF",
     "opp": {
      "snap": 0.12,
@@ -102672,9 +102679,9 @@
     "this_week_opp": "@ NYJ",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.6,
-    "game_ou": 45.8,
-    "opp_implied": 16.1,
+    "implied_total": 30.8,
+    "game_ou": 43.5,
+    "opp_implied": 12.8,
     "next_week_opp": "vs MIA",
     "opp": {
      "snap": 0.72,
@@ -102922,9 +102929,9 @@
     "this_week_opp": "@ NO",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 13.5,
-    "game_ou": 24.5,
-    "opp_implied": 11.0,
+    "implied_total": 20.0,
+    "game_ou": 37.5,
+    "opp_implied": 17.5,
     "next_week_opp": "vs BAL",
     "opp": {
      "snap": 0.7,
@@ -103412,9 +103419,9 @@
     "this_week_opp": "vs SF",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 25.9,
+    "implied_total": 26.1,
     "game_ou": 55.9,
-    "opp_implied": 30.0,
+    "opp_implied": 29.8,
     "next_week_opp": "vs TEN",
     "opp": {
      "snap": 0.7,
@@ -103904,9 +103911,9 @@
     "this_week_opp": "@ ATL",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.8,
-    "game_ou": 38.8,
-    "opp_implied": 9.1,
+    "implied_total": 34.8,
+    "game_ou": 48.5,
+    "opp_implied": 13.8,
     "next_week_opp": "vs ARI",
     "opp": {
      "snap": 0.62,
@@ -104396,9 +104403,9 @@
     "this_week_opp": "vs CAR",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 11.0,
-    "game_ou": 24.5,
-    "opp_implied": 13.5,
+    "implied_total": 17.5,
+    "game_ou": 37.5,
+    "opp_implied": 20.0,
     "next_week_opp": "@ CHI",
     "opp": {
      "snap": 0.47,
@@ -104644,9 +104651,9 @@
     "this_week_opp": "@ DAL",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 30.0,
+    "implied_total": 29.8,
     "game_ou": 55.9,
-    "opp_implied": 25.9,
+    "opp_implied": 26.1,
     "next_week_opp": "vs MIN"
    },
    {
@@ -104911,7 +104918,9 @@
     "weekly_proj": {
      "10": 0.0
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 103,
     "is_rookie": false,
@@ -105125,9 +105134,9 @@
     "this_week_opp": "@ LV",
     "kickoff_jst": "月 06:05",
     "venue_str": "ドーム/天然芝",
-    "implied_total": 23.5,
-    "game_ou": 40.6,
-    "opp_implied": 17.0,
+    "implied_total": 22.8,
+    "game_ou": 41.7,
+    "opp_implied": 18.9,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.32,
@@ -105159,7 +105168,9 @@
     "weekly_proj": {
      "10": 4.76
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 36,
     "is_rookie": false,
@@ -105373,9 +105384,9 @@
     "this_week_opp": "vs LA",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 14.2,
-    "game_ou": 38.3,
-    "opp_implied": 24.1,
+    "implied_total": 15.1,
+    "game_ou": 39.4,
+    "opp_implied": 24.2,
     "next_week_opp": "@ KC",
     "opp": {
      "snap": 0.66,
@@ -105623,9 +105634,6 @@
     "this_week_opp": "vs MIN",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 13.5,
-    "game_ou": 43.6,
-    "opp_implied": 30.0,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.25,
@@ -105871,9 +105879,9 @@
     "this_week_opp": "vs SF",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 25.9,
+    "implied_total": 26.1,
     "game_ou": 55.9,
-    "opp_implied": 30.0,
+    "opp_implied": 29.8,
     "next_week_opp": "vs TEN",
     "opp": {
      "snap": 0.08,
@@ -106123,7 +106131,7 @@
     "game_ou": 49.5,
     "opp_implied": 23.0,
     "next_week_opp": "@ WAS",
-    "next_implied_total": 27.6,
+    "next_implied_total": 27.5,
     "opp": {
      "snap": 0.28,
      "snap_avg": 0.4,
@@ -106370,9 +106378,9 @@
     "this_week_opp": "@ NO",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 13.5,
-    "game_ou": 24.5,
-    "opp_implied": 11.0,
+    "implied_total": 20.0,
+    "game_ou": 37.5,
+    "opp_implied": 17.5,
     "next_week_opp": "vs BAL"
    },
    {
@@ -106606,9 +106614,9 @@
     "this_week_opp": "@ TEN",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 28.9,
-    "game_ou": 49.3,
-    "opp_implied": 20.4,
+    "implied_total": 39.9,
+    "game_ou": 63.5,
+    "opp_implied": 23.6,
     "next_week_opp": "@ NYG",
     "opp": {
      "snap": 0.55,
@@ -106640,7 +106648,9 @@
     "weekly_proj": {
      "10": 4.76
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 44,
     "is_rookie": false,
@@ -106854,9 +106864,9 @@
     "this_week_opp": "@ ARI",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.1,
-    "game_ou": 38.3,
-    "opp_implied": 14.2,
+    "implied_total": 24.2,
+    "game_ou": 39.4,
+    "opp_implied": 15.1,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.74,
@@ -107595,7 +107605,7 @@
     "game_ou": 49.5,
     "opp_implied": 23.0,
     "next_week_opp": "@ WAS",
-    "next_implied_total": 27.6,
+    "next_implied_total": 27.5,
     "opp": {
      "snap": 0.55,
      "snap_avg": 0.535,
@@ -107619,15 +107629,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 0.08,
-    "total_points": 22.6,
-    "avg_points": 2.51,
+    "total_points": 24.4,
+    "avg_points": 2.44,
     "proj_total": 15.86,
     "proj_avg": 1.98,
     "weekly_proj": {
      "10": 1.94
     },
     "weekly_actual": {
-     "10": 0.0
+     "10": 1.8
     },
     "opponents": {},
     "pos_rank": 52,
@@ -107842,9 +107852,9 @@
     "this_week_opp": "vs KC",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 9.1,
-    "game_ou": 38.8,
-    "opp_implied": 29.8,
+    "implied_total": 13.8,
+    "game_ou": 48.5,
+    "opp_implied": 34.8,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.13,
@@ -108340,9 +108350,9 @@
     "this_week_opp": "vs MIA",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 28.5,
-    "game_ou": 54.5,
-    "opp_implied": 26.0,
+    "implied_total": 24.1,
+    "game_ou": 48.0,
+    "opp_implied": 23.9,
     "next_week_opp": "@ HOU",
     "opp": {
      "snap": 0.34,
@@ -108832,9 +108842,9 @@
     "this_week_opp": "@ NYJ",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.6,
-    "game_ou": 45.8,
-    "opp_implied": 16.1,
+    "implied_total": 30.8,
+    "game_ou": 43.5,
+    "opp_implied": 12.8,
     "next_week_opp": "vs MIA",
     "opp": {
      "snap": 0.57,
@@ -108866,7 +108876,9 @@
     "weekly_proj": {
      "10": 0.0
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 111,
     "is_rookie": true,
@@ -109080,9 +109092,9 @@
     "this_week_opp": "@ ARI",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.1,
-    "game_ou": 38.3,
-    "opp_implied": 14.2,
+    "implied_total": 24.2,
+    "game_ou": 39.4,
+    "opp_implied": 15.1,
     "next_week_opp": "BYE"
    },
    {
@@ -109316,9 +109328,6 @@
     "this_week_opp": "@ GB",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 30.0,
-    "game_ou": 43.6,
-    "opp_implied": 13.5,
     "next_week_opp": "@ SF",
     "opp": {
      "snap": 0.41,
@@ -109566,9 +109575,9 @@
     "this_week_opp": "@ CLE",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.9,
-    "game_ou": 48.2,
-    "opp_implied": 23.2,
+    "implied_total": 24.5,
+    "game_ou": 51.5,
+    "opp_implied": 27.0,
     "next_week_opp": "vs IND",
     "opp": {
      "snap": 0.62,
@@ -109816,9 +109825,9 @@
     "this_week_opp": "vs CAR",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 11.0,
-    "game_ou": 24.5,
-    "opp_implied": 13.5,
+    "implied_total": 17.5,
+    "game_ou": 37.5,
+    "opp_implied": 20.0,
     "next_week_opp": "@ CHI",
     "opp": {
      "snap": 0.29,
@@ -110542,9 +110551,9 @@
     "this_week_opp": "@ IND",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 26.0,
-    "game_ou": 54.5,
-    "opp_implied": 28.5,
+    "implied_total": 23.9,
+    "game_ou": 48.0,
+    "opp_implied": 24.1,
     "next_week_opp": "@ BUF",
     "opp": {
      "snap": 0.35,
@@ -110792,9 +110801,9 @@
     "this_week_opp": "vs MIA",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 28.5,
-    "game_ou": 54.5,
-    "opp_implied": 26.0,
+    "implied_total": 24.1,
+    "game_ou": 48.0,
+    "opp_implied": 23.9,
     "next_week_opp": "@ HOU",
     "opp": {
      "snap": 0.64,
@@ -111042,9 +111051,9 @@
     "this_week_opp": "vs HOU",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 23.2,
-    "game_ou": 48.2,
-    "opp_implied": 24.9,
+    "implied_total": 27.0,
+    "game_ou": 51.5,
+    "opp_implied": 24.5,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.26,
@@ -111537,9 +111546,9 @@
     "this_week_opp": "@ DAL",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 30.0,
+    "implied_total": 29.8,
     "game_ou": 55.9,
-    "opp_implied": 25.9,
+    "opp_implied": 26.1,
     "next_week_opp": "vs MIN",
     "opp": {
      "snap": 0.45,
@@ -112035,9 +112044,6 @@
     "this_week_opp": "vs MIN",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 13.5,
-    "game_ou": 43.6,
-    "opp_implied": 30.0,
     "next_week_opp": "BYE"
    },
    {
@@ -112271,9 +112277,9 @@
     "this_week_opp": "@ CLE",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.9,
-    "game_ou": 48.2,
-    "opp_implied": 23.2,
+    "implied_total": 24.5,
+    "game_ou": 51.5,
+    "opp_implied": 27.0,
     "next_week_opp": "vs IND",
     "opp": {
      "snap": 0.36,
@@ -112298,15 +112304,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 0.04,
-    "total_points": 23.2,
-    "avg_points": 2.58,
+    "total_points": 24.6,
+    "avg_points": 2.73,
     "proj_total": 24.84,
     "proj_avg": 2.76,
     "weekly_proj": {
      "10": 3.14
     },
     "weekly_actual": {
-     "10": 7.2
+     "10": 8.6
     },
     "opponents": {},
     "pos_rank": 61,
@@ -112521,9 +112527,9 @@
     "this_week_opp": "vs JAX",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 20.4,
-    "game_ou": 49.3,
-    "opp_implied": 28.9,
+    "implied_total": 23.6,
+    "game_ou": 63.5,
+    "opp_implied": 39.9,
     "next_week_opp": "@ DAL",
     "opp": {
      "snap": 0.4,
@@ -112772,7 +112778,7 @@
     "kickoff_jst": "金 10:15",
     "venue_str": "屋外",
     "next_week_opp": "vs CIN",
-    "next_implied_total": 23.9,
+    "next_implied_total": 24.0,
     "opp": {
      "snap": 0.35,
      "snap_avg": 0.36,
@@ -113019,9 +113025,9 @@
     "this_week_opp": "vs BUF",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 16.1,
-    "game_ou": 45.8,
-    "opp_implied": 29.6,
+    "implied_total": 12.8,
+    "game_ou": 43.5,
+    "opp_implied": 30.8,
     "next_week_opp": "@ LAC",
     "opp": {
      "snap": 0.39,
@@ -113295,7 +113301,9 @@
     "weekly_proj": {
      "10": 1.0
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 71,
     "is_rookie": false,
@@ -113509,9 +113517,9 @@
     "this_week_opp": "@ LV",
     "kickoff_jst": "月 06:05",
     "venue_str": "ドーム/天然芝",
-    "implied_total": 23.5,
-    "game_ou": 40.6,
-    "opp_implied": 17.0,
+    "implied_total": 22.8,
+    "game_ou": 41.7,
+    "opp_implied": 18.9,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.48,
@@ -113759,9 +113767,9 @@
     "this_week_opp": "@ NO",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 13.5,
-    "game_ou": 24.5,
-    "opp_implied": 11.0,
+    "implied_total": 20.0,
+    "game_ou": 37.5,
+    "opp_implied": 17.5,
     "next_week_opp": "vs BAL",
     "opp": {
      "snap": 0.47,
@@ -114028,7 +114036,7 @@
     "kickoff_jst": "金 10:15",
     "venue_str": "屋外",
     "next_week_opp": "vs CIN",
-    "next_implied_total": 23.9,
+    "next_implied_total": 24.0,
     "opp": {
      "snap": 0.41,
      "snap_avg": 0.38,
@@ -114523,9 +114531,6 @@
     "this_week_opp": "vs MIN",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 13.5,
-    "game_ou": 43.6,
-    "opp_implied": 30.0,
     "next_week_opp": "BYE"
    },
    {
@@ -114759,9 +114764,9 @@
     "this_week_opp": "@ CLE",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.9,
-    "game_ou": 48.2,
-    "opp_implied": 23.2,
+    "implied_total": 24.5,
+    "game_ou": 51.5,
+    "opp_implied": 27.0,
     "next_week_opp": "vs IND",
     "opp": {
      "snap": 0.11,
@@ -114793,7 +114798,9 @@
     "weekly_proj": {
      "10": 0.48
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 59,
     "is_rookie": false,
@@ -115007,9 +115014,9 @@
     "this_week_opp": "vs SEA",
     "kickoff_jst": "月 06:05",
     "venue_str": "ドーム/天然芝",
-    "implied_total": 17.0,
-    "game_ou": 40.6,
-    "opp_implied": 23.5,
+    "implied_total": 18.9,
+    "game_ou": 41.7,
+    "opp_implied": 22.8,
     "next_week_opp": "@ DEN",
     "opp": {
      "snap": 0.26,
@@ -115257,9 +115264,9 @@
     "this_week_opp": "vs KC",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 9.1,
-    "game_ou": 38.8,
-    "opp_implied": 29.8,
+    "implied_total": 13.8,
+    "game_ou": 48.5,
+    "opp_implied": 34.8,
     "next_week_opp": "BYE",
     "opp": {
      "snap": 0.42,
@@ -115754,9 +115761,6 @@
     "this_week_opp": "@ GB",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 30.0,
-    "game_ou": 43.6,
-    "opp_implied": 13.5,
     "next_week_opp": "@ SF",
     "opp": {
      "snap": 0.21,
@@ -116004,9 +116008,9 @@
     "this_week_opp": "@ IND",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 26.0,
-    "game_ou": 54.5,
-    "opp_implied": 28.5,
+    "implied_total": 23.9,
+    "game_ou": 48.0,
+    "opp_implied": 24.1,
     "next_week_opp": "@ BUF"
    },
    {
@@ -116500,9 +116504,9 @@
     "this_week_opp": "@ IND",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 26.0,
-    "game_ou": 54.5,
-    "opp_implied": 28.5,
+    "implied_total": 23.9,
+    "game_ou": 48.0,
+    "opp_implied": 24.1,
     "next_week_opp": "@ BUF",
     "opp": {
      "snap": 0.23,
@@ -116527,15 +116531,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 0.02,
-    "total_points": 5.3,
-    "avg_points": 0.88,
+    "total_points": 7.1,
+    "avg_points": 1.01,
     "proj_total": 0.0,
     "proj_avg": 0.0,
     "weekly_proj": {
      "10": 0.0
     },
     "weekly_actual": {
-     "10": 0.0
+     "10": 1.8
     },
     "opponents": {},
     "pos_rank": 90,
@@ -116750,9 +116754,9 @@
     "this_week_opp": "@ TEN",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 28.9,
-    "game_ou": 49.3,
-    "opp_implied": 20.4,
+    "implied_total": 39.9,
+    "game_ou": 63.5,
+    "opp_implied": 23.6,
     "next_week_opp": "@ NYG",
     "opp": {
      "snap": 0.21,
@@ -117242,9 +117246,9 @@
     "this_week_opp": "vs MIA",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 28.5,
-    "game_ou": 54.5,
-    "opp_implied": 26.0,
+    "implied_total": 24.1,
+    "game_ou": 48.0,
+    "opp_implied": 23.9,
     "next_week_opp": "@ HOU"
    },
    {
@@ -117969,9 +117973,9 @@
     "this_week_opp": "@ ATL",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.8,
-    "game_ou": 38.8,
-    "opp_implied": 9.1,
+    "implied_total": 34.8,
+    "game_ou": 48.5,
+    "opp_implied": 13.8,
     "next_week_opp": "vs ARI"
    },
    {
@@ -118206,7 +118210,7 @@
     "kickoff_jst": "金 10:15",
     "venue_str": "屋外",
     "next_week_opp": "vs CIN",
-    "next_implied_total": 23.9,
+    "next_implied_total": 24.0,
     "opp": {
      "snap": 0.11,
      "snap_avg": 0.065,
@@ -118453,9 +118457,9 @@
     "this_week_opp": "@ NYJ",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.6,
-    "game_ou": 45.8,
-    "opp_implied": 16.1,
+    "implied_total": 30.8,
+    "game_ou": 43.5,
+    "opp_implied": 12.8,
     "next_week_opp": "vs MIA",
     "opp": {
      "snap": 0.26,
@@ -118737,9 +118741,9 @@
     "this_week_opp": "vs HOU",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 23.2,
-    "game_ou": 48.2,
-    "opp_implied": 24.9,
+    "implied_total": 27.0,
+    "game_ou": 51.5,
+    "opp_implied": 24.5,
     "next_week_opp": "BYE"
    }
   ],
@@ -118752,15 +118756,15 @@
     "injury_status": "",
     "lineup_slot": "",
     "percent_owned": 61.17,
-    "total_points": 49.0,
-    "avg_points": 5.44,
+    "total_points": 51.0,
+    "avg_points": 5.67,
     "proj_total": 51.47,
     "proj_avg": 3.03,
     "weekly_proj": {
      "10": 6.22
     },
     "weekly_actual": {
-     "10": 8.0
+     "10": 10.0
     },
     "opponents": {},
     "pos_rank": 17,
@@ -118980,9 +118984,9 @@
      "to_g": 0.8,
      "season": 2026
     },
-    "implied_total": 29.6,
-    "game_ou": 45.8,
-    "opp_implied": 16.1,
+    "implied_total": 30.8,
+    "game_ou": 43.5,
+    "opp_implied": 12.8,
     "next_week_opp": "vs MIA"
    },
    {
@@ -119221,9 +119225,9 @@
      "to_g": 1.9,
      "season": 2026
     },
-    "implied_total": 29.8,
-    "game_ou": 38.8,
-    "opp_implied": 9.1,
+    "implied_total": 34.8,
+    "game_ou": 48.5,
+    "opp_implied": 13.8,
     "next_week_opp": "vs ARI"
    },
    {
@@ -119234,15 +119238,15 @@
     "injury_status": "",
     "lineup_slot": "",
     "percent_owned": 50.31,
-    "total_points": 74.0,
-    "avg_points": 7.4,
+    "total_points": 71.0,
+    "avg_points": 7.1,
     "proj_total": 49.78,
     "proj_avg": 2.93,
     "weekly_proj": {
      "10": 5.53
     },
     "weekly_actual": {
-     "10": 7.0
+     "10": 4.0
     },
     "opponents": {},
     "pos_rank": 7,
@@ -119462,9 +119466,6 @@
      "to_g": 1.0,
      "season": 2026
     },
-    "implied_total": 13.5,
-    "game_ou": 43.6,
-    "opp_implied": 30.0,
     "next_week_opp": "BYE"
    },
    {
@@ -119713,15 +119714,15 @@
     "injury_status": "",
     "lineup_slot": "",
     "percent_owned": 42.53,
-    "total_points": 58.0,
-    "avg_points": 5.8,
+    "total_points": 57.0,
+    "avg_points": 5.7,
     "proj_total": 49.86,
     "proj_avg": 2.93,
     "weekly_proj": {
      "10": 4.21
     },
     "weekly_actual": {
-     "10": 6.0
+     "10": 5.0
     },
     "opponents": {},
     "pos_rank": 12,
@@ -119941,9 +119942,9 @@
      "to_g": 0.5,
      "season": 2026
     },
-    "implied_total": 23.2,
-    "game_ou": 48.2,
-    "opp_implied": 24.9,
+    "implied_total": 27.0,
+    "game_ou": 51.5,
+    "opp_implied": 24.5,
     "next_week_opp": "BYE"
    },
    {
@@ -120180,9 +120181,9 @@
      "to_g": 1.0,
      "season": 2026
     },
-    "implied_total": 30.0,
+    "implied_total": 29.8,
     "game_ou": 55.9,
-    "opp_implied": 25.9,
+    "opp_implied": 26.1,
     "next_week_opp": "vs MIN"
    },
    {
@@ -120888,7 +120889,7 @@
     "game_ou": 49.5,
     "opp_implied": 23.0,
     "next_week_opp": "@ WAS",
-    "next_implied_total": 27.6
+    "next_implied_total": 27.5
    },
    {
     "id": -16027,
@@ -121354,7 +121355,7 @@
      "season": 2026
     },
     "next_week_opp": "vs CIN",
-    "next_implied_total": 23.9
+    "next_implied_total": 24.0
    },
    {
     "id": -16021,
@@ -121591,15 +121592,15 @@
     "injury_status": "",
     "lineup_slot": "",
     "percent_owned": 22.69,
-    "total_points": 30.0,
-    "avg_points": 3.0,
+    "total_points": 31.0,
+    "avg_points": 3.1,
     "proj_total": 35.92,
     "proj_avg": 2.11,
     "weekly_proj": {
      "10": 6.33
     },
     "weekly_actual": {
-     "10": 13.0
+     "10": 14.0
     },
     "opponents": {},
     "pos_rank": 32,
@@ -121819,9 +121820,9 @@
      "to_g": 1.2,
      "season": 2026
     },
-    "implied_total": 28.5,
-    "game_ou": 54.5,
-    "opp_implied": 26.0,
+    "implied_total": 24.1,
+    "game_ou": 48.0,
+    "opp_implied": 23.9,
     "next_week_opp": "@ HOU"
    },
    {
@@ -121832,15 +121833,15 @@
     "injury_status": "",
     "lineup_slot": "",
     "percent_owned": 10.34,
-    "total_points": 44.0,
-    "avg_points": 4.4,
+    "total_points": 43.0,
+    "avg_points": 4.3,
     "proj_total": 43.73,
     "proj_avg": 2.57,
     "weekly_proj": {
      "10": 3.65
     },
     "weekly_actual": {
-     "10": 4.0
+     "10": 3.0
     },
     "opponents": {},
     "pos_rank": 20,
@@ -122060,9 +122061,9 @@
      "to_g": 1.5,
      "season": 2026
     },
-    "implied_total": 16.1,
-    "game_ou": 45.8,
-    "opp_implied": 29.6,
+    "implied_total": 12.8,
+    "game_ou": 43.5,
+    "opp_implied": 30.8,
     "next_week_opp": "@ LAC"
    },
    {
@@ -122299,9 +122300,9 @@
      "to_g": 1.4,
      "season": 2026
     },
-    "implied_total": 25.9,
+    "implied_total": 26.1,
     "game_ou": 55.9,
-    "opp_implied": 30.0,
+    "opp_implied": 29.8,
     "next_week_opp": "vs TEN"
    },
    {
@@ -122779,9 +122780,9 @@
      "to_g": 1.9,
      "season": 2026
     },
-    "implied_total": 26.0,
-    "game_ou": 54.5,
-    "opp_implied": 28.5,
+    "implied_total": 23.9,
+    "game_ou": 48.0,
+    "opp_implied": 24.1,
     "next_week_opp": "@ BUF"
    },
    {
@@ -122792,15 +122793,15 @@
     "injury_status": "",
     "lineup_slot": "",
     "percent_owned": 7.18,
-    "total_points": 42.0,
-    "avg_points": 4.67,
+    "total_points": 39.0,
+    "avg_points": 4.33,
     "proj_total": 37.16,
     "proj_avg": 2.19,
     "weekly_proj": {
      "10": 4.48
     },
     "weekly_actual": {
-     "10": 13.0
+     "10": 10.0
     },
     "opponents": {},
     "pos_rank": 26,
@@ -123020,9 +123021,9 @@
      "to_g": 1.9,
      "season": 2026
     },
-    "implied_total": 13.5,
-    "game_ou": 24.5,
-    "opp_implied": 11.0,
+    "implied_total": 20.0,
+    "game_ou": 37.5,
+    "opp_implied": 17.5,
     "next_week_opp": "vs BAL"
    },
    {
@@ -123033,15 +123034,15 @@
     "injury_status": "",
     "lineup_slot": "",
     "percent_owned": 5.78,
-    "total_points": 41.0,
-    "avg_points": 4.56,
+    "total_points": 38.0,
+    "avg_points": 4.22,
     "proj_total": 34.24,
     "proj_avg": 2.01,
     "weekly_proj": {
      "10": 4.73
     },
     "weekly_actual": {
-     "10": 8.0
+     "10": 5.0
     },
     "opponents": {},
     "pos_rank": 24,
@@ -123261,9 +123262,9 @@
      "to_g": 1.5,
      "season": 2026
     },
-    "implied_total": 11.0,
-    "game_ou": 24.5,
-    "opp_implied": 13.5,
+    "implied_total": 17.5,
+    "game_ou": 37.5,
+    "opp_implied": 20.0,
     "next_week_opp": "@ CHI"
    },
    {
@@ -123274,14 +123275,16 @@
     "injury_status": "",
     "lineup_slot": "",
     "percent_owned": 3.43,
-    "total_points": 38.0,
-    "avg_points": 4.22,
+    "total_points": 51.0,
+    "avg_points": 5.1,
     "proj_total": 33.2,
     "proj_avg": 1.95,
     "weekly_proj": {
      "10": 3.49
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 13.0
+    },
     "opponents": {},
     "pos_rank": 21,
     "bye": 13,
@@ -123500,9 +123503,9 @@
      "to_g": 1.6,
      "season": 2026
     },
-    "implied_total": 17.0,
-    "game_ou": 40.6,
-    "opp_implied": 23.5,
+    "implied_total": 18.9,
+    "game_ou": 41.7,
+    "opp_implied": 22.8,
     "next_week_opp": "@ DEN"
    },
    {
@@ -123513,15 +123516,15 @@
     "injury_status": "",
     "lineup_slot": "",
     "percent_owned": 2.68,
-    "total_points": 41.0,
-    "avg_points": 4.56,
+    "total_points": 33.0,
+    "avg_points": 3.67,
     "proj_total": 23.96,
     "proj_avg": 1.41,
     "weekly_proj": {
      "10": 2.37
     },
     "weekly_actual": {
-     "10": 3.0
+     "10": -5.0
     },
     "opponents": {},
     "pos_rank": 21,
@@ -123741,9 +123744,9 @@
      "to_g": 0.8,
      "season": 2026
     },
-    "implied_total": 20.4,
-    "game_ou": 49.3,
-    "opp_implied": 28.9,
+    "implied_total": 23.6,
+    "game_ou": 63.5,
+    "opp_implied": 39.9,
     "next_week_opp": "@ DAL"
    },
    {
@@ -123754,15 +123757,15 @@
     "injury_status": "",
     "lineup_slot": "",
     "percent_owned": 2.62,
-    "total_points": 40.0,
-    "avg_points": 4.0,
+    "total_points": 34.0,
+    "avg_points": 3.4,
     "proj_total": 35.64,
     "proj_avg": 2.1,
     "weekly_proj": {
      "10": 3.14
     },
     "weekly_actual": {
-     "10": -1.0
+     "10": -7.0
     },
     "opponents": {},
     "pos_rank": 17,
@@ -123982,9 +123985,9 @@
      "to_g": 0.9,
      "season": 2026
     },
-    "implied_total": 9.1,
-    "game_ou": 38.8,
-    "opp_implied": 29.8,
+    "implied_total": 13.8,
+    "game_ou": 48.5,
+    "opp_implied": 34.8,
     "next_week_opp": "BYE"
    },
    {
@@ -123995,14 +123998,16 @@
     "injury_status": "",
     "lineup_slot": "",
     "percent_owned": 0.56,
-    "total_points": 29.0,
-    "avg_points": 3.22,
+    "total_points": 39.0,
+    "avg_points": 3.9,
     "proj_total": 36.05,
     "proj_avg": 2.12,
     "weekly_proj": {
      "10": 3.34
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 10.0
+    },
     "opponents": {},
     "pos_rank": 26,
     "bye": 14,
@@ -124221,9 +124226,9 @@
      "to_g": 1.6,
      "season": 2026
     },
-    "implied_total": 14.2,
-    "game_ou": 38.3,
-    "opp_implied": 24.1,
+    "implied_total": 15.1,
+    "game_ou": 39.4,
+    "opp_implied": 24.2,
     "next_week_opp": "@ KC"
    }
   ],
@@ -124236,15 +124241,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 88.4,
-    "total_points": 98.0,
-    "avg_points": 10.89,
+    "total_points": 101.0,
+    "avg_points": 11.22,
     "proj_total": 89.34,
     "proj_avg": 9.93,
     "weekly_proj": {
      "10": 9.41
     },
     "weekly_actual": {
-     "10": 9.0
+     "10": 12.0
     },
     "opponents": {},
     "pos_rank": 5,
@@ -124459,9 +124464,6 @@
     "this_week_opp": "@ GB",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 30.0,
-    "game_ou": 43.6,
-    "opp_implied": 13.5,
     "next_week_opp": "@ SF"
    },
    {
@@ -124472,15 +124474,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 83.21,
-    "total_points": 97.0,
-    "avg_points": 10.78,
+    "total_points": 98.0,
+    "avg_points": 10.89,
     "proj_total": 97.96,
     "proj_avg": 10.88,
     "weekly_proj": {
      "10": 11.23
     },
     "weekly_actual": {
-     "10": 6.0
+     "10": 7.0
     },
     "opponents": {},
     "pos_rank": 4,
@@ -124695,9 +124697,9 @@
     "this_week_opp": "@ NYJ",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.6,
-    "game_ou": 45.8,
-    "opp_implied": 16.1,
+    "implied_total": 30.8,
+    "game_ou": 43.5,
+    "opp_implied": 12.8,
     "next_week_opp": "vs MIA"
    },
    {
@@ -125175,15 +125177,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 53.21,
-    "total_points": 63.0,
-    "avg_points": 7.0,
+    "total_points": 64.0,
+    "avg_points": 7.11,
     "proj_total": 83.92,
     "proj_avg": 9.32,
     "weekly_proj": {
      "10": 9.31
     },
     "weekly_actual": {
-     "10": 4.0
+     "10": 5.0
     },
     "opponents": {},
     "pos_rank": 24,
@@ -125398,9 +125400,9 @@
     "this_week_opp": "@ ATL",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.8,
-    "game_ou": 38.8,
-    "opp_implied": 9.1,
+    "implied_total": 34.8,
+    "game_ou": 48.5,
+    "opp_implied": 13.8,
     "next_week_opp": "vs ARI"
    },
    {
@@ -125411,14 +125413,16 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 49.96,
-    "total_points": 88.0,
-    "avg_points": 9.78,
+    "total_points": 89.0,
+    "avg_points": 8.9,
     "proj_total": 68.54,
     "proj_avg": 8.57,
     "weekly_proj": {
      "10": 8.33
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 1.0
+    },
     "opponents": {},
     "pos_rank": 6,
     "is_rookie": false,
@@ -125632,9 +125636,9 @@
     "this_week_opp": "vs SEA",
     "kickoff_jst": "月 06:05",
     "venue_str": "ドーム/天然芝",
-    "implied_total": 17.0,
-    "game_ou": 40.6,
-    "opp_implied": 23.5,
+    "implied_total": 18.9,
+    "game_ou": 41.7,
+    "opp_implied": 22.8,
     "next_week_opp": "@ DEN"
    },
    {
@@ -126100,9 +126104,9 @@
     "this_week_opp": "@ DAL",
     "kickoff_jst": "月 06:25",
     "venue_str": "屋外/人工芝",
-    "implied_total": 30.0,
+    "implied_total": 29.8,
     "game_ou": 55.9,
-    "opp_implied": 25.9,
+    "opp_implied": 26.1,
     "next_week_opp": "vs MIN"
    },
    {
@@ -126566,7 +126570,7 @@
     "game_ou": 49.5,
     "opp_implied": 23.0,
     "next_week_opp": "@ WAS",
-    "next_implied_total": 27.6
+    "next_implied_total": 27.5
    },
    {
     "id": 4363538,
@@ -126576,14 +126580,16 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 22.75,
-    "total_points": 84.0,
-    "avg_points": 9.33,
+    "total_points": 88.0,
+    "avg_points": 8.8,
     "proj_total": 68.34,
     "proj_avg": 8.54,
     "weekly_proj": {
      "10": 7.81
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 4.0
+    },
     "opponents": {},
     "pos_rank": 8,
     "is_rookie": false,
@@ -126797,9 +126803,9 @@
     "this_week_opp": "vs LA",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 14.2,
-    "game_ou": 38.3,
-    "opp_implied": 24.1,
+    "implied_total": 15.1,
+    "game_ou": 39.4,
+    "opp_implied": 24.2,
     "next_week_opp": "@ KC"
    },
    {
@@ -127495,9 +127501,9 @@
     "this_week_opp": "vs BUF",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 16.1,
-    "game_ou": 45.8,
-    "opp_implied": 29.6,
+    "implied_total": 12.8,
+    "game_ou": 43.5,
+    "opp_implied": 30.8,
     "next_week_opp": "@ LAC"
    },
    {
@@ -127751,9 +127757,6 @@
     "this_week_opp": "vs MIN",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 13.5,
-    "game_ou": 43.6,
-    "opp_implied": 30.0,
     "next_week_opp": "BYE"
    },
    {
@@ -127764,15 +127767,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 8.76,
-    "total_points": 88.0,
-    "avg_points": 8.8,
+    "total_points": 89.0,
+    "avg_points": 8.9,
     "proj_total": 75.79,
     "proj_avg": 9.47,
     "weekly_proj": {
      "10": 9.54
     },
     "weekly_actual": {
-     "10": 8.0
+     "10": 9.0
     },
     "opponents": {},
     "pos_rank": 9,
@@ -127987,9 +127990,9 @@
     "this_week_opp": "vs HOU",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 23.2,
-    "game_ou": 48.2,
-    "opp_implied": 24.9,
+    "implied_total": 27.0,
+    "game_ou": 51.5,
+    "opp_implied": 24.5,
     "next_week_opp": "BYE"
    },
    {
@@ -128000,15 +128003,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 6.69,
-    "total_points": 69.0,
-    "avg_points": 7.67,
+    "total_points": 75.0,
+    "avg_points": 8.33,
     "proj_total": 67.24,
     "proj_avg": 7.47,
     "weekly_proj": {
      "10": 7.66
     },
     "weekly_actual": {
-     "10": 5.0
+     "10": 11.0
     },
     "opponents": {},
     "pos_rank": 22,
@@ -128223,9 +128226,9 @@
     "this_week_opp": "@ NO",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 13.5,
-    "game_ou": 24.5,
-    "opp_implied": 11.0,
+    "implied_total": 20.0,
+    "game_ou": 37.5,
+    "opp_implied": 17.5,
     "next_week_opp": "vs BAL"
    },
    {
@@ -128936,7 +128939,7 @@
     "kickoff_jst": "金 10:15",
     "venue_str": "屋外",
     "next_week_opp": "vs CIN",
-    "next_implied_total": 23.9
+    "next_implied_total": 24.0
    },
    {
     "id": 4569923,
@@ -129179,15 +129182,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 1.43,
-    "total_points": 12.0,
-    "avg_points": 6.0,
+    "total_points": 18.0,
+    "avg_points": 9.0,
     "proj_total": 73.35,
     "proj_avg": 8.15,
     "weekly_proj": {
      "10": 8.76
     },
     "weekly_actual": {
-     "10": 1.0
+     "10": 7.0
     },
     "opponents": {},
     "pos_rank": 35,
@@ -129402,9 +129405,9 @@
     "this_week_opp": "vs CAR",
     "kickoff_jst": "月 03:00",
     "venue_str": "ドーム/人工芝",
-    "implied_total": 11.0,
-    "game_ou": 24.5,
-    "opp_implied": 13.5,
+    "implied_total": 17.5,
+    "game_ou": 37.5,
+    "opp_implied": 20.0,
     "next_week_opp": "@ CHI"
    },
    {
@@ -129422,7 +129425,9 @@
     "weekly_proj": {
      "10": 7.69
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 34,
     "is_rookie": false,
@@ -129636,9 +129641,9 @@
     "this_week_opp": "@ ARI",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.1,
-    "game_ou": 38.3,
-    "opp_implied": 14.2,
+    "implied_total": 24.2,
+    "game_ou": 39.4,
+    "opp_implied": 15.1,
     "next_week_opp": "BYE"
    },
    {
@@ -129656,7 +129661,9 @@
     "weekly_proj": {
      "10": 0.0
     },
-    "weekly_actual": {},
+    "weekly_actual": {
+     "10": 0.0
+    },
     "opponents": {},
     "pos_rank": 37,
     "is_rookie": false,
@@ -129870,9 +129877,9 @@
     "this_week_opp": "@ ARI",
     "kickoff_jst": "月 06:05",
     "venue_str": "屋外/天然芝",
-    "implied_total": 24.1,
-    "game_ou": 38.3,
-    "opp_implied": 14.2,
+    "implied_total": 24.2,
+    "game_ou": 39.4,
+    "opp_implied": 15.1,
     "next_week_opp": "BYE"
    },
    {
@@ -130124,9 +130131,9 @@
     "this_week_opp": "@ ATL",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 29.8,
-    "game_ou": 38.8,
-    "opp_implied": 9.1,
+    "implied_total": 34.8,
+    "game_ou": 48.5,
+    "opp_implied": 13.8,
     "next_week_opp": "vs ARI"
    },
    {
@@ -130371,15 +130378,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 0.31,
-    "total_points": 69.0,
-    "avg_points": 7.67,
+    "total_points": 70.0,
+    "avg_points": 7.78,
     "proj_total": 63.26,
     "proj_avg": 7.03,
     "weekly_proj": {
      "10": 6.71
     },
     "weekly_actual": {
-     "10": 16.0
+     "10": 17.0
     },
     "opponents": {},
     "pos_rank": 27,
@@ -130594,9 +130601,9 @@
     "this_week_opp": "vs JAX",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/天然芝",
-    "implied_total": 20.4,
-    "game_ou": 49.3,
-    "opp_implied": 28.9,
+    "implied_total": 23.6,
+    "game_ou": 63.5,
+    "opp_implied": 39.9,
     "next_week_opp": "@ DAL"
    },
    {
@@ -130607,15 +130614,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 0.21,
-    "total_points": 9.0,
-    "avg_points": 4.5,
+    "total_points": 13.0,
+    "avg_points": 6.5,
     "proj_total": 56.51,
     "proj_avg": 7.06,
     "weekly_proj": {
      "10": 6.85
     },
     "weekly_actual": {
-     "10": 3.0
+     "10": 7.0
     },
     "opponents": {},
     "pos_rank": 36,
@@ -130830,9 +130837,9 @@
     "this_week_opp": "vs KC",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 9.1,
-    "game_ou": 38.8,
-    "opp_implied": 29.8,
+    "implied_total": 13.8,
+    "game_ou": 48.5,
+    "opp_implied": 34.8,
     "next_week_opp": "BYE"
    },
    {
@@ -130843,15 +130850,15 @@
     "injury_status": "ACTIVE",
     "lineup_slot": "",
     "percent_owned": 0.14,
-    "total_points": 27.0,
-    "avg_points": 6.75,
+    "total_points": 26.0,
+    "avg_points": 6.5,
     "proj_total": 63.12,
     "proj_avg": 7.01,
     "weekly_proj": {
      "10": 7.03
     },
     "weekly_actual": {
-     "10": 5.0
+     "10": 4.0
     },
     "opponents": {},
     "pos_rank": 33,
@@ -131066,9 +131073,9 @@
     "this_week_opp": "@ IND",
     "kickoff_jst": "月 03:00",
     "venue_str": "屋外/人工芝",
-    "implied_total": 26.0,
-    "game_ou": 54.5,
-    "opp_implied": 28.5,
+    "implied_total": 23.9,
+    "game_ou": 48.0,
+    "opp_implied": 24.1,
     "next_week_opp": "@ BUF"
    },
    {
