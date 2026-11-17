@@ -2414,6 +2414,13 @@
    "action": "FA ADDED",
    "player": "Jordan Love",
    "bid": 0
+  },
+  {
+   "date": 1794919168742,
+   "team": "Rodgers Last Dance",
+   "action": "DROPPED",
+   "player": "Giants D/ST",
+   "bid": 0
   }
  ]
 }
