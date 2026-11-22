@@ -2624,6 +2624,13 @@
    "action": "FA ADDED",
    "player": "Chiefs D/ST",
    "bid": 0
+  },
+  {
+   "date": 1795351309160,
+   "team": "Jollibees",
+   "action": "DROPPED",
+   "player": "Puka Nacua",
+   "bid": 0
   }
  ]
 }
